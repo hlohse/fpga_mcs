@@ -1,0 +1,19 @@
+binary image in bram, e.g. 100x100
+occupancy < 5% => 500 active pixels/image
+
+pattern resolution: 100 * 60 = 6000
+100 rams 64x6 in parallel
+
+LUT: 100*6 bit = 600 bit = 20*32 bit
+
+Per pixel 20 DRAM read cycles, matches occupancy
+
+Potential optimization using wider histogram memory (sequential operation)
+
+After image, parallel readout of 100 histo rams (60 cycles), with parallel thresholding
+
+(Buffer results in FIFO)
+
+Peak finding on results
+
+Display

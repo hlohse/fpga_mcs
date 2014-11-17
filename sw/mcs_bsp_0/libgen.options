@@ -1,0 +1,3 @@
+PROCESSOR=mblaze
+REPOSITORIES=
+HWSPEC=../mcs_hw/system.xml

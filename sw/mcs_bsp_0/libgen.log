@@ -1,0 +1,35 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mcs_hw/system.xml -pe mblaze -log libgen.log
+system.mss 
+
+WARNING:EDK:411 - bram -
+   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 22 -
+   deprecated driver!
+WARNING:EDK:411 - bram -
+   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 28 -
+   deprecated driver!
+WARNING:EDK:411 - iomodule -
+   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 34 -
+   deprecated driver!
+WARNING:EDK:411 - cpu -
+   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 14 -
+   deprecated processor!
+WARNING:EDK:411 - standalone -
+   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 5 -
+   deprecated os!
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -DXPAR_IOMODULE_SINGLE_DEVICE_ID=0"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -DXPAR_IOMODULE_SINGLE_DEVICE_ID=0"'.
+Running execs_generate.

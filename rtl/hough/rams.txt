@@ -1,0 +1,8 @@
+distributed memory, simple dual port mode
+1 slice : 32x6
+2 slices: 32x7, 64x6
+3 slices: 64x7
+
+bram, simple dual port mode
+10kx72: 40 brams
+
