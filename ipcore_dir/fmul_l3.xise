@@ -33,7 +33,7 @@
     <property xil_pn:name="Device" xil_pn:value="xc6slx45" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Device Family" xil_pn:value="Spartan6" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Enable Internal Done Pipe" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Stop View" xil_pn:value="Structural" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Stop View" xil_pn:value="PreSynthesis" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top" xil_pn:value="Architecture|fmul_l3|fmul_l3_a" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top File" xil_pn:value="fmul_l3.vhd" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/fmul_l3" xil_pn:valueState="non-default"/>

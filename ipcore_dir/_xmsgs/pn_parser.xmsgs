@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/ipcore_dir/mcsPll_600_125_100_50.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/fel/Desktop/mcs/ipcore_dir/mcsPll_600_125_100_50.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

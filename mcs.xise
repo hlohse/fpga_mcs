@@ -237,19 +237,23 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="181"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
     </file>
+    <file xil_pn:name="rtl/cxgen.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="126"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="126"/>
+    </file>
     <file xil_pn:name="remote_sources/_/mblaze.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fadd.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fsub.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fmul.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fcmpless.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/hdmiClkXga.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/hdmiClk720p.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fadd_l3.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fmul_l3.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fsub_l3.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/itof_l3.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/fmul_nd_l3.xise" xil_pn:type="FILE_ISE"/>
-    <file xil_pn:name="ipcore_dir/mcsPll_600_125_100_50.xise" xil_pn:type="FILE_ISE"/>
+    <file xil_pn:name="ipcore_dir/fadd.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fsub.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fmul.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fcmpless.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/hdmiClkXga.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/hdmiClk720p.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fadd_l3.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fmul_l3.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fsub_l3.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/itof_l3.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/fmul_nd_l3.xise" xil_pn:type="FILE_COREGENISE"/>
+    <file xil_pn:name="ipcore_dir/mcsPll_600_125_100_50.xise" xil_pn:type="FILE_COREGENISE"/>
   </files>
 
   <autoManagedFiles>
@@ -296,7 +300,7 @@
     <property xil_pn:name="Change Device Speed To Post Trace" xil_pn:value="-2" xil_pn:valueState="default"/>
     <property xil_pn:name="Clock Port" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Combinatorial Logic Optimization" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Compile EDK Simulation Library" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Compile SIMPRIM (Timing) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile SmartModels (PPC, MGT) Simulation Library" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Compile UNISIM (Functional) Simulation Library" xil_pn:value="true" xil_pn:valueState="default"/>
@@ -636,7 +640,7 @@
     <property xil_pn:name="Symbolic FSM Compiler" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
     <property xil_pn:name="Sysgen Instantiation Template Target Language" xil_pn:value="VHDL" xil_pn:valueState="default"/>
-    <property xil_pn:name="Target Board for Hardware Co-Simulation" xil_pn:value="N/A" xil_pn:valueState="default"/>
+    <property xil_pn:name="Target Board for Hardware Co-Simulation" xil_pn:value="SP601 (JTAG)" xil_pn:valueState="default"/>
     <property xil_pn:name="Target Simulator" xil_pn:value="Please Specify" xil_pn:valueState="default"/>
     <property xil_pn:name="Target UCF File Name" xil_pn:value="mcs_top.ucf" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Test Bench Module/Entity Name" xil_pn:value="testbench" xil_pn:valueState="default"/>
