@@ -1,0 +1,15 @@
+# Output products list for <fmul>
+_xmsgs/pn_parser.xmsgs
+fmul/doc/floating_point_ds335.pdf
+fmul/doc/floating_point_v5_0_readme.txt
+fmul/doc/floating_point_v5_0_vinfo.html
+fmul.asy
+fmul.gise
+fmul.ngc
+fmul.sym
+fmul.vhd
+fmul.vho
+fmul.xco
+fmul.xise
+fmul_flist.txt
+fmul_xmdf.tcl

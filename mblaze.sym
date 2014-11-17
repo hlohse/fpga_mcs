@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="mblaze">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-11-17T14:32:15</timestamp>
+    <pin polarity="Input" x="0" y="80" name="clk" />
+    <pin polarity="Input" x="0" y="112" name="reset" />
+    <pin polarity="Output" x="768" y="80" name="uart_tx" />
+    <pin polarity="Input" x="0" y="144" name="uart_rx" />
+    <pin polarity="Output" x="768" y="112" name="fit1_toggle" />
+    <pin polarity="Output" x="768" y="144" name="fit2_toggle" />
+    <pin polarity="Output" x="768" y="240" name="pit1_toggle" />
+    <pin polarity="Output" x="768" y="272" name="pit2_toggle" />
+    <pin polarity="Output" x="768" y="368" name="fit1_interrupt" />
+    <pin polarity="Output" x="768" y="400" name="fit2_interrupt" />
+    <pin polarity="Output" x="768" y="496" name="pit1_interrupt" />
+    <pin polarity="Output" x="768" y="528" name="pit2_interrupt" />
+    <pin polarity="Output" x="768" y="752" name="uart_interrupt" />
+    <pin polarity="Input" x="0" y="208" name="pit2_enable" />
+    <pin polarity="Input" x="0" y="304" name="gpi1[7:0]" />
+    <pin polarity="Input" x="0" y="336" name="gpi2[4:0]" />
+    <pin polarity="Output" x="768" y="784" name="gpo1[7:0]" />
+    <pin polarity="Output" x="768" y="912" name="intc_irq" />
+    <pin polarity="Input" x="0" y="432" name="intc_interrupt[2:0]" />
+    <pin polarity="Output" x="768" y="944" name="io_addr_strobe" />
+    <pin polarity="Output" x="768" y="976" name="io_read_strobe" />
+    <pin polarity="Output" x="768" y="1008" name="io_write_strobe" />
+    <pin polarity="Output" x="768" y="1040" name="io_address[31:0]" />
+    <pin polarity="Output" x="768" y="1072" name="io_byte_enable[3:0]" />
+    <pin polarity="Output" x="768" y="1104" name="io_write_data[31:0]" />
+    <pin polarity="Input" x="768" y="1136" name="io_read_data[31:0]" />
+    <pin polarity="Input" x="768" y="1168" name="io_ready" />
+    <pin polarity="Output" x="768" y="1200" name="trace_instruction[0:31]" />
+    <pin polarity="Output" x="768" y="1232" name="trace_valid_instr" />
+    <pin polarity="Output" x="768" y="1264" name="trace_pc[0:31]" />
+    <pin polarity="Output" x="768" y="1296" name="trace_reg_write" />
+    <pin polarity="Output" x="768" y="1328" name="trace_reg_addr[0:4]" />
+    <pin polarity="Output" x="768" y="1360" name="trace_msr_reg[0:14]" />
+    <pin polarity="Output" x="768" y="1392" name="trace_new_reg_value[0:31]" />
+    <pin polarity="Output" x="768" y="1424" name="trace_jump_taken" />
+    <pin polarity="Output" x="768" y="1456" name="trace_delay_slot" />
+    <pin polarity="Output" x="768" y="1488" name="trace_data_address[0:31]" />
+    <pin polarity="Output" x="768" y="1520" name="trace_data_access" />
+    <pin polarity="Output" x="768" y="1552" name="trace_data_read" />
+    <pin polarity="Output" x="768" y="1584" name="trace_data_write" />
+    <pin polarity="Output" x="768" y="1616" name="trace_data_write_value[0:31]" />
+    <pin polarity="Output" x="768" y="1648" name="trace_data_byte_enable[0:3]" />
+    <pin polarity="Output" x="768" y="1680" name="trace_mb_halted" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">mblaze</text>
+        <rect width="704" x="32" y="32" height="1696" />
+        <line x2="32" y1="80" y2="80" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin clk" />
+        <line x2="32" y1="112" y2="112" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="112" type="pin reset" />
+        <line x2="736" y1="80" y2="80" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="80" type="pin uart_tx" />
+        <line x2="32" y1="144" y2="144" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="144" type="pin uart_rx" />
+        <line x2="736" y1="112" y2="112" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="112" type="pin fit1_toggle" />
+        <line x2="736" y1="144" y2="144" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="144" type="pin fit2_toggle" />
+        <line x2="736" y1="240" y2="240" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="240" type="pin pit1_toggle" />
+        <line x2="736" y1="272" y2="272" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="272" type="pin pit2_toggle" />
+        <line x2="736" y1="368" y2="368" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="368" type="pin fit1_interrupt" />
+        <line x2="736" y1="400" y2="400" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="400" type="pin fit2_interrupt" />
+        <line x2="736" y1="496" y2="496" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="496" type="pin pit1_interrupt" />
+        <line x2="736" y1="528" y2="528" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="528" type="pin pit2_interrupt" />
+        <line x2="736" y1="752" y2="752" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="752" type="pin uart_interrupt" />
+        <line x2="32" y1="208" y2="208" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="208" type="pin pit2_enable" />
+        <line x2="32" y1="304" y2="304" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="304" type="pin gpi1[7:0]" />
+        <line x2="32" y1="336" y2="336" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="336" type="pin gpi2[4:0]" />
+        <line x2="736" y1="784" y2="784" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="784" type="pin gpo1[7:0]" />
+        <line x2="736" y1="912" y2="912" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="912" type="pin intc_irq" />
+        <line x2="32" y1="432" y2="432" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="432" type="pin intc_interrupt[2:0]" />
+        <line x2="736" y1="944" y2="944" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="944" type="pin io_addr_strobe" />
+        <line x2="736" y1="976" y2="976" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="976" type="pin io_read_strobe" />
+        <line x2="736" y1="1008" y2="1008" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1008" type="pin io_write_strobe" />
+        <line x2="736" y1="1040" y2="1040" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1040" type="pin io_address[31:0]" />
+        <line x2="736" y1="1072" y2="1072" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1072" type="pin io_byte_enable[3:0]" />
+        <line x2="736" y1="1104" y2="1104" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1104" type="pin io_write_data[31:0]" />
+        <line x2="736" y1="1136" y2="1136" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1136" type="pin io_read_data[31:0]" />
+        <line x2="736" y1="1168" y2="1168" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1168" type="pin io_ready" />
+        <line x2="736" y1="1200" y2="1200" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1200" type="pin trace_instruction[0:31]" />
+        <line x2="736" y1="1232" y2="1232" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1232" type="pin trace_valid_instr" />
+        <line x2="736" y1="1264" y2="1264" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1264" type="pin trace_pc[0:31]" />
+        <line x2="736" y1="1296" y2="1296" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1296" type="pin trace_reg_write" />
+        <line x2="736" y1="1328" y2="1328" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1328" type="pin trace_reg_addr[0:4]" />
+        <line x2="736" y1="1360" y2="1360" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1360" type="pin trace_msr_reg[0:14]" />
+        <line x2="736" y1="1392" y2="1392" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1392" type="pin trace_new_reg_value[0:31]" />
+        <line x2="736" y1="1424" y2="1424" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1424" type="pin trace_jump_taken" />
+        <line x2="736" y1="1456" y2="1456" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1456" type="pin trace_delay_slot" />
+        <line x2="736" y1="1488" y2="1488" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1488" type="pin trace_data_address[0:31]" />
+        <line x2="736" y1="1520" y2="1520" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1520" type="pin trace_data_access" />
+        <line x2="736" y1="1552" y2="1552" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1552" type="pin trace_data_read" />
+        <line x2="736" y1="1584" y2="1584" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1584" type="pin trace_data_write" />
+        <line x2="736" y1="1616" y2="1616" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1616" type="pin trace_data_write_value[0:31]" />
+        <line x2="736" y1="1648" y2="1648" style="linewidth:W" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1648" type="pin trace_data_byte_enable[0:3]" />
+        <line x2="736" y1="1680" y2="1680" x1="768" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="732" y="1680" type="pin trace_mb_halted" />
+    </graph>
+</symbol>

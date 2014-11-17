@@ -1,0 +1,15 @@
+# Output products list for <fsub_l3>
+_xmsgs/pn_parser.xmsgs
+fsub_l3/doc/floating_point_ds335.pdf
+fsub_l3/doc/floating_point_v5_0_readme.txt
+fsub_l3/doc/floating_point_v5_0_vinfo.html
+fsub_l3.asy
+fsub_l3.gise
+fsub_l3.ngc
+fsub_l3.sym
+fsub_l3.vhd
+fsub_l3.vho
+fsub_l3.xco
+fsub_l3.xise
+fsub_l3_flist.txt
+fsub_l3_xmdf.tcl

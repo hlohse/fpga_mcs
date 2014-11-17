@@ -1,0 +1,15 @@
+# Output products list for <fcmpless>
+_xmsgs/pn_parser.xmsgs
+fcmpless/doc/floating_point_ds335.pdf
+fcmpless/doc/floating_point_v5_0_readme.txt
+fcmpless/doc/floating_point_v5_0_vinfo.html
+fcmpless.asy
+fcmpless.gise
+fcmpless.ngc
+fcmpless.sym
+fcmpless.vhd
+fcmpless.vho
+fcmpless.xco
+fcmpless.xise
+fcmpless_flist.txt
+fcmpless_xmdf.tcl

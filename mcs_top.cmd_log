@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/huang/FPGACo/fpga_mcs/mcs_top.xst" -ofn "/home/huang/FPGACo/fpga_mcs/mcs_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mcs_top.ucf -uc dp_dram.ucf -uc hdmi.ucf -p xc6slx45-csg324-2 mcs_top.ngc mcs_top.ngd -bm "/home/kugel/temp/mcs/mblaze.bmm" 

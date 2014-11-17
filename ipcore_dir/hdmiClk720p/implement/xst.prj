@@ -1,0 +1,2 @@
+vhdl work ../../hdmiClk720p.vhd
+vhdl work ../example_design/hdmiClk720p_exdes.vhd
