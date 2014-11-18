@@ -1,0 +1,15 @@
+# Output products list for <fadd_l3>
+_xmsgs/pn_parser.xmsgs
+fadd_l3/doc/floating_point_ds335.pdf
+fadd_l3/doc/floating_point_v5_0_readme.txt
+fadd_l3/doc/floating_point_v5_0_vinfo.html
+fadd_l3.asy
+fadd_l3.gise
+fadd_l3.ngc
+fadd_l3.sym
+fadd_l3.vhd
+fadd_l3.vho
+fadd_l3.xco
+fadd_l3.xise
+fadd_l3_flist.txt
+fadd_l3_xmdf.tcl

@@ -1,0 +1,2 @@
+vhdl work ../../mcsPll_600_125_100_50.vhd
+vhdl work ../example_design/mcsPll_600_125_100_50_exdes.vhd

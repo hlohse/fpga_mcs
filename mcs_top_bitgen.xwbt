@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/huang/FPGACo/fpga_mcs/mcs_top.ncd
+OUTFILE=/home/huang/FPGACo/fpga_mcs/mcs_top.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/home/huang/FPGACo/fpga_mcs
+LICENSE=WebPack
+USER_INFO=210959228_0_0_052

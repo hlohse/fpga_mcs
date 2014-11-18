@@ -1,0 +1,40 @@
+XGA: 1024*768 
+65MHz Pixel takt
+
+  //1024x768@60HZ
+  parameter HPIXELS_XGA = 11'd1024; //Horizontal Live Pixels
+  parameter VLINES_XGA  = 11'd768;  //Vertical Live ines
+  parameter HSYNCPW_XGA = 11'd136;  //HSYNC Pulse Width
+  parameter VSYNCPW_XGA = 11'd6;    //VSYNC Pulse Width
+  parameter HFNPRCH_XGA = 11'd24;   //Horizontal Front Portch
+  parameter VFNPRCH_XGA = 11'd3;    //Vertical Front Portch
+  parameter HBKPRCH_XGA = 11'd160;  //Horizontal Front Portch
+  parameter VBKPRCH_XGA = 11'd29;   //Vertical Front Portch
+
+horizontal: HPIXELS_XGA + HSYNCPW_XGA + HFNPRCH_XGA + HBKPRCH_XGA = 1344
+vertical: VLINES_XGA + VSYNCPW_XGA + VFNPRCH_XGA + VBKPRCH_XGA = 806
+Sync invertiert
+
+Pixel takt = 806 * 1344 * 60 = 64.995MHz
+
+
+720p:
+74,25MHz pixel takt
+
+  //1280x720@60HZ
+  parameter HPIXELS_HDTV720P = 11'd1280; //Horizontal Live Pixels
+  parameter VLINES_HDTV720P  = 11'd720;  //Vertical Live ines
+  parameter HSYNCPW_HDTV720P = 11'd80;  //HSYNC Pulse Width
+  parameter VSYNCPW_HDTV720P = 11'd5;    //VSYNC Pulse Width
+  parameter HFNPRCH_HDTV720P = 11'd72;   //Horizontal Front Portch
+  parameter VFNPRCH_HDTV720P = 11'd3;    //Vertical Front Portch
+  parameter HBKPRCH_HDTV720P = 11'd216;  //Horizontal Front Portch
+  parameter VBKPRCH_HDTV720P = 11'd22;   //Vertical Front Portch
+
+horizontal: HPIXELS_XGA + HSYNCPW_XGA + HFNPRCH_XGA + HBKPRCH_XGA = 1648
+vertical: VLINES_XGA + VSYNCPW_XGA + VFNPRCH_XGA + VBKPRCH_XGA = 750
+Sync nicht invertiert
+
+Pixel takt = 750 * 1648 * 60 = 74,16MHz
+
+  

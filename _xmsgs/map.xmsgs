@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Map" num="284" delta="new" >Map is running with the multi-threading option on. Map currently supports the use of up to 2 processors. Based on the the user options and machine load, Map will use 2 processors during this run.
+</msg>
+
+<msg type="warning" file="Xst" num="3201" delta="new" >TIMESPEC &apos;<arg fmt="%s" index="1">TS_hdmiRx_n_3_</arg>&apos; is related to another TIMESPEC which is not defined.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIADDR_int_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIADDR_int_3&gt; &lt;withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIADDR_int_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_30</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_30&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_27</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_29</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r2_28&gt; &lt;withMbrot.mbCompute/fnull_r1_29&gt; &lt;withMbrot.mbCompute/fnull_r1_28&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_2/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_2/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_3_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_2_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_1_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_0_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_4_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_3_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_2_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_1_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_0_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_4_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_3_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_2_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_1_BRB0&gt; &lt;withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_Break</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_NM_Break&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_3/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_3/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fsub_1/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fsub_1/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_1/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_1/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_1/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_1/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiHsyncTxIn_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiVsyncTxIn_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiHsyncTxIn_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiVsyncTxIn_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_0_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIUDQSINC</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UILDQSINC&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIUDQSDEC</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UILDQSDEC&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_2/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_2/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_2/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_2/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/fnull_r2_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/fnull_r1_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_7_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB2&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxAct_r0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/de_reg&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_7_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_3/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_3/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/itof_1/blk000001e41</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/itof_2/blk000001e41&gt; &lt;withMbrot.mbCompute/itof_3/blk000001e41&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_3/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_3/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/we</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_q&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/we&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rawdata_vld_q&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/we&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rawdata_vld_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fsub_1/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fsub_1/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fsub_1/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fsub_1/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mcs_0/U0/dlmb/POR_FF_I</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mcs_0/U0/ilmb/POR_FF_I&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiVsyncTxIn_BRB3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiTx.Inst_dram_reader/vsync_out_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_0_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/update</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/update_1&gt; &lt;withMbrot.mbCompute/update_2&gt; &lt;withMbrot.mbCompute/update_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fadd_1/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_1/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/itof_1/blk000001e42</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/itof_2/blk000001e42&gt; &lt;withMbrot.mbCompute/itof_3/blk000001e42&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_0_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_1_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_1_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_2_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_1_BRB21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_2_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_3_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_4_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_5_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_6_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_7_BRB21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_2_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_3_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_3_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_4_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_4_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_5_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_5_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_6_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_6_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_7_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_16_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_17_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_8_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_9_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_17_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_18_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_17_BRB21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_18_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_19_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_20_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_21_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_22_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_23_BRB21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_9_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_10_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_9_BRB21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_10_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_11_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_12_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_13_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_14_BRB21&gt; &lt;Mshreg_hdmiRxDreg1_15_BRB21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_18_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_19_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_10_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_11_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_19_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_20_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_11_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_12_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_20_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_21_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_13_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_12_BRB11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_21_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_22_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_13_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_14_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_22_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_23_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mshreg_hdmiRxDreg1_14_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mshreg_hdmiRxDreg1_15_BRB01&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_0_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_1_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_1_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_2_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_1_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_2_BRB2&gt; &lt;hdmiRxDreg1_3_BRB2&gt; &lt;hdmiRxDreg1_4_BRB2&gt; &lt;hdmiRxDreg1_5_BRB2&gt; &lt;hdmiRxDreg1_6_BRB2&gt; &lt;hdmiRxDreg1_7_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_2_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_3_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_3_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_4_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_4_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_5_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_5_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_6_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_6_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_7_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_8_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_9_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_9_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_10_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_10_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_11_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_9_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_10_BRB2&gt; &lt;hdmiRxDreg1_11_BRB2&gt; &lt;hdmiRxDreg1_12_BRB2&gt; &lt;hdmiRxDreg1_13_BRB2&gt; &lt;hdmiRxDreg1_14_BRB2&gt; &lt;hdmiRxDreg1_15_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_11_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_12_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_13_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_12_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_13_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_14_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_14_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_15_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_20_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_21_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_16_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_17_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_21_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_22_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_17_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_18_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_22_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_23_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_17_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">6 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_18_BRB2&gt; &lt;hdmiRxDreg1_19_BRB2&gt; &lt;hdmiRxDreg1_20_BRB2&gt; &lt;hdmiRxDreg1_21_BRB2&gt; &lt;hdmiRxDreg1_22_BRB2&gt; &lt;hdmiRxDreg1_23_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/itof_1/blk000001e5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/itof_2/blk000001e5&gt; &lt;withMbrot.mbCompute/itof_3/blk000001e5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_18_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_19_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">hdmiRxDreg1_19_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;hdmiRxDreg1_20_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_rising</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rawdata_vld_rising&gt; &lt;withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rawdata_vld_rising&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fsub_1/blk000000b1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/latency3.fadd_1/blk000000b1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">withMbrot.mbCompute/latency3.fcmp_1/blk0000000f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;withMbrot.mbCompute/itof_1/blk00000086&gt; &lt;withMbrot.mbCompute/itof_2/blk00000086&gt; </arg>
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[5].gen_iob_dq_inst/N2</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">51</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[5].gen_iob_dq_inst/N3,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[4].gen_iob_dq_inst/N2,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[4].gen_iob_dq_inst/N3,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[7].gen_iob_dq_inst/N2,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[7].gen_iob_dq_inst/N3</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="841" delta="new" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">clkRst/clkGen/pll_base_inst/PLL_ADV</arg>.
+</msg>
+
+<msg type="info" file="MapLib" num="841" delta="new" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV</arg>.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="new" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="info" file="Timing" num="3386" delta="new" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
+
+<msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2410" delta="new" >This design is using one or more 9K Block RAMs (RAMB8BWER).  9K Block RAM initialization data, both user defined and default, may be incorrect and should not be used.  For more information, please reference Xilinx Answer Record 39999.
+</msg>
+
+</messages>
+

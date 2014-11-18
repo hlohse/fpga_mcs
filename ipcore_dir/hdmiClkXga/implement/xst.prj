@@ -1,0 +1,2 @@
+vhdl work ../../hdmiClkXga.vhd
+vhdl work ../example_design/hdmiClkXga_exdes.vhd

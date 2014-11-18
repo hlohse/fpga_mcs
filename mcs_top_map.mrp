@@ -1,0 +1,1845 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'mcs_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -r 4 -global_opt speed -equivalent_register_removal on -mt 2 -ir
+off -pr b -lc off -power off -o mcs_top_map.ncd mcs_top.ngd mcs_top.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Nov 18 13:21:43 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Slice Logic Utilization:
+  Number of Slice Registers:                 4,207 out of  54,576    7%
+    Number used as Flip Flops:               4,197
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               10
+  Number of Slice LUTs:                      5,898 out of  27,288   21%
+    Number used as logic:                    5,579 out of  27,288   20%
+      Number using O6 output only:           3,469
+      Number using O5 output only:             235
+      Number using O5 and O6:                1,875
+      Number used as ROM:                        0
+    Number used as Memory:                     233 out of   6,408    3%
+      Number used as Dual Port RAM:             96
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                 92
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           137
+        Number using O6 output only:            36
+        Number using O5 output only:             1
+        Number using O5 and O6:                100
+    Number used exclusively as route-thrus:     86
+      Number with same-slice register load:     56
+      Number with same-slice carry load:        30
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,403 out of   6,822   35%
+  Number of MUXCYs used:                     2,784 out of  13,644   20%
+  Number of LUT Flip Flop pairs used:        7,130
+    Number with an unused Flip Flop:         3,364 out of   7,130   47%
+    Number with an unused LUT:               1,232 out of   7,130   17%
+    Number of fully used LUT-FF pairs:       2,534 out of   7,130   35%
+    Number of unique control sets:             216
+    Number of slice register sites lost
+      to control set restrictions:             762 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        90 out of     218   41%
+    Number of LOCed IOBs:                       90 out of      90  100%
+    IOB Flip Flops:                             27
+    IOB Master Pads:                             4
+    IOB Slave Pads:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        32 out of     116   27%
+  Number of RAMB8BWERs:                          1 out of     232    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       9 out of      16   56%
+    Number used as BUFGs:                        7
+    Number used as BUFGMUX:                      2
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                  23 out of     376    6%
+    Number used as ILOGIC2s:                    17
+    Number used as ISERDES2s:                    6
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        30 out of     376    7%
+    Number used as IODELAY2s:                    6
+    Number used as IODRP2s:                      2
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  63 out of     376   16%
+    Number used as OLOGIC2s:                    10
+    Number used as OSERDES2s:                   53
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             2 out of       8   25%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                            1 out of      58    1%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            3 out of       4   75%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.31
+
+Peak Memory Usage:  1155 MB
+Total REAL time to MAP completion:  4 mins 25 secs 
+Total CPU time to MAP completion (all processors):   4 mins 29 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Xst:3201 - TIMESPEC 'TS_hdmiRx_n_3_' is related to another TIMESPEC
+   which is not defined.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:284 - Map is running with the multi-threading option on. Map currently
+   supports the use of up to 2 processors. Based on the the user options and
+   machine load, Map will use 2 processors during this run.
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB0> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_10> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_10> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_11> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_11> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_12> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_12> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_13> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_13> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_14> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_14> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_15> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_15> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_20> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_20> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_16> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_16> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_21> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_21> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_17> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_17> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_22> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_22> 
+INFO:Xst:2261 - The FF/Latch
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIA
+   DDR_int_4> in Unit <mcs_top> is equivalent to the following 2 FFs/Latches,
+   which will be removed :
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIA
+   DDR_int_3>
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIA
+   DDR_int_2> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_23> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_23> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_18> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_18> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_19> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_19> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_24> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_24> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_25> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_25> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_30> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_30> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_31> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_31> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_26> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_26> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_27> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_27> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_29> in Unit <mcs_top>
+   is equivalent to the following 3 FFs/Latches, which will be removed :
+   <withMbrot.mbCompute/fnull_r2_28> <withMbrot.mbCompute/fnull_r1_29>
+   <withMbrot.mbCompute/fnull_r1_28> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_2/blk00000031> 
+INFO:Xst:2261 - The FF/Latch <withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0> in
+   Unit <mcs_top> is equivalent to the following 14 FFs/Latches, which will be
+   removed : <withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_3_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_2_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_1_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_0_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_4_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_3_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_2_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_1_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxGFast_0_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_4_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_3_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_2_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_1_BRB0>
+   <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_Break> in Unit
+   <mcs_top> is equivalent to the following FF/Latch, which will be removed :
+   <mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_NM_Break> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_3/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_3/blk00000031> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fsub_1/blk00000031> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB2> in Unit <mcs_top>
+   is equivalent to the following 6 FFs/Latches, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB2> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk00000032> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch <hdmiHsyncTxIn_BRB2> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiVsyncTxIn_BRB2> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB1> 
+INFO:Xst:2261 - The FF/Latch <hdmiHsyncTxIn_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiVsyncTxIn_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_0_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB0> 
+INFO:Xst:2261 - The FF/Latch
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIU
+   DQSINC> in Unit <mcs_top> is equivalent to the following FF/Latch, which will
+   be removed :
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIL
+   DQSINC> 
+INFO:Xst:2261 - The FF/Latch
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIU
+   DQSDEC> in Unit <mcs_top> is equivalent to the following FF/Latch, which will
+   be removed :
+   <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
+   en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIL
+   DQSDEC> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_2/blk00000032> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_2/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_0> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_1> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_2> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_2> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_3> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_3> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_4> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_4> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_5> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_5> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_6> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_6> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_7> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_7> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_8> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_8> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_9> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_9> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB2> in Unit <mcs_top>
+   is equivalent to the following 6 FFs/Latches, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB2> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_7_BRB2> in Unit <mcs_top>
+   is equivalent to the following 6 FFs/Latches, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB2> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxAct_r0> in Unit <mcs_top> is equivalent to
+   the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/de_reg> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_7_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_3/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_3/blk00000032> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/itof_1/blk000001e41> in Unit
+   <mcs_top> is equivalent to the following 2 FFs/Latches, which will be removed
+   : <withMbrot.mbCompute/itof_2/blk000001e41>
+   <withMbrot.mbCompute/itof_3/blk000001e41> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_3/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_3/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/we> in Unit <mcs_top> is
+   equivalent to the following 5 FFs/Latches, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_q>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/we>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rawdata_vld_q>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/we>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rawdata_vld_q> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fsub_1/blk00000032> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fsub_1/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB1> 
+INFO:Xst:2261 - The FF/Latch <mcs_0/U0/dlmb/POR_FF_I> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <mcs_0/U0/ilmb/POR_FF_I> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB1> 
+INFO:Xst:2261 - The FF/Latch <hdmiVsyncTxIn_BRB3> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <withHdmiTx.Inst_dram_reader/vsync_out_BRB0> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_0_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB0> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/update> in Unit <mcs_top> is
+   equivalent to the following 3 FFs/Latches, which will be removed :
+   <withMbrot.mbCompute/update_1> <withMbrot.mbCompute/update_2>
+   <withMbrot.mbCompute/update_3> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk00000031> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/itof_1/blk000001e42> in Unit
+   <mcs_top> is equivalent to the following 2 FFs/Latches, which will be removed
+   : <withMbrot.mbCompute/itof_2/blk000001e42>
+   <withMbrot.mbCompute/itof_3/blk000001e42> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_0_BRB01> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_1_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_1_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_2_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_1_BRB21> in Unit <mcs_top> is
+   equivalent to the following 6 FFs/Latches, which will be removed :
+   <Mshreg_hdmiRxDreg1_2_BRB21> <Mshreg_hdmiRxDreg1_3_BRB21>
+   <Mshreg_hdmiRxDreg1_4_BRB21> <Mshreg_hdmiRxDreg1_5_BRB21>
+   <Mshreg_hdmiRxDreg1_6_BRB21> <Mshreg_hdmiRxDreg1_7_BRB21> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_2_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_3_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_3_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_4_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_4_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_5_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_5_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_6_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_6_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_7_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_16_BRB01> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_17_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_8_BRB01> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_9_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_17_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_18_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_17_BRB21> in Unit <mcs_top> is
+   equivalent to the following 6 FFs/Latches, which will be removed :
+   <Mshreg_hdmiRxDreg1_18_BRB21> <Mshreg_hdmiRxDreg1_19_BRB21>
+   <Mshreg_hdmiRxDreg1_20_BRB21> <Mshreg_hdmiRxDreg1_21_BRB21>
+   <Mshreg_hdmiRxDreg1_22_BRB21> <Mshreg_hdmiRxDreg1_23_BRB21> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_9_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_10_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_9_BRB21> in Unit <mcs_top> is
+   equivalent to the following 6 FFs/Latches, which will be removed :
+   <Mshreg_hdmiRxDreg1_10_BRB21> <Mshreg_hdmiRxDreg1_11_BRB21>
+   <Mshreg_hdmiRxDreg1_12_BRB21> <Mshreg_hdmiRxDreg1_13_BRB21>
+   <Mshreg_hdmiRxDreg1_14_BRB21> <Mshreg_hdmiRxDreg1_15_BRB21> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_18_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_19_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_10_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_11_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_19_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_20_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_11_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_12_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_20_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_21_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_13_BRB01> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_12_BRB11> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_21_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_22_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_13_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_14_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_22_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_23_BRB01> 
+INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_14_BRB11> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <Mshreg_hdmiRxDreg1_15_BRB01> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_0_BRB0> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_1_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_1_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_2_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_1_BRB2> in Unit <mcs_top> is
+   equivalent to the following 6 FFs/Latches, which will be removed :
+   <hdmiRxDreg1_2_BRB2> <hdmiRxDreg1_3_BRB2> <hdmiRxDreg1_4_BRB2>
+   <hdmiRxDreg1_5_BRB2> <hdmiRxDreg1_6_BRB2> <hdmiRxDreg1_7_BRB2> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_2_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_3_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_3_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_4_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_4_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_5_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_5_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_6_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_6_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_7_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_8_BRB0> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_9_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_9_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_10_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_10_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_11_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_9_BRB2> in Unit <mcs_top> is
+   equivalent to the following 6 FFs/Latches, which will be removed :
+   <hdmiRxDreg1_10_BRB2> <hdmiRxDreg1_11_BRB2> <hdmiRxDreg1_12_BRB2>
+   <hdmiRxDreg1_13_BRB2> <hdmiRxDreg1_14_BRB2> <hdmiRxDreg1_15_BRB2> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_11_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_12_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_13_BRB0> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_12_BRB1> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_13_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_14_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_14_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_15_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_20_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_21_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_16_BRB0> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_17_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_21_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_22_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_17_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_18_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_22_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_23_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_17_BRB2> in Unit <mcs_top> is
+   equivalent to the following 6 FFs/Latches, which will be removed :
+   <hdmiRxDreg1_18_BRB2> <hdmiRxDreg1_19_BRB2> <hdmiRxDreg1_20_BRB2>
+   <hdmiRxDreg1_21_BRB2> <hdmiRxDreg1_22_BRB2> <hdmiRxDreg1_23_BRB2> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/itof_1/blk000001e5> in Unit
+   <mcs_top> is equivalent to the following 2 FFs/Latches, which will be removed
+   : <withMbrot.mbCompute/itof_2/blk000001e5>
+   <withMbrot.mbCompute/itof_3/blk000001e5> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_18_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_19_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxDreg1_19_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiRxDreg1_20_BRB0> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_rising> in Unit
+   <mcs_top> is equivalent to the following 2 FFs/Latches, which will be removed
+   : <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rawdata_vld_rising>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rawdata_vld_rising> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk000000b1>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk000000b1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fcmp_1/blk0000000f>
+   in Unit <mcs_top> is equivalent to the following 2 FFs/Latches, which will be
+   removed : <withMbrot.mbCompute/itof_1/blk00000086>
+   <withMbrot.mbCompute/itof_2/blk00000086> 
+INFO:LIT:243 - Logical network
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_dq_iobuft[5].gen_iob_dq_inst/N2 has no load.
+INFO:LIT:395 - The above info message is repeated 51 more times for the
+   following (max. 5 shown):
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_dq_iobuft[5].gen_iob_dq_inst/N3,
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_dq_iobuft[4].gen_iob_dq_inst/N2,
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_dq_iobuft[4].gen_iob_dq_inst/N3,
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_dq_iobuft[7].gen_iob_dq_inst/N2,
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_dq_iobuft[7].gen_iob_dq_inst/N3
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV clkRst/clkGen/pll_base_inst/PLL_ADV.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV
+   withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 169 block(s) removed
+ 115 block(s) optimized away
+ 186 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "withMbrot.mbCompute/itof_1/sig00000125" is loadless and has been
+removed.
+ Loadless block "withMbrot.mbCompute/itof_1/blk00000083" (MUX) removed.
+  The signal "withMbrot.mbCompute/itof_1/sig00000126" is loadless and has been
+removed.
+   Loadless block "withMbrot.mbCompute/itof_1/blk00000084" (MUX) removed.
+    The signal "withMbrot.mbCompute/itof_1/sig00000127" is loadless and has been
+removed.
+     Loadless block "withMbrot.mbCompute/itof_1/blk00000085" (MUX) removed.
+      The signal "withMbrot.mbCompute/itof_1/sig00000124" is loadless and has been
+removed.
+       Loadless block "withMbrot.mbCompute/itof_1/blk00000082" (MUX) removed.
+    The signal "withMbrot.mbCompute/itof_1/sig0000012a" is loadless and has been
+removed.
+     Loadless block "withMbrot.mbCompute/itof_1/blk000001331_INV_0" (BUF) removed.
+The signal "withMbrot.mbCompute/itof_2/sig00000125" is loadless and has been
+removed.
+ Loadless block "withMbrot.mbCompute/itof_2/blk00000083" (MUX) removed.
+  The signal "withMbrot.mbCompute/itof_2/sig00000126" is loadless and has been
+removed.
+   Loadless block "withMbrot.mbCompute/itof_2/blk00000084" (MUX) removed.
+    The signal "withMbrot.mbCompute/itof_2/sig00000127" is loadless and has been
+removed.
+     Loadless block "withMbrot.mbCompute/itof_2/blk00000085" (MUX) removed.
+      The signal "withMbrot.mbCompute/itof_2/sig00000124" is loadless and has been
+removed.
+       Loadless block "withMbrot.mbCompute/itof_2/blk00000082" (MUX) removed.
+      The signal "withMbrot.mbCompute/itof_2/sig0000012b" is loadless and has been
+removed.
+       Loadless block "withMbrot.mbCompute/itof_2/blk000001341_INV_0" (BUF) removed.
+The signal "withMbrot.mbCompute/itof_3/sig00000125" is loadless and has been
+removed.
+ Loadless block "withMbrot.mbCompute/itof_3/blk00000083" (MUX) removed.
+  The signal "withMbrot.mbCompute/itof_3/sig00000126" is loadless and has been
+removed.
+   Loadless block "withMbrot.mbCompute/itof_3/blk00000084" (MUX) removed.
+    The signal "withMbrot.mbCompute/itof_3/sig00000127" is loadless and has been
+removed.
+     Loadless block "withMbrot.mbCompute/itof_3/blk00000085" (MUX) removed.
+      The signal "withMbrot.mbCompute/itof_3/sig00000124" is loadless and has been
+removed.
+       Loadless block "withMbrot.mbCompute/itof_3/blk00000082" (MUX) removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[5].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[5].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[4].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[4].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[7].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[7].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[6].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[6].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[3].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[3].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[2].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[2].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[1].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[1].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[0].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[0].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[9].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[9].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[8].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[8].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[11].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[11].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[10].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[10].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[13].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[13].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[12].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[12].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[15].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[15].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[14].gen_iob_dq_inst/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[14].gen_iob_dq_inst/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dqs_iobufds.iob_dqs/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dqs_iobufds.iob_dqs/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+udqs_iobufds.iob_udqs/N2" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+udqs_iobufds.iob_udqs/N3" is sourceless and has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/gen_zio.IOBUF_ZIO/N2" is sourceless and
+has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/gen_zio.IOBUF_ZIO/N3" is sourceless and
+has been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ/N2" is sourceless and has
+been removed.
+The signal
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ/N3" is sourceless and has
+been removed.
+The signal "edid_sda_IOBUF/N2" is sourceless and has been removed.
+The signal "edid_sda_IOBUF/N3" is sourceless and has been removed.
+The signal "withHdmiRx.Inst_hdmiRx/receiveDecoder/PLL_ISERDES/N2" is sourceless
+and has been removed.
+The signal "withHdmiRx.Inst_hdmiRx/receiveDecoder/PLL_ISERDES/N3" is sourceless
+and has been removed.
+The signal "clkRst/clkGen/pll_base_inst/CLKOUT2" is sourceless and has been
+removed.
+The signal "clkRst/clkGen/pll_base_inst/N2" is sourceless and has been removed.
+The signal "clkRst/clkGen/pll_base_inst/N3" is sourceless and has been removed.
+The signal "withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/N2" is
+sourceless and has been removed.
+The signal "withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/N3" is
+sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "withMbrot.mbCompute/latency3.fsub_1/sig000001af" is unused and has
+been removed.
+ Unused block "withMbrot.mbCompute/latency3.fsub_1/blk00000081" (MUX) removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_1/sig0000000c" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_1/sig00000059" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_1/sig0000005d" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_1/sig00000086" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_1/sig00000087" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_1/sig00000048" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig0000000c" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000059" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig0000005d" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000086" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000087" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000048" is
+unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003da" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a6" (XOR)
+removed.
+  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d8" is
+unused and has been removed.
+   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a4" (MUX)
+removed.
+    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d6" is
+unused and has been removed.
+     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a2" (MUX)
+removed.
+      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d4" is
+unused and has been removed.
+       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a0" (MUX)
+removed.
+        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d2" is
+unused and has been removed.
+         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000039e" (MUX)
+removed.
+          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d0" is
+unused and has been removed.
+           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000039c" (MUX)
+removed.
+            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003ce" is
+unused and has been removed.
+             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000039a" (MUX)
+removed.
+              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003cc" is
+unused and has been removed.
+               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000398" (MUX)
+removed.
+                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003ca" is
+unused and has been removed.
+                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000396" (MUX)
+removed.
+                  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c8" is
+unused and has been removed.
+                   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000394" (MUX)
+removed.
+                    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c6" is
+unused and has been removed.
+                     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000392" (MUX)
+removed.
+                      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c4" is
+unused and has been removed.
+                       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000390" (MUX)
+removed.
+                        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c2" is
+unused and has been removed.
+                         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000038e" (MUX)
+removed.
+                          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c0" is
+unused and has been removed.
+                           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000038c" (MUX)
+removed.
+                            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003be" is
+unused and has been removed.
+                             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000038a" (MUX)
+removed.
+                              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003bc" is
+unused and has been removed.
+                               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000388" (MUX)
+removed.
+                                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003ba" is
+unused and has been removed.
+                                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000386" (MUX)
+removed.
+                                  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b8" is
+unused and has been removed.
+                                   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000384" (MUX)
+removed.
+                                    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b6" is
+unused and has been removed.
+                                     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000382" (MUX)
+removed.
+                                      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b4" is
+unused and has been removed.
+                                       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000380" (MUX)
+removed.
+                                        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b2" is
+unused and has been removed.
+                                         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000037e" (MUX)
+removed.
+                                          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b0" is
+unused and has been removed.
+                                           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000037c" (MUX)
+removed.
+                                            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003ae" is
+unused and has been removed.
+                                             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000037a" (MUX)
+removed.
+                                              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003ac" is
+unused and has been removed.
+                                               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000378" (MUX)
+removed.
+                                                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003ab" is
+unused and has been removed.
+                                                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000377" (MUX)
+removed.
+*The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000037a" is
+unused and has been removed.
+* Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000345" (AND)
+removed.
+*  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000607" is
+unused and has been removed.
+*   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000041e" (ROM)
+removed.
+*The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000379" is
+unused and has been removed.
+* Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000344" (ROM)
+removed.
+*  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000608" is
+unused and has been removed.
+*   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000415" (ROM)
+removed.
+                                                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000037d" is
+unused and has been removed.
+                                                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000348" (AND)
+removed.
+                                                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000037c" is
+unused and has been removed.
+                                                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000347" (ROM)
+removed.
+                                              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000037f" is
+unused and has been removed.
+                                               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000034a" (AND)
+removed.
+                                              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000037e" is
+unused and has been removed.
+                                               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000349" (ROM)
+removed.
+                                            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000381" is
+unused and has been removed.
+                                             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000034c" (AND)
+removed.
+                                            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000380" is
+unused and has been removed.
+                                             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000034b" (ROM)
+removed.
+                                          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000383" is
+unused and has been removed.
+                                           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000034e" (AND)
+removed.
+                                          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000382" is
+unused and has been removed.
+                                           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000034d" (ROM)
+removed.
+                                        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000385" is
+unused and has been removed.
+                                         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000350" (AND)
+removed.
+                                        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000384" is
+unused and has been removed.
+                                         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000034f" (ROM)
+removed.
+                                      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000387" is
+unused and has been removed.
+                                       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000352" (AND)
+removed.
+                                      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000386" is
+unused and has been removed.
+                                       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000351" (ROM)
+removed.
+                                    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000389" is
+unused and has been removed.
+                                     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000354" (AND)
+removed.
+                                    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000388" is
+unused and has been removed.
+                                     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000353" (ROM)
+removed.
+                                  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000038b" is
+unused and has been removed.
+                                   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000356" (AND)
+removed.
+                                  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000038a" is
+unused and has been removed.
+                                   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000355" (ROM)
+removed.
+                                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000038d" is
+unused and has been removed.
+                                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000358" (AND)
+removed.
+                                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000038c" is
+unused and has been removed.
+                                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000357" (ROM)
+removed.
+                              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000038f" is
+unused and has been removed.
+                               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000035a" (AND)
+removed.
+                              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000038e" is
+unused and has been removed.
+                               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000359" (ROM)
+removed.
+                            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000391" is
+unused and has been removed.
+                             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000035c" (AND)
+removed.
+                            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000390" is
+unused and has been removed.
+                             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000035b" (ROM)
+removed.
+                          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000393" is
+unused and has been removed.
+                           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000035e" (AND)
+removed.
+                          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000392" is
+unused and has been removed.
+                           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000035d" (ROM)
+removed.
+                        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000395" is
+unused and has been removed.
+                         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000360" (AND)
+removed.
+                        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000394" is
+unused and has been removed.
+                         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000035f" (ROM)
+removed.
+                      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000397" is
+unused and has been removed.
+                       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000362" (AND)
+removed.
+                      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000396" is
+unused and has been removed.
+                       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000361" (ROM)
+removed.
+                    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000399" is
+unused and has been removed.
+                     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000364" (AND)
+removed.
+                    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000398" is
+unused and has been removed.
+                     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000363" (ROM)
+removed.
+                  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000039b" is
+unused and has been removed.
+                   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000366" (AND)
+removed.
+                  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000039a" is
+unused and has been removed.
+                   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000365" (ROM)
+removed.
+                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000039d" is
+unused and has been removed.
+                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000368" (AND)
+removed.
+                The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000039c" is
+unused and has been removed.
+                 Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000367" (ROM)
+removed.
+              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000039f" is
+unused and has been removed.
+               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000036a" (AND)
+removed.
+              The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000039e" is
+unused and has been removed.
+               Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000369" (ROM)
+removed.
+            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a1" is
+unused and has been removed.
+             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000036c" (AND)
+removed.
+            The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a0" is
+unused and has been removed.
+             Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000036b" (ROM)
+removed.
+          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a3" is
+unused and has been removed.
+           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000036e" (AND)
+removed.
+          The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a2" is
+unused and has been removed.
+           Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000036d" (ROM)
+removed.
+        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a5" is
+unused and has been removed.
+         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000370" (AND)
+removed.
+        The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a4" is
+unused and has been removed.
+         Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000036f" (ROM)
+removed.
+      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a7" is
+unused and has been removed.
+       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000372" (AND)
+removed.
+      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a6" is
+unused and has been removed.
+       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000371" (ROM)
+removed.
+    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a9" is
+unused and has been removed.
+     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000374" (AND)
+removed.
+    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003a8" is
+unused and has been removed.
+     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000373" (ROM)
+removed.
+  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003aa" is
+unused and has been removed.
+   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000375" (ROM)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d9" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a5" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d7" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a3" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d5" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000003a1" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d3" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000039f" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003d1" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000039d" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003cf" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000039b" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003cd" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000399" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003cb" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000397" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c9" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000395" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c7" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000393" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c5" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000391" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c3" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000038f" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003c1" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000038d" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003bf" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000038b" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003bd" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000389" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003bb" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000387" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b9" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000385" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b7" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000383" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b5" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000381" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b3" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000037f" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003b1" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000037d" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig000003af" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000037b" (XOR)
+removed.
+The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000064" is
+unused and has been removed.
+ Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000020" (MUX)
+removed.
+  The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000007f" is
+unused and has been removed.
+   Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000001f" (MUX)
+removed.
+    The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000007e" is
+unused and has been removed.
+     Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000001e" (MUX)
+removed.
+      The signal "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig0000007d" is
+unused and has been removed.
+       Unused block "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000001d" (MUX)
+removed.
+The signal "withMbrot.mbCompute/latency3.fadd_3/sig000001af" is unused and has
+been removed.
+ Unused block "withMbrot.mbCompute/latency3.fadd_3/blk00000081" (MUX) removed.
+The signal "withMbrot.mbCompute/latency3.fadd_2/sig000001af" is unused and has
+been removed.
+ Unused block "withMbrot.mbCompute/latency3.fadd_2/blk00000081" (MUX) removed.
+The signal "][51675_10137" is unused and has been removed.
+The signal "withMbrot.mbCompute/latency3.fadd_1/sig0000013d" is unused and has
+been removed.
+The signal "withMbrot.mbCompute/latency3.fadd_1/sig00000118" is unused and has
+been removed.
+ Unused block "withMbrot.mbCompute/latency3.fadd_1/blk000001c0" (ROM) removed.
+The signal "withMbrot.mbCompute/latency3.fadd_1/sig0000013c" is unused and has
+been removed.
+The signal "withMbrot.mbCompute/latency3.fadd_1/sig000001af" is unused and has
+been removed.
+ Unused block "withMbrot.mbCompute/latency3.fadd_1/blk00000081" (MUX) removed.
+The signal "withMbrot.mbCompute/latency3.fadd_1/sig000000e0" is unused and has
+been removed.
+Unused block "clkRst/clkGen/pll_base_inst/XST_GND" (ZERO) removed.
+Unused block "clkRst/clkGen/pll_base_inst/XST_VCC" (ONE) removed.
+Unused block "edid_sda_IOBUF/XST_GND" (ZERO) removed.
+Unused block "edid_sda_IOBUF/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[0].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[0].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[10].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[10].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[11].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[11].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[12].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[12].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[13].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[13].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[14].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[14].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[15].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[15].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[1].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[1].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[2].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[2].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[3].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[3].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[4].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[4].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[5].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[5].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[6].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[6].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[7].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[7].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[8].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[8].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[9].gen_iob_dq_inst/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dq_iobuft[9].gen_iob_dq_inst/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dqs_iobufds.iob_dqs/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+dqs_iobufds.iob_dqs/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/IOBUF_RZQ/XST_VCC" (ONE) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/gen_zio.IOBUF_ZIO/XST_GND" (ZERO)
+removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+term_calib.mcb_soft_calibration_top_inst/gen_zio.IOBUF_ZIO/XST_VCC" (ONE)
+removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+udqs_iobufds.iob_udqs/XST_GND" (ZERO) removed.
+Unused block
+"withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_
+udqs_iobufds.iob_udqs/XST_VCC" (ONE) removed.
+Unused block "withHdmiRx.Inst_hdmiRx/receiveDecoder/PLL_ISERDES/XST_GND" (ZERO)
+removed.
+Unused block "withHdmiRx.Inst_hdmiRx/receiveDecoder/PLL_ISERDES/XST_VCC" (ONE)
+removed.
+Unused block "withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/XST_GND"
+(ZERO) removed.
+Unused block "withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/XST_VCC"
+(ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+INV 		][51675_10137_INV_0
+LUT1 		][63246_282
+   optimized to 0
+LUT1 		][63288_283
+   optimized to 0
+LUT2 		lut11244_911
+   optimized to 1
+LUT6 		lut21833_848
+   optimized to 0
+LUT3
+		mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/ALU_I/FPGA_Target.No_
+Carry_Decoding.alu_carry_select_LUT
+   optimized to 0
+FDE 		withMbrot.mbCompute/latency3.fadd_1/blk00000035
+   optimized to 0
+FDE 		withMbrot.mbCompute/latency3.fadd_1/blk00000036
+   optimized to 0
+LUT1 		withMbrot.mbCompute/latency3.fadd_1/blk000000be_rt
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.fadd_1/blk000001b7
+   optimized to 0
+LUT5 		withMbrot.mbCompute/latency3.fadd_1/blk00000264
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.fadd_1/blk00000280
+   optimized to 0
+FDE 		withMbrot.mbCompute/latency3.fadd_1/blk00000310
+   optimized to 0
+FDE 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000004
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000021
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000022
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000025
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000026
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000123
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000186
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk000001e9
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk0000024c
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk000002af
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000312
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk00000375
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk000003d8
+   optimized to 0
+LUT6 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk000008d0
+   optimized to 0
+LUT6 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk000008dc
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_1/blk000008dd
+   optimized to 0
+FDE 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000004
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000021
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000022
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000025
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000026
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000123
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000186
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk000001e9
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk0000024c
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk000002af
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000312
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk00000375
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk000003d8
+   optimized to 0
+LUT6 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk000008d0
+   optimized to 0
+LUT6 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk000008dc
+   optimized to 0
+FD 		withMbrot.mbCompute/latency3.withoutDsp.fmul_2/blk000008dd
+   optimized to 0
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000002c
+   optimized to 1
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000002d
+   optimized to 1
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000002e
+   optimized to 1
+LUT1 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000002f
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000089
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000008a
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000008b
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000008c
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000008d
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000090
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000091
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000092
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000093
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000094
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000095
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000096
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000097
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000098
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000099
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000009a
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000009b
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000009c
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000009d
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000009e
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000009f
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a0
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a1
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a2
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a3
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a4
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a5
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a6
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a7
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a8
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000a9
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000aa
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000ab
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000ac
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000ad
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000000f1
+   optimized to 1
+LUT4 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000040c
+   optimized to 1
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk0000056e
+   optimized to 0
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000586
+   optimized to 1
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000587
+   optimized to 1
+LUT3 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000754
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007e8
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007e9
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007ea
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007eb
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007ec
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007ed
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007ee
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007ef
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f0
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f1
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f2
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f3
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f4
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f5
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f6
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f7
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f8
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007f9
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007fa
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007fb
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007fc
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007fd
+   optimized to 0
+LUT2 		withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000007fe
+   optimized to 0
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| GPI1<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<5>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<6>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI1<7>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI2<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI2<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI2<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI2<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPI2<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| GPO1<0>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<1>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<2>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<3>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<4>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<5>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<6>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| GPO1<7>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| Rst_n                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| UART_Rx                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| UART_Tx                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| edid_scl                           | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          | PULLUP   |          |
+| edid_sda                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| hdmiRx_n<0>                        | IOB              | INPUT     | TMDS_33              |       |          |      |              |          |          |
+| hdmiRx_n<1>                        | IOB              | INPUT     | TMDS_33              |       |          |      |              |          |          |
+| hdmiRx_n<2>                        | IOB              | INPUT     | TMDS_33              |       |          |      |              |          |          |
+| hdmiRx_n<3>                        | IOB              | INPUT     | TMDS_33              |       |          |      |              |          |          |
+| hdmiRx_p<0>                        | IOB              | INPUT     | TMDS_33              |       |          |      | ISERDES      |          | DIFF_PHA |
+| hdmiRx_p<1>                        | IOB              | INPUT     | TMDS_33              |       |          |      | ISERDES      |          | DIFF_PHA |
+| hdmiRx_p<2>                        | IOB              | INPUT     | TMDS_33              |       |          |      | ISERDES      |          | DIFF_PHA |
+| hdmiRx_p<3>                        | IOB              | INPUT     | TMDS_33              |       |          |      |              |          |          |
+| hdmiTx0_n                          | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmiTx0_p                          | IOBM             | OUTPUT    | TMDS_33              |       |          |      | OSERDES      |          |          |
+| hdmiTx1_n                          | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmiTx1_p                          | IOBM             | OUTPUT    | TMDS_33              |       |          |      | OSERDES      |          |          |
+| hdmiTx2_n                          | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmiTx2_p                          | IOBM             | OUTPUT    | TMDS_33              |       |          |      | OSERDES      |          |          |
+| hdmiTx3_n                          | IOBS             | OUTPUT    | TMDS_33              |       |          |      |              |          |          |
+| hdmiTx3_p                          | IOBM             | OUTPUT    | TMDS_33              |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<0>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<1>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<2>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<3>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<4>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<5>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<6>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<7>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<8>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<9>                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<10>                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<11>                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<12>                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ba<0>                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ba<1>                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ba<2>                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_cas_n                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ck                       | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ck_n                     | IOB              | OUTPUT    | DIFF_SSTL18_II       |       |          |      | OSERDES      |          |          |
+| mcb3_dram_cke                      | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_dm                       | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<0>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<1>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<2>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<3>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<4>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<5>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<6>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<7>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<8>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<9>                    | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<10>                   | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<11>                   | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<12>                   | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<13>                   | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<14>                   | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dq<15>                   | IOB              | BIDIR     | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_dqs                      | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLDOWN |          |
+| mcb3_dram_dqs_n                    | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLUP   |          |
+| mcb3_dram_odt                      | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ras_n                    | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_dram_udm                      | IOB              | OUTPUT    | SSTL18_II            |       |          |      |              |          |          |
+| mcb3_dram_udqs                     | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLDOWN |          |
+| mcb3_dram_udqs_n                   | IOB              | BIDIR     | DIFF_SSTL18_II       |       |          |      |              | PULLUP   |          |
+| mcb3_dram_we_n                     | IOB              | OUTPUT    | SSTL18_II            |       |          |      | OSERDES      |          |          |
+| mcb3_rzq                           | IOB              | BIDIR     | SSTL18_II            |       |          |      | IFF          |          | DEFAULT  |
+| mcb3_zio                           | IOB              | BIDIR     | SSTL18_II            |       |          |      | IFF          |          | DEFAULT  |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

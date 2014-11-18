@@ -1,0 +1,3 @@
+THIRPARTY=false
+PROCESSOR=mblaze
+MSS_FILE=system.mss

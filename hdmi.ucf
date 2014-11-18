@@ -1,0 +1,42 @@
+
+# hdmi output
+NET "hdmiTx0_p"  	LOC = "D8" |IOSTANDARD = TMDS_33 ; # Blue
+NET "hdmiTx0_n"  LOC = "C8" |IOSTANDARD = TMDS_33 ;
+NET "hdmiTx1_p"  	LOC = "C7" |IOSTANDARD = TMDS_33 ; # Red
+NET "hdmiTx1_n"  LOC = "A7" |IOSTANDARD = TMDS_33 ;
+NET "hdmiTx2_p"  	LOC = "B8" |IOSTANDARD = TMDS_33 ; # Green
+NET "hdmiTx2_n"  LOC = "A8" |IOSTANDARD = TMDS_33 ;
+NET "hdmiTx3_p"  	LOC = "B6" |IOSTANDARD = TMDS_33 ; # Clock
+NET "hdmiTx3_n"  LOC = "A6" |IOSTANDARD = TMDS_33 ;
+
+
+#HDMI in Ports
+NET "hdmiRx_p(3)"  	LOC = "H17" |IOSTANDARD = TMDS_33 ; # CLK
+NET "hdmiRx_n(3)"  LOC = "H18" |IOSTANDARD = TMDS_33 ;
+NET "hdmiRx_p(2)"  	LOC = "J16" |IOSTANDARD = TMDS_33 ; # Red
+NET "hdmiRx_n(2)"  LOC = "J18" |IOSTANDARD = TMDS_33 ;
+NET "hdmiRx_p(1)"  	LOC = "L17" |IOSTANDARD = TMDS_33 ; # Green	
+NET "hdmiRx_n(1)"  LOC = "L18" |IOSTANDARD = TMDS_33 ;
+NET "hdmiRx_p(0)"  	LOC = "K17" |IOSTANDARD = TMDS_33 ; # Blue	
+NET "hdmiRx_n(0)"  LOC = "K18" |IOSTANDARD = TMDS_33 ;
+
+#i2c for hdmi. External pullups (10k) present
+NET "edid_scl"  LOC = "M16" | PULLUP | IOSTANDARD = LVCMOS33;
+NET "edid_sda"  LOC = "M18" | PULLUP | IOSTANDARD = LVCMOS33;
+#Created by Constraints Editor (xc6slx45-csg324-2) - 2013/09/24
+INST "clkRst/rstDelay_24" TNM = SyncReset;
+#Created by Constraints Editor (xc6slx45-csg324-2) - 2013/09/24
+INST "withHdmiTx.Inst_hdmiOutIF/localRst" TNM = HdmiReset;
+TIMESPEC TS_hdmireset = FROM "SyncReset" TO "HdmiReset" TIG;
+#
+INST "withHdmiTx.Inst_dram_reader/rst_r0" TNM = HdmiReset2;
+TIMESPEC TS_hdmireset2 = FROM "SyncReset" TO "HdmiReset2" TIG;
+INST "withHdmiTx.Inst_dram_reader/rst_r1" TNM = HdmiReset3;
+TIMESPEC TS_hdmireset3 = FROM "SyncReset" TO "HdmiReset3" TIG;
+
+#Created by Constraints Editor (xc6slx45-csg324-2) - 2013/10/10
+# allow for ~80MHz
+NET "hdmiRx_p<3>" TNM_NET = hdmiRxClk;
+TIMESPEC TS_hdmiRxClk = PERIOD "hdmiRxClk" 12 ns HIGH 50%;
+NET "hdmiRx_n<3>" TNM_NET = hdmiRxClk_n;
+TIMESPEC TS_hdmiRx_n_3_ = PERIOD "hdmiRxClk_n" TS_hdmiRxClk PHASE 6 ns HIGH 50%;
