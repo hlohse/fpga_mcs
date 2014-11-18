@@ -44,7 +44,7 @@ Pixel freq.	65.0 MHz
 Horizontal timing (line)
 Polarity of horizontal sync pulse is negative.
 
-Scanline part	Pixels	Time [µs]
+Scanline part	Pixels	Time [s]
 Visible area	1024	15.753846153846
 Front porch	24	0.36923076923077
 Sync pulse	136	2.0923076923077
@@ -63,3 +63,4 @@ Whole frame	806	16.6656
 -----------------------------------------------------------------
 DRAM runs at 300MHz
 
+program : djtgcfg prog -d Atlys -i 0 -f mcs_top_out.bit
