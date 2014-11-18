@@ -8,29 +8,5 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/fpTest.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/fpTest_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/rtl/float/lib/fixed_float_types_c.vhdl&quot; into library ieee_proposed</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/rtl/float/lib/fixed_pkg_c.vhdl&quot; into library ieee_proposed</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/rtl/float/lib/float_pkg_c.vhdl&quot; into library ieee_proposed</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/rtl/float/mbrot_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/rtl/hdmi/hdmi_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/huang/FPGACo/fpga_mcs/sim/mcs_top_tb.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

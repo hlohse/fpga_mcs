@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: mcs_top.prj
@@ -3563,13 +3563,13 @@ withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/CLKOUT2|    8.228|     
 =========================================================================
 
 
-Total REAL time to Xst completion: 32.00 secs
-Total CPU time to Xst completion: 31.98 secs
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.42 secs
  
 --> 
 
 
-Total memory usage is 476788 kilobytes
+Total memory usage is 476904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  483 (   0 filtered)
