@@ -69,13 +69,47 @@ component fmul IS
   );
 END component;
 
-signal count: STD_LOGIC_VECTOR(10 DOWNTO 0);
+signal cnt_q: STD_LOGIC_VECTOR(10 DOWNTO 0);
+signal cnt_enable: STD_LOGIC;
 signal fadd_a, fadd_b, fadd_result: STD_LOGIC;
 signal fmul_a, fmul_b, fmul_result: STD_LOGIC;
 
 begin
-	CNT_I: c_counter_binary_v11_0 port map (clk, enable, clear, count);
+	CNT_I: c_counter_binary_v11_0 port map (clk, cnt_enable, clear, cnt_q);
 	FADD_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
 	FMUL_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
+	
+	proc: process(clk,reset)
+	begin
+		if reset = '1' then
+			cx               <= (others => '0');
+			ready         <= '0';
+			cnt_enable <= '0';
+			fadd_a        <= '0';
+			fmul_b        <= '0';
+			fadd_a        <= '0';
+			fmul_b        <= '0';
+			
+		elsif rising_edge(clk) then
+			if clear = '1' then
+			  cx               <= (others => '0');
+			  ready         <= '0';
+			  cnt_enable <= '0';
+			  fadd_a        <= '0';
+			  fmul_b        <= '0';
+			  fadd_a        <= '0';
+			  fmul_b        <= '0';
+			  
+			elsif enable = '1' then
+				cnt_enable <= '1';
+				
+				case to_integer(unsigned(cnt_q)) is
+					when others => ready <= '1';
+				end case;
+				
+			end if;
+		end if;
+	end process;
+	
 end Behavioral;
 
