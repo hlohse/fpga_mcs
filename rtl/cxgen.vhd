@@ -60,6 +60,15 @@ component fadd IS
   );
 END component;
 
+component fsub IS
+  PORT (
+    a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    result : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END component;
+
 component fmul IS
   PORT (
     a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -72,11 +81,13 @@ END component;
 signal cnt_q: STD_LOGIC_VECTOR(10 DOWNTO 0);
 signal cnt_enable: STD_LOGIC;
 signal fadd_a, fadd_b, fadd_result: STD_LOGIC;
+signal fsub_a, fsub_b, fsub_result: STD_LOGIC;
 signal fmul_a, fmul_b, fmul_result: STD_LOGIC;
 
 begin
 	CNT_I: c_counter_binary_v11_0 port map (clk, cnt_enable, clear, cnt_q);
 	FADD_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
+	FSUB_I: fsub port map (fsub_a, fsub_b, clk, fsub_result);
 	FMUL_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
 	
 	proc: process(clk,reset)
@@ -86,8 +97,10 @@ begin
 			ready         <= '0';
 			cnt_enable <= '0';
 			fadd_a        <= '0';
-			fmul_b        <= '0';
-			fadd_a        <= '0';
+			fadd_b        <= '0';
+			fsub_a        <= '0';
+			fsub_b        <= '0';
+			fmul_a        <= '0';
 			fmul_b        <= '0';
 			
 		elsif rising_edge(clk) then
@@ -96,8 +109,10 @@ begin
 			  ready         <= '0';
 			  cnt_enable <= '0';
 			  fadd_a        <= '0';
-			  fmul_b        <= '0';
-			  fadd_a        <= '0';
+			  fadd_b        <= '0';
+			  fsub_a        <= '0';
+			  fsub_b        <= '0';
+		     fmul_a        <= '0';
 			  fmul_b        <= '0';
 			  
 			elsif enable = '1' then
