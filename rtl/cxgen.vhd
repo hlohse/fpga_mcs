@@ -83,6 +83,7 @@ signal cnt_enable: STD_LOGIC;
 signal fadd_a, fadd_b, fadd_result: STD_LOGIC;
 signal fsub_a, fsub_b, fsub_result: STD_LOGIC;
 signal fmul_a, fmul_b, fmul_result: STD_LOGIC;
+signal cx_0, cx_1, cx_2, dx_3: STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 begin
 	CNT_I: c_counter_binary_v11_0 port map (clk, cnt_enable, clear, cnt_q);
@@ -102,6 +103,10 @@ begin
 			fsub_b        <= '0';
 			fmul_a        <= '0';
 			fmul_b        <= '0';
+			cx_0           <= '0';
+			cx_1           <= '0';
+			cx_2           <= '0';
+			dx_3           <= '0';
 			
 		elsif rising_edge(clk) then
 			if clear = '1' then
@@ -114,12 +119,44 @@ begin
 			  fsub_b        <= '0';
 		     fmul_a        <= '0';
 			  fmul_b        <= '0';
+			  cx_0           <= '0';
+			  cx_1           <= '0';
+			  cx_2           <= '0';
+			  dx_3           <= '0';
 			  
 			elsif enable = '1' then
 				cnt_enable <= '1';
 				
 				case to_integer(unsigned(cnt_q)) is
-					when others => ready <= '1';
+				  when 0 =>
+					 fsub_a <= cx_min;
+					 fsub_b <= dx;
+					 fmul_a <= dx;
+					 fmul_b <= "11";
+				  when 3 =>
+				    cx_2 <= fsub_result;
+					 dx_3 <= fmul_result;
+					 fsub_a <= fsub_result;
+					 fsub_b <= dx;
+				  when 6 =>
+				    cx_1 <= fsub_result;
+					 fsub_a <= fsub_result;
+					 fsub_b <= dx;
+				  when 9 =>
+				    cx_0 <= fsub_result;
+					 fadd_a <= fsub_result;
+					 fadd_b <= dx_3;
+				  when 10 =>
+					 fadd_a <= cx_1;
+					 fadd_b <= dx_3;
+				  when 11 =>
+					 fadd_a <= cx_2;
+					 fadd_b <= dx_3;
+				  when others =>
+					 fadd_a <= fadd_result;
+					 fadd_b <= dx_3;
+				    ready  <= '1';
+					 cx        <= fadd_result;
 				end case;
 				
 			end if;
