@@ -125,10 +125,9 @@ begin
 			  dx_3           <= '0';
 			  
 			elsif enable = '1' then
-				cnt_enable <= '1';
-				
 				case to_integer(unsigned(cnt_q)) is
 				  when 0 =>
+				    cnt_enable <= '1';
 					 fsub_a <= cx_min;
 					 fsub_b <= dx;
 					 fmul_a <= dx;
@@ -152,11 +151,15 @@ begin
 				  when 11 =>
 					 fadd_a <= cx_2;
 					 fadd_b <= dx_3;
-				  when others =>
+				  when 12 to 811 =>
 					 fadd_a <= fadd_result;
 					 fadd_b <= dx_3;
 				    ready  <= '1';
 					 cx        <= fadd_result;
+				  when others =>
+				    cnt_enable <= '0';
+					 ready         <= '0';
+					 cx               <= (others => '0');
 				end case;
 				
 			end if;
