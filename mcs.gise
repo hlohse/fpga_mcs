@@ -22,6 +22,11 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="mcs.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="coregen.log"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
@@ -30,18 +35,43 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mblaze.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="mblaze.vhd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHO" xil_pn:name="mblaze.vho" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mcs_top.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mcs_top.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mcs_top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mcs_top.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mcs_top.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mcs_top.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mcs_top.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mcs_top.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mcs_top.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mcs_top.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mcs_top.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mcs_top.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mcs_top.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mcs_top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mcs_top.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mcs_top.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mcs_top.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mcs_top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mcs_top.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="mcs_top_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mcs_top_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mcs_top_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mcs_top_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mcs_top_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mcs_top_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_PSR" xil_pn:name="mcs_top_map.psr"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcs_top_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcs_top_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mcs_top_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mcs_top_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcs_top_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="mcs_top_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mcs_top_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mcs_top_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcs_top_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -103,6 +133,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="mcs_top.lso"/>
       <outfile xil_pn:name="mcs_top.ngc"/>
@@ -114,6 +146,58 @@
       <outfile xil_pn:name="mcs_top_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1416824300" xil_pn:in_ck="-7455331974489851345" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8279859657396032130" xil_pn:start_ts="1416824299">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1416825787" xil_pn:in_ck="2696008544759746588" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7891482830733038984" xil_pn:start_ts="1416825763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="mcs_top.bld"/>
+      <outfile xil_pn:name="mcs_top.ngd"/>
+      <outfile xil_pn:name="mcs_top_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1416826643" xil_pn:in_ck="-7692214846561265778" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="9142713983894266776" xil_pn:start_ts="1416825787">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="mcs_top.pcf"/>
+      <outfile xil_pn:name="mcs_top_map.map"/>
+      <outfile xil_pn:name="mcs_top_map.mrp"/>
+      <outfile xil_pn:name="mcs_top_map.ncd"/>
+      <outfile xil_pn:name="mcs_top_map.ngm"/>
+      <outfile xil_pn:name="mcs_top_map.psr"/>
+      <outfile xil_pn:name="mcs_top_map.xrpt"/>
+      <outfile xil_pn:name="mcs_top_summary.xml"/>
+      <outfile xil_pn:name="mcs_top_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1416826881" xil_pn:in_ck="8138534054466369671" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7846039340612803429" xil_pn:start_ts="1416826643">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="mcs_top.ncd"/>
+      <outfile xil_pn:name="mcs_top.pad"/>
+      <outfile xil_pn:name="mcs_top.par"/>
+      <outfile xil_pn:name="mcs_top.ptwx"/>
+      <outfile xil_pn:name="mcs_top.unroutes"/>
+      <outfile xil_pn:name="mcs_top.xpi"/>
+      <outfile xil_pn:name="mcs_top_pad.csv"/>
+      <outfile xil_pn:name="mcs_top_pad.txt"/>
+      <outfile xil_pn:name="mcs_top_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1416826881" xil_pn:in_ck="4082971167336345994" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1416826831">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="mcs_top.twr"/>
+      <outfile xil_pn:name="mcs_top.twx"/>
     </transform>
   </transforms>
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_Clk;&gt; [mcs_top.pcf(7605)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_Clk = PERIOD TIMEGRP &quot;Clk&quot; 10 ns HIGH 50%;&gt; [mcs_top.pcf(7522)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500_n;&gt; [mcs_top.pcf(7606)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500_n = PERIOD TIMEGRP &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE         0.833333333 ns HIGH 50%;&gt; [mcs_top.pcf(7534)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_clkGen_clkout5;&gt; [mcs_top.pcf(7607)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5         HIGH 50%;&gt; [mcs_top.pcf(7536)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500;&gt; [mcs_top.pcf(7608)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500 = PERIOD TIMEGRP &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%;&gt; [mcs_top.pcf(7537)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_100c;&gt; [mcs_top.pcf(7609)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_100c = PERIOD TIMEGRP &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%;&gt; [mcs_top.pcf(7538)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;&gt; [mcs_top.pcf(7611)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot;         TS_clkRst_CLK_100s / 1.3 HIGH 50%;&gt; [mcs_top.pcf(7545)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650;&gt; [mcs_top.pcf(7612)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%;&gt; [mcs_top.pcf(7547)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;&gt; [mcs_top.pcf(7614)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot;         TS_clkRst_CLK_100s / 0.65 HIGH 50%;&gt; [mcs_top.pcf(7550)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_Clk;&gt; [mcs_top.ucf(11)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_Clk = PERIOD &quot;Clk&quot; 10 ns HIGH 50%;&gt; [mcs_top.ucf(9)]</arg>.
+</msg>
+
+<msg type="info" file="Timing" num="3386" delta="new" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
+
+<msg type="info" file="Timing" num="3412" delta="new" >To improve timing, see the Timing Closure User Guide (UG612).</msg>
+
+<msg type="info" file="Timing" num="2752" delta="new" >To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in the unconstrained paths section(s) of the report.</msg>
+
+<msg type="info" file="Timing" num="3339" delta="new" >The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of this model, and for more information on accounting for different loading conditions, please see the device datasheet.</msg>
+
+</messages>
+
