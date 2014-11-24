@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -80,16 +81,16 @@ END component;
 
 signal cnt_q: STD_LOGIC_VECTOR(10 DOWNTO 0);
 signal cnt_enable: STD_LOGIC;
-signal fadd_a, fadd_b, fadd_result: STD_LOGIC;
-signal fsub_a, fsub_b, fsub_result: STD_LOGIC;
-signal fmul_a, fmul_b, fmul_result: STD_LOGIC;
+signal fadd_a, fadd_b, fadd_result: STD_LOGIC_VECTOR(31 DOWNTO 0);
+signal fsub_a, fsub_b, fsub_result: STD_LOGIC_VECTOR(31 DOWNTO 0);
+signal fmul_a, fmul_b, fmul_result: STD_LOGIC_VECTOR(31 DOWNTO 0);
 signal cx_0, cx_1, cx_2, dx_3: STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 begin
 	CNT_I: c_counter_binary_v11_0 port map (clk, cnt_enable, clear, cnt_q);
 	FADD_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
 	FSUB_I: fsub port map (fsub_a, fsub_b, clk, fsub_result);
-	FMUL_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
+	FMUL_I: fadd port map (fadd_a, fadd_b, clk, fmul_result);
 	
 	proc: process(clk,reset)
 	begin
@@ -97,32 +98,32 @@ begin
 			cx               <= (others => '0');
 			ready         <= '0';
 			cnt_enable <= '0';
-			fadd_a        <= '0';
-			fadd_b        <= '0';
-			fsub_a        <= '0';
-			fsub_b        <= '0';
-			fmul_a        <= '0';
-			fmul_b        <= '0';
-			cx_0           <= '0';
-			cx_1           <= '0';
-			cx_2           <= '0';
-			dx_3           <= '0';
+			fadd_a        <= (others => '0');
+			fadd_b        <= (others => '0');
+			fsub_a        <= (others => '0');
+			fsub_b        <= (others => '0');
+			fmul_a        <= (others => '0');
+			fmul_b        <= (others => '0');
+			cx_0           <= (others => '0');
+			cx_1           <= (others => '0');
+			cx_2           <= (others => '0');
+			dx_3           <= (others => '0');
 			
 		elsif rising_edge(clk) then
 			if clear = '1' then
 			  cx               <= (others => '0');
 			  ready         <= '0';
 			  cnt_enable <= '0';
-			  fadd_a        <= '0';
-			  fadd_b        <= '0';
-			  fsub_a        <= '0';
-			  fsub_b        <= '0';
-		     fmul_a        <= '0';
-			  fmul_b        <= '0';
-			  cx_0           <= '0';
-			  cx_1           <= '0';
-			  cx_2           <= '0';
-			  dx_3           <= '0';
+			  fadd_a        <= (others => '0');
+			  fadd_b        <= (others => '0');
+			  fsub_a        <= (others => '0');
+			  fsub_b        <= (others => '0');
+		     fmul_a        <= (others => '0');
+			  fmul_b        <= (others => '0');
+			  cx_0           <= (others => '0');
+			  cx_1           <= (others => '0');
+			  cx_2           <= (others => '0');
+			  dx_3           <= (others => '0');
 			  
 			elsif enable = '1' then
 				case to_integer(unsigned(cnt_q)) is
@@ -131,7 +132,7 @@ begin
 					 fsub_a <= cx_min;
 					 fsub_b <= dx;
 					 fmul_a <= dx;
-					 fmul_b <= "11";
+					 fmul_b <= "00000000000000000000000000000011";
 				  when 3 =>
 				    cx_2 <= fsub_result;
 					 dx_3 <= fmul_result;

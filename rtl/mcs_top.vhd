@@ -181,8 +181,8 @@ constant cnReg: integer := 6; -- mandelbrot cy
 constant crReg: integer := 7; -- mandelbrot result
 constant cxgenMinReg: integer := 8; -- cxgen cx_min
 constant cxgenDxReg: integer := 9; -- cxgen dx
-constant cxgenEnableReg: boolean := 10; -- cxgen enable
-constant cxgenClearReg: boolean := 11; -- cxgen clear
+constant cxgenEnableReg: integer := 10; -- cxgen enable
+constant cxgenClearReg: integer := 11; -- cxgen clear
 
 constant idAddr:   ADDR :=  std_logic_vector(to_unsigned(idReg,addrBits));
 constant ctlAddr:  ADDR :=  std_logic_vector(to_unsigned(ctlReg,addrBits));
@@ -483,7 +483,7 @@ end component;
   signal cpu_ram_addr: std_logic_vector(29 downto 0); -- byte address
   
   signal cxgen_cx_min: std_logic_vector(31 downto 0);
-  signal cxgen_dx_min: std_logic_vector(31 downto 0);
+  signal cxgen_dx: std_logic_vector(31 downto 0);
   signal cxgen_enable: std_logic;
   signal cxgen_clear: std_logic;
   signal cxgen_ready: std_logic;
