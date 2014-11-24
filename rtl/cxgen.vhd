@@ -42,8 +42,18 @@ end cxgen;
 
 architecture Behavioral of cxgen is
 
+component c_counter_binary_v11_0 IS
+  PORT (
+    clk : IN STD_LOGIC;
+    ce : IN STD_LOGIC;
+    sclr : IN STD_LOGIC;
+    q : OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
+  );
+END component;
+
+signal count: STD_LOGIC_VECTOR(10 DOWNTO 0);
+
 begin
-
-
+	CNT_I: c_counter_binary_v11_0 port map (clk, enable, clear, count);
 end Behavioral;
 
