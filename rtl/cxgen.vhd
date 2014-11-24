@@ -51,9 +51,31 @@ component c_counter_binary_v11_0 IS
   );
 END component;
 
+component fadd IS
+  PORT (
+    a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    result : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END component;
+
+component fmul IS
+  PORT (
+    a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    result : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END component;
+
 signal count: STD_LOGIC_VECTOR(10 DOWNTO 0);
+signal fadd_a, fadd_b, fadd_result: STD_LOGIC;
+signal fmul_a, fmul_b, fmul_result: STD_LOGIC;
 
 begin
 	CNT_I: c_counter_binary_v11_0 port map (clk, enable, clear, count);
+	FADD_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
+	FMUL_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
 end Behavioral;
 
