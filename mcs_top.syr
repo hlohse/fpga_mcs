@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 Reading design: mcs_top.prj
@@ -180,9 +180,6 @@ Parsing architecture <fmul_nd_l3_a> of entity <fmul_nd_l3>.
 Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/mcsPll_600_125_100_50.vhd" into library work
 Parsing entity <mcsPll_600_125_100_50>.
 Parsing architecture <xilinx> of entity <mcspll_600_125_100_50>.
-Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/c_counter_binary_v11_0.vhd" into library work
-Parsing entity <c_counter_binary_v11_0>.
-Parsing architecture <c_counter_binary_v11_0_a> of entity <c_counter_binary_v11_0>.
 Parsing VHDL file "/home/fel/Desktop/mcs/dp_dram250mhz/example_design/rtl/iodrp_mcb_controller.vhd" into library work
 Parsing entity <iodrp_mcb_controller>.
 Parsing architecture <trans> of entity <iodrp_mcb_controller>.
@@ -254,12 +251,10 @@ WARNING:HDLCompiler:871 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 573: Usin
 
 Elaborating entity <cxgen> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <c_counter_binary_v11_0> (architecture <c_counter_binary_v11_0_a>) from library <work>.
-
 Elaborating entity <fadd> (architecture <fadd_a>) from library <work>.
 
 Elaborating entity <fsub> (architecture <fsub_a>) from library <work>.
-WARNING:HDLCompiler:1127 - "/home/fel/Desktop/mcs/rtl/cxgen.vhd" Line 95: Assignment to fmul_a ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fel/Desktop/mcs/rtl/cxgen.vhd" Line 84: Assignment to fmul_a ignored, since the identifier is never used
 
 Elaborating entity <dp_mem_infrastructure> (architecture <syn>) with generics from library <work>.
 
@@ -415,7 +410,7 @@ Synthesizing Unit <mcs_top>.
         simulation = 0
         trace = 1
 INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 709: Output port <cx> of the instance <CXGEN_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 709: Output port <ready> of the instance <CXGEN_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 709: Output port <valid> of the instance <CXGEN_I> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 722: Output port <clk125> of the instance <clkRst> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 744: Output port <IO_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 744: Output port <Trace_Instruction> of the instance <mcs_0> is unconnected or connected to loadless signal.
@@ -524,10 +519,9 @@ Synthesizing Unit <cxgen>.
     Found 32-bit register for signal <fsub_a>.
     Found 32-bit register for signal <fsub_b>.
     Found 32-bit register for signal <cx>.
-    Found 1-bit register for signal <ready>.
-    Found 1-bit register for signal <cnt_enable>.
+    Found 1-bit register for signal <valid>.
     Summary:
-	inferred 162 D-type flip-flop(s).
+	inferred 161 D-type flip-flop(s).
 Unit <cxgen> synthesized.
 
 Synthesizing Unit <dp_mem_infrastructure>.
@@ -993,37 +987,37 @@ INFO:Xst:1799 - State 111010 is never reached in FSM <STATE>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_20_o_add_13_OUT> created at line 632.
-    Found 10-bit adder for signal <RstCounter[9]_GND_20_o_add_18_OUT> created at line 694.
-    Found 4-bit adder for signal <pre_sysrst_cnt[3]_GND_20_o_add_24_OUT> created at line 761.
-    Found 8-bit adder for signal <WaitTimer[7]_GND_20_o_add_33_OUT> created at line 936.
-    Found 6-bit adder for signal <count[5]_GND_20_o_add_41_OUT> created at line 958.
-    Found 6-bit adder for signal <P_Term[5]_GND_20_o_add_55_OUT> created at line 1134.
-    Found 7-bit adder for signal <N_Term[6]_GND_20_o_add_86_OUT> created at line 1187.
-    Found 8-bit adder for signal <counter_inc[7]_GND_20_o_add_332_OUT> created at line 1699.
-    Found 8-bit adder for signal <DQS_DELAY[7]_GND_20_o_add_335_OUT> created at line 1705.
-    Found 8-bit adder for signal <counter_dec[7]_GND_20_o_add_345_OUT> created at line 1724.
+    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_19_o_add_13_OUT> created at line 632.
+    Found 10-bit adder for signal <RstCounter[9]_GND_19_o_add_18_OUT> created at line 694.
+    Found 4-bit adder for signal <pre_sysrst_cnt[3]_GND_19_o_add_24_OUT> created at line 761.
+    Found 8-bit adder for signal <WaitTimer[7]_GND_19_o_add_33_OUT> created at line 936.
+    Found 6-bit adder for signal <count[5]_GND_19_o_add_41_OUT> created at line 958.
+    Found 6-bit adder for signal <P_Term[5]_GND_19_o_add_55_OUT> created at line 1134.
+    Found 7-bit adder for signal <N_Term[6]_GND_19_o_add_86_OUT> created at line 1187.
+    Found 8-bit adder for signal <counter_inc[7]_GND_19_o_add_332_OUT> created at line 1699.
+    Found 8-bit adder for signal <DQS_DELAY[7]_GND_19_o_add_335_OUT> created at line 1705.
+    Found 8-bit adder for signal <counter_dec[7]_GND_19_o_add_345_OUT> created at line 1724.
     Found 8-bit subtractor for signal <Max_Value_Delta_Up> created at line 433.
     Found 8-bit subtractor for signal <Max_Value_Delta_Dn> created at line 435.
-    Found 6-bit subtractor for signal <GND_20_o_GND_20_o_sub_73_OUT<5:0>> created at line 1139.
-    Found 7-bit subtractor for signal <GND_20_o_GND_20_o_sub_180_OUT<6:0>> created at line 1197.
-    Found 8-bit subtractor for signal <GND_20_o_GND_20_o_sub_349_OUT<7:0>> created at line 1730.
+    Found 6-bit subtractor for signal <GND_19_o_GND_19_o_sub_73_OUT<5:0>> created at line 1139.
+    Found 7-bit subtractor for signal <GND_19_o_GND_19_o_sub_180_OUT<6:0>> created at line 1197.
+    Found 8-bit subtractor for signal <GND_19_o_GND_19_o_sub_349_OUT<7:0>> created at line 1730.
     Found 15-bit adder for signal <_n0876> created at line 501.
+    Found 15-bit adder for signal <n0483> created at line 501.
+    Found 15-bit adder for signal <_n0882> created at line 501.
     Found 15-bit adder for signal <n0491[14:0]> created at line 501.
     Found 15-bit adder for signal <n0493> created at line 501.
-    Found 15-bit adder for signal <_n0885> created at line 501.
+    Found 15-bit adder for signal <_n0891> created at line 501.
     Found 15-bit adder for signal <n0754> created at line 501.
     Found 15-bit adder for signal <n0502> created at line 501.
-    Found 15-bit adder for signal <_n0894> created at line 501.
-    Found 15-bit adder for signal <n0483> created at line 501.
     Found 15-bit adder for signal <n0554> created at line 501.
     Found 1-bit 3-to-1 multiplexer for signal <IODRP_SDO> created at line 982.
-    Found 10-bit comparator greater for signal <RstCounter[9]_GND_20_o_LessThan_18_o> created at line 692
+    Found 10-bit comparator greater for signal <RstCounter[9]_GND_19_o_LessThan_18_o> created at line 692
     Found 8-bit comparator greater for signal <Dec_Flag> created at line 946
     Found 8-bit comparator greater for signal <Inc_Flag> created at line 947
     Found 6-bit comparator equal for signal <n0171> created at line 1205
     Found 7-bit comparator equal for signal <n0180> created at line 1237
-    Found 6-bit comparator greater for signal <count[5]_PWR_19_o_LessThan_308_o> created at line 1642
+    Found 6-bit comparator greater for signal <count[5]_PWR_18_o_LessThan_308_o> created at line 1642
     Found 8-bit comparator greater for signal <Max_Value_int[7]_Max_Value_Previous[7]_LessThan_314_o> created at line 1675
     Found 8-bit comparator greater for signal <n0261> created at line 1675
     Found 8-bit comparator greater for signal <Max_Value_Previous[7]_Max_Value_int[7]_LessThan_319_o> created at line 1679
@@ -1067,7 +1061,7 @@ Synthesizing Unit <iodrp_controller>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_21_o_add_12_OUT> created at line 238.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_20_o_add_12_OUT> created at line 238.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  40 D-type flip-flop(s).
@@ -1106,7 +1100,7 @@ WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserve
     | Encoding           | gray                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_23_o_add_13_OUT> created at line 372.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_22_o_add_13_OUT> created at line 372.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  41 D-type flip-flop(s).
@@ -1181,8 +1175,8 @@ Synthesizing Unit <serialInterface>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bitCnt[2]_GND_866_o_add_65_OUT> created at line 277.
-    Found 8-bit adder for signal <regAddr[7]_GND_866_o_add_81_OUT> created at line 314.
+    Found 3-bit adder for signal <bitCnt[2]_GND_865_o_add_65_OUT> created at line 277.
+    Found 8-bit adder for signal <regAddr[7]_GND_865_o_add_81_OUT> created at line 314.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  38 D-type flip-flop(s).
@@ -1223,14 +1217,14 @@ Synthesizing Unit <timing_xga>.
     Found 1-bit register for signal <active>.
     Found 11-bit register for signal <hpos_cnt>.
     Found 11-bit adder for signal <hpos_cnt[10]_hpos_cnt[10]_mux_1_OUT> created at line 1241.
-    Found 11-bit adder for signal <vpos_cnt[10]_GND_869_o_add_4_OUT> created at line 1241.
+    Found 11-bit adder for signal <vpos_cnt[10]_GND_868_o_add_4_OUT> created at line 1241.
     Found 11-bit comparator lessequal for signal <n0010> created at line 192
     Found 11-bit comparator lessequal for signal <n0015> created at line 195
     Found 11-bit comparator lessequal for signal <hblnk> created at line 217
-    Found 11-bit comparator greater for signal <PWR_131_o_hcount_i[10]_LessThan_14_o> created at line 218
+    Found 11-bit comparator greater for signal <PWR_130_o_hcount_i[10]_LessThan_14_o> created at line 218
     Found 11-bit comparator lessequal for signal <n0022> created at line 218
     Found 11-bit comparator lessequal for signal <vblnk> created at line 240
-    Found 11-bit comparator greater for signal <GND_869_o_vcount_i[10]_LessThan_18_o> created at line 241
+    Found 11-bit comparator greater for signal <GND_868_o_vcount_i[10]_LessThan_18_o> created at line 241
     Found 11-bit comparator lessequal for signal <n0028> created at line 241
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -1260,29 +1254,29 @@ Synthesizing Unit <tmdsEncoder>.
     Found 4-bit adder for signal <n0218> created at line 73.
     Found 4-bit adder for signal <n0221> created at line 73.
     Found 4-bit adder for signal <n0224> created at line 73.
-    Found 4-bit adder for signal <GND_870_o_GND_870_o_add_6_OUT> created at line 73.
+    Found 4-bit adder for signal <GND_869_o_GND_869_o_add_6_OUT> created at line 73.
     Found 4-bit adder for signal <n0230> created at line 95.
     Found 4-bit adder for signal <n0233> created at line 95.
     Found 4-bit adder for signal <n0236> created at line 95.
     Found 4-bit adder for signal <n0239> created at line 95.
     Found 4-bit adder for signal <n0242> created at line 95.
     Found 4-bit adder for signal <n0245> created at line 95.
-    Found 4-bit adder for signal <GND_870_o_GND_870_o_add_17_OUT> created at line 95.
-    Found 5-bit adder for signal <cnt[4]_GND_870_o_add_44_OUT> created at line 152.
+    Found 4-bit adder for signal <GND_869_o_GND_869_o_add_17_OUT> created at line 95.
+    Found 5-bit adder for signal <cnt[4]_GND_869_o_add_44_OUT> created at line 152.
     Found 5-bit adder for signal <n0254> created at line 154.
-    Found 5-bit adder for signal <GND_870_o_GND_870_o_add_52_OUT> created at line 162.
-    Found 4-bit subtractor for signal <GND_870_o_GND_870_o_sub_26_OUT<3:0>> created at line 98.
-    Found 4-bit subtractor for signal <GND_870_o_GND_870_o_sub_47_OUT<3:0>> created at line 154.
-    Found 5-bit subtractor for signal <GND_870_o_GND_870_o_sub_48_OUT<4:0>> created at line 154.
+    Found 5-bit adder for signal <GND_869_o_GND_869_o_add_52_OUT> created at line 162.
+    Found 4-bit subtractor for signal <GND_869_o_GND_869_o_sub_26_OUT<3:0>> created at line 98.
+    Found 4-bit subtractor for signal <GND_869_o_GND_869_o_sub_47_OUT<3:0>> created at line 154.
+    Found 5-bit subtractor for signal <GND_869_o_GND_869_o_sub_48_OUT<4:0>> created at line 154.
     Found 5-bit subtractor for signal <n0260> created at line 0.
-    Found 4-bit subtractor for signal <GND_870_o_GND_870_o_sub_55_OUT<3:0>> created at line 164.
-    Found 5-bit subtractor for signal <GND_870_o_GND_870_o_sub_56_OUT<4:0>> created at line 164.
+    Found 4-bit subtractor for signal <GND_869_o_GND_869_o_sub_55_OUT<3:0>> created at line 164.
+    Found 5-bit subtractor for signal <GND_869_o_GND_869_o_sub_56_OUT<4:0>> created at line 164.
     Found 5-bit subtractor for signal <_n0276> created at line 141.
-    Found 5-bit adder for signal <GND_870_o_GND_870_o_sub_37_OUT<4:0>> created at line 141.
+    Found 5-bit adder for signal <GND_869_o_GND_869_o_sub_37_OUT<4:0>> created at line 141.
     Found 5-bit subtractor for signal <_n0278> created at line 143.
-    Found 5-bit adder for signal <GND_870_o_GND_870_o_sub_39_OUT<4:0>> created at line 143.
-    Found 4x10-bit Read Only RAM for signal <concat[1]_PWR_132_o_wide_mux_59_OUT>
-    Found 4-bit comparator greater for signal <GND_870_o_n1d[3]_LessThan_10_o> created at line 80
+    Found 5-bit adder for signal <GND_869_o_GND_869_o_sub_39_OUT<4:0>> created at line 143.
+    Found 4x10-bit Read Only RAM for signal <concat[1]_PWR_131_o_wide_mux_59_OUT>
+    Found 4-bit comparator greater for signal <GND_869_o_n1d[3]_LessThan_10_o> created at line 80
     Found 4-bit comparator equal for signal <n1q_m[3]_n0q_m[3]_equal_30_o> created at line 105
     Found 4-bit comparator greater for signal <n0q_m[3]_n1q_m[3]_LessThan_31_o> created at line 106
     Found 4-bit comparator greater for signal <n1q_m[3]_n0q_m[3]_LessThan_32_o> created at line 106
@@ -1317,8 +1311,8 @@ WARNING:Xst:647 - Input <rdFull> is never used. This port will be preserved and 
     Found 1-bit register for signal <hsync_r>.
     Found 25-bit register for signal <rowAddr>.
     Found 25-bit register for signal <cmdAddr>.
-    Found 25-bit adder for signal <rowAddr[24]_GND_889_o_add_4_OUT> created at line 131.
-    Found 25-bit adder for signal <cmdAddr[24]_GND_889_o_add_8_OUT> created at line 142.
+    Found 25-bit adder for signal <rowAddr[24]_GND_888_o_add_4_OUT> created at line 131.
+    Found 25-bit adder for signal <cmdAddr[24]_GND_888_o_add_8_OUT> created at line 142.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  88 D-type flip-flop(s).
@@ -1343,7 +1337,7 @@ Synthesizing Unit <reader>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit adder for signal <cnt[4]_GND_890_o_add_1_OUT> created at line 82.
+    Found 5-bit adder for signal <cnt[4]_GND_889_o_add_1_OUT> created at line 82.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
@@ -1363,9 +1357,9 @@ WARNING:Xst:647 - Input <nmax<31:16>> is never used. This port will be preserved
     Found 32-bit register for signal <fnull_r2>.
     Found 1-bit register for signal <cmpless>.
     Found 4-bit register for signal <cnt>.
-    Found 4-bit adder for signal <cnt[3]_GND_892_o_add_0_OUT> created at line 182.
-    Found 16-bit adder for signal <n_i[15]_GND_892_o_add_2_OUT> created at line 187.
-    Found 16-bit subtractor for signal <GND_892_o_GND_892_o_sub_6_OUT<15:0>> created at line 192.
+    Found 4-bit adder for signal <cnt[3]_GND_891_o_add_0_OUT> created at line 182.
+    Found 16-bit adder for signal <n_i[15]_GND_891_o_add_2_OUT> created at line 187.
+    Found 16-bit subtractor for signal <GND_891_o_GND_891_o_sub_6_OUT<15:0>> created at line 192.
     Found 16-bit comparator equal for signal <n_i[15]_nmax_i[15]_equal_5_o> created at line 190
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -1399,9 +1393,9 @@ Synthesizing Unit <hdmiRx>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 16-bit adder for signal <pxl_cnt[15]_GND_993_o_add_10_OUT> created at line 219.
-    Found 16-bit adder for signal <line_cnt[15]_GND_993_o_add_11_OUT> created at line 222.
-    Found 16-bit subtractor for signal <GND_993_o_GND_993_o_sub_24_OUT<15:0>> created at line 242.
+    Found 16-bit adder for signal <pxl_cnt[15]_GND_992_o_add_10_OUT> created at line 219.
+    Found 16-bit adder for signal <line_cnt[15]_GND_992_o_add_11_OUT> created at line 222.
+    Found 16-bit subtractor for signal <GND_992_o_GND_992_o_sub_24_OUT<15:0>> created at line 242.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  68 D-type flip-flop(s).
@@ -1481,9 +1475,9 @@ Synthesizing Unit <serdes_1_to_5_diff_data>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit adder for signal <counter[8]_GND_1001_o_add_2_OUT> created at line 122.
-    Found 5-bit adder for signal <pdcounter[4]_GND_1001_o_add_54_OUT> created at line 224.
-    Found 5-bit adder for signal <pdcounter[4]_PWR_167_o_add_57_OUT> created at line 227.
+    Found 9-bit adder for signal <counter[8]_GND_1000_o_add_2_OUT> created at line 122.
+    Found 5-bit adder for signal <pdcounter[4]_GND_1000_o_add_54_OUT> created at line 224.
+    Found 5-bit adder for signal <pdcounter[4]_PWR_166_o_add_57_OUT> created at line 227.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  25 D-type flip-flop(s).
@@ -1525,10 +1519,10 @@ Synthesizing Unit <phsaligner>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 12-bit adder for signal <ctkn_srh_timer[11]_GND_1009_o_add_6_OUT> created at line 98.
-    Found 7-bit adder for signal <ctkn_counter[6]_GND_1009_o_add_12_OUT> created at line 122.
-    Found 3-bit adder for signal <bitslip_cnt[2]_GND_1009_o_add_32_OUT> created at line 245.
-    Found 1-bit adder for signal <blnkprd_cnt[0]_PWR_173_o_add_33_OUT<0>> created at line 255.
+    Found 12-bit adder for signal <ctkn_srh_timer[11]_GND_1008_o_add_6_OUT> created at line 98.
+    Found 7-bit adder for signal <ctkn_counter[6]_GND_1008_o_add_12_OUT> created at line 122.
+    Found 3-bit adder for signal <bitslip_cnt[2]_GND_1008_o_add_32_OUT> created at line 245.
+    Found 1-bit adder for signal <blnkprd_cnt[0]_PWR_172_o_add_33_OUT<0>> created at line 255.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -1554,8 +1548,8 @@ INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/hdmi/hdmiInput/chnlbond.v" line 86: O
     Found 1-bit register for signal <ra_en>.
     Found 4-bit register for signal <ra>.
     Found 1-bit register for signal <we>.
-    Found 4-bit adder for signal <wa[3]_GND_1011_o_add_2_OUT> created at line 79.
-    Found 4-bit adder for signal <ra[3]_GND_1011_o_add_17_OUT> created at line 167.
+    Found 4-bit adder for signal <wa[3]_GND_1010_o_add_2_OUT> created at line 79.
+    Found 4-bit adder for signal <ra[3]_GND_1010_o_add_17_OUT> created at line 167.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  27 D-type flip-flop(s).
@@ -1600,8 +1594,8 @@ Macro Statistics
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 2
  9-bit adder                                           : 3
-# Registers                                            : 373
- 1-bit register                                        : 220
+# Registers                                            : 372
+ 1-bit register                                        : 219
  10-bit register                                       : 16
  11-bit register                                       : 2
  12-bit register                                       : 3
@@ -1661,8 +1655,6 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 =========================================================================
 
 Reading core <mblaze.ngc>.
-Reading core <ipcore_dir/c_counter_binary_v11_0.ngc>.
-Reading Secure Unit <blk00000001>.
 Reading core <ipcore_dir/fadd.ngc>.
 Reading core <ipcore_dir/fsub.ngc>.
 Reading core <ipcore_dir/fadd_l3.ngc>.
@@ -1672,7 +1664,6 @@ Reading core <ipcore_dir/fmul_l3.ngc>.
 Reading core <ipcore_dir/fsub_l3.ngc>.
 Reading core <ipcore_dir/fcmpless.ngc>.
 Loading core <mblaze> for timing and area information for instance <mcs_0>.
-Loading core <c_counter_binary_v11_0> for timing and area information for instance <CNT_I>.
 Loading core <fadd> for timing and area information for instance <FADD_I>.
 Loading core <fsub> for timing and area information for instance <FSUB_I>.
 Loading core <fadd> for timing and area information for instance <FMUL_I>.
@@ -1709,17 +1700,17 @@ WARNING:Xst:1710 - FF/Latch <fsub_b_27> (without init value) has a constant valu
 WARNING:Xst:1710 - FF/Latch <fsub_b_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_b_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_b_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_21> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_22> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_23> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_24> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_25> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_26> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_27> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_21> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_22> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_23> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_24> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_25> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_26> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_27> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_a_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_b_0> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_b_1> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_b_2> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
@@ -1752,7 +1743,6 @@ WARNING:Xst:1710 - FF/Latch <mb_n_29> (without init value) has a constant value 
 WARNING:Xst:1710 - FF/Latch <mb_n_30> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <mb_n_31> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_b_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <cnt_enable> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -1773,17 +1763,27 @@ WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has
 WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_21> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_22> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_23> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_24> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_25> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_26> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_27> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fsub_a_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_21> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_22> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_23> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_24> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_25> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_26> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_27> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_0> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_1> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_2> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_3> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_4> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_5> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_6> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_7> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_8> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_9> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_a_0> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_a_1> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_a_2> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
@@ -1794,6 +1794,18 @@ WARNING:Xst:1710 - FF/Latch <fadd_a_6> (without init value) has a constant value
 WARNING:Xst:1710 - FF/Latch <fadd_a_7> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_a_8> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_a_9> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_10> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_11> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_12> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_13> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_14> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_15> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_16> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_17> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_18> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_19> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_a_20> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_a_0> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_a_1> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_a_2> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
@@ -1815,17 +1827,6 @@ WARNING:Xst:1710 - FF/Latch <fsub_a_17> (without init value) has a constant valu
 WARNING:Xst:1710 - FF/Latch <fsub_a_18> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_a_19> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fsub_a_20> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_31> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_0> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_1> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_2> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_3> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_4> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_5> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_6> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_7> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_8> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_b_9> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_b_10> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_b_11> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_b_12> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
@@ -1837,27 +1838,16 @@ WARNING:Xst:1710 - FF/Latch <fadd_b_17> (without init value) has a constant valu
 WARNING:Xst:1710 - FF/Latch <fadd_b_18> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_b_19> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <fadd_b_20> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_10> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_11> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_12> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_13> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_14> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_15> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_16> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_17> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_18> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_19> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_20> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_21> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_22> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_23> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_24> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_25> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_26> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_27> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <fadd_a_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_21> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_22> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_23> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_24> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_25> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_26> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_27> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_28> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_29> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fadd_b_30> (without init value) has a constant value of 0 in block <CXGEN_I>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_reg> (without init value) has a constant value of 0 in block <greeEncoder>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_reg> (without init value) has a constant value of 0 in block <greeEncoder>. This FF/Latch will be trimmed during the optimization process.
@@ -1981,11 +1971,11 @@ The following registers are absorbed into counter <vpos_cnt>: 1 register on sign
 Unit <timing_xga> synthesized (advanced).
 
 Synthesizing (advanced) Unit <tmdsEncoder>.
-	The following adders/subtractors are grouped into adder tree <Madd_GND_870_o_GND_870_o_add_17_OUT_Madd1> :
- 	<Madd_n0230> in block <tmdsEncoder>, 	<Madd_n0236_Madd> in block <tmdsEncoder>, 	<Madd_n0242_Madd> in block <tmdsEncoder>, 	<Madd_GND_870_o_GND_870_o_add_17_OUT_Madd> in block <tmdsEncoder>.
-	The following adders/subtractors are grouped into adder tree <Madd_GND_870_o_GND_870_o_add_6_OUT_Madd1> :
- 	<Madd_n0209> in block <tmdsEncoder>, 	<Madd_n0215_Madd> in block <tmdsEncoder>, 	<Madd_n0221_Madd> in block <tmdsEncoder>, 	<Madd_GND_870_o_GND_870_o_add_6_OUT_Madd> in block <tmdsEncoder>.
-INFO:Xst:3231 - The small RAM <Mram_concat[1]_PWR_132_o_wide_mux_59_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+	The following adders/subtractors are grouped into adder tree <Madd_GND_869_o_GND_869_o_add_17_OUT_Madd1> :
+ 	<Madd_n0230> in block <tmdsEncoder>, 	<Madd_n0236_Madd> in block <tmdsEncoder>, 	<Madd_n0242_Madd> in block <tmdsEncoder>, 	<Madd_GND_869_o_GND_869_o_add_17_OUT_Madd> in block <tmdsEncoder>.
+	The following adders/subtractors are grouped into adder tree <Madd_GND_869_o_GND_869_o_add_6_OUT_Madd1> :
+ 	<Madd_n0209> in block <tmdsEncoder>, 	<Madd_n0215_Madd> in block <tmdsEncoder>, 	<Madd_n0221_Madd> in block <tmdsEncoder>, 	<Madd_GND_869_o_GND_869_o_add_6_OUT_Madd> in block <tmdsEncoder>.
+INFO:Xst:3231 - The small RAM <Mram_concat[1]_PWR_131_o_wide_mux_59_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1996,7 +1986,7 @@ INFO:Xst:3231 - The small RAM <Mram_concat[1]_PWR_132_o_wide_mux_59_OUT> will be
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3217 - HDL ADVISOR - Register <q> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_concat[1]_PWR_132_o_wide_mux_59_OUT> for implementation on block RAM resources if you made this reset synchronous instead.
+INFO:Xst:3217 - HDL ADVISOR - Register <q> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_concat[1]_PWR_131_o_wide_mux_59_OUT> for implementation on block RAM resources if you made this reset synchronous instead.
 Unit <tmdsEncoder> synthesized (advanced).
 
 =========================================================================
@@ -2044,8 +2034,8 @@ Macro Statistics
  9-bit up counter                                      : 3
 # Accumulators                                         : 1
  30-bit up accumulator                                 : 1
-# Registers                                            : 1583
- Flip-Flops                                            : 1583
+# Registers                                            : 1582
+ Flip-Flops                                            : 1582
 # Comparators                                          : 36
  10-bit comparator greater                             : 1
  11-bit comparator greater                             : 2
@@ -2083,8 +2073,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <fsub_b_4> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_5> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <fsub_b_5> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_6> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_7> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_8> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
@@ -2103,6 +2092,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_20> (without
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_21> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_22> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_23> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_24> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_17> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_18> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_19> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
@@ -2118,11 +2108,11 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_28> (without
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_29> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_30> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fadd_b_31> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ready> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_0> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_1> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_2> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_3> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_4> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_13> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_14> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_15> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
@@ -2142,8 +2132,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_28> (without ini
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_29> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_30> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cx_31> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_enable> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_24> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <valid> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_25> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_26> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <fsub_b_27> (without init value) has a constant value of 0 in block <cxgen>. This FF/Latch will be trimmed during the optimization process.
@@ -2478,15 +2467,15 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmdAddr_4> (without
 WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_0> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_11> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_10> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_9> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_7> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_6> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_8> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_4> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_3> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_7> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_9> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_5> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_1> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_4> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_6> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_2> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_1> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <withHdmiRx.row_base_addr_3> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <c3_p4_cmd_byte_addr_6> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <c3_p4_cmd_byte_addr_5> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <c3_p4_cmd_byte_addr_4> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
@@ -2738,9 +2727,9 @@ WARNING:Xst:1898 - Due to constant pushing, FF/Latch <withHdmiTx.Inst_hdmiOutIF/
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_0> is unconnected in block <mcs_top>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_0> is unconnected in block <mcs_top>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_0> is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_A11_FRB> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_A11_FRB> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_A11_FRB> of sequential type is unconnected in block <mcs_top>.
+WARNING:Xst:2677 - Node <withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_A11_FRB> of sequential type is unconnected in block <mcs_top>.
+WARNING:Xst:2677 - Node <withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_A11_FRB> of sequential type is unconnected in block <mcs_top>.
+WARNING:Xst:2677 - Node <withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_A11_FRB> of sequential type is unconnected in block <mcs_top>.
 
 Pipelining and Register Balancing Report ...
 
@@ -2748,25 +2737,25 @@ Processing Unit <mcs_top> :
 	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_2 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_3 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>11_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>1121_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_2 withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_3 withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>11_FRB has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>121_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_1 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<1>1_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_58_OUT_AS621_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_2 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<2>1_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_1 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_2 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_2 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_3 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>1111_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1q_m_0 withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_2 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_3 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>11_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>1121_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_2 withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_3 withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>11_FRB has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>121_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_1 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<1>1_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_58_OUT_AS621_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_2 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<2>1_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_1 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_2 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_2 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_3 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>1111_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1q_m_0 withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_2 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_3 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>11_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>1121_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_2 withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_3 withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>11_FRB has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>121_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_1 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<1>1_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_58_OUT_AS621_FRB.
-	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_2 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<2>1_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_1 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB.
+	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_2 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_2 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_2 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_3 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>1111_FRB.
 	Register(s) withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_1 withHdmiTx.Inst_hdmiOutIF/redEncoder/n1q_m_0 withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m_0 has(ve) been forward balanced into : withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB.
 	Register(s) hdmiHsyncTxIn has(ve) been backward balanced into : hdmiHsyncTxIn_BRB0 hdmiHsyncTxIn_BRB1 hdmiHsyncTxIn_BRB2 hdmiHsyncTxIn_BRB3.
@@ -2978,10 +2967,10 @@ Top Level Output File Name         : mcs_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 17252
-#      GND                         : 19
-#      INV                         : 99
-#      LUT1                        : 239
+# BELS                             : 17219
+#      GND                         : 18
+#      INV                         : 98
+#      LUT1                        : 230
 #      LUT2                        : 1688
 #      LUT3                        : 1999
 #      LUT4                        : 2063
@@ -2989,15 +2978,15 @@ Primitive and Black Box Usage:
 #      LUT6                        : 2569
 #      LUT6_2                      : 106
 #      MULT_AND                    : 878
-#      MUXCY                       : 3306
+#      MUXCY                       : 3296
 #      MUXCY_L                     : 146
 #      MUXF5                       : 66
 #      MUXF6                       : 1
 #      MUXF7                       : 179
 #      MUXF8                       : 7
-#      VCC                         : 18
-#      XORCY                       : 2971
-# FlipFlops/Latches                : 5278
+#      VCC                         : 17
+#      XORCY                       : 2960
+# FlipFlops/Latches                : 5267
 #      FD                          : 1910
 #      FDC                         : 165
 #      FDC_1                       : 5
@@ -3007,7 +2996,7 @@ Primitive and Black Box Usage:
 #      FDP                         : 43
 #      FDPE                        : 4
 #      FDR                         : 487
-#      FDRE                        : 765
+#      FDRE                        : 754
 #      FDRE_1                      : 1
 #      FDS                         : 56
 #      FDSE                        : 50
@@ -3056,18 +3045,18 @@ Selected Device : 6slx45csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5254  out of  54576     9%  
- Number of Slice LUTs:                10176  out of  27288    37%  
-    Number used as Logic:              9661  out of  27288    35%  
+ Number of Slice Registers:            5243  out of  54576     9%  
+ Number of Slice LUTs:                10166  out of  27288    37%  
+    Number used as Logic:              9651  out of  27288    35%  
     Number used as Memory:              515  out of   6408     8%  
        Number used as RAM:              188
        Number used as SRL:              327
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  12493
-   Number with an unused Flip Flop:    7239  out of  12493    57%  
-   Number with an unused LUT:          2317  out of  12493    18%  
-   Number of fully used LUT-FF pairs:  2937  out of  12493    23%  
+ Number of LUT Flip Flop pairs used:  12472
+   Number with an unused Flip Flop:    7229  out of  12472    57%  
+   Number with an unused LUT:          2306  out of  12472    18%  
+   Number of fully used LUT-FF pairs:  2937  out of  12472    23%  
    Number of unique control sets:       241
 
 IO Utilization: 
@@ -3113,7 +3102,7 @@ withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/CLKOUT1| BUFG          
 mcs_0/U0/Debug.mdm_0/drck_i                                     | BUFG                                                                                                         | 209   |
 mcs_0/U0/Debug.mdm_0/update                                     | NONE(mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debug_Area/command_reg_0)| 41    |
 mcs_0/GPI2_Interrupt                                            | NONE(mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[31].PLBv46_rdBus_FDRE)              | 34    |
-Clk                                                             | IBUFG+BUFG                                                                                                   | 230   |
+Clk                                                             | IBUFG+BUFG                                                                                                   | 219   |
 ----------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -3155,8 +3144,8 @@ Delay:               8.587ns (Levels of Logic = 7)
      LUT6:I5->O            2   0.254   0.726  withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd71 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7)
      LUT5:I4->O            8   0.254   0.944  withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7_lut<0>11 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7_lut<0>1)
      LUT6:I5->O            5   0.254   0.841  withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7_cy<0>2 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7_cy<0>1)
-     LUT5:I4->O            2   0.254   0.726  withHdmiTx.Inst_hdmiOutIF/blueEncoder/Msub_GND_870_o_GND_870_o_sub_26_OUT<3:0>_xor<3>111 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7_cy<0>2)
-     LUT6:I5->O            1   0.254   0.000  withHdmiTx.Inst_hdmiOutIF/blueEncoder/Msub_GND_870_o_GND_870_o_sub_26_OUT<3:0>_xor<3>11 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/GND_870_o_GND_870_o_sub_26_OUT<3>)
+     LUT5:I4->O            2   0.254   0.726  withHdmiTx.Inst_hdmiOutIF/blueEncoder/Msub_GND_869_o_GND_869_o_sub_26_OUT<3:0>_xor<3>111 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/ADDERTREE_INTERNAL_Madd7_cy<0>2)
+     LUT6:I5->O            1   0.254   0.000  withHdmiTx.Inst_hdmiOutIF/blueEncoder/Msub_GND_869_o_GND_869_o_sub_26_OUT<3:0>_xor<3>11 (withHdmiTx.Inst_hdmiOutIF/blueEncoder/GND_869_o_GND_869_o_sub_26_OUT<3>)
      FD:D                      0.074          withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m_3
     ----------------------------------------
     Total                      8.587ns (2.358ns logic, 6.229ns route)
@@ -3235,8 +3224,8 @@ Delay:               5.804ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               6   0.525   1.152  withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_2 (withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_2)
-     LUT4:I0->O            1   0.254   0.958  withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/sdata[9]_GND_1000_o_Select_17_o2_SW0 (N66)
-     LUT6:I2->O            2   0.254   0.726  withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/sdata[9]_GND_1000_o_Select_17_o2 (withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/sdata[9]_GND_1000_o_Select_17_o2)
+     LUT4:I0->O            1   0.254   0.958  withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/sdata[9]_GND_999_o_Select_17_o2_SW0 (N66)
+     LUT6:I2->O            2   0.254   0.726  withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/sdata[9]_GND_999_o_Select_17_o2 (withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/sdata[9]_GND_999_o_Select_17_o2)
      LUT2:I1->O           24   0.254   1.379  withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/n0050_inv1 (withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/n0050_inv)
      FDRE:CE                   0.302          withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_0_BRB0
     ----------------------------------------
@@ -3423,7 +3412,7 @@ Delay:               2.329ns (Levels of Logic = 5)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
   Clock period: 12.268ns (frequency: 81.513MHz)
-  Total number of paths / destination ports: 1751760 / 107
+  Total number of paths / destination ports: 1751694 / 96
 -------------------------------------------------------------------------
 Delay:               12.268ns (Levels of Logic = 19)
   Source:            CXGEN_I/FADD_I/blk00000093 (FF)
@@ -3954,15 +3943,15 @@ withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/CLKOUT2|    8.587|     
 =========================================================================
 
 
-Total REAL time to Xst completion: 77.00 secs
-Total CPU time to Xst completion: 50.74 secs
+Total REAL time to Xst completion: 116.00 secs
+Total CPU time to Xst completion: 79.10 secs
  
 --> 
 
 
-Total memory usage is 185796 kilobytes
+Total memory usage is 185624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  783 (   0 filtered)
+Number of warnings :  781 (   0 filtered)
 Number of infos    :  136 (   0 filtered)
 

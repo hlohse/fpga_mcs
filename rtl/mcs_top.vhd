@@ -486,7 +486,7 @@ end component;
   signal cxgen_dx: std_logic_vector(31 downto 0);
   signal cxgen_enable: std_logic;
   signal cxgen_clear: std_logic;
-  signal cxgen_ready: std_logic;
+  signal cxgen_valid: std_logic;
   signal cxgen_cx: std_logic_vector(31 downto 0);
 
 -------------------------------------------------------------
@@ -498,7 +498,7 @@ component cxgen is
            reset : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            cx : out  STD_LOGIC_VECTOR (31 downto 0);
-           ready : out  STD_LOGIC);
+           valid : out  STD_LOGIC);
 end component;
   
 -------------------------------------------------------------
@@ -714,7 +714,7 @@ begin
 	 reset     => reset,
 	 clk         => clk,
 	 cx          => cxgen_cx,
-	 ready    => cxgen_ready
+	 valid    => cxgen_valid
  );
 	 
 
