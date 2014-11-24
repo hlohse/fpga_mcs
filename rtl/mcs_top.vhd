@@ -179,6 +179,10 @@ constant cxReg: integer := 4; -- mandelbrot cx
 constant cyReg: integer := 5; -- mandelbrot cy
 constant cnReg: integer := 6; -- mandelbrot cy
 constant crReg: integer := 7; -- mandelbrot result
+constant cxgenMinReg: integer := 8; -- cxgen cx_min
+constant cxgenDxReg: integer := 9; -- cxgen dx
+constant cxgenEnableReg: boolean := 10; -- cxgen enable
+constant cxgenClearReg: boolean := 11; -- cxgen clear
 
 constant idAddr:   ADDR :=  std_logic_vector(to_unsigned(idReg,addrBits));
 constant ctlAddr:  ADDR :=  std_logic_vector(to_unsigned(ctlReg,addrBits));
@@ -188,6 +192,10 @@ constant cxAddr: ADDR   :=  std_logic_vector(to_unsigned(cxReg,addrBits));
 constant cyAddr: ADDR   :=  std_logic_vector(to_unsigned(cyReg,addrBits));
 constant cnAddr: ADDR   :=  std_logic_vector(to_unsigned(cnReg,addrBits));
 constant crAddr: ADDR   :=  std_logic_vector(to_unsigned(crReg,addrBits));
+constant cxgenMinAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenMinReg,addrBits));
+constant cxgenDxAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenDxReg,addrBits));
+constant cxgenEnableAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenEnableReg,addrBits));
+constant cxgenClearAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenClearReg,addrBits));
 
 constant ramSelectAddrBit: integer := 29;
 
@@ -474,6 +482,25 @@ end component;
   signal cpu_rd_ram_instr: std_logic;
   signal cpu_ram_addr: std_logic_vector(29 downto 0); -- byte address
   
+  signal cxgen_cx_min: std_logic_vector(31 downto 0);
+  signal cxgen_dx_min: std_logic_vector(31 downto 0);
+  signal cxgen_enable: std_logic;
+  signal cxgen_clear: std_logic;
+  signal cxgen_ready: std_logic;
+  signal cxgen_cx: std_logic_vector(31 downto 0);
+
+-------------------------------------------------------------
+component cxgen is
+    Port ( cx_min : in  STD_LOGIC_VECTOR (31 downto 0);
+           dx : in  STD_LOGIC_VECTOR (31 downto 0);
+           enable : in  STD_LOGIC;
+           clear : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           clk : in  STD_LOGIC;
+           cx : out  STD_LOGIC_VECTOR (31 downto 0);
+           ready : out  STD_LOGIC);
+end component;
+  
 -------------------------------------------------------------
 	COMPONENT dp_mem_infrastructure
 	  generic (
@@ -677,6 +704,19 @@ begin
   begin
 	simStat <= '0';
   end generate;
+  
+  -- cxgen
+  CXGEN_I: cxgen port map (
+    cx_min => cxgen_cx_min,
+	 dx         => cxgen_dx,
+	 enable  => cxgen_enable,
+	 clear     => cxgen_clear,
+	 reset     => reset,
+	 clk         => clk,
+	 cx          => cxgen_cx,
+	 ready    => cxgen_ready
+ );
+	 
 
   -- infrastructure: clock and reset
 	clkRst: dp_mem_infrastructure PORT MAP(
@@ -831,6 +871,14 @@ begin
 					regs(cyReg) <= IO_Write_Data;
 				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = cnAddr) then
 					regs(cnReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = cxgenMinAddr) then
+					regs(cxgenMinReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = cxgenDxAddr) then
+					regs(cxgenDxReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = cxgenEnableAddr) then
+					regs(cxgenEnableReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = cxgenClearAddr) then
+					regs(cxgenClearReg) <= IO_Write_Data;
 				end if;
 				
 			else
