@@ -22,7 +22,7 @@ entity mcs_top is
 		simulation: integer := 0;
 		trace: integer := 1;  -- use chipscope
     num_cx: integer := 800;
-    num_mbpipe_tages: integer := 16
+    num_mbpipe_stages: integer := 16
   );
   port (
 		Clk : IN STD_LOGIC;
@@ -517,8 +517,8 @@ end component;
 -------------------------------------------------------------
 
 component mbrot_pipe is
-  generic( num_cx     : positiv := 800;
-           num_stages : positiv := 16);
+  generic( num_cx     : integer := 800;
+           num_stages : integer := 16);
     Port ( clk        : in   STD_LOGIC;
            reset      : in   STD_LOGIC;
            clear      : in   STD_LOGIC;
