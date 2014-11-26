@@ -31,16 +31,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity mbrot_pipe_element is
   generic( num_cx  : positiv := 800);
-    Port ( clk     : in   STD_LOGIC;
-           reset   : in   STD_LOGIC;
-           clear   : in   STD_LOGIC;
-           enable  : in   STD_LOGIC;
-           cx      : in   STD_LOGIC_VECTOR (31 downto 0);
-           cy      : in   STD_LOGIC_VECTOR (31 downto 0);
-           zx      : out  STD_LOGIC_VECTOR (31 downto 0);
-           zy      : out  STD_LOGIC_VECTOR (31 downto 0);
-           compare : out  STD_LOGIC;
-           valid   : out  STD_LOGIC);
+    Port ( clk       : in   STD_LOGIC;
+           reset     : in   STD_LOGIC;
+           clear     : in   STD_LOGIC;
+           valid_in  : in   STD_LOGIC;
+           cx        : in   STD_LOGIC_VECTOR (31 downto 0);
+           cy        : in   STD_LOGIC_VECTOR (31 downto 0);
+           zx_in     : in   STD_LOGIC_VECTOR (31 downto 0);
+           zy_in     : in   STD_LOGIC_VECTOR (31 downto 0);
+           zx_out    : out  STD_LOGIC_VECTOR (31 downto 0);
+           zy_out    : out  STD_LOGIC_VECTOR (31 downto 0);
+           compare   : out  STD_LOGIC;
+           valid_out : out  STD_LOGIC);
 end mbrot_pipe_element;
 
 architecture Behavioral of mbrot_pipe_element is
@@ -90,48 +92,61 @@ COMPONENT fcmpless
   );
 END COMPONENT;
 
-signal sqr_1_1_a, sqr_1_1_b, sqr_1_1_result: STD_LOGIC_VECTOR(31 downto 0);
-signal mul_1_a,   mul_1_b,   mul_1_result:   STD_LOGIC_VECTOR(31 downto 0);
-signal sqr_1_2_a, sqr_1_2_b, sqr_1_2_result: STD_LOGIC_VECTOR(31 downto 0);
+signal sqr_1_1_result: STD_LOGIC_VECTOR(31 downto 0);
+signal mul_1_result:   STD_LOGIC_VECTOR(31 downto 0);
+signal sqr_1_2_result: STD_LOGIC_VECTOR(31 downto 0);
 
-signal sub_2_a, sub_2_b, sub_2_result: STD_LOGIC_VECTOR(31 downto 0);
-signal mul_2_a, mul_2_b, mul_2_result: STD_LOGIC_VECTOR(31 downto 0);
-signal add_2_a, add_2_b, add_2_result: STD_LOGIC_VECTOR(31 downto 0);
+signal sub_2_result: STD_LOGIC_VECTOR(31 downto 0);
+signal mul_2_const_2, mul_2_result: STD_LOGIC_VECTOR(31 downto 0);
+signal add_2_result: STD_LOGIC_VECTOR(31 downto 0);
 
-signal add_3_1_a, add_3_1_b, add_3_1_result: STD_LOGIC_VECTOR(31 downto 0);
-signal add_3_2_a, add_3_2_b, add_3_2_result: STD_LOGIC_VECTOR(31 downto 0);
-signal cmp_3_a,   cmp_3_b,   cmp_3_result:   STD_LOGIC_VECTOR(31 downto 0);
+signal add_3_1_result: STD_LOGIC_VECTOR(31 downto 0);
+signal add_3_2_result: STD_LOGIC_VECTOR(31 downto 0);
+signal cmp_3_const_4:  STD_LOGIC_VECTOR(31 downto 0);
 
-signal cnt: integer range 0 to 9;
+signal counter: integer range 0 to 9;
 
 begin
-  FSQR_1_1_I: fmul port map (sqr_1_1_a, sqr_1_1_b, clk, sqr_1_1_result);
-  FMUL_1_I:   fmul port map (mul_1_a,   mul_1_b,   clk, mul_1_result);
-  FSQR_1_2_I: fmul port map (sqr_1_2_a, sqr_1_2_b, clk, sqr_1_2_result);
-  FSUB_2_I:   fsub port map (sub_2_a,   sub_2_b,   clk, sub_2_result);
-  FMUL_2_I:   fmul port map (mul_2_a,   mul_2_b,   clk, mul_2_result);
-  FADD_2_I:   fadd port map (add_2_a,   add_2_b,   clk, add_2_result);
-  FADD_3_1_I: fadd port map (add_3_1_a, add_3_1_b, clk, add_3_1_result);
-  FADD_3_2_I: fadd port map (add_3_2_a, add_3_2_b, clk, add_3_2_result);
-  FCMP_3_I:   fcmp port map (cmp_3_a,   cmp_3_b,   clk, cmp_3_result);
+
+  FSQR_1_1_I: fmul port map (zx_in,          zx_in,          clk, sqr_1_1_result);
+  FMUL_1_I:   fmul port map (zx_in,          zy_in,          clk, mul_1_result);
+  FSQR_1_2_I: fmul port map (zy_in,          zy_in,          clk, sqr_1_2_result);
+  
+  FSUB_2_I:   fsub port map (sqr_1_1_result, sqr_1_2_result, clk, sub_2_result);
+  FMUL_2_I:   fmul port map (mul_2_const_2,  mul_1_result,   clk, mul_2_result);
+  FADD_2_I:   fadd port map (sqr_1_1_result, sqr_1_2_result, clk, add_2_result);
+  
+  FADD_3_1_I: fadd port map (cx,             sub_2_result,   clk, add_3_1_result);
+  FADD_3_2_I: fadd port map (cy,             mul_2_result,   clk, add_3_2_result);
+  FCMP_3_I:   fcmp port map (cmp_3_const_4,  add_2_result,   clk, compare);
 
   proc: process begin
     if reset = '1' then
-      zx         <= "00000000000000000000000000000000";
-      zy         <= "00000000000000000000000000000000";
-      compare    <= '0';
-      valid      <= '0';
+      zx_out        <= "00000000000000000000000000000000";
+      zy_out        <= "00000000000000000000000000000000";
+      compare       <= '0';
+      valid_out     <= '0';
+      mul_2_const_2 <= "01000000000000000000000000000000";
+      cmp_3_const_4 <= "01000000100000000000000000000000";
+      counter       <= 0;
       
-     elsif rising_edge(clk) then
-       if clear = '1' then
-         zx         <= "00000000000000000000000000000000";
-         zy         <= "00000000000000000000000000000000";
-         compare    <= '0';
-         valid      <= '0';
+    elsif rising_edge(clk) then
+      if clear = '1' then
+        zx_out        <= "00000000000000000000000000000000";
+        zy_out        <= "00000000000000000000000000000000";
+        compare       <= '0';
+        valid_out     <= '0';
+        mul_2_const_2 <= "01000000000000000000000000000000";
+        cmp_3_const_4 <= "01000000100000000000000000000000";
+        counter       <= 0;
          
-       elsif enable = '1' then
-         -- use cnt; beware that enable might be '0' before we output all results
-       end if;
+      elsif enable = '1' then
+        if counter = 9 then
+          valid_out <= '1';
+        else
+          counter <= counter + 1;
+        end if;
+      end if;
     end if;
   end process;
 
