@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '6slx45.nph' in environment
    "mcs_top" is an NCD, version 3.2, device xc6slx45, package csg324, speed -2
 Opened constraints file mcs_top.pcf.
 
-Wed Nov 26 11:06:29 2014
+Wed Nov 26 14:13:45 2014
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/bitgen -intstyle ise -bd ./sw/test1/Debug/test1.elf tag mblaze -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 mcs_top.ncd 
 
@@ -134,100 +134,100 @@ There were 1 CONFIG constraint(s) processed from mcs_top.pcf.
 
 Updating BRAM initialization data for design mcs_top.ncd.
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[24].RAMB16_S1_1' at 'RAMB16_X1Y38' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[24].RAMB16_S1_1' at 'RAMB16_X2Y28' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[25].RAMB16_S1_1' at 'RAMB16_X2Y36' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[25].RAMB16_S1_1' at 'RAMB16_X1Y32' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[26].RAMB16_S1_1' at 'RAMB16_X1Y30' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[26].RAMB16_S1_1' at 'RAMB16_X3Y32' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[27].RAMB16_S1_1' at 'RAMB16_X0Y26' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[27].RAMB16_S1_1' at 'RAMB16_X2Y22' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[28].RAMB16_S1_1' at 'RAMB16_X1Y26' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[28].RAMB16_S1_1' at 'RAMB16_X3Y22' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[29].RAMB16_S1_1' at 'RAMB16_X1Y22' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[29].RAMB16_S1_1' at 'RAMB16_X3Y28' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[30].RAMB16_S1_1' at 'RAMB16_X1Y18' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[30].RAMB16_S1_1' at 'RAMB16_X2Y26' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[31].RAMB16_S1_1' at 'RAMB16_X1Y20' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[31].RAMB16_S1_1' at 'RAMB16_X3Y30' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[16].RAMB16_S1_1' at 'RAMB16_X2Y28' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[16].RAMB16_S1_1' at 'RAMB16_X0Y32' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[17].RAMB16_S1_1' at 'RAMB16_X2Y26' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[17].RAMB16_S1_1' at 'RAMB16_X1Y36' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[18].RAMB16_S1_1' at 'RAMB16_X2Y24' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[18].RAMB16_S1_1' at 'RAMB16_X1Y30' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[19].RAMB16_S1_1' at 'RAMB16_X2Y30' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[19].RAMB16_S1_1' at 'RAMB16_X0Y28' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[20].RAMB16_S1_1' at 'RAMB16_X2Y32' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[20].RAMB16_S1_1' at 'RAMB16_X0Y30' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[21].RAMB16_S1_1' at 'RAMB16_X1Y28' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[21].RAMB16_S1_1' at 'RAMB16_X0Y26' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[22].RAMB16_S1_1' at 'RAMB16_X2Y34' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[22].RAMB16_S1_1' at 'RAMB16_X0Y24' location successfully updated with design data.
 
 
 INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[23].RAMB16_S1_1' at 'RAMB16_X1Y24' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[8].RAMB16_S1_1' at 'RAMB16_X1Y40' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[8].RAMB16_S1_1' at 'RAMB16_X0Y34' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[9].RAMB16_S1_1' at 'RAMB16_X1Y36' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[9].RAMB16_S1_1' at 'RAMB16_X1Y34' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[10].RAMB16_S1_1' at 'RAMB16_X0Y30' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[10].RAMB16_S1_1' at 'RAMB16_X3Y34' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[11].RAMB16_S1_1' at 'RAMB16_X0Y38' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[11].RAMB16_S1_1' at 'RAMB16_X2Y34' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[12].RAMB16_S1_1' at 'RAMB16_X0Y18' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[12].RAMB16_S1_1' at 'RAMB16_X3Y24' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[13].RAMB16_S1_1' at 'RAMB16_X0Y22' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[13].RAMB16_S1_1' at 'RAMB16_X3Y26' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[14].RAMB16_S1_1' at 'RAMB16_X0Y28' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[14].RAMB16_S1_1' at 'RAMB16_X2Y24' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[15].RAMB16_S1_1' at 'RAMB16_X0Y20' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[15].RAMB16_S1_1' at 'RAMB16_X2Y20' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[0].RAMB16_S1_1' at 'RAMB16_X0Y24' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[0].RAMB16_S1_1' at 'RAMB16_X2Y36' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[1].RAMB16_S1_1' at 'RAMB16_X1Y32' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[1].RAMB16_S1_1' at 'RAMB16_X0Y22' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[2].RAMB16_S1_1' at 'RAMB16_X0Y34' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[2].RAMB16_S1_1' at 'RAMB16_X2Y30' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[3].RAMB16_S1_1' at 'RAMB16_X0Y40' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[3].RAMB16_S1_1' at 'RAMB16_X2Y32' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[4].RAMB16_S1_1' at 'RAMB16_X0Y32' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[4].RAMB16_S1_1' at 'RAMB16_X1Y22' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[5].RAMB16_S1_1' at 'RAMB16_X0Y36' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[5].RAMB16_S1_1' at 'RAMB16_X1Y28' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[6].RAMB16_S1_1' at 'RAMB16_X1Y34' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[6].RAMB16_S1_1' at 'RAMB16_X1Y20' location successfully updated with design data.
 
 
-INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[7].RAMB16_S1_1' at 'RAMB16_X1Y42' location successfully updated with design data.
+INFO::100 - BRAM 'mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[7].RAMB16_S1_1' at 'RAMB16_X1Y26' location successfully updated with design data.
 
 Saving updated design in "mcs_top_bd.ncd".
 Running DRC.
