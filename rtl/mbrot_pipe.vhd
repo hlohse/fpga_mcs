@@ -1,6 +1,9 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
 entity mbrot_pipe is
-  generic( num_cx     : positiv := 800;
-           num_stages : positiv := 16);
+  generic( num_cx     : integer := 800;
+           num_stages : integer := 16);
     Port ( clk        : in   STD_LOGIC;
            reset      : in   STD_LOGIC;
            clear      : in   STD_LOGIC;
@@ -16,7 +19,7 @@ end mbrot_pipe;
 architecture Behavioral of mbrot_pipe is
 
 component mbrot_pipe_element is
-  generic( num_cx    : positiv := 800);
+  generic( num_cx    : integer := 800);
     Port ( clk       : in   STD_LOGIC;
            reset     : in   STD_LOGIC;
            clear     : in   STD_LOGIC;
@@ -31,7 +34,8 @@ component mbrot_pipe_element is
            valid_out : out  STD_LOGIC);
 end component;
 
-signal e_zx_out, e_zy_out: STD_LOGIC_VECTOR((num_stages-1) downto 0, 31 downto 0);
+type e_out is array ((num_stages-1) downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+signal e_zx_out, e_zy_out: e_out;
 signal e_valid_out: STD_LOGIC_VECTOR((num_stages-1) downto 0);
 
 begin
