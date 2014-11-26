@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Nov 26 10:07:45 2014
+// Written by: Map P.20131013 on Wed Nov 26 14:10:09 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -157,10 +157,14 @@ TIMEGRP withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c1_reg" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c0_reg" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_3" BEL
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_2" BEL
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_1" BEL
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/n1d_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_7" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_6" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_5" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_4" BEL
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_3" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_2" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/d_q_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/cnt_4" BEL
@@ -193,10 +197,14 @@ TIMEGRP withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/q_m_reg_1" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/q_m_reg_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_3" BEL
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_2" BEL
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_1" BEL
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/n1d_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_7" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_6" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_5" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_4" BEL
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_3" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_2" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/d_q_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/cnt_4" BEL
@@ -229,10 +237,14 @@ TIMEGRP withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/q_m_reg_1" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/q_m_reg_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_3" BEL
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_2" BEL
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_1" BEL
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/n1d_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_7" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_6" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_5" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_4" BEL
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_3" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_2" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/d_q_0" BEL
         "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vpos_cnt_9" BEL
@@ -256,6 +268,9 @@ TIMEGRP withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = BEL
         "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/hpos_cnt_2" BEL
         "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/hpos_cnt_1" BEL
         "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/hpos_cnt_0" BEL
+        "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active" BEL
+        "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vsync" BEL
+        "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/hsync" BEL
         "withHdmiTx.Inst_dram_reader/cmdAddr_24" BEL
         "withHdmiTx.Inst_dram_reader/cmdAddr_23" BEL
         "withHdmiTx.Inst_dram_reader/cmdAddr_22" BEL
@@ -328,46 +343,14 @@ TIMEGRP withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = BEL
         "withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3"
         BEL "hdmiDataGTx_0" BEL
         "withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd1"
-        BEL "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active" BEL
-        "withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/hsync" BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>11_FRB" BEL
+        BEL "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>11_FRB" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>11_FRB" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>11_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>1111_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>1121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB"
-        BEL "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>1111_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>1121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB"
-        BEL "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>1111_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>1121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB"
-        BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB"
-        BEL "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c0_q_BRB0" BEL
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c0_q_BRB0" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c1_q_BRB0" BEL
         "hdmiHsyncTxIn_BRB1" BEL "hdmiHsyncTxIn_BRB2" BEL "hdmiHsyncTxIn_BRB3"
-        BEL "hdmiVsyncTxIn_BRB0" BEL "hdmiHsyncTxIn_BRB0" BEL
-        "Mshreg_hdmiVsyncTxIn_BRB3" BEL "hdmiVsyncTxIn_BRB3" BEL
+        BEL "hdmiVsyncTxIn_BRB0" BEL "hdmiVsyncTxIn_BRB3" BEL
+        "hdmiHsyncTxIn_BRB0" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mshreg_de_reg" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/de_reg";
 PIN withHdmiTx.edidRom_u_rom/Mram_dataOut_pins<10> = BEL
@@ -391,6 +374,7 @@ TIMEGRP clkRst_CLK_100s = BEL "GPI2_r_0" BEL "GPI2_r_1" BEL "GPI2_r_2" BEL
         "withHdmiTx.edidRom/sdaPipe_5" BEL "withHdmiTx.edidRom/sdaPipe_4" BEL
         "withHdmiTx.edidRom/sdaPipe_3" BEL "withHdmiTx.edidRom/sdaPipe_2" BEL
         "withHdmiTx.edidRom/sdaPipe_1" BEL "withHdmiTx.edidRom/sdaPipe_0" BEL
+        "withHdmiTx.edidRom/u_serialInterface/sdaOut" BEL
         "withHdmiTx.edidRom/u_serialInterface/txData_7" BEL
         "withHdmiTx.edidRom/u_serialInterface/txData_6" BEL
         "withHdmiTx.edidRom/u_serialInterface/txData_5" BEL
@@ -410,6 +394,8 @@ TIMEGRP clkRst_CLK_100s = BEL "GPI2_r_0" BEL "GPI2_r_1" BEL "GPI2_r_2" BEL
         "withHdmiTx.edidRom/u_serialInterface/rxData_2" BEL
         "withHdmiTx.edidRom/u_serialInterface/rxData_1" BEL
         "withHdmiTx.edidRom/u_serialInterface/rxData_0" BEL
+        "withHdmiTx.edidRom/u_serialInterface/writeEn" BEL
+        "withHdmiTx.edidRom/u_serialInterface/clearStartStopDet" BEL
         "withHdmiTx.edidRom/sdaDelayed_3" BEL
         "withHdmiTx.edidRom/sdaDelayed_2" BEL
         "withHdmiTx.edidRom/sdaDelayed_1" BEL
@@ -441,11 +427,7 @@ TIMEGRP clkRst_CLK_100s = BEL "GPI2_r_0" BEL "GPI2_r_1" BEL "GPI2_r_2" BEL
         "clkRst/rstDelay_5" BEL "clkRst/rstDelay_4" BEL "clkRst/rstDelay_3"
         BEL "clkRst/rstDelay_2" BEL "clkRst/rstDelay_1" BEL
         "clkRst/rstDelay_0" BEL "withHdmiTx.edidRom/sclDeb" BEL
-        "withHdmiTx.edidRom/sdaDeb" BEL
-        "withHdmiTx.edidRom/u_serialInterface/sdaOut" BEL
-        "withHdmiTx.edidRom/u_serialInterface/writeEn" BEL
-        "withHdmiTx.edidRom/u_serialInterface/clearStartStopDet" BEL
-        "withHdmiTx.edidRom/u_serialInterface/sdaOut_1" PIN
+        "withHdmiTx.edidRom/sdaDeb" PIN
         "withHdmiTx.edidRom_u_rom/Mram_dataOut_pins<10>" BEL
         "withHdmiTx.edidRom/rstPipe_1_shift1" BEL
         "withHdmiTx.edidRom/rstPipe_1_shift2" BEL
@@ -837,30 +819,31 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "regs_1_19" BEL "regs_1_20" BEL "regs_1_21" BEL "regs_1_22" BEL
         "regs_1_23" BEL "regs_1_24" BEL "regs_1_25" BEL "regs_1_26" BEL
         "regs_1_27" BEL "regs_1_28" BEL "regs_1_29" BEL "regs_1_30" BEL
-        "regs_1_31" BEL "cxReg_i_0" BEL "cxReg_i_1" BEL "cxReg_i_2" BEL
-        "cxReg_i_3" BEL "cxReg_i_4" BEL "cxReg_i_5" BEL "cxReg_i_6" BEL
-        "cxReg_i_7" BEL "cxReg_i_8" BEL "cxReg_i_9" BEL "cxReg_i_10" BEL
-        "cxReg_i_11" BEL "cxReg_i_12" BEL "cxReg_i_13" BEL "cxReg_i_14" BEL
-        "cxReg_i_15" BEL "cxReg_i_16" BEL "cxReg_i_17" BEL "cxReg_i_18" BEL
-        "cxReg_i_19" BEL "cxReg_i_20" BEL "cxReg_i_21" BEL "cxReg_i_22" BEL
-        "cxReg_i_23" BEL "cxReg_i_24" BEL "cxReg_i_25" BEL "cxReg_i_26" BEL
-        "cxReg_i_27" BEL "cxReg_i_28" BEL "cxReg_i_29" BEL "cxReg_i_30" BEL
-        "cxReg_i_31" BEL "cyReg_i_0" BEL "cyReg_i_1" BEL "cyReg_i_2" BEL
-        "cyReg_i_3" BEL "cyReg_i_4" BEL "cyReg_i_5" BEL "cyReg_i_6" BEL
-        "cyReg_i_7" BEL "cyReg_i_8" BEL "cyReg_i_9" BEL "cyReg_i_10" BEL
-        "cyReg_i_11" BEL "cyReg_i_12" BEL "cyReg_i_13" BEL "cyReg_i_14" BEL
-        "cyReg_i_15" BEL "cyReg_i_16" BEL "cyReg_i_17" BEL "cyReg_i_18" BEL
-        "cyReg_i_19" BEL "cyReg_i_20" BEL "cyReg_i_21" BEL "cyReg_i_22" BEL
-        "cyReg_i_23" BEL "cyReg_i_24" BEL "cyReg_i_25" BEL "cyReg_i_26" BEL
-        "cyReg_i_27" BEL "cyReg_i_28" BEL "cyReg_i_29" BEL "cyReg_i_30" BEL
-        "cyReg_i_31" BEL "cnReg_i_0" BEL "cnReg_i_1" BEL "cnReg_i_2" BEL
-        "cnReg_i_3" BEL "cnReg_i_4" BEL "cnReg_i_5" BEL "cnReg_i_6" BEL
-        "cnReg_i_7" BEL "cnReg_i_8" BEL "cnReg_i_9" BEL "cnReg_i_10" BEL
-        "cnReg_i_11" BEL "cnReg_i_12" BEL "cnReg_i_13" BEL "cnReg_i_14" BEL
-        "cnReg_i_15" BEL "mb_n_0" BEL "mb_n_1" BEL "mb_n_2" BEL "mb_n_3" BEL
-        "mb_n_4" BEL "mb_n_5" BEL "mb_n_6" BEL "mb_n_7" BEL "mb_n_8" BEL
-        "mb_n_9" BEL "mb_n_10" BEL "mb_n_11" BEL "mb_n_12" BEL "mb_n_13" BEL
-        "mb_n_14" BEL "mb_n_15" BEL "mb_done" PIN
+        "regs_1_31" BEL "cpu_wr_ram_instr" BEL "cxReg_i_0" BEL "cxReg_i_1" BEL
+        "cxReg_i_2" BEL "cxReg_i_3" BEL "cxReg_i_4" BEL "cxReg_i_5" BEL
+        "cxReg_i_6" BEL "cxReg_i_7" BEL "cxReg_i_8" BEL "cxReg_i_9" BEL
+        "cxReg_i_10" BEL "cxReg_i_11" BEL "cxReg_i_12" BEL "cxReg_i_13" BEL
+        "cxReg_i_14" BEL "cxReg_i_15" BEL "cxReg_i_16" BEL "cxReg_i_17" BEL
+        "cxReg_i_18" BEL "cxReg_i_19" BEL "cxReg_i_20" BEL "cxReg_i_21" BEL
+        "cxReg_i_22" BEL "cxReg_i_23" BEL "cxReg_i_24" BEL "cxReg_i_25" BEL
+        "cxReg_i_26" BEL "cxReg_i_27" BEL "cxReg_i_28" BEL "cxReg_i_29" BEL
+        "cxReg_i_30" BEL "cxReg_i_31" BEL "cyReg_i_0" BEL "cyReg_i_1" BEL
+        "cyReg_i_2" BEL "cyReg_i_3" BEL "cyReg_i_4" BEL "cyReg_i_5" BEL
+        "cyReg_i_6" BEL "cyReg_i_7" BEL "cyReg_i_8" BEL "cyReg_i_9" BEL
+        "cyReg_i_10" BEL "cyReg_i_11" BEL "cyReg_i_12" BEL "cyReg_i_13" BEL
+        "cyReg_i_14" BEL "cyReg_i_15" BEL "cyReg_i_16" BEL "cyReg_i_17" BEL
+        "cyReg_i_18" BEL "cyReg_i_19" BEL "cyReg_i_20" BEL "cyReg_i_21" BEL
+        "cyReg_i_22" BEL "cyReg_i_23" BEL "cyReg_i_24" BEL "cyReg_i_25" BEL
+        "cyReg_i_26" BEL "cyReg_i_27" BEL "cyReg_i_28" BEL "cyReg_i_29" BEL
+        "cyReg_i_30" BEL "cyReg_i_31" BEL "cnReg_i_0" BEL "cnReg_i_1" BEL
+        "cnReg_i_2" BEL "cnReg_i_3" BEL "cnReg_i_4" BEL "cnReg_i_5" BEL
+        "cnReg_i_6" BEL "cnReg_i_7" BEL "cnReg_i_8" BEL "cnReg_i_9" BEL
+        "cnReg_i_10" BEL "cnReg_i_11" BEL "cnReg_i_12" BEL "cnReg_i_13" BEL
+        "cnReg_i_14" BEL "cnReg_i_15" BEL "mb_n_0" BEL "mb_n_1" BEL "mb_n_2"
+        BEL "mb_n_3" BEL "mb_n_4" BEL "mb_n_5" BEL "mb_n_6" BEL "mb_n_7" BEL
+        "mb_n_8" BEL "mb_n_9" BEL "mb_n_10" BEL "mb_n_11" BEL "mb_n_12" BEL
+        "mb_n_13" BEL "mb_n_14" BEL "mb_n_15" BEL "mb_done" BEL
+        "cpu_rd_ram_data" BEL "wrRdy" PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<252>"
         PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<274>"
@@ -904,14 +887,7 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/cnt_3" BEL "withMbrot.mbCompute/cnt_2" BEL
         "withMbrot.mbCompute/cnt_1" BEL "withMbrot.mbCompute/cnt_0" BEL
         "withMbrot.mbCompute/fnull_r2_30" BEL "withMbrot.mbCompute/done_i" BEL
-        "withMbrot.mbCompute/update" BEL "cpu_wr_ram_instr" BEL
-        "cpu_rd_ram_data" BEL "wrRdy" BEL
-        "withMbrot.mbCompute/latency3.fcmp_1/blk00000034" BEL
-        "withMbrot.mbCompute/latency3.fcmp_1/blk0000001b" BEL
-        "withMbrot.mbCompute/latency3.fcmp_1/blk0000000f" BEL
-        "withMbrot.mbCompute/latency3.fcmp_1/blk0000000e" BEL
-        "withMbrot.mbCompute/latency3.fcmp_1/blk0000000c" BEL
-        "withMbrot.mbCompute/latency3.fcmp_1/blk00000003" BEL
+        "withMbrot.mbCompute/update" BEL
         "withMbrot.mbCompute/latency3.fsub_1/blk00000311" BEL
         "withMbrot.mbCompute/latency3.fsub_1/blk00000310" BEL
         "withMbrot.mbCompute/latency3.fsub_1/blk0000030f" BEL
@@ -1739,6 +1715,7 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000005f6" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000005f5" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000005f4" BEL
+        "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk000005f3" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000028" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000027" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000026" BEL
@@ -1755,6 +1732,7 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/blk00000003" BEL
         "withMbrot.mbCompute/itof_1/blk0000016c" BEL
         "withMbrot.mbCompute/itof_1/blk0000016a" BEL
+        "withMbrot.mbCompute/itof_1/blk00000086" BEL
         "withMbrot.mbCompute/itof_1/blk00000071" BEL
         "withMbrot.mbCompute/itof_2/blk0000016c" BEL
         "withMbrot.mbCompute/itof_2/blk0000016a" BEL
@@ -2103,13 +2081,21 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000008e" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000008d" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000008c" BEL
-        "withMbrot.mbCompute/latency3.fadd_1/blk0000007f" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk0000007a" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000079" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000077" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000073" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000072" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000003b" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000003a" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000039" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000038" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000037" BEL
-        "withMbrot.mbCompute/latency3.fadd_1/blk00000030" PIN
+        "withMbrot.mbCompute/latency3.fcmp_1/blk00000034" BEL
+        "withMbrot.mbCompute/latency3.fcmp_1/blk0000001b" BEL
+        "withMbrot.mbCompute/latency3.fcmp_1/blk0000000e" BEL
+        "withMbrot.mbCompute/latency3.fcmp_1/blk0000000c" BEL
+        "withMbrot.mbCompute/latency3.fcmp_1/blk00000003" PIN
         "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[0].RAMB16_S1_1_pins<28>"
         PIN
         "mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S1.The_BRAMs[0].RAMB16_S1_1_pins<29>"
@@ -4575,14 +4561,14 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.fsub_1/sig00000129" BEL
         "withMbrot.mbCompute/latency3.fsub_1/Mshreg_sig00000128" BEL
         "withMbrot.mbCompute/latency3.fsub_1/sig00000128" BEL
-        "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig0000017d" BEL
-        "withMbrot.mbCompute/latency3.fmul_4/sig0000017d" BEL
         "withMbrot.mbCompute/latency3.fsub_1/Mshreg_sig00000127" BEL
         "withMbrot.mbCompute/latency3.fsub_1/sig00000127" BEL
-        "withMbrot.mbCompute/latency3.fsub_1/Mshreg_sig00000126" BEL
-        "withMbrot.mbCompute/latency3.fsub_1/sig00000126" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig0000017e" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig0000017e" BEL
+        "withMbrot.mbCompute/latency3.fsub_1/Mshreg_sig00000126" BEL
+        "withMbrot.mbCompute/latency3.fsub_1/sig00000126" BEL
+        "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig0000017d" BEL
+        "withMbrot.mbCompute/latency3.fmul_4/sig0000017d" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig0000017f" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig0000017f" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000182" BEL
@@ -4593,14 +4579,14 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig00000181" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000024" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig00000024" BEL
-        "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000021" BEL
-        "withMbrot.mbCompute/latency3.fmul_4/sig00000021" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000023" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig00000023" BEL
-        "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000022" BEL
-        "withMbrot.mbCompute/latency3.fmul_4/sig00000022" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000020" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig00000020" BEL
+        "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000022" BEL
+        "withMbrot.mbCompute/latency3.fmul_4/sig00000022" BEL
+        "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig00000021" BEL
+        "withMbrot.mbCompute/latency3.fmul_4/sig00000021" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig0000001f" BEL
         "withMbrot.mbCompute/latency3.fmul_4/sig0000001f" BEL
         "withMbrot.mbCompute/latency3.fmul_4/Mshreg_sig0000001e" BEL
@@ -4627,14 +4613,14 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000009" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000008"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000008" BEL
-        "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000005"
-        BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000005" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000007"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000007" BEL
-        "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000006"
-        BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000006" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000004"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000004" BEL
+        "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000006"
+        BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000006" BEL
+        "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000005"
+        BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000005" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig00000003"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/sig00000003" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_2/Mshreg_sig0000043d"
@@ -4645,12 +4631,12 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000009" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000008"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000008" BEL
-        "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000005"
-        BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000005" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000007"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000007" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000006"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000006" BEL
+        "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000005"
+        BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000005" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000004"
         BEL "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/sig00000004" BEL
         "withMbrot.mbCompute/latency3.withoutDsp.fmul_3/Mshreg_sig00000003"
@@ -4963,7 +4949,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "c3_p4_wr_data_14" BEL "c3_p4_wr_data_15" BEL "c3_p4_wr_data_16" BEL
         "c3_p4_wr_data_17" BEL "c3_p4_wr_data_18" BEL "c3_p4_wr_data_19" BEL
         "c3_p4_wr_data_20" BEL "c3_p4_wr_data_21" BEL "c3_p4_wr_data_22" BEL
-        "c3_p4_wr_data_23" BEL "c3_p4_cmd_byte_addr_7" BEL
+        "c3_p4_wr_data_23" BEL "c3_p4_cmd_en" BEL "c3_p4_cmd_byte_addr_7" BEL
         "c3_p4_cmd_byte_addr_8" BEL "c3_p4_cmd_byte_addr_9" BEL
         "c3_p4_cmd_byte_addr_10" BEL "c3_p4_cmd_byte_addr_11" BEL
         "c3_p4_cmd_byte_addr_12" BEL "c3_p4_cmd_byte_addr_13" BEL
@@ -4974,10 +4960,10 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "c3_p4_cmd_byte_addr_22" BEL "c3_p4_cmd_byte_addr_23" BEL
         "c3_p4_cmd_byte_addr_24" BEL "c3_p4_cmd_byte_addr_25" BEL
         "c3_p4_cmd_byte_addr_26" BEL "withHdmiRx.row_base_addr_12" BEL
-        "withHdmiRx.row_base_addr_13" BEL "withHdmiRx.row_base_addr_16" BEL
-        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_15" BEL
-        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_17" BEL
-        "withHdmiRx.row_base_addr_18" BEL "withHdmiRx.row_base_addr_20" BEL
+        "withHdmiRx.row_base_addr_15" BEL "withHdmiRx.row_base_addr_13" BEL
+        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_16" BEL
+        "withHdmiRx.row_base_addr_17" BEL "withHdmiRx.row_base_addr_18" BEL
+        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_20" BEL
         "withHdmiRx.row_base_addr_21" BEL "withHdmiRx.row_base_addr_23" BEL
         "withHdmiRx.row_base_addr_24" BEL "withHdmiRx.row_base_addr_25" BEL
         "withHdmiRx.row_base_addr_26" BEL "withHdmiRx.cnt_2" BEL
@@ -4993,6 +4979,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         BEL "withHdmiRx.Inst_hdmiRx/frame_state_FSM_FFd1" BEL
         "withHdmiRx.Inst_hdmiRx/frame_state_FSM_FFd2" BEL
         "withHdmiRx.Inst_hdmiRx/frame_state_FSM_FFd3" BEL
+        "withHdmiRx.Inst_hdmiRx/vsync_pol" BEL
         "withHdmiRx.Inst_hdmiRx/vsync_reg" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/pclkbufg" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/de" BEL
@@ -5046,6 +5033,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/cstate_FSM_FFd3"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/cstate_FSM_FFd6"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/blnkbgn"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/rcvd_ctkn_q"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/rcvd_ctkn"
@@ -5118,6 +5106,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/cstate_FSM_FFd3"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/cstate_FSM_FFd6"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/blnkbgn"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/rcvd_ctkn_q"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/rcvd_ctkn"
@@ -5190,6 +5179,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/cstate_FSM_FFd3"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/cstate_FSM_FFd6"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/blnkbgn"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/rcvd_ctkn_q"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/rcvd_ctkn"
@@ -5230,6 +5220,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_0" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/blnkbgn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rcvd_ctkn_q" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_rising"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/we" BEL
@@ -5248,6 +5239,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/sdata_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/sdata_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/sdata_0" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/blnkbgn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rcvd_ctkn_q" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rcvd_ctkn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/ra_3" BEL
@@ -5264,26 +5256,19 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/sdata_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/sdata_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/sdata_0" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/blnkbgn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rcvd_ctkn_q" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rcvd_ctkn" BEL
+        "c3_p4_wr_en" BEL "withHdmiRx.row_base_addr_22" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/skip_line" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/ra_en" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/iamrdy" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/skip_line" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/ra_en" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/iamrdy" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/skip_line" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/iamrdy" BEL
-        "c3_p4_cmd_en" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/blnkbgn" BEL
-        "c3_p4_wr_en" BEL "withHdmiRx.row_base_addr_22" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/ra_en" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/ra_en" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/ra_en" BEL
-        "withHdmiRx.Inst_hdmiRx/vsync_pol" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/iamrdy" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_0_BRB0" BEL
@@ -5471,7 +5456,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "c3_p4_wr_data_14" BEL "c3_p4_wr_data_15" BEL "c3_p4_wr_data_16" BEL
         "c3_p4_wr_data_17" BEL "c3_p4_wr_data_18" BEL "c3_p4_wr_data_19" BEL
         "c3_p4_wr_data_20" BEL "c3_p4_wr_data_21" BEL "c3_p4_wr_data_22" BEL
-        "c3_p4_wr_data_23" BEL "c3_p4_cmd_byte_addr_7" BEL
+        "c3_p4_wr_data_23" BEL "c3_p4_cmd_en" BEL "c3_p4_cmd_byte_addr_7" BEL
         "c3_p4_cmd_byte_addr_8" BEL "c3_p4_cmd_byte_addr_9" BEL
         "c3_p4_cmd_byte_addr_10" BEL "c3_p4_cmd_byte_addr_11" BEL
         "c3_p4_cmd_byte_addr_12" BEL "c3_p4_cmd_byte_addr_13" BEL
@@ -5482,10 +5467,10 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "c3_p4_cmd_byte_addr_22" BEL "c3_p4_cmd_byte_addr_23" BEL
         "c3_p4_cmd_byte_addr_24" BEL "c3_p4_cmd_byte_addr_25" BEL
         "c3_p4_cmd_byte_addr_26" BEL "withHdmiRx.row_base_addr_12" BEL
-        "withHdmiRx.row_base_addr_13" BEL "withHdmiRx.row_base_addr_16" BEL
-        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_15" BEL
-        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_17" BEL
-        "withHdmiRx.row_base_addr_18" BEL "withHdmiRx.row_base_addr_20" BEL
+        "withHdmiRx.row_base_addr_15" BEL "withHdmiRx.row_base_addr_13" BEL
+        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_16" BEL
+        "withHdmiRx.row_base_addr_17" BEL "withHdmiRx.row_base_addr_18" BEL
+        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_20" BEL
         "withHdmiRx.row_base_addr_21" BEL "withHdmiRx.row_base_addr_23" BEL
         "withHdmiRx.row_base_addr_24" BEL "withHdmiRx.row_base_addr_25" BEL
         "withHdmiRx.row_base_addr_26" BEL "withHdmiRx.cnt_2" BEL
@@ -5501,6 +5486,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         BEL "withHdmiRx.Inst_hdmiRx/frame_state_FSM_FFd1" BEL
         "withHdmiRx.Inst_hdmiRx/frame_state_FSM_FFd2" BEL
         "withHdmiRx.Inst_hdmiRx/frame_state_FSM_FFd3" BEL
+        "withHdmiRx.Inst_hdmiRx/vsync_pol" BEL
         "withHdmiRx.Inst_hdmiRx/vsync_reg" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/pclkbufg" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/de" BEL
@@ -5554,6 +5540,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/cstate_FSM_FFd3"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/cstate_FSM_FFd6"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/blnkbgn"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/rcvd_ctkn_q"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/rcvd_ctkn"
@@ -5626,6 +5613,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/cstate_FSM_FFd3"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/cstate_FSM_FFd6"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/blnkbgn"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/rcvd_ctkn_q"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/rcvd_ctkn"
@@ -5698,6 +5686,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/cstate_FSM_FFd3"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/cstate_FSM_FFd6"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/blnkbgn"
         BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/rcvd_ctkn_q"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/rcvd_ctkn"
@@ -5738,6 +5727,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/sdata_0" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/blnkbgn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rcvd_ctkn_q" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_rising"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/we" BEL
@@ -5756,6 +5746,7 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/sdata_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/sdata_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/sdata_0" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/blnkbgn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rcvd_ctkn_q" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rcvd_ctkn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/ra_3" BEL
@@ -5772,26 +5763,19 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/sdata_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/sdata_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/sdata_0" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/blnkbgn" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rcvd_ctkn_q" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rcvd_ctkn" BEL
+        "c3_p4_wr_en" BEL "withHdmiRx.row_base_addr_22" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/skip_line" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/ra_en" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/iamrdy" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/skip_line" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/ra_en" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/iamrdy" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/skip_line" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/iamrdy" BEL
-        "c3_p4_cmd_en" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/phsalgn_0/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/phsalgn_0/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/phsalgn_0/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/blnkbgn" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/blnkbgn" BEL
-        "c3_p4_wr_en" BEL "withHdmiRx.row_base_addr_22" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/ra_en" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/ra_en" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/ra_en" BEL
-        "withHdmiRx.Inst_hdmiRx/vsync_pol" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/iamrdy" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB0" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_0_BRB0" BEL
@@ -6306,6 +6290,8 @@ PIN
         PINNAME UICLK;
 TIMEGRP clkRst_clkGen_clkout5 = PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0_pins<657>"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock"
         BEL "clkRst/clkGen/clkout6_buf" BEL "clkRst/localRst" BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/gen_zio.IODRP2_ZIO"
         BEL
@@ -6384,6 +6370,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/counter_dec_1"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/counter_dec_0"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd2"
         BEL
@@ -6543,9 +6531,15 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/pre_sysrst_cnt_0"
         BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIDRPUPDATE"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UICMDEN"
+        BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Active_IODRP_1"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Active_IODRP_0"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIDONECAL_xilinx7"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_MEMCELL_ADDR_7"
         BEL
@@ -6639,6 +6633,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Block_Reset"
         BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Rst_condition1"
+        BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_6"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_5"
@@ -6687,6 +6683,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIUDQSINC"
         BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Pre_SYSRST"
+        BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_Previous_7"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_Previous_6"
@@ -6702,6 +6700,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_Previous_1"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_Previous_0"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_Dyn_Cal_Done"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/P_Term_w_5"
         BEL
@@ -6763,6 +6763,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train"
         BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL"
+        BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MCB_MODE_R1"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd2"
@@ -6770,6 +6772,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd3"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd1"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd4"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd5"
         BEL
@@ -6853,6 +6857,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/bit_cnt_0"
         BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/state_FSM_FFd1"
+        BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/state_FSM_FFd2"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/state_FSM_FFd3"
@@ -6874,6 +6880,8 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/shift_through_reg_1"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/shift_through_reg_0"
+        BEL
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/MCB_UIREAD"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/DRP_ADD_xilinx0"
         BEL
@@ -6907,33 +6915,9 @@ TIMEGRP clkRst_clkGen_clkout5 = PIN
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/rd_not_write_reg"
         BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIDRPUPDATE"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UICMDEN"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIDONECAL_xilinx7"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Pre_SYSRST"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_Dyn_Cal_Done"
+        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/normal_operation_window"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_In_Term_Done"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/syn_uiclk_pll_lock"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Rst_condition1"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd4"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/state_FSM_FFd1"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/MCB_UIREAD"
-        BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/normal_operation_window"
         BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/SELFREFRESH_MODE_xilinx11"
         BEL
@@ -7052,14 +7036,20 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/incdec_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_4" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_3" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_2" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_1" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/busy_data_d" PIN
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_master"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_4"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_3"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_2"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_1"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_0"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/busy_data_d"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/ce_data_inta"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/enable" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_sint" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/rst_data" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/flag" PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/iodelay_s_pins<3>"
         PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/iodelay_m_pins<2>"
@@ -7075,14 +7065,20 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/incdec_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_4" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_3" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_2" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_1" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/busy_data_d" PIN
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_master"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_4"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_3"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_2"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_1"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_0"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/busy_data_d"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/ce_data_inta"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/enable" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_sint" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/rst_data" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/flag" PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/iodelay_s_pins<3>"
         PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/iodelay_m_pins<2>"
@@ -7098,38 +7094,26 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/incdec_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_4" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_3" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_2" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_1" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/busy_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_master"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/ce_data_inta"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/enable" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_sint" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/flag" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_master"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/ce_data_inta"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/enable" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_sint" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/flag" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/cal_data_master"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_4"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_3"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_2"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_1"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_0"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/busy_data_d"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/ce_data_inta"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/enable" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/cal_data_sint" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/rst_data" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/flag" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/inc_data_int" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/ce_data" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/inc_data_int" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/ce_data" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/inc_data_int" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/ce_data" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/rst_data" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/rst_data" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/rst_data" PIN
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/ce_data" PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/iserdes_m_pins<3>"
         PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/iserdes_s_pins<3>"
@@ -7215,14 +7199,20 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/incdec_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_4" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_3" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_2" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_1" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/busy_data_d" PIN
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_master"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_4"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_3"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_2"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_1"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_0"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/busy_data_d"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/ce_data_inta"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/enable" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_sint" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/rst_data" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/flag" PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/iodelay_s_pins<3>"
         PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/iodelay_m_pins<2>"
@@ -7238,14 +7228,20 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/incdec_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_4" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_3" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_2" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_1" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/busy_data_d" PIN
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_master"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_4"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_3"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_2"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_1"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_0"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/busy_data_d"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/ce_data_inta"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/enable" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_sint" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/rst_data" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/flag" PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/iodelay_s_pins<3>"
         PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/iodelay_m_pins<2>"
@@ -7261,38 +7257,26 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/incdec_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_4" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_3" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_2" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_1" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/busy_data_d" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_master"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/ce_data_inta"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/enable" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_sint" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/flag" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_master"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/ce_data_inta"
-        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/enable" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_sint" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/flag" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/valid_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/cal_data_master"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_4"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_3"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_2"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_1"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_0"
+        BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/busy_data_d"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/ce_data_inta"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/enable" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/cal_data_sint" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/rst_data" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/flag" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/inc_data_int" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/ce_data" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/inc_data_int" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/ce_data" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/inc_data_int" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/ce_data" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/rst_data" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/rst_data" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/rst_data" PIN
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/ce_data" PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/iserdes_m_pins<3>"
         PIN
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/iserdes_s_pins<3>"
@@ -7579,11 +7563,6 @@ PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train"
         PINNAME Q;
 PIN
-        withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL_rstpot_pins<3>
-        = BEL
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL_rstpot"
-        PINNAME O6;
-PIN
         withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL_pins<2>
         = BEL
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL"
@@ -7594,9 +7573,6 @@ PIN
 PIN "clkRst/withDram.BUFPLL_MCB_INST_pins<3>" TIG;
 PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train_pins<2>"
-        TIG;
-PIN
-        "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL_rstpot_pins<3>"
         TIG;
 PIN
         "withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL_pins<2>"
