@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Nov 24 11:57:17 2014
+// Written by: Map P.20131013 on Wed Nov 26 10:07:45 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -338,31 +338,31 @@ TIMEGRP withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>121_FRB" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>1111_FRB" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_q_m<1>1121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<1>1_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB"
         BEL "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>1111_FRB" BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_q_m<1>1121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<1>1_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB"
         BEL "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>1111_FRB" BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_q_m<1>1121_FRB" BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<1>1_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<1>1_FRB"
         BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB"
         BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_58_OUT_AS621_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB"
         BEL
         "withHdmiTx.Inst_hdmiOutIF/greeEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB"
         BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_58_OUT_AS621_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB"
         BEL
         "withHdmiTx.Inst_hdmiOutIF/redEncoder/n0q_m[3]_n1q_m[3]_LessThan_31_o11_FRB"
         BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_58_OUT_AS621_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_58_OUT_AS621_FRB"
         BEL
-        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<2>1_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/blueEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB"
         BEL
-        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<2>1_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/greeEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB"
         BEL
-        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_870_o_GND_870_o_mux_39_OUT_B_rs_lut<2>1_FRB"
+        "withHdmiTx.Inst_hdmiOutIF/redEncoder/Mmux_GND_869_o_GND_869_o_mux_39_OUT_B_rs_lut<2>1_FRB"
         BEL "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c0_q_BRB0" BEL
         "withHdmiTx.Inst_hdmiOutIF/blueEncoder/c1_q_BRB0" BEL
         "hdmiHsyncTxIn_BRB1" BEL "hdmiHsyncTxIn_BRB2" BEL "hdmiHsyncTxIn_BRB3"
@@ -4974,10 +4974,10 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = BEL "hdmiRxAct_r0" BEL
         "c3_p4_cmd_byte_addr_22" BEL "c3_p4_cmd_byte_addr_23" BEL
         "c3_p4_cmd_byte_addr_24" BEL "c3_p4_cmd_byte_addr_25" BEL
         "c3_p4_cmd_byte_addr_26" BEL "withHdmiRx.row_base_addr_12" BEL
-        "withHdmiRx.row_base_addr_15" BEL "withHdmiRx.row_base_addr_13" BEL
-        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_16" BEL
-        "withHdmiRx.row_base_addr_17" BEL "withHdmiRx.row_base_addr_18" BEL
-        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_20" BEL
+        "withHdmiRx.row_base_addr_13" BEL "withHdmiRx.row_base_addr_16" BEL
+        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_15" BEL
+        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_17" BEL
+        "withHdmiRx.row_base_addr_18" BEL "withHdmiRx.row_base_addr_20" BEL
         "withHdmiRx.row_base_addr_21" BEL "withHdmiRx.row_base_addr_23" BEL
         "withHdmiRx.row_base_addr_24" BEL "withHdmiRx.row_base_addr_25" BEL
         "withHdmiRx.row_base_addr_26" BEL "withHdmiRx.cnt_2" BEL
@@ -5482,10 +5482,10 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = BEL "hdmiRxAct_r0"
         "c3_p4_cmd_byte_addr_22" BEL "c3_p4_cmd_byte_addr_23" BEL
         "c3_p4_cmd_byte_addr_24" BEL "c3_p4_cmd_byte_addr_25" BEL
         "c3_p4_cmd_byte_addr_26" BEL "withHdmiRx.row_base_addr_12" BEL
-        "withHdmiRx.row_base_addr_15" BEL "withHdmiRx.row_base_addr_13" BEL
-        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_16" BEL
-        "withHdmiRx.row_base_addr_17" BEL "withHdmiRx.row_base_addr_18" BEL
-        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_20" BEL
+        "withHdmiRx.row_base_addr_13" BEL "withHdmiRx.row_base_addr_16" BEL
+        "withHdmiRx.row_base_addr_14" BEL "withHdmiRx.row_base_addr_15" BEL
+        "withHdmiRx.row_base_addr_19" BEL "withHdmiRx.row_base_addr_17" BEL
+        "withHdmiRx.row_base_addr_18" BEL "withHdmiRx.row_base_addr_20" BEL
         "withHdmiRx.row_base_addr_21" BEL "withHdmiRx.row_base_addr_23" BEL
         "withHdmiRx.row_base_addr_24" BEL "withHdmiRx.row_base_addr_25" BEL
         "withHdmiRx.row_base_addr_26" BEL "withHdmiRx.cnt_2" BEL

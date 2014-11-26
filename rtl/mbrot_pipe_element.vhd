@@ -29,7 +29,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mbrot_pipe is
+entity mbrot_pipe_element is
   generic( num_cx  : positiv := 800);
     Port ( clk     : in   STD_LOGIC;
            reset   : in   STD_LOGIC;
@@ -41,9 +41,9 @@ entity mbrot_pipe is
            zy      : out  STD_LOGIC_VECTOR (31 downto 0);
            compare : out  STD_LOGIC;
            valid   : out  STD_LOGIC);
-end mbrot_pipe;
+end mbrot_pipe_element;
 
-architecture Behavioral of mbrot_pipe is
+architecture Behavioral of mbrot_pipe_element is
 
 component fadd IS
   PORT (

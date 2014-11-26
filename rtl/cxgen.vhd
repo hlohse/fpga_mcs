@@ -118,7 +118,7 @@ begin
 					  fsub_a <= cx_min;
 					  fsub_b <= dx;
 					  fmul_a <= dx;
-					  fmul_b <= "00000000000000000000000000000011";
+					  fmul_b <= "01000000010000000000000000000000";
             cnt    <= cnt + 1;
 				  when 3 =>
 				    cx_2 <= fsub_result;

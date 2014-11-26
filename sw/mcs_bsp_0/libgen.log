@@ -1,25 +1,20 @@
 Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
- (lin64)
+ (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: libgen -hw ../mcs_hw/system.xml -pe mblaze -log libgen.log
 system.mss 
 
-WARNING:EDK:411 - bram -
-   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 22 -
+WARNING:EDK:411 - bram - /home/fel/Desktop/mcs/sw/mcs_bsp_0/system.mss line 22 -
    deprecated driver!
-WARNING:EDK:411 - bram -
-   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 28 -
+WARNING:EDK:411 - bram - /home/fel/Desktop/mcs/sw/mcs_bsp_0/system.mss line 28 -
    deprecated driver!
-WARNING:EDK:411 - iomodule -
-   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 34 -
-   deprecated driver!
-WARNING:EDK:411 - cpu -
-   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 14 -
+WARNING:EDK:411 - iomodule - /home/fel/Desktop/mcs/sw/mcs_bsp_0/system.mss line
+   34 - deprecated driver!
+WARNING:EDK:411 - cpu - /home/fel/Desktop/mcs/sw/mcs_bsp_0/system.mss line 14 -
    deprecated processor!
-WARNING:EDK:411 - standalone -
-   /home/kugel/daten/work/vhdl/mbIp/sp6/sw/mcs_bsp_0/system.mss line 5 -
-   deprecated os!
+WARNING:EDK:411 - standalone - /home/fel/Desktop/mcs/sw/mcs_bsp_0/system.mss
+   line 5 - deprecated os!
 
 Staging source files.
 Running DRCs.

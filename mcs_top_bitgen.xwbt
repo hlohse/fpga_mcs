@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/fel/Desktop/mcs/mcs_top.ncd
+OUTFILE=/home/fel/Desktop/mcs/mcs_top.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/home/fel/Desktop/mcs
+LICENSE=WebPack
+USER_INFO=174144604_176456465_0_538

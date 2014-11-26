@@ -10,7 +10,7 @@ Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Nov 24 11:43:13 2014
+Mapped Date    : Wed Nov 26 09:59:54 2014
 
 Design Summary
 --------------
@@ -22,10 +22,10 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               11
-  Number of Slice LUTs:                      5,834 out of  27,288   21%
-    Number used as logic:                    5,502 out of  27,288   20%
+  Number of Slice LUTs:                      5,820 out of  27,288   21%
+    Number used as logic:                    5,501 out of  27,288   20%
       Number using O6 output only:           3,383
-      Number using O5 output only:             235
+      Number using O5 output only:             234
       Number using O5 and O6:                1,884
       Number used as ROM:                        0
     Number used as Memory:                     233 out of   6,408    3%
@@ -38,18 +38,18 @@ Slice Logic Utilization:
         Number using O6 output only:            36
         Number using O5 output only:             1
         Number using O5 and O6:                100
-    Number used exclusively as route-thrus:     99
-      Number with same-slice register load:     69
+    Number used exclusively as route-thrus:     86
+      Number with same-slice register load:     56
       Number with same-slice carry load:        30
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,354 out of   6,822   34%
+  Number of occupied Slices:                 2,321 out of   6,822   34%
   Number of MUXCYs used:                     2,784 out of  13,644   20%
-  Number of LUT Flip Flop pairs used:        6,998
-    Number with an unused Flip Flop:         3,255 out of   6,998   46%
-    Number with an unused LUT:               1,164 out of   6,998   16%
-    Number of fully used LUT-FF pairs:       2,579 out of   6,998   36%
+  Number of LUT Flip Flop pairs used:        7,048
+    Number with an unused Flip Flop:         3,288 out of   7,048   46%
+    Number with an unused LUT:               1,228 out of   7,048   17%
+    Number of fully used LUT-FF pairs:       2,532 out of   7,048   35%
     Number of unique control sets:             216
     Number of slice register sites lost
       to control set restrictions:             765 out of  54,576    1%
@@ -103,9 +103,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.30
 
-Peak Memory Usage:  455 MB
-Total REAL time to MAP completion:  14 mins 9 secs 
-Total CPU time to MAP completion (all processors):   10 mins 42 secs 
+Peak Memory Usage:  454 MB
+Total REAL time to MAP completion:  7 mins 54 secs 
+Total CPU time to MAP completion (all processors):   6 mins 1 secs 
 
 Table of Contents
 -----------------
@@ -167,10 +167,6 @@ INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_15> in Unit <mcs_top>
 INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_20> in Unit <mcs_top>
    is equivalent to the following FF/Latch, which will be removed :
    <withMbrot.mbCompute/fnull_r1_20> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB1> 
 INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_16> in Unit <mcs_top>
    is equivalent to the following FF/Latch, which will be removed :
    <withMbrot.mbCompute/fnull_r1_16> 
@@ -214,17 +210,13 @@ INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_29> in Unit <mcs_top>
    is equivalent to the following 3 FFs/Latches, which will be removed :
    <withMbrot.mbCompute/fnull_r2_28> <withMbrot.mbCompute/fnull_r1_29>
    <withMbrot.mbCompute/fnull_r1_28> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB1> 
 INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk00000311>
    in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
    removed : <withMbrot.mbCompute/latency3.fadd_2/blk00000031> 
 INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB0> in Unit <mcs_top>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB0> in Unit <mcs_top>
    is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB1> 
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB1> 
 INFO:Xst:2261 - The FF/Latch
    <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
    en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIA
@@ -253,13 +245,13 @@ INFO:Xst:2261 - The FF/Latch <withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0> in
    <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_1_BRB0>
    <withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_0_BRB0> 
 INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_0_BRB0> in Unit <mcs_top>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB0> in Unit <mcs_top>
    is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB0> 
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB1> 
 INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB0> in Unit <mcs_top>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_0_BRB0> in Unit <mcs_top>
    is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB1> 
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB0> 
 INFO:Xst:2261 - The FF/Latch
    <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
    en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIU
@@ -269,6 +261,10 @@ INFO:Xst:2261 - The FF/Latch
    en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIL
    DQSINC> 
 INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB1> 
+INFO:Xst:2261 - The FF/Latch
    <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
    en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIU
    DQSDEC> in Unit <mcs_top> is equivalent to the following FF/Latch, which will
@@ -276,6 +272,167 @@ INFO:Xst:2261 - The FF/Latch
    <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/g
    en_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_UIL
    DQSDEC> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_Break> in Unit
+   <mcs_top> is equivalent to the following FF/Latch, which will be removed :
+   <mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_NM_Break> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_3/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_3/blk00000031> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/itof_1/blk000001e41> in Unit
+   <mcs_top> is equivalent to the following 2 FFs/Latches, which will be removed
+   : <withMbrot.mbCompute/itof_2/blk000001e41>
+   <withMbrot.mbCompute/itof_3/blk000001e41> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fsub_1/blk00000031> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB0> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch <mcs_0/U0/dlmb/POR_FF_I> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <mcs_0/U0/ilmb/POR_FF_I> 
+INFO:Xst:2261 - The FF/Latch <hdmiHsyncTxIn_BRB2> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiVsyncTxIn_BRB2> 
+INFO:Xst:2261 - The FF/Latch <hdmiHsyncTxIn_BRB1> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <hdmiVsyncTxIn_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_0> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_1> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_2> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_2> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_3> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_3> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_4> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_4> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_5> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_5> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_6> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_6> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_7> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_7> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_8> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_8> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_9> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withMbrot.mbCompute/fnull_r1_9> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB2> in Unit <mcs_top>
+   is equivalent to the following 6 FFs/Latches, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB2>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB2> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk00000032> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB1> 
+INFO:Xst:2261 - The FF/Latch <hdmiRxAct_r0> in Unit <mcs_top> is equivalent to
+   the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/de_reg> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/we> in Unit <mcs_top> is
+   equivalent to the following 5 FFs/Latches, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_q>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/we>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rawdata_vld_q>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/we>
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rawdata_vld_q> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_0_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB0> 
+INFO:Xst:2261 - The FF/Latch <hdmiVsyncTxIn_BRB3> in Unit <mcs_top> is
+   equivalent to the following FF/Latch, which will be removed :
+   <withHdmiTx.Inst_dram_reader/vsync_out_BRB0> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_2/blk00000032> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_2/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk00000310>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fsub_1/blk00000032> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk0000030f>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fsub_1/blk000000ea> 
+INFO:Xst:2261 - The FF/Latch
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB0> in Unit <mcs_top>
+   is equivalent to the following FF/Latch, which will be removed :
+   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB1> 
+INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk00000311>
+   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
+   removed : <withMbrot.mbCompute/latency3.fadd_1/blk00000031> 
 INFO:Xst:2261 - The FF/Latch
    <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB2> in Unit <mcs_top>
    is equivalent to the following 6 FFs/Latches, which will be removed :
@@ -294,170 +451,13 @@ INFO:Xst:2261 - The FF/Latch
    <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB2>
    <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB2>
    <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB2> 
-INFO:Xst:2261 - The FF/Latch
-   <mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_Break> in Unit
-   <mcs_top> is equivalent to the following FF/Latch, which will be removed :
-   <mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_NM_Break> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_3/blk00000311>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fadd_3/blk00000031> 
+INFO:Xst:2261 - The FF/Latch <CXGEN_I/FSUB_I/blk00000064> in Unit <mcs_top> is
+   equivalent to the following 2 FFs/Latches, which will be removed :
+   <CXGEN_I/FMUL_I/blk00000064> <CXGEN_I/FADD_I/blk00000064> 
 INFO:Xst:2261 - The FF/Latch
    <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_7_BRB0> in Unit <mcs_top>
    is equivalent to the following FF/Latch, which will be removed :
    <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB1> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/itof_1/blk000001e41> in Unit
-   <mcs_top> is equivalent to the following 2 FFs/Latches, which will be removed
-   : <withMbrot.mbCompute/itof_2/blk000001e41>
-   <withMbrot.mbCompute/itof_3/blk000001e41> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk00000311>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fsub_1/blk00000031> 
-INFO:Xst:2261 - The FF/Latch <mcs_0/U0/dlmb/POR_FF_I> in Unit <mcs_top> is
-   equivalent to the following FF/Latch, which will be removed :
-   <mcs_0/U0/ilmb/POR_FF_I> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_0_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_1_BRB0> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_7_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB1> 
-INFO:Xst:2261 - The FF/Latch <hdmiHsyncTxIn_BRB2> in Unit <mcs_top> is
-   equivalent to the following FF/Latch, which will be removed :
-   <hdmiVsyncTxIn_BRB2> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_2_BRB1> 
-INFO:Xst:2261 - The FF/Latch <hdmiHsyncTxIn_BRB1> in Unit <mcs_top> is
-   equivalent to the following FF/Latch, which will be removed :
-   <hdmiVsyncTxIn_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_2_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB1> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_0> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_1> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_1> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_2> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_2> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_3> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_3> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_4> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_4> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_0_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_1_BRB0> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_5> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_5> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_6> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_6> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_7> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_7> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_8> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_8> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/fnull_r2_9> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withMbrot.mbCompute/fnull_r1_9> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB1> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk00000310>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fadd_1/blk00000032> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk0000030f>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fadd_1/blk000000ea> 
-INFO:Xst:2261 - The FF/Latch <hdmiRxAct_r0> in Unit <mcs_top> is equivalent to
-   the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/de_reg> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/we> in Unit <mcs_top> is
-   equivalent to the following 5 FFs/Latches, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/cbnd/rawdata_vld_q>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/we>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/cbnd/rawdata_vld_q>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/we>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/cbnd/rawdata_vld_q> 
-INFO:Xst:2261 - The FF/Latch <hdmiVsyncTxIn_BRB3> in Unit <mcs_top> is
-   equivalent to the following FF/Latch, which will be removed :
-   <withHdmiTx.Inst_dram_reader/vsync_out_BRB0> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk00000310>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fadd_2/blk00000032> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_6_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_5_BRB1> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_2/blk0000030f>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fadd_2/blk000000ea> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_6_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_5_BRB1> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk00000310>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fsub_1/blk00000032> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fsub_1/blk0000030f>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fsub_1/blk000000ea> 
-INFO:Xst:2261 - The FF/Latch <withMbrot.mbCompute/latency3.fadd_1/blk00000311>
-   in Unit <mcs_top> is equivalent to the following FF/Latch, which will be
-   removed : <withMbrot.mbCompute/latency3.fadd_1/blk00000031> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB2> in Unit <mcs_top>
-   is equivalent to the following 6 FFs/Latches, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB2>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_5_BRB2>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_4_BRB2>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_3_BRB2>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_2_BRB2>
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_1_BRB2> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_4_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/dout_3_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_4_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/dout_3_BRB1> 
-INFO:Xst:2261 - The FF/Latch
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_7_BRB0> in Unit <mcs_top>
-   is equivalent to the following FF/Latch, which will be removed :
-   <withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/dout_6_BRB1> 
-INFO:Xst:2261 - The FF/Latch <CXGEN_I/FSUB_I/blk00000064> in Unit <mcs_top> is
-   equivalent to the following 2 FFs/Latches, which will be removed :
-   <CXGEN_I/FMUL_I/blk00000064> <CXGEN_I/FADD_I/blk00000064> 
 INFO:Xst:2261 - The FF/Latch <Mshreg_hdmiRxDreg1_8_BRB01> in Unit <mcs_top> is
    equivalent to the following FF/Latch, which will be removed :
    <Mshreg_hdmiRxDreg1_9_BRB01> 

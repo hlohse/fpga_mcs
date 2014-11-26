@@ -1,8 +1,0 @@
-elfcheck
-Xilinx EDK 14.5 Build EDK_P.58f
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../mcs_hw/system.xml -pe mblaze test1.elf 
-
-ELF file	: test1.elf
-elfcheck passed.
