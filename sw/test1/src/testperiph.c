@@ -44,6 +44,12 @@ const int cxReg = 4;
 const int cyReg = 5;
 const int cnReg = 6;
 const int crReg = 7;
+const int cxgenMinReg    = 8;
+const int cxgenDxReg     = 9;
+const int cxgenEnableReg = 10;
+const int cxgenClearReg  = 11;
+const int mbpipeClearReg = 12;
+const int mbpipeCyReg    = 13;
 
 const int simStatBit = 31;
 
@@ -71,6 +77,7 @@ static int xdir = 1, ydir =1;
 
 // const int MAXIT = 16; // 32; // 255;  4096;
 const int MAXIT = 31; // 255;
+void mbrotHwPipe (int x0, int y0, int nx, int ny);
 void mbrot (int x0, int y, int nx, int ny, int dy, Xuint32 *p);
 void mbrotHw1 (int x0, int y, int nx, int ny, int dy, Xuint32 *p);
 void mbrotTest(void);
@@ -215,7 +222,8 @@ int main()
 					   mbrot(80,80,512,320,hcnt,dramBase + frameIdx);
 				   } else {
 					   // mbrotHw1(80,80,512,320,hcnt,dramBase + frameIdx);
-					   mbrotHw1(80,80,800,600,hcnt,dramBase + frameIdx);
+					   //mbrotHw1(80,80,800,600,hcnt,dramBase + frameIdx);
+					   mbrotHwPipe(80,80,800,600);
 				   }
 				   sprint("---DRAM mbrot finished ---\n\r");
 			   }
@@ -309,6 +317,28 @@ int main()
 
 
    return 0;
+}
+
+void mbrotHwPipe (int x0, int y0, int nx, int ny)
+{
+    volatile Xuint32 *ioBase = (volatile Xuint32 *)XPAR_IOMODULE_0_IO_BASEADDR;
+	const float xCentre = -0.75;
+	const float yCentre = +0.0;
+	const float dxy     = 0.006;
+    float cx = xCentre - nx/2 * dxy;
+    float cy = xCentre - ny/2 * dxy;
+    int i;
+    
+    ioBase[cxgenMinReg]    = cx;
+    ioBase[cxgenDxReg]     = dxy;
+    ioBase[cxgenEnableReg] = 1;
+    ioBase[cxgenClearReg]  = 0;
+    
+    ioBase[mbpipeClearReg] = 0;
+    ioBase[mbpipeCyReg]    = cy;
+    
+    // Delay?
+    for (i = 0; i < 1000000; ++i);
 }
 
 
