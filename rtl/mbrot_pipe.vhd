@@ -11,7 +11,7 @@ entity mbrot_pipe is
            zy         : out  STD_LOGIC_VECTOR (31 downto 0);
            valid_out  : out  STD_LOGIC;
            compare    : out  STD_LOGIC_VECTOR ((num_stages-1) downto 0));
-end mbrot_pipe_element;
+end mbrot_pipe;
 
 architecture Behavioral of mbrot_pipe is
 

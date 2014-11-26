@@ -20,7 +20,9 @@ entity mcs_top is
 		hasHdmiTx: integer := 1;
 		hasHdmiRx: integer := 1;
 		simulation: integer := 0;
-		trace: integer := 1  -- use chipscope
+		trace: integer := 1;  -- use chipscope
+    num_cx: integer := 800;
+    num_mbpipe_tages: integer := 16
   );
   port (
 		Clk : IN STD_LOGIC;
@@ -179,10 +181,12 @@ constant cxReg: integer := 4; -- mandelbrot cx
 constant cyReg: integer := 5; -- mandelbrot cy
 constant cnReg: integer := 6; -- mandelbrot cy
 constant crReg: integer := 7; -- mandelbrot result
-constant cxgenMinReg: integer := 8; -- cxgen cx_min
-constant cxgenDxReg: integer := 9; -- cxgen dx
+constant cxgenMinReg:    integer := 8;  -- cxgen cx_min
+constant cxgenDxReg:     integer := 9;  -- cxgen dx
 constant cxgenEnableReg: integer := 10; -- cxgen enable
-constant cxgenClearReg: integer := 11; -- cxgen clear
+constant cxgenClearReg:  integer := 11; -- cxgen clear
+constant mbpipeClearReg: integer := 12; -- mbrot_pipe clear
+constant mbpipeCyReg:    integer := 13; -- mbrot_pipe cy
 
 constant idAddr:   ADDR :=  std_logic_vector(to_unsigned(idReg,addrBits));
 constant ctlAddr:  ADDR :=  std_logic_vector(to_unsigned(ctlReg,addrBits));
@@ -192,10 +196,12 @@ constant cxAddr: ADDR   :=  std_logic_vector(to_unsigned(cxReg,addrBits));
 constant cyAddr: ADDR   :=  std_logic_vector(to_unsigned(cyReg,addrBits));
 constant cnAddr: ADDR   :=  std_logic_vector(to_unsigned(cnReg,addrBits));
 constant crAddr: ADDR   :=  std_logic_vector(to_unsigned(crReg,addrBits));
-constant cxgenMinAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenMinReg,addrBits));
-constant cxgenDxAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenDxReg,addrBits));
-constant cxgenEnableAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenEnableReg,addrBits));
-constant cxgenClearAddr: ADDR   :=  std_logic_vector(to_unsigned(cxgenClearReg,addrBits));
+constant cxgenMinAddr:    ADDR := std_logic_vector(to_unsigned(cxgenMinReg,addrBits));
+constant cxgenDxAddr:     ADDR := std_logic_vector(to_unsigned(cxgenDxReg,addrBits));
+constant cxgenEnableAddr: ADDR := std_logic_vector(to_unsigned(cxgenEnableReg,addrBits));
+constant cxgenClearAddr:  ADDR := std_logic_vector(to_unsigned(cxgenClearReg,addrBits));
+constant mbpipeClearAddr: ADDR := std_logic_vector(to_unsigned(mbpipeClearReg,addrBits));
+constant mbpipeCyAddr:    ADDR := std_logic_vector(to_unsigned(mbpipeCyReg,addrBits));
 
 constant ramSelectAddrBit: integer := 29;
 
@@ -488,17 +494,41 @@ end component;
   signal cxgen_clear: std_logic;
   signal cxgen_valid: std_logic;
   signal cxgen_cx: std_logic_vector(31 downto 0);
+  
+  signal mbpipe_clear:     STD_LOGIC;
+  signal mbpipe_cy:        STD_LOGIC_VECTOR (31 downto 0);
+  signal mbpipe_zx:        STD_LOGIC_VECTOR (31 downto 0);
+  signal mbpipe_zy:        STD_LOGIC_VECTOR (31 downto 0);
+  signal mbpipe_valid_out: STD_LOGIC;
+  signal mbpipe_compare:   STD_LOGIC_VECTOR ((num_mbpipe_stages-1) downto 0);
 
 -------------------------------------------------------------
 component cxgen is
     Port ( cx_min : in  STD_LOGIC_VECTOR (31 downto 0);
-           dx : in  STD_LOGIC_VECTOR (31 downto 0);
+           dx     : in  STD_LOGIC_VECTOR (31 downto 0);
            enable : in  STD_LOGIC;
-           clear : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           clk : in  STD_LOGIC;
-           cx : out  STD_LOGIC_VECTOR (31 downto 0);
-           valid : out  STD_LOGIC);
+           clear  : in  STD_LOGIC;
+           reset  : in  STD_LOGIC;
+           clk    : in  STD_LOGIC;
+           cx     : out STD_LOGIC_VECTOR (31 downto 0);
+           valid  : out STD_LOGIC);
+end component;
+
+-------------------------------------------------------------
+
+component mbrot_pipe is
+  generic( num_cx     : positiv := 800;
+           num_stages : positiv := 16);
+    Port ( clk        : in   STD_LOGIC;
+           reset      : in   STD_LOGIC;
+           clear      : in   STD_LOGIC;
+           valid_in   : in   STD_LOGIC;
+           cx         : in   STD_LOGIC_VECTOR (31 downto 0);
+           cy         : in   STD_LOGIC_VECTOR (31 downto 0);
+           zx         : out  STD_LOGIC_VECTOR (31 downto 0);
+           zy         : out  STD_LOGIC_VECTOR (31 downto 0);
+           valid_out  : out  STD_LOGIC;
+           compare    : out  STD_LOGIC_VECTOR ((num_stages-1) downto 0));
 end component;
   
 -------------------------------------------------------------
@@ -708,15 +738,30 @@ begin
   -- cxgen
   CXGEN_I: cxgen port map (
     cx_min => cxgen_cx_min,
-	 dx         => cxgen_dx,
-	 enable  => cxgen_enable,
-	 clear     => cxgen_clear,
-	 reset     => reset,
-	 clk         => clk,
-	 cx          => cxgen_cx,
-	 valid    => cxgen_valid
- );
-	 
+	  dx     => cxgen_dx,
+	  enable => cxgen_enable,
+	  clear  => cxgen_clear,
+	  reset  => reset,
+	  clk    => clk,
+	  cx     => cxgen_cx,
+	  valid  => cxgen_valid
+  );
+ 
+  -- mbrot_pipe
+  MBPIPE_I: mbrot_pipe
+    generic map (num_cx     => num_cx,
+                 num_stages => num_mbpipe_stages)
+    port map    (clk       => clk,
+                 reset     => reset,
+                 clear     => mbpipe_clear,
+                 valid_in  => cxgen_valid,
+                 cx        => cxgen_cx,
+                 cy        => mbpipe_cy,
+                 zx        => mbpipe_zx,
+                 zy        => mbpipe_zy,
+                 valid_out => mbpipe_valid_out,
+                 compare   => mbpipe_compare
+  );
 
   -- infrastructure: clock and reset
 	clkRst: dp_mem_infrastructure PORT MAP(
@@ -879,6 +924,10 @@ begin
 					regs(cxgenEnableReg) <= IO_Write_Data;
 				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = cxgenClearAddr) then
 					regs(cxgenClearReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = mbpipeClearAddr) then
+					regs(mbpipeClearReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = mbpipeCyAddr) then
+					regs(mbpipeCyReg) <= IO_Write_Data;
 				end if;
 				
 			else
