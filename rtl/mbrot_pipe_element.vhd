@@ -47,6 +47,14 @@ end mbrot_pipe_element;
 
 architecture Behavioral of mbrot_pipe_element is
 
+component cx_shift IS
+  PORT (
+    d:   IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk: IN  STD_LOGIC;
+    q:   OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END component;
+
 component fadd IS
   PORT (
     a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -83,6 +91,8 @@ COMPONENT fcmpless
   );
 END COMPONENT;
 
+signal cx_shift_out: STD_LOGIC_VECTOR(31 downto 0);
+
 signal sqr_1_1_result: STD_LOGIC_VECTOR(31 downto 0);
 signal mul_1_result:   STD_LOGIC_VECTOR(31 downto 0);
 signal sqr_1_2_result: STD_LOGIC_VECTOR(31 downto 0);
@@ -100,6 +110,8 @@ signal counter: integer range 0 to 9;
 
 begin
 
+  CX_SHIFT_I: cx_shift port map (cx, clk, cx_shift_out);
+
   FSQR_1_1_I: fmul     port map (zx_in,          zx_in,          clk, sqr_1_1_result);
   FMUL_1_I:   fmul     port map (zx_in,          zy_in,          clk, mul_1_result);
   FSQR_1_2_I: fmul     port map (zy_in,          zy_in,          clk, sqr_1_2_result);
@@ -108,7 +120,7 @@ begin
   FMUL_2_I:   fmul     port map (mul_2_const_2,  mul_1_result,   clk, mul_2_result);
   FADD_2_I:   fadd     port map (sqr_1_1_result, sqr_1_2_result, clk, add_2_result);
   
-  FADD_3_1_I: fadd     port map (cx,             sub_2_result,   clk, add_3_1_result);
+  FADD_3_1_I: fadd     port map (cx_shift_out,   sub_2_result,   clk, add_3_1_result);
   FADD_3_2_I: fadd     port map (cy,             mul_2_result,   clk, add_3_2_result);
   FCMP_3_I:   fcmpless port map (cmp_3_const_4,  add_2_result,   clk, cmp_3_result);
 

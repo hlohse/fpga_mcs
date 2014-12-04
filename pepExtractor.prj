@@ -1,3 +1,5 @@
 work	"ipcore_dir/fadd.vhd"
+work	"ipcore_dir/fcmpless.vhd"
+work	"ipcore_dir/fmul.vhd"
 work	"ipcore_dir/fsub.vhd"
-work	"rtl/cxgen.vhd"
+work	"rtl/mbrot_pipe_element.vhd"
