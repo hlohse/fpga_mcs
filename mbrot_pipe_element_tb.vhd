@@ -114,6 +114,26 @@ BEGIN
       wait for clk_period*10;
 
       -- insert stimulus here 
+      
+      clear    <= '0';
+      cx       <= "01000001001000000000000000000000"; -- float 10
+      cy       <= "01000001001000000000000000000000"; -- float 10
+      zx_in    <= "01000001001000000000000000000000"; -- float 10
+      zy_in    <= "01000001001000000000000000000000"; -- float 10
+      valid_in <= '1';
+      
+      wait for clk_period;
+      assert valid_out = '0' report "valid_out must be false after 1 cycle!";
+      wait for 7*clk_period;
+      assert valid_out = '0' report "valid_out must be false after 8 cycles!";
+      
+      wait for clk_period;
+      assert zx_out    = "01000001001000000000000000000000"
+        report "zx_out must be 10 after 9 cycles!";
+      assert zy_out    = "01000011010100100000000000000000"
+        report "zy_out must be 210 after 9 cycles!";
+      assert compare   = '0' report "compare must be false (here) after 9 cycles!";
+      assert valid_out = '1' report "valid_out must be true after 9 cycles!";
 
       wait;
    end process;

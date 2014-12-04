@@ -1,0 +1,7 @@
+vhdl work "ipcore_dir/fadd.vhd"
+vhdl work "ipcore_dir/fsub.vhd"
+vhdl work "ipcore_dir/fmul.vhd"
+vhdl work "ipcore_dir/fcmpless.vhd"
+vhdl work "ipcore_dir/cx_shift.vhd"
+vhdl work "rtl/mbrot_pipe_element.vhd"
+vhdl work "mbrot_pipe_element_tb.vhd"
