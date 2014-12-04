@@ -101,8 +101,6 @@ signal sub_2_result: STD_LOGIC_VECTOR(31 downto 0);
 signal mul_2_const_2, mul_2_result: STD_LOGIC_VECTOR(31 downto 0);
 signal add_2_result: STD_LOGIC_VECTOR(31 downto 0);
 
-signal add_3_1_result: STD_LOGIC_VECTOR(31 downto 0);
-signal add_3_2_result: STD_LOGIC_VECTOR(31 downto 0);
 signal cmp_3_const_4:  STD_LOGIC_VECTOR(31 downto 0);
 signal cmp_3_result:   STD_LOGIC_VECTOR(0 DOWNTO 0);
 
@@ -120,15 +118,13 @@ begin
   FMUL_2_I:   fmul     port map (mul_2_const_2,  mul_1_result,   clk, mul_2_result);
   FADD_2_I:   fadd     port map (sqr_1_1_result, sqr_1_2_result, clk, add_2_result);
   
-  FADD_3_1_I: fadd     port map (cx_shift_out,   sub_2_result,   clk, add_3_1_result);
-  FADD_3_2_I: fadd     port map (cy,             mul_2_result,   clk, add_3_2_result);
-  FCMP_3_I:   fcmpless port map (cmp_3_const_4,  add_2_result,   clk, cmp_3_result);
+  FADD_3_1_I: fadd     port map (cx_shift_out,   sub_2_result,   clk, zx_out);
+  FADD_3_2_I: fadd     port map (cy,             mul_2_result,   clk, zy_out);
+  FCMP_3_I:   fcmpless port map (add_2_result,   cmp_3_const_4,  clk, cmp_3_result);
 
   proc: process begin
     wait until rising_edge(clk);
     if reset = '1' then
-      zx_out        <= "00000000000000000000000000000000";
-      zy_out        <= "00000000000000000000000000000000";
       compare       <= '0';
       valid_out     <= '0';
       mul_2_const_2 <= "01000000000000000000000000000000";
@@ -137,16 +133,12 @@ begin
       
     else
       if clear = '1' then
-        zx_out        <= "00000000000000000000000000000000";
-        zy_out        <= "00000000000000000000000000000000";
-        compare       <= '0';
-        valid_out     <= '0';
-        mul_2_const_2 <= "01000000000000000000000000000000";
-        cmp_3_const_4 <= "01000000100000000000000000000000";
-        counter       <= 0;
+        compare   <= '0';
+        valid_out <= '0';
+        counter   <= 0;
          
       elsif valid_in = '1' then
-        if counter = 9 then
+        if counter = 8 then
           valid_out <= '1';
           compare   <= cmp_3_result(0);
         else
