@@ -5,43 +5,34 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_Clk;&gt; [mcs_top.pcf(7581)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_Clk = PERIOD TIMEGRP &quot;Clk&quot; 10 ns HIGH 50%;&gt; [mcs_top.pcf(7506)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_Clk;&gt; [mcs_top.pcf(7582)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_Clk = PERIOD TIMEGRP &quot;Clk&quot; 10 ns HIGH 50%;&gt; [mcs_top.pcf(7507)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500_n;&gt; [mcs_top.pcf(7582)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500_n = PERIOD TIMEGRP &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE         0.833333333 ns HIGH 50%;&gt; [mcs_top.pcf(7518)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500_n;&gt; [mcs_top.pcf(7583)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500_n = PERIOD TIMEGRP &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE         0.833333333 ns HIGH 50%;&gt; [mcs_top.pcf(7519)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_clkGen_clkout5;&gt; [mcs_top.pcf(7583)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5         HIGH 50%;&gt; [mcs_top.pcf(7520)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_clkGen_clkout5;&gt; [mcs_top.pcf(7584)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5         HIGH 50%;&gt; [mcs_top.pcf(7521)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500;&gt; [mcs_top.pcf(7584)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500 = PERIOD TIMEGRP &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%;&gt; [mcs_top.pcf(7521)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500;&gt; [mcs_top.pcf(7585)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500 = PERIOD TIMEGRP &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%;&gt; [mcs_top.pcf(7522)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_100c;&gt; [mcs_top.pcf(7585)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_100c = PERIOD TIMEGRP &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%;&gt; [mcs_top.pcf(7522)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_100c;&gt; [mcs_top.pcf(7586)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_100c = PERIOD TIMEGRP &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%;&gt; [mcs_top.pcf(7523)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;&gt; [mcs_top.pcf(7587)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot;         TS_clkRst_CLK_100s / 1.3 HIGH 50%;&gt; [mcs_top.pcf(7529)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;&gt; [mcs_top.pcf(7588)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot;         TS_clkRst_CLK_100s / 1.3 HIGH 50%;&gt; [mcs_top.pcf(7530)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650;&gt; [mcs_top.pcf(7588)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%;&gt; [mcs_top.pcf(7531)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650;&gt; [mcs_top.pcf(7589)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%;&gt; [mcs_top.pcf(7532)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;&gt; [mcs_top.pcf(7590)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot;         TS_clkRst_CLK_100s / 0.65 HIGH 50%;&gt; [mcs_top.pcf(7534)]</arg>.
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;&gt; [mcs_top.pcf(7591)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot;         TS_clkRst_CLK_100s / 0.65 HIGH 50%;&gt; [mcs_top.pcf(7535)]</arg>.
 </msg>
 
 <msg type="warning" file="Par" num="251" delta="old" >Map -timing was run with a lower effort level setting than you are using for PAR.  Xilinx recommends that you rerun Map -timing with the effort level that you have set in PAR to achieve better design performance.
 </msg>
 
 <msg type="info" file="Timing" num="3386" delta="old" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
-
-<msg type="warning" file="Par" num="468" delta="old" >Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
-
-Review the timing report using Timing Analyzer (In ISE select &quot;Post-Place &amp;
-Route Static Timing Report&quot;). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
-
-Try the Design Goal and Strategies for Timing Performance(In ISE select Project -&gt; Design Goals &amp; Strategies) to ensure the best options are set in the tools for timing closure.
-
-</msg>
 
 <msg type="info" file="Timing" num="2761" delta="old" >N/A entries in the Constraints List may indicate that the constraint is not analyzed due to the following: No paths covered by this constraint; Other constraints intersect with this constraint; or This constraint was disabled by a Path Tracing Control. Please run the Timespec Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.</msg>
 

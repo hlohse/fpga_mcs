@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/fadd.vhd"
+vhdl work "ipcore_dir/fsub.vhd"
+vhdl work "rtl/cxgen.vhd"
+vhdl work "rtl/cxgen_tb.vhd"

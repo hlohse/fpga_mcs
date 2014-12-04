@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Nov 26 14:10:09 2014
+// Written by: Map P.20131013 on Thu Dec 04 10:36:28 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -1995,6 +1995,7 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.fadd_2/blk00000030" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000311" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000030f" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000280" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000172" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000171" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000170" BEL
@@ -2081,16 +2082,16 @@ TIMEGRP clkRst_CLK_100c = BEL "withDram.wt" BEL "regs_6_0" BEL "regs_6_1" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000008e" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000008d" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000008c" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk0000007b" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000007a" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000079" BEL
-        "withMbrot.mbCompute/latency3.fadd_1/blk00000077" BEL
-        "withMbrot.mbCompute/latency3.fadd_1/blk00000073" BEL
-        "withMbrot.mbCompute/latency3.fadd_1/blk00000072" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000003b" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk0000003a" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000039" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000038" BEL
         "withMbrot.mbCompute/latency3.fadd_1/blk00000037" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000036" BEL
+        "withMbrot.mbCompute/latency3.fadd_1/blk00000035" BEL
         "withMbrot.mbCompute/latency3.fcmp_1/blk00000034" BEL
         "withMbrot.mbCompute/latency3.fcmp_1/blk0000001b" BEL
         "withMbrot.mbCompute/latency3.fcmp_1/blk0000000e" BEL
@@ -7036,8 +7037,8 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_master"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_4"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_3"
@@ -7065,8 +7066,8 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_master"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_4"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_3"
@@ -7094,8 +7095,8 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/cal_data_master"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_4"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_3"
@@ -7199,8 +7200,8 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/cal_data_master"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_4"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_b/des_0/pdcounter_3"
@@ -7228,8 +7229,8 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/cal_data_master"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_4"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_g/des_0/pdcounter_3"
@@ -7257,8 +7258,8 @@ TIMEGRP withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_2" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_1" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/counter_0" BEL
-        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/valid_data_d" BEL
+        "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/incdec_data_d" BEL
         "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/cal_data_master"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_4"
         BEL "withHdmiRx.Inst_hdmiRx/receiveDecoder/dec_r/des_0/pdcounter_3"

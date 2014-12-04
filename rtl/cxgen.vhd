@@ -79,10 +79,10 @@ signal cx_0, cx_1, cx_2, dx_3: STD_LOGIC_VECTOR(31 DOWNTO 0);
 begin
 	FADD_I: fadd port map (fadd_a, fadd_b, clk, fadd_result);
 	FSUB_I: fsub port map (fsub_a, fsub_b, clk, fsub_result);
-	FMUL_I: fadd port map (fadd_a, fadd_b, clk, fmul_result);
+	FMUL_I: fadd port map (fmul_a, fmul_b, clk, fmul_result);
 	
-	proc: process(clk,reset)
-	begin
+	proc: process begin
+    wait until rising_edge(clk);
 		if reset = '1' then
 			cx     <= (others => '0');
 			valid  <= '0';
@@ -97,7 +97,7 @@ begin
 			cx_2   <= (others => '0');
 			dx_3   <= (others => '0');
 			
-		elsif rising_edge(clk) then
+		else
 			if clear = '1' then
         cx     <= (others => '0');
         valid  <= '0';

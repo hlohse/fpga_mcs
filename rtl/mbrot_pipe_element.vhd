@@ -113,6 +113,7 @@ begin
   FCMP_3_I:   fcmpless port map (cmp_3_const_4,  add_2_result,   clk, cmp_3_result);
 
   proc: process begin
+    wait until rising_edge(clk);
     if reset = '1' then
       zx_out        <= "00000000000000000000000000000000";
       zy_out        <= "00000000000000000000000000000000";
@@ -122,7 +123,7 @@ begin
       cmp_3_const_4 <= "01000000100000000000000000000000";
       counter       <= 0;
       
-    elsif rising_edge(clk) then
+    else
       if clear = '1' then
         zx_out        <= "00000000000000000000000000000000";
         zy_out        <= "00000000000000000000000000000000";

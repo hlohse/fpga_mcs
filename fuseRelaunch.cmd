@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/fel/Desktop/mcs/cxgen_tb_isim_beh.exe" -prj "/home/fel/Desktop/mcs/cxgen_tb_beh.prj" "work.cxgen_tb" 

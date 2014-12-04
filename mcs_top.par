@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-localhost.localdomain::  Wed Nov 26 14:10:18 2014
+localhost.localdomain::  Thu Dec 04 10:36:36 2014
 
 par -w -intstyle ise -ol high -xe n -mt 4 mcs_top_map.ncd mcs_top.ncd
 mcs_top.pcf 
@@ -10,39 +10,39 @@ mcs_top.pcf
 Constraints file: mcs_top.pcf.
 Loading device for application Rf_Device from file '6slx45.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
    "mcs_top" is an NCD, version 3.2, device xc6slx45, package csg324, speed -2
-WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_Clk;> [mcs_top.pcf(7581)] modifies the effective
-   value of constraint <TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;> [mcs_top.pcf(7506)].
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_Clk;> [mcs_top.pcf(7582)] modifies the effective
+   value of constraint <TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;> [mcs_top.pcf(7507)].
 
-WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_500_n;> [mcs_top.pcf(7582)] modifies
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_500_n;> [mcs_top.pcf(7583)] modifies
    the effective value of constraint <TS_clkRst_CLK_500_n = PERIOD TIMEGRP "clkRst_CLK_500_n" TS_Clk / 6 PHASE        
-   0.833333333 ns HIGH 50%;> [mcs_top.pcf(7518)].
+   0.833333333 ns HIGH 50%;> [mcs_top.pcf(7519)].
 
-WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_clkGen_clkout5;> [mcs_top.pcf(7583)]
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_clkGen_clkout5;> [mcs_top.pcf(7584)]
    modifies the effective value of constraint <TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP "clkRst_clkGen_clkout5" TS_Clk
-   / 0.5         HIGH 50%;> [mcs_top.pcf(7520)].
+   / 0.5         HIGH 50%;> [mcs_top.pcf(7521)].
 
-WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_500;> [mcs_top.pcf(7584)] modifies the
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_500;> [mcs_top.pcf(7585)] modifies the
    effective value of constraint <TS_clkRst_CLK_500 = PERIOD TIMEGRP "clkRst_CLK_500" TS_Clk / 6 HIGH 50%;>
-   [mcs_top.pcf(7521)].
-
-WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_100c;> [mcs_top.pcf(7585)] modifies
-   the effective value of constraint <TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkRst_CLK_100c" TS_Clk HIGH 50%;>
    [mcs_top.pcf(7522)].
 
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_100c;> [mcs_top.pcf(7586)] modifies
+   the effective value of constraint <TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkRst_CLK_100c" TS_Clk HIGH 50%;>
+   [mcs_top.pcf(7523)].
+
 WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =        
-   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;> [mcs_top.pcf(7587)] modifies the effective value of
+   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;> [mcs_top.pcf(7588)] modifies the effective value of
    constraint <TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP        
-   "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"         TS_clkRst_CLK_100s / 1.3 HIGH 50%;> [mcs_top.pcf(7529)].
+   "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"         TS_clkRst_CLK_100s / 1.3 HIGH 50%;> [mcs_top.pcf(7530)].
 
 WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650;>
-   [mcs_top.pcf(7588)] modifies the effective value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP
-           "withHdmiTx_Inst_hdmiOutIF_clk_650" TS_clkRst_CLK_100s / 6.5 HIGH 50%;> [mcs_top.pcf(7531)].
+   [mcs_top.pcf(7589)] modifies the effective value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP
+           "withHdmiTx_Inst_hdmiOutIF_clk_650" TS_clkRst_CLK_100s / 6.5 HIGH 50%;> [mcs_top.pcf(7532)].
 
 WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =        
-   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;> [mcs_top.pcf(7590)] modifies the effective value of
+   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;> [mcs_top.pcf(7591)] modifies the effective value of
    constraint <TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP        
    "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2"         TS_clkRst_CLK_100s / 0.65 HIGH 50%;>
-   [mcs_top.pcf(7534)].
+   [mcs_top.pcf(7535)].
 
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -59,16 +59,16 @@ WARNING:Par:251 - Map -timing was run with a lower effort level setting than you
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,191 out of  54,576    7%
-    Number used as Flip Flops:               4,181
+  Number of Slice Registers:                 4,192 out of  54,576    7%
+    Number used as Flip Flops:               4,182
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               10
-  Number of Slice LUTs:                      5,793 out of  27,288   21%
-    Number used as logic:                    5,477 out of  27,288   20%
-      Number using O6 output only:           3,358
-      Number using O5 output only:             236
-      Number using O5 and O6:                1,883
+  Number of Slice LUTs:                      5,797 out of  27,288   21%
+    Number used as logic:                    5,478 out of  27,288   20%
+      Number using O6 output only:           3,350
+      Number using O5 output only:             235
+      Number using O5 and O6:                1,893
       Number used as ROM:                        0
     Number used as Memory:                     232 out of   6,408    3%
       Number used as Dual Port RAM:             96
@@ -80,18 +80,18 @@ Slice Logic Utilization:
         Number using O6 output only:            35
         Number using O5 output only:             1
         Number using O5 and O6:                100
-    Number used exclusively as route-thrus:     84
-      Number with same-slice register load:     53
+    Number used exclusively as route-thrus:     87
+      Number with same-slice register load:     56
       Number with same-slice carry load:        31
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,354 out of   6,822   34%
+  Number of occupied Slices:                 2,361 out of   6,822   34%
   Number of MUXCYs used:                     2,776 out of  13,644   20%
-  Number of LUT Flip Flop pairs used:        7,077
-    Number with an unused Flip Flop:         3,328 out of   7,077   47%
-    Number with an unused LUT:               1,284 out of   7,077   18%
-    Number of fully used LUT-FF pairs:       2,465 out of   7,077   34%
+  Number of LUT Flip Flop pairs used:        7,084
+    Number with an unused Flip Flop:         3,328 out of   7,084   46%
+    Number with an unused LUT:               1,287 out of   7,084   18%
+    Number of fully used LUT-FF pairs:       2,469 out of   7,084   34%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -152,31 +152,31 @@ INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more inform
 Starting Multi-threaded Router
 
 
-Phase  1  : 33910 unrouted;      REAL time: 15 secs 
+Phase  1  : 33926 unrouted;      REAL time: 15 secs 
 
-Phase  2  : 28351 unrouted;      REAL time: 20 secs 
+Phase  2  : 28340 unrouted;      REAL time: 20 secs 
 
-Phase  3  : 11631 unrouted;      REAL time: 40 secs 
+Phase  3  : 11390 unrouted;      REAL time: 41 secs 
 
-Phase  4  : 11781 unrouted; (Setup:95769, Hold:4851, Component Switching Limit:0)     REAL time: 45 secs 
+Phase  4  : 11541 unrouted; (Setup:1677, Hold:2991, Component Switching Limit:0)     REAL time: 46 secs 
 
 Updating file: mcs_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:86806, Hold:4935, Component Switching Limit:0)     REAL time: 1 mins 13 secs 
+Phase  5  : 0 unrouted; (Setup:2868, Hold:2976, Component Switching Limit:0)     REAL time: 1 mins 8 secs 
 
-Phase  6  : 0 unrouted; (Setup:86806, Hold:4935, Component Switching Limit:0)     REAL time: 1 mins 23 secs 
+Phase  6  : 0 unrouted; (Setup:2220, Hold:2976, Component Switching Limit:0)     REAL time: 1 mins 11 secs 
 
-Phase  7  : 0 unrouted; (Setup:20174, Hold:4935, Component Switching Limit:0)     REAL time: 1 mins 57 secs 
+Phase  7  : 0 unrouted; (Setup:16, Hold:2976, Component Switching Limit:0)     REAL time: 1 mins 46 secs 
 
-Phase  8  : 0 unrouted; (Setup:20174, Hold:4935, Component Switching Limit:0)     REAL time: 1 mins 57 secs 
+Phase  8  : 0 unrouted; (Setup:16, Hold:2976, Component Switching Limit:0)     REAL time: 1 mins 46 secs 
 
-Phase  9  : 0 unrouted; (Setup:20174, Hold:4935, Component Switching Limit:0)     REAL time: 1 mins 57 secs 
+Phase  9  : 0 unrouted; (Setup:16, Hold:2976, Component Switching Limit:0)     REAL time: 1 mins 46 secs 
 
-Phase 10  : 0 unrouted; (Setup:20174, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 57 secs 
+Phase 10  : 0 unrouted; (Setup:16, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 46 secs 
 
-Phase 11  : 0 unrouted; (Setup:4840, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 1 secs 
-Total REAL time to Router completion: 2 mins 1 secs 
-Total CPU time to Router completion (all processors): 1 mins 53 secs 
+Phase 11  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 50 secs 
+Total REAL time to Router completion: 1 mins 50 secs 
+Total CPU time to Router completion (all processors): 1 mins 39 secs 
 
 Generating "PAR" statistics.
 
@@ -187,25 +187,25 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
+|              cpuClk |  BUFGMUX_X3Y8| No   | 1035 |  0.657     |  2.366      |
++---------------------+--------------+------+------+------------+-------------+
+|           hdmiRxClk | BUFGMUX_X2Y12| No   |  147 |  0.062     |  1.770      |
++---------------------+--------------+------+------+------------+-------------+
+|              clkDrp | BUFGMUX_X3Y15| No   |  144 |  0.661     |  2.374      |
++---------------------+--------------+------+------+------------+-------------+
 |withHdmiRx.Inst_hdmi |              |      |      |            |             |
 |Rx/receiveDecoder/pc |              |      |      |            |             |
-|                lkx2 |  BUFGMUX_X2Y1| No   |   88 |  0.185     |  1.893      |
+|                lkx2 |  BUFGMUX_X2Y1| No   |   89 |  0.183     |  1.893      |
 +---------------------+--------------+------+------+------------+-------------+
-|              cpuClk |  BUFGMUX_X3Y8| No   | 1020 |  0.658     |  2.366      |
+|           clkHdmiTx |  BUFGMUX_X2Y3| No   |   92 |  0.062     |  1.771      |
 +---------------------+--------------+------+------+------------+-------------+
-|           clkHdmiTx |  BUFGMUX_X2Y3| No   |   87 |  0.059     |  1.769      |
-+---------------------+--------------+------+------+------------+-------------+
-|              clkDrp | BUFGMUX_X3Y15| No   |  152 |  0.657     |  2.374      |
-+---------------------+--------------+------+------+------------+-------------+
-|           hdmiRxClk | BUFGMUX_X2Y12| No   |  153 |  0.062     |  1.770      |
-+---------------------+--------------+------+------+------------+-------------+
-|              sysClk | BUFGMUX_X2Y10| No   |   57 |  0.638     |  2.350      |
+|              sysClk | BUFGMUX_X2Y10| No   |   58 |  0.635     |  2.350      |
 +---------------------+--------------+------+------+------------+-------------+
 |withHdmiTx.Inst_hdmi |              |      |      |            |             |
-|       OutIF/clk_130 | BUFGMUX_X3Y13| No   |   23 |  0.359     |  2.081      |
+|       OutIF/clk_130 | BUFGMUX_X3Y13| No   |   23 |  0.368     |  2.081      |
 +---------------------+--------------+------+------+------------+-------------+
 |mcs_0/U0/Debug.mdm_0 |              |      |      |            |             |
-|               /drck |  BUFGMUX_X2Y2| No   |   66 |  0.062     |  1.770      |
+|               /drck |  BUFGMUX_X2Y2| No   |   67 |  0.059     |  1.771      |
 +---------------------+--------------+------+------+------------+-------------+
 |            clkMem2x |         Local|      |   34 |  0.704     |  1.551      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -249,7 +249,7 @@ Generating Clock Report
 |        y_udqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
 +---------------------+--------------+------+------+------------+-------------+
 |mcs_0/U0/Debug.mdm_0 |              |      |      |            |             |
-|             /update |         Local|      |   19 |  3.545     |  6.879      |
+|             /update |         Local|      |   19 |  5.525     |  8.263      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -260,23 +260,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 4840 (Setup: 4840, Hold: 0, Component Switching Limit: 0)
-
-WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
-
-   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
-   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
-
-   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
-   are set in the tools for timing closure.
-
-   Use the Xilinx "SmartXplorer" script to try special combinations of
-   options known to produce very good results.
-
-   Visit the Xilinx technical support web at http://support.xilinx.com and go to
-   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
-   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
-   in your design.
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
 
 INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
    information, see the TSI report.  Please consult the Xilinx Command Line 
@@ -289,9 +273,6 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
-----------------------------------------------------------------------------------------------------------
-* TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkR | SETUP       |    -0.571ns|    10.571ns|      22|        4840
-  st_CLK_100c" TS_Clk HIGH 50%              | HOLD        |     0.117ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_clkRst_CLK_500 = PERIOD TIMEGRP "clkRs | MINPERIOD   |     0.067ns|     1.599ns|       0|           0
   t_CLK_500" TS_Clk / 6 HIGH 50%            |             |            |            |        |            
@@ -310,26 +291,29 @@ Asterisk (*) preceding a constraint indicates it was not met.
   iRx_Inst_hdmiRx_receiveDecoder_rxclk_0" T |             |            |            |        |            
   S_hdmiRxClk HIGH 50%                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_clkRst_CLK_100s = PERIOD TIMEGRP "clkR | SETUP       |     1.319ns|     8.681ns|       0|           0
-  st_CLK_100s" TS_Clk HIGH 50%              | HOLD        |     0.374ns|            |       0|           0
+  TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkR | SETUP       |     0.309ns|     9.691ns|       0|           0
+  st_CLK_100c" TS_Clk HIGH 50%              | HOLD        |     0.158ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH  | MINLOWPULSE |     6.666ns|     3.334ns|       0|           0
-  50%                                       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_ | SETUP       |     0.797ns|     5.203ns|       0|           0
-  pllclk2 = PERIOD TIMEGRP         "withHdm | HOLD        |     0.255ns|            |       0|           0
-  iRx_Inst_hdmiRx_receiveDecoder_pllclk2"   |             |            |            |        |            
-         TS_withHdmiRx_Inst_hdmiRx_receiveD |             |            |            |        |            
-  ecoder_rxclk / 2 HIGH 50%                 |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_cl | SETUP       |     1.317ns|     6.375ns|       0|           0
-  kGen_clkout1 = PERIOD TIMEGRP         "wi | HOLD        |     0.139ns|            |       0|           0
+  TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_cl | SETUP       |     0.431ns|     7.261ns|       0|           0
+  kGen_clkout1 = PERIOD TIMEGRP         "wi | HOLD        |     0.104ns|            |       0|           0
   thHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_ |             |            |            |        |            
   clkout1"         TS_clkRst_CLK_100s / 1.3 |             |            |            |        |            
    HIGH 50%                                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_ | SETUP       |     2.548ns|     6.904ns|       0|           0
-  pllclk1 = PERIOD TIMEGRP         "withHdm | HOLD        |     0.247ns|            |       0|           0
+  TS_clkRst_CLK_100s = PERIOD TIMEGRP "clkR | SETUP       |     1.319ns|     8.681ns|       0|           0
+  st_CLK_100s" TS_Clk HIGH 50%              | HOLD        |     0.385ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH  | MINLOWPULSE |     6.666ns|     3.334ns|       0|           0
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_ | SETUP       |     1.548ns|     4.452ns|       0|           0
+  pllclk2 = PERIOD TIMEGRP         "withHdm | HOLD        |     0.291ns|            |       0|           0
+  iRx_Inst_hdmiRx_receiveDecoder_pllclk2"   |             |            |            |        |            
+         TS_withHdmiRx_Inst_hdmiRx_receiveD |             |            |            |        |            
+  ecoder_rxclk / 2 HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_ | SETUP       |     2.627ns|     8.207ns|       0|           0
+  pllclk1 = PERIOD TIMEGRP         "withHdm | HOLD        |     0.259ns|            |       0|           0
   iRx_Inst_hdmiRx_receiveDecoder_pllclk1"   |             |            |            |        |            
          TS_withHdmiRx_Inst_hdmiRx_receiveD |             |            |            |        |            
   ecoder_rxclk HIGH 50%                     |             |            |            |        |            
@@ -340,14 +324,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   0"         TS_withHdmiRx_Inst_hdmiRx_rece |             |            |            |        |            
   iveDecoder_rxclk_0 / 2 HIGH 50%           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_cl | SETUP       |     6.602ns|     8.782ns|       0|           0
-  kGen_clkout2 = PERIOD TIMEGRP         "wi | HOLD        |     0.345ns|            |       0|           0
+  TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_cl | SETUP       |     5.111ns|    10.273ns|       0|           0
+  kGen_clkout2 = PERIOD TIMEGRP         "wi | HOLD        |     0.389ns|            |       0|           0
   thHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_ |             |            |            |        |            
   clkout2"         TS_clkRst_CLK_100s / 0.6 |             |            |            |        |            
   5 HIGH 50%                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP | SETUP       |     7.649ns|    12.351ns|       0|           0
-   "clkRst_clkGen_clkout5" TS_Clk / 0.5     | HOLD        |     0.431ns|            |       0|           0
+  TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP | SETUP       |     8.262ns|    11.738ns|       0|           0
+   "clkRst_clkGen_clkout5" TS_Clk / 0.5     | HOLD        |     0.369ns|            |       0|           0
        HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_ | MINPERIOD   |     9.334ns|     2.666ns|       0|           0
@@ -363,11 +347,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_hdmiRxClk = PERIOD TIMEGRP "hdmiRxClk" | MINPERIOD   |    10.948ns|     1.052ns|       0|           0
    12 ns HIGH 50%                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_hdmireset3_path" TIG             | SETUP       |         N/A|     2.801ns|     N/A|           0
+  PATH "TS_hdmireset3_path" TIG             | SETUP       |         N/A|     2.397ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_hdmireset2_path" TIG             | SETUP       |         N/A|     2.798ns|     N/A|           0
+  PATH "TS_hdmireset2_path" TIG             | SETUP       |         N/A|     2.386ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_hdmireset_path" TIG              | SETUP       |         N/A|    15.947ns|     N/A|           0
+  PATH "TS_hdmireset_path" TIG              | SETUP       |         N/A|    13.397ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PE | N/A         |         N/A|         N/A|     N/A|         N/A
   RIOD TIMEGRP         "withHdmiTx_Inst_hdm |             |            |            |        |            
@@ -398,18 +382,18 @@ Derived Constraints for TS_Clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_Clk                         |     10.000ns|      3.334ns|     10.571ns|            0|           22|            0|     30812521|
-| TS_clkRst_CLK_100s            |     10.000ns|      8.681ns|      8.287ns|            0|            0|          913|         6658|
-|  TS_withHdmiTx_Inst_hdmiOutIF_|      7.692ns|      6.375ns|          N/A|            0|            0|          106|            0|
+|TS_Clk                         |     10.000ns|      3.334ns|      9.691ns|            0|            0|            0|     30812971|
+| TS_clkRst_CLK_100s            |     10.000ns|      8.681ns|      9.439ns|            0|            0|          911|         6788|
+|  TS_withHdmiTx_Inst_hdmiOutIF_|      7.692ns|      7.261ns|          N/A|            0|            0|          106|            0|
 |  xgaTiming_clkGen_clkout1     |             |             |             |             |             |             |             |
 |  TS_withHdmiTx_Inst_hdmiOutIF_|      1.538ns|          N/A|          N/A|            0|            0|            0|            0|
 |  clk_650                      |             |             |             |             |             |             |             |
-|  TS_withHdmiTx_Inst_hdmiOutIF_|     15.385ns|      8.782ns|          N/A|            0|            0|         6552|            0|
+|  TS_withHdmiTx_Inst_hdmiOutIF_|     15.385ns|     10.273ns|          N/A|            0|            0|         6682|            0|
 |  xgaTiming_clkGen_clkout2     |             |             |             |             |             |             |             |
 | TS_clkRst_CLK_500_n           |      1.667ns|      1.599ns|          N/A|            0|            0|            0|            0|
-| TS_clkRst_clkGen_clkout5      |     20.000ns|     12.351ns|          N/A|            0|            0|        17136|            0|
+| TS_clkRst_clkGen_clkout5      |     20.000ns|     11.738ns|          N/A|            0|            0|        17346|            0|
 | TS_clkRst_CLK_500             |      1.667ns|      1.599ns|          N/A|            0|            0|            0|            0|
-| TS_clkRst_CLK_100c            |     10.000ns|     10.571ns|          N/A|           22|            0|     30787814|            0|
+| TS_clkRst_CLK_100c            |     10.000ns|      9.691ns|          N/A|            0|            0|     30787926|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_hdmiRxClk
@@ -418,15 +402,15 @@ Derived Constraints for TS_hdmiRxClk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_hdmiRxClk                   |     12.000ns|      1.052ns|     10.406ns|            0|            0|            0|         6049|
-| TS_hdmiRx_n_3_                |     12.000ns|      1.052ns|     10.406ns|            0|            0|            0|         6049|
-|  TS_withHdmiRx_Inst_hdmiRx_rec|     12.000ns|      5.000ns|     10.406ns|            0|            0|            0|         6049|
+|TS_hdmiRxClk                   |     12.000ns|      1.052ns|      8.904ns|            0|            0|            0|         6042|
+| TS_hdmiRx_n_3_                |     12.000ns|      1.052ns|      8.904ns|            0|            0|            0|         6042|
+|  TS_withHdmiRx_Inst_hdmiRx_rec|     12.000ns|      5.000ns|      8.904ns|            0|            0|            0|         6042|
 |  eiveDecoder_rxclk            |             |             |             |             |             |             |             |
-|   TS_withHdmiRx_Inst_hdmiRx_re|     12.000ns|      6.904ns|          N/A|            0|            0|         4673|            0|
+|   TS_withHdmiRx_Inst_hdmiRx_re|     12.000ns|      8.207ns|          N/A|            0|            0|         4675|            0|
 |   ceiveDecoder_pllclk1        |             |             |             |             |             |             |             |
 |   TS_withHdmiRx_Inst_hdmiRx_re|      1.200ns|          N/A|          N/A|            0|            0|            0|            0|
 |   ceiveDecoder_pllclk0        |             |             |             |             |             |             |             |
-|   TS_withHdmiRx_Inst_hdmiRx_re|      6.000ns|      5.203ns|          N/A|            0|            0|         1376|            0|
+|   TS_withHdmiRx_Inst_hdmiRx_re|      6.000ns|      4.452ns|          N/A|            0|            0|         1367|            0|
 |   ceiveDecoder_pllclk2        |             |             |             |             |             |             |             |
 | TS_withHdmiRx_Inst_hdmiRx_rece|     12.000ns|      5.000ns|      5.332ns|            0|            0|            0|            0|
 | iveDecoder_rxclk_0            |             |             |             |             |             |             |             |
@@ -438,7 +422,7 @@ Derived Constraints for TS_hdmiRxClk
 |  eiveDecoder_pllclk2_0        |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
-1 constraint not met.
+All constraints were met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 
@@ -450,17 +434,17 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 2 mins 7 secs 
-Total CPU time to PAR completion (all processors): 1 mins 58 secs 
+Total REAL time to PAR completion: 1 mins 55 secs 
+Total CPU time to PAR completion (all processors): 1 mins 44 secs 
 
-Peak Memory Usage:  350 MB
+Peak Memory Usage:  352 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 22 errors found.
+Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 10
+Number of warning messages: 9
 Number of info messages: 1
 
 Writing design to file mcs_top.ncd

@@ -1,0 +1,3 @@
+work	"ipcore_dir/fadd.vhd"
+work	"ipcore_dir/fsub.vhd"
+work	"rtl/cxgen.vhd"
