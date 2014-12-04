@@ -23,38 +23,37 @@
          <ClosedNode>/mcs_top - rtl |home|huang|FPGACo|fpga_mcs|rtl|mcs_top.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mcs_top - rtl (/home/fel/Desktop/mcs/rtl/mcs_top.vhd)</SelectedItem>
+         <SelectedItem>mbCompute - mbrot - behavior (/home/fel/Desktop/mcs/rtl/float/mbrot.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >14</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b9000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mcs_top - rtl (/home/fel/Desktop/mcs/rtl/mcs_top.vhd)</CurrentItem>
+      <CurrentItem>mbCompute - mbrot - behavior (/home/fel/Desktop/mcs/rtl/float/mbrot.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>CORE Generator</ClosedNode>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Implement Design</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000151000000010000000100000000000000000000000064ffffffff000000810000000000000001000001510000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Implement Design</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002ec000000040101000100000000000000000000000064ffffffff000000810000000000000004000000dc00000001000000000000011b0000000100000000000000840000000100000000000000710000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -81,45 +80,53 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>CORE Generator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CORE Generator</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>CORE Generator</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/cxgen_tb - behavior |home|fel|Desktop|mcs|rtl|cxgen_tb.vhd</ClosedNode>
          <ClosedNode>/fpTest_tb - behavior |home|fel|Desktop|mcs|fpTest_tb.vhd</ClosedNode>
          <ClosedNode>/hdmi_tb - behavior |home|fel|Desktop|mcs|rtl|hdmi|hdmi_tb.vhd</ClosedNode>
          <ClosedNode>/mbrot_pipe - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe_element.vhd</ClosedNode>
          <ClosedNode>/mbrot_tb - behavior |home|fel|Desktop|mcs|rtl|float|mbrot_tb.vhd</ClosedNode>
-         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/CXGEN_I - cxgen - Behavioral</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/Inst_dp_mem_wrapper - dp_mem_wrapper300 - arc</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/Inst_dram_reader - dram_reader - arch</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/Inst_hdmiOutIF - hdmiOutIF - Behavioral</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/Inst_hdmiRx - hdmiRx - Behavioral</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/MBPIPE_I - mbrot_pipe - Behavioral/MBROT_PIPE_ELEMENT_I - mbrot_pipe_element - Behavioral</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/clkRst - dp_mem_infrastructure - syn</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/edidRom - i2cSlave</ClosedNode>
+         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/mbCompute - mbrot - behavior</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>cxgen_tb - behavior (/home/fel/Desktop/mcs/rtl/cxgen_tb.vhd)</SelectedItem>
+         <SelectedItem>mbrot_pipe_element_tb - behavior (/home/fel/Desktop/mcs/mbrot_pipe_element_tb.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >18</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001eb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001eb0000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>cxgen_tb - behavior (/home/fel/Desktop/mcs/rtl/cxgen_tb.vhd)</CurrentItem>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002cd000000020000000000000000000000000200000064ffffffff000000810000000300000002000002cd0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mbrot_pipe_element_tb - behavior (/home/fel/Desktop/mcs/mbrot_pipe_element_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -147,5 +154,18 @@
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

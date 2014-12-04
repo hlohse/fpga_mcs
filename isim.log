@@ -13,4 +13,5 @@ Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 at 5 ns(1), Instance /mbrot_pipe_element_tb/uut/FMUL_2_I/U0/FP_OP/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 at 5 ns(1), Instance /mbrot_pipe_element_tb/uut/FCMP_3_I/U0/FP_OP/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 25 ns(1), Instance /mbrot_pipe_element_tb/uut/FADD_3_2_I/U0/FP_OP/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /mbrot_pipe_element_tb/uut/FADD_3_2_I/U0/FP_OP/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# exit 0

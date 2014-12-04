@@ -37,7 +37,6 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_ASY" xil_pn:name="mblaze.asy" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mblaze.ngc" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mblaze.sym" xil_pn:origination="imported"/>
@@ -102,7 +101,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417692803" xil_pn:in_ck="-918197145510797597" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1417692803">
+    <transform xil_pn:end_ts="1417707515" xil_pn:in_ck="-918197145510797597" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1417707515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_controller.vhd"/>
@@ -185,7 +184,7 @@
       <outfile xil_pn:name="mblaze.ngc"/>
       <outfile xil_pn:name="mblaze.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1417692803" xil_pn:in_ck="8196978874955835189" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1417692803">
+    <transform xil_pn:end_ts="1417707516" xil_pn:in_ck="8196978874955835189" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1417707515">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_controller.vhd"/>
@@ -245,23 +244,23 @@
       <outfile xil_pn:name="rtl/mcs_top.vhd"/>
       <outfile xil_pn:name="sim/mcs_top_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1417692810" xil_pn:in_ck="9038174148319804640" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-823358733024040630" xil_pn:start_ts="1417692803">
+    <transform xil_pn:end_ts="1417707525" xil_pn:in_ck="9038174148319804640" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-823358733024040630" xil_pn:start_ts="1417707516">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="mbrot_pipe_element_tb_beh.prj"/>
       <outfile xil_pn:name="mbrot_pipe_element_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1417692811" xil_pn:in_ck="-3863785995539384009" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7342412385881478185" xil_pn:start_ts="1417692810">
+    <transform xil_pn:end_ts="1417707526" xil_pn:in_ck="-3863785995539384009" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7342412385881478185" xil_pn:start_ts="1417707525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="mbrot_pipe_element_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1416823452" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1416823452">

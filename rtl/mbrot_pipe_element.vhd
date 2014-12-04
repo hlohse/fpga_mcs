@@ -55,7 +55,7 @@ component cx_shift IS
   );
 END component;
 
-component fadd IS
+component fadd_l3 IS
   PORT (
     a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -64,7 +64,7 @@ component fadd IS
   );
 END component;
 
-component fsub IS
+component fsub_l3 IS
   PORT (
     a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -73,7 +73,7 @@ component fsub IS
   );
 END component;
 
-component fmul IS
+component fmul_l3 IS
   PORT (
     a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -110,22 +110,22 @@ begin
 
   CX_SHIFT_I: cx_shift port map (cx, clk, cx_shift_out);
 
-  FSQR_1_1_I: fmul     port map (zx_in,          zx_in,          clk, sqr_1_1_result);
-  FMUL_1_I:   fmul     port map (zx_in,          zy_in,          clk, mul_1_result);
-  FSQR_1_2_I: fmul     port map (zy_in,          zy_in,          clk, sqr_1_2_result);
+  FSQR_1_1_I: fmul_l3  port map (zx_in,          zx_in,          clk, sqr_1_1_result);
+  FMUL_1_I:   fmul_l3  port map (zx_in,          zy_in,          clk, mul_1_result);
+  FSQR_1_2_I: fmul_l3  port map (zy_in,          zy_in,          clk, sqr_1_2_result);
   
-  FSUB_2_I:   fsub     port map (sqr_1_1_result, sqr_1_2_result, clk, sub_2_result);
-  FMUL_2_I:   fmul     port map (mul_2_const_2,  mul_1_result,   clk, mul_2_result);
-  FADD_2_I:   fadd     port map (sqr_1_1_result, sqr_1_2_result, clk, add_2_result);
+  FSUB_2_I:   fsub_l3  port map (sqr_1_1_result, sqr_1_2_result, clk, sub_2_result);
+  FMUL_2_I:   fmul_l3  port map (mul_2_const_2,  mul_1_result,   clk, mul_2_result);
+  FADD_2_I:   fadd_l3  port map (sqr_1_1_result, sqr_1_2_result, clk, add_2_result);
   
-  FADD_3_1_I: fadd     port map (cx_shift_out,   sub_2_result,   clk, zx_out);
-  FADD_3_2_I: fadd     port map (cy,             mul_2_result,   clk, zy_out);
-  FCMP_3_I:   fcmpless port map (add_2_result,   cmp_3_const_4,  clk, cmp_3_result);
-
+  FADD_3_1_I: fadd_l3  port map (cx_shift_out,   sub_2_result,   clk, zx_out);
+  FADD_3_2_I: fadd_l3  port map (cy,             mul_2_result,   clk, zy_out);
+  FCMP_3_I:   fcmpless port map (add_2_result,   cmp_3_const_4,  clk,
+    result(0) => compare);
+  
   proc: process begin
     wait until rising_edge(clk);
     if reset = '1' then
-      compare       <= '0';
       valid_out     <= '0';
       mul_2_const_2 <= "01000000000000000000000000000000";
       cmp_3_const_4 <= "01000000100000000000000000000000";
@@ -133,14 +133,12 @@ begin
       
     else
       if clear = '1' then
-        compare   <= '0';
         valid_out <= '0';
         counter   <= 0;
          
       elsif valid_in = '1' then
         if counter = 8 then
           valid_out <= '1';
-          compare   <= cmp_3_result(0);
         else
           counter <= counter + 1;
         end if;

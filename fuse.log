@@ -3,17 +3,17 @@ ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fadd.vhd" into library work
-Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fsub.vhd" into library work
-Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fmul.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fcmpless.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fadd_l3.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fmul_l3.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fsub_l3.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/cx_shift.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/mbrot_pipe_element_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 42372 KB
-Fuse CPU Usage: 1340 ms
+Fuse Memory Usage: 42380 KB
+Fuse CPU Usage: 1410 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -30,13 +30,13 @@ Compiling package floating_point_v5_0_consts
 Compiling package floating_point_pkg_v5_0
 Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
 Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
-Compiling architecture fmul_a of entity fmul [fmul_default]
+Compiling architecture fmul_l3_a of entity fmul_l3 [fmul_l3_default]
 Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
 Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
-Compiling architecture fsub_a of entity fsub [fsub_default]
+Compiling architecture fsub_l3_a of entity fsub_l3 [fsub_l3_default]
 Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
 Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
-Compiling architecture fadd_a of entity fadd [fadd_default]
+Compiling architecture fadd_l3_a of entity fadd_l3 [fadd_l3_default]
 Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
 WARNING:HDLCompiler:746 - "/build/xfndry10/P.20131013/rtf/vhdl/src/XilinxCoreLib/floating_point_v5_0.vhd" Line 314: Range is empty (null range)
 Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
@@ -44,9 +44,9 @@ Compiling architecture fcmpless_a of entity fcmpless [fcmpless_default]
 Compiling architecture behavioral of entity mbrot_pipe_element [\mbrot_pipe_element(800)\]
 Compiling architecture behavior of entity mbrot_pipe_element_tb
 Time Resolution for simulation is 1ps.
-Waiting for 12 sub-compilation(s) to finish...
+Waiting for 20 sub-compilation(s) to finish...
 Compiled 45 VHDL Units
 Built simulation executable /home/fel/Desktop/mcs/mbrot_pipe_element_tb_isim_beh.exe
-Fuse Memory Usage: 106264 KB
-Fuse CPU Usage: 1780 ms
-GCC CPU Usage: 5560 ms
+Fuse Memory Usage: 106300 KB
+Fuse CPU Usage: 1850 ms
+GCC CPU Usage: 7040 ms
