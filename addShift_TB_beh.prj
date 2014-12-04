@@ -1,0 +1,2 @@
+vhdl work "rtl/addShift.vhd"
+vhdl work "rtl/addShift_TB.vhd"

@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/XilinxCoreLib/floating_point_v5_0.vhd" Line 314: Range is empty (null range)
-</msg>
-
 </messages>
 
