@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/fel/Desktop/mcs/addShift_TB_isim_beh.exe" -prj "/home/fel/Desktop/mcs/addShift_TB_beh.prj" "work.addShift_TB" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/fel/Desktop/mcs/mbrot_pipe_element_tb_isim_beh.exe" -prj "/home/fel/Desktop/mcs/mbrot_pipe_element_tb_beh.prj" "work.mbrot_pipe_element_tb" 

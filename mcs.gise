@@ -49,7 +49,9 @@
       <branch xil_pn:name="BehavioralSim"/>
     </file>
     <file xil_pn:fileType="FILE_VHO" xil_pn:name="mblaze.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mbrot_pipe_element_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mbrot_pipe_element_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mbrot_pipe_element_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mcs_top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mcs_top.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mcs_top.bld"/>
@@ -104,7 +106,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417709961" xil_pn:in_ck="-1823164354733693414" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1417709961">
+    <transform xil_pn:end_ts="1417773266" xil_pn:in_ck="1097944839436497435" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1417773266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_controller.vhd"/>
@@ -115,7 +117,6 @@
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/memc3_wrapper.vhd"/>
       <outfile xil_pn:name="fpTest.vhd"/>
       <outfile xil_pn:name="fpTest_tb.vhd"/>
-      <outfile xil_pn:name="mbrot_pipe_element_tb.vhd"/>
       <outfile xil_pn:name="rtl/addShift.vhd"/>
       <outfile xil_pn:name="rtl/addShift_TB.vhd"/>
       <outfile xil_pn:name="rtl/cxgen.vhd"/>
@@ -149,17 +150,18 @@
       <outfile xil_pn:name="rtl/image/ramReader/work/hdl/reader_fsm.vhd"/>
       <outfile xil_pn:name="rtl/mbrot_pipe.vhd"/>
       <outfile xil_pn:name="rtl/mbrot_pipe_element.vhd"/>
+      <outfile xil_pn:name="rtl/mbrot_pipe_element_tb.vhd"/>
       <outfile xil_pn:name="rtl/mcs_top.vhd"/>
       <outfile xil_pn:name="rtl/shiftPipe.vhd"/>
       <outfile xil_pn:name="rtl/shiftPipe_TB.vhd"/>
       <outfile xil_pn:name="rtl/shiftStage.vhd"/>
       <outfile xil_pn:name="sim/mcs_top_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1417710013" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9179335376687011663" xil_pn:start_ts="1417710013">
+    <transform xil_pn:end_ts="1417773266" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4470577037869057147" xil_pn:start_ts="1417773266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1417710013" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5134797845222162641" xil_pn:start_ts="1417710013">
+    <transform xil_pn:end_ts="1417773266" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="288145466205518339" xil_pn:start_ts="1417773266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -192,7 +194,7 @@
       <outfile xil_pn:name="mblaze.ngc"/>
       <outfile xil_pn:name="mblaze.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1417709962" xil_pn:in_ck="-619871461091212603" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1417709961">
+    <transform xil_pn:end_ts="1417773266" xil_pn:in_ck="8181612200428448838" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1417773266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_controller.vhd"/>
@@ -204,7 +206,6 @@
       <outfile xil_pn:name="fpTest.vhd"/>
       <outfile xil_pn:name="fpTest_tb.vhd"/>
       <outfile xil_pn:name="mblaze.vhd"/>
-      <outfile xil_pn:name="mbrot_pipe_element_tb.vhd"/>
       <outfile xil_pn:name="rtl/addShift.vhd"/>
       <outfile xil_pn:name="rtl/addShift_TB.vhd"/>
       <outfile xil_pn:name="rtl/cxgen.vhd"/>
@@ -238,32 +239,33 @@
       <outfile xil_pn:name="rtl/image/ramReader/work/hdl/reader_fsm.vhd"/>
       <outfile xil_pn:name="rtl/mbrot_pipe.vhd"/>
       <outfile xil_pn:name="rtl/mbrot_pipe_element.vhd"/>
+      <outfile xil_pn:name="rtl/mbrot_pipe_element_tb.vhd"/>
       <outfile xil_pn:name="rtl/mcs_top.vhd"/>
       <outfile xil_pn:name="rtl/shiftPipe.vhd"/>
       <outfile xil_pn:name="rtl/shiftPipe_TB.vhd"/>
       <outfile xil_pn:name="rtl/shiftStage.vhd"/>
       <outfile xil_pn:name="sim/mcs_top_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1417710015" xil_pn:in_ck="-1085694549732448681" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6307446652869964259" xil_pn:start_ts="1417710013">
+    <transform xil_pn:end_ts="1417773294" xil_pn:in_ck="3443283077039835352" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-823358733024040630" xil_pn:start_ts="1417773266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="addShift_TB_beh.prj"/>
-      <outfile xil_pn:name="addShift_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mbrot_pipe_element_tb_beh.prj"/>
+      <outfile xil_pn:name="mbrot_pipe_element_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1417710016" xil_pn:in_ck="-529270575519877173" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5683657997221811408" xil_pn:start_ts="1417710015">
+    <transform xil_pn:end_ts="1417773295" xil_pn:in_ck="-4370599821174620736" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7342412385881478185" xil_pn:start_ts="1417773294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="addShift_TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mbrot_pipe_element_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1416823452" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1416823452">
       <status xil_pn:value="SuccessfullyRun"/>

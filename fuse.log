@@ -1,23 +1,52 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/fel/Desktop/mcs/addShift_TB_isim_beh.exe -prj /home/fel/Desktop/mcs/addShift_TB_beh.prj work.addShift_TB 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/fel/Desktop/mcs/mbrot_pipe_element_tb_isim_beh.exe -prj /home/fel/Desktop/mcs/mbrot_pipe_element_tb_beh.prj work.mbrot_pipe_element_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/fel/Desktop/mcs/rtl/addShift.vhd" into library work
-Parsing VHDL file "/home/fel/Desktop/mcs/rtl/addShift_TB.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fcmpless.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fadd_l3.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fmul_l3.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fsub_l3.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/cx_shift.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 37808 KB
-Fuse CPU Usage: 680 ms
+Fuse Memory Usage: 42380 KB
+Fuse CPU Usage: 2050 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
 Compiling package textio
-Compiling architecture imp of entity addShift [\addShift(4)\]
-Compiling architecture beh of entity addshift_tb
+Compiling package bip_utils_pkg_v2_0
+Compiling package numeric_std
+Compiling package c_shift_ram_v11_0_pkg
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(32,"000000000000...]
+Compiling architecture behavioral of entity c_shift_ram_v11_0_legacy [\c_shift_ram_v11_0_legacy("spart...]
+Compiling architecture behavioral of entity c_shift_ram_v11_0 [\c_shift_ram_v11_0("spartan6",0,...]
+Compiling architecture cx_shift_a of entity cx_shift [cx_shift_default]
+Compiling package std_logic_arith
+Compiling package floating_point_v5_0_consts
+Compiling package floating_point_pkg_v5_0
+Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
+Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
+Compiling architecture fmul_l3_a of entity fmul_l3 [fmul_l3_default]
+Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
+Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
+Compiling architecture fsub_l3_a of entity fsub_l3 [fsub_l3_default]
+Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
+Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
+Compiling architecture fadd_l3_a of entity fadd_l3 [fadd_l3_default]
+Compiling architecture behavioral of entity FLT_PT_OPERATOR_V5_0 [\FLT_PT_OPERATOR_V5_0("spartan6"...]
+WARNING:HDLCompiler:746 - "/build/xfndry10/P.20131013/rtf/vhdl/src/XilinxCoreLib/floating_point_v5_0.vhd" Line 314: Range is empty (null range)
+Compiling architecture behavioral of entity FLOATING_POINT_V5_0 [\FLOATING_POINT_V5_0("spartan6",...]
+Compiling architecture fcmpless_a of entity fcmpless [fcmpless_default]
+Compiling architecture behavioral of entity mbrot_pipe_element [\mbrot_pipe_element(800)\]
+Compiling architecture behavior of entity mbrot_pipe_element_tb
 Time Resolution for simulation is 1ps.
-Compiled 7 VHDL Units
-Built simulation executable /home/fel/Desktop/mcs/addShift_TB_isim_beh.exe
-Fuse Memory Usage: 88332 KB
-Fuse CPU Usage: 770 ms
-GCC CPU Usage: 220 ms
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 45 VHDL Units
+Built simulation executable /home/fel/Desktop/mcs/mbrot_pipe_element_tb_isim_beh.exe
+Fuse Memory Usage: 106300 KB
+Fuse CPU Usage: 2710 ms
+GCC CPU Usage: 8260 ms
