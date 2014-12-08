@@ -188,6 +188,7 @@ constant cxgenEnableReg: integer := 10; -- cxgen enable
 constant cxgenClearReg:  integer := 11; -- cxgen clear
 constant mbpipeClearReg: integer := 12; -- mbrot_pipe clear
 constant mbpipeCyReg:    integer := 13; -- mbrot_pipe cy
+constant startAddrReg:   integer := 14; -- start addr for fr_buff
 
 constant idAddr:   ADDR :=  std_logic_vector(to_unsigned(idReg,addrBits));
 constant ctlAddr:  ADDR :=  std_logic_vector(to_unsigned(ctlReg,addrBits));
@@ -203,6 +204,7 @@ constant cxgenEnableAddr: ADDR := std_logic_vector(to_unsigned(cxgenEnableReg,ad
 constant cxgenClearAddr:  ADDR := std_logic_vector(to_unsigned(cxgenClearReg,addrBits));
 constant mbpipeClearAddr: ADDR := std_logic_vector(to_unsigned(mbpipeClearReg,addrBits));
 constant mbpipeCyAddr:    ADDR := std_logic_vector(to_unsigned(mbpipeCyReg,addrBits));
+constant startAddr: 		  ADDR := std_logic_vector(to_unsigned(startAddrReg,addrBits)); 
 
 constant ramSelectAddrBit: integer := 29;
 
@@ -965,6 +967,8 @@ begin
 					regs(mbpipeClearReg) <= IO_Write_Data;
 				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = mbpipeCyAddr) then
 					regs(mbpipeCyReg) <= IO_Write_Data;
+				elsif (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0) = startAddr) then
+					regs(startAddrReg) <= IO_Write_Data;
 				end if;
 				
 			else
@@ -1419,6 +1423,7 @@ begin
 
 	-- copy input data to other memory area
 		clkHdmiRx <= hdmiRxClk;
+		
 
 		process
 			variable cnt : integer range 0 to 32 := 0;
@@ -1428,14 +1433,14 @@ begin
 			c3_p4_cmd_en <= '0';
 			if hdmiRx_new_frame = '1' then 
 				cnt := 0;
-				row_base_addr := frameBaseRx;
+				row_base_addr := startAddr;
 				-- c3_p4_cmd_byte_addr <= frameBaseRx;
 			elsif (hdmiRx_line_end = '1') and (hdmiRxVsync = '0') then -- line_end should not be active during vsync. might be though
 			-- elsif (hdmiRx_line_end = '1') then -- line_end should not be active during vsync. might be though
 				cnt := 0;
 				row_base_addr := row_base_addr + line_length*4;
-				c3_p4_cmd_byte_addr <= row_base_addr; -- test
-				-- c3_p4_cmd_byte_addr <= row_base_addr + line_length*4;
+				--c3_p4_cmd_byte_addr <= row_base_addr; -- test
+				c3_p4_cmd_byte_addr <= row_base_addr + line_length*4;
 			-- elsif hdmiRxActive = '1' then 
 			elsif c3_p4_wr_en = '1' then  -- count with the real data write enable
 				if cnt = 31 then
