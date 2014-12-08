@@ -73,7 +73,8 @@ entity mcs_top is
 		UART_Tx : OUT STD_LOGIC;
 		GPO1 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 		GPI1 : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-		GPI2 : IN STD_LOGIC_VECTOR(4 DOWNTO 0)
+		GPI2 : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+    shiftPipe_debug: OUT STD_LOGIC_VECTOR(4 downto 0)
   );
 
 end entity;
@@ -501,6 +502,9 @@ end component;
   signal mbpipe_zy:        STD_LOGIC_VECTOR (31 downto 0);
   signal mbpipe_valid_out: STD_LOGIC;
   signal mbpipe_compare:   STD_LOGIC_VECTOR ((num_mbpipe_stages-1) downto 0);
+  
+  signal spOColor:         STD_LOGIC_VECTOR(3 downto 0);
+  signal spOValid:         STD_LOGIC;
 
 -------------------------------------------------------------
 component cxgen is
@@ -530,6 +534,21 @@ component mbrot_pipe is
            valid_out  : out  STD_LOGIC;
            compare    : out  STD_LOGIC_VECTOR ((num_stages-1) downto 0));
 end component;
+
+-------------------------------------------------------------
+ 
+COMPONENT shiftPipe
+generic (width: integer := 4; depth: integer := 16);
+port
+(
+  clk, reset:	in std_logic;
+  iCmpVector:	in std_logic_vector(depth-1 downto 0);
+  iValid:		in std_logic;
+
+  oColor:		out std_logic_vector(width-1 downto 0);
+  oValid:		out std_logic
+);
+END COMPONENT;
   
 -------------------------------------------------------------
 	COMPONENT dp_mem_infrastructure
@@ -736,6 +755,10 @@ begin
   end generate;
   
   -- cxgen
+  cxgen_cx_min <= regs(cxgenMinReg);
+  cxgen_dx     <= regs(cxgenDxReg);
+  cxgen_enable <= regs(cxgenEnableReg)(0);
+  cxgen_clear  <= regs(cxgenClearReg)(0);
   CXGEN_I: cxgen port map (
     cx_min => cxgen_cx_min,
 	  dx     => cxgen_dx,
@@ -748,6 +771,8 @@ begin
   );
  
   -- mbrot_pipe
+  mbpipe_cy    <= regs(mbpipeCyReg);
+  mbpipe_clear <= regs(mbpipeClearReg)(0);
   MBPIPE_I: mbrot_pipe
     generic map (num_cx     => num_cx,
                  num_stages => num_mbpipe_stages)
@@ -762,6 +787,18 @@ begin
                  valid_out => mbpipe_valid_out,
                  compare   => mbpipe_compare
   );
+  
+  -- shiftPipe
+   SHIFTPIPE_I: shiftPipe
+   generic map (width => 4, depth => num_mbpipe_stages)
+   PORT MAP (
+          clk => clk,
+          reset => reset,
+          iCmpVector => mbpipe_compare,
+          iValid => mbpipe_valid_out,
+          oColor => shiftPipe_debug(3 downto 0),
+          oValid => shiftPipe_debug(4)
+        );
 
   -- infrastructure: clock and reset
 	clkRst: dp_mem_infrastructure PORT MAP(

@@ -61,3 +61,10 @@ map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -r 
 par -w -intstyle ise -ol high -xe n -mt 4 mcs_top_map.ncd mcs_top.ncd mcs_top.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml mcs_top.twx mcs_top.ncd -o mcs_top.twr mcs_top.pcf -ucf mcs_top.ucf -ucf dp_dram.ucf -ucf hdmi.ucf 
 xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 
+xst -intstyle ise -ifn "/home/fel/Desktop/mcs/mcs_top.xst" -ofn "/home/fel/Desktop/mcs/mcs_top.syr" 

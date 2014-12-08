@@ -35,8 +35,9 @@ entity mbrot_pipe_element is
            reset     : in   STD_LOGIC;
            clear     : in   STD_LOGIC;
            valid_in  : in   STD_LOGIC;
-           cx        : in   STD_LOGIC_VECTOR (31 downto 0);
+           cx_in     : in   STD_LOGIC_VECTOR (31 downto 0);
            cy        : in   STD_LOGIC_VECTOR (31 downto 0);
+           cx_out    : out  STD_LOGIC_VECTOR (31 downto 0);
            zx_in     : in   STD_LOGIC_VECTOR (31 downto 0);
            zy_in     : in   STD_LOGIC_VECTOR (31 downto 0);
            zx_out    : out  STD_LOGIC_VECTOR (31 downto 0);
@@ -91,7 +92,7 @@ COMPONENT fcmpless
   );
 END COMPONENT;
 
-signal cx_shift_out: STD_LOGIC_VECTOR(31 downto 0);
+signal cx_shift_out:   STD_LOGIC_VECTOR(31 downto 0);
 
 signal sqr_1_1_result: STD_LOGIC_VECTOR(31 downto 0);
 signal mul_1_result:   STD_LOGIC_VECTOR(31 downto 0);
@@ -108,7 +109,7 @@ signal counter: integer range 0 to 9;
 
 begin
 
-  CX_SHIFT_I: cx_shift port map (cx, clk, cx_shift_out);
+  CX_SHIFT_I: cx_shift port map (cx_in, clk, cx_shift_out);
 
   FSQR_1_1_I: fmul_l3  port map (zx_in,          zx_in,          clk, sqr_1_1_result);
   FMUL_1_I:   fmul_l3  port map (zx_in,          zy_in,          clk, mul_1_result);
@@ -139,6 +140,7 @@ begin
       elsif valid_in = '1' then
         if counter = 8 then
           valid_out <= '1';
+          cx_out    <= cx_shift_out;
         else
           counter <= counter + 1;
         end if;

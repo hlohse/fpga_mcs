@@ -45,8 +45,9 @@ ARCHITECTURE behavior OF mbrot_pipe_element_tb IS
          reset:     IN  std_logic;
          clear:     IN  std_logic;
          valid_in:  IN  std_logic;
-         cx:        IN  std_logic_vector(31 downto 0);
+         cx_in:     IN  std_logic_vector(31 downto 0);
          cy:        IN  std_logic_vector(31 downto 0);
+         cx_out:    OUT std_logic_vector(31 downto 0);
          zx_in:     IN  std_logic_vector(31 downto 0);
          zy_in:     IN  std_logic_vector(31 downto 0);
          zx_out:    OUT  std_logic_vector(31 downto 0);
@@ -62,12 +63,13 @@ ARCHITECTURE behavior OF mbrot_pipe_element_tb IS
    signal reset:     std_logic := '0';
    signal clear:     std_logic := '0';
    signal valid_in:  std_logic := '0';
-   signal cx:        std_logic_vector(31 downto 0) := (others => '0');
+   signal cx_in:     std_logic_vector(31 downto 0) := (others => '0');
    signal cy:        std_logic_vector(31 downto 0) := (others => '0');
    signal zx_in:     std_logic_vector(31 downto 0) := (others => '0');
    signal zy_in:     std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
+   signal cx_out:    std_logic_vector(31 downto 0) := (others => '0');
    signal zx_out:    std_logic_vector(31 downto 0);
    signal zy_out:    std_logic_vector(31 downto 0);
    signal compare:   std_logic;
@@ -84,8 +86,9 @@ BEGIN
           reset     => reset,
           clear     => clear,
           valid_in  => valid_in,
-          cx        => cx,
+          cx_in     => cx_in,
           cy        => cy,
+          cx_out    => cx_out,
           zx_in     => zx_in,
           zy_in     => zy_in,
           zx_out    => zx_out,
@@ -121,47 +124,47 @@ BEGIN
       
       -- INPUT
       
-      cx       <= "00111101110011001100110011001101"; -- float 0.1
+      cx_in    <= "00111101110011001100110011001101"; -- float 0.1
       zx_in    <= "00111101110011001100110011001101"; -- float 0.1
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 1 cycle!";
-      cx       <= "00111110010011001100110011001101"; -- float 0.2
+      cx_in       <= "00111110010011001100110011001101"; -- float 0.2
       zx_in    <= "00111110010011001100110011001101"; -- float 0.2
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 2 cycles!";
-      cx       <= "00111110110011001100110011001101"; -- float 0.4
+      cx_in       <= "00111110110011001100110011001101"; -- float 0.4
       zx_in    <= "00111110110011001100110011001101"; -- float 0.4
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 3 cycles!";
-      cx       <= "00111111010011001100110011001101"; -- float 0.8
+      cx_in    <= "00111111010011001100110011001101"; -- float 0.8
       zx_in    <= "00111111010011001100110011001101"; -- float 0.8
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 4 cycles!";
-      cx       <= "00111111110011001100110011001101"; -- float 1.6
+      cx_in    <= "00111111110011001100110011001101"; -- float 1.6
       zx_in    <= "00111111110011001100110011001101"; -- float 1.6
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 5 cycles!";
-      cx       <= "01000000010011001100110011001101"; -- float 3.2
+      cx_in    <= "01000000010011001100110011001101"; -- float 3.2
       zx_in    <= "01000000010011001100110011001101"; -- float 3.2
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 6 cycles!";
-      cx       <= "01000000110011001100110011001101"; -- float 6.4
+      cx_in    <= "01000000110011001100110011001101"; -- float 6.4
       zx_in    <= "01000000110011001100110011001101"; -- float 6.4
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 7 cycles!";
-      cx       <= "01000001010011001100110011001101"; -- float 12.8
+      cx_in    <= "01000001010011001100110011001101"; -- float 12.8
       zx_in    <= "01000001010011001100110011001101"; -- float 12.8
       
       wait for clk_period;
       assert valid_out = '0' report "valid_out must be false after 8 cycles!";
-      cx       <= "01000001110011001100110011001101"; -- float 25.6
+      cx_in    <= "01000001110011001100110011001101"; -- float 25.6
       zx_in    <= "01000001110011001100110011001101"; -- float 25.6
       
       -- OUTPUT

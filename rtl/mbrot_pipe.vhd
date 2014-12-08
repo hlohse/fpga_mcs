@@ -24,8 +24,9 @@ component mbrot_pipe_element is
            reset     : in   STD_LOGIC;
            clear     : in   STD_LOGIC;
            valid_in  : in   STD_LOGIC;
-           cx        : in   STD_LOGIC_VECTOR (31 downto 0);
+           cx_in     : in   STD_LOGIC_VECTOR (31 downto 0);
            cy        : in   STD_LOGIC_VECTOR (31 downto 0);
+           cx_out    : out  STD_LOGIC_VECTOR (31 downto 0);
            zx_in     : in   STD_LOGIC_VECTOR (31 downto 0);
            zy_in     : in   STD_LOGIC_VECTOR (31 downto 0);
            zx_out    : out  STD_LOGIC_VECTOR (31 downto 0);
@@ -35,7 +36,7 @@ component mbrot_pipe_element is
 end component;
 
 type e_out is array ((num_stages-1) downto 0) of STD_LOGIC_VECTOR(31 downto 0);
-signal e_zx_out, e_zy_out: e_out;
+signal e_cx_out, e_zx_out, e_zy_out: e_out;
 signal e_valid_out: STD_LOGIC_VECTOR((num_stages-1) downto 0);
 
 begin
@@ -49,8 +50,9 @@ GEN_ELEMENTS: for i in 0 to (num_stages-1) generate
                    reset     => reset,
                    clear     => clear,
                    valid_in  => valid_in,
-                   cx        => cx,
+                   cx_in     => cx,
                    cy        => cy,
+                   cx_out    => e_cx_out(i),
                    zx_in     => cx,
                    zy_in     => cy,
                    zx_out    => e_zx_out(i),
@@ -66,8 +68,9 @@ GEN_ELEMENTS: for i in 0 to (num_stages-1) generate
                    reset     => reset,
                    clear     => clear,
                    valid_in  => e_valid_out(i-1),
-                   cx        => cx,
+                   cx_in     => e_cx_out(i-1),
                    cy        => cy,
+                   cx_out    => e_cx_out(i),
                    zx_in     => e_zx_out(i-1),
                    zy_in     => e_zy_out(i-1),
                    zx_out    => e_zx_out(i),
@@ -83,8 +86,9 @@ GEN_ELEMENTS: for i in 0 to (num_stages-1) generate
                    reset     => reset,
                    clear     => clear,
                    valid_in  => e_valid_out(i-1),
-                   cx        => cx,
+                   cx_in     => e_cx_out(i-1),
                    cy        => cy,
+                   cx_out    => e_cx_out(i),
                    zx_in     => e_zx_out(i-1),
                    zy_in     => e_zy_out(i-1),
                    zx_out    => zx,

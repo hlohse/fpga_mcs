@@ -12,8 +12,8 @@ Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element.vhd" into librar
 Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 42380 KB
-Fuse CPU Usage: 2050 ms
+Fuse Memory Usage: 42384 KB
+Fuse CPU Usage: 2060 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -44,9 +44,9 @@ Compiling architecture fcmpless_a of entity fcmpless [fcmpless_default]
 Compiling architecture behavioral of entity mbrot_pipe_element [\mbrot_pipe_element(800)\]
 Compiling architecture behavior of entity mbrot_pipe_element_tb
 Time Resolution for simulation is 1ps.
-Waiting for 11 sub-compilation(s) to finish...
+Waiting for 17 sub-compilation(s) to finish...
 Compiled 45 VHDL Units
 Built simulation executable /home/fel/Desktop/mcs/mbrot_pipe_element_tb_isim_beh.exe
-Fuse Memory Usage: 106300 KB
-Fuse CPU Usage: 2710 ms
-GCC CPU Usage: 8260 ms
+Fuse Memory Usage: 106304 KB
+Fuse CPU Usage: 2690 ms
+GCC CPU Usage: 11330 ms

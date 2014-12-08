@@ -11,7 +11,6 @@
          <ClosedNode>/mbrot_pipe - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe.vhd/MBROT_PIPE_ELEMENT_I - mbrot_pipe_element - Behavioral</ClosedNode>
          <ClosedNode>/mbrot_pipe - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe_element.vhd</ClosedNode>
          <ClosedNode>/mbrot_pipe_element - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe_element.vhd</ClosedNode>
-         <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd</ClosedNode>
          <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd/CXGEN_I - cxgen - Behavioral</ClosedNode>
          <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd/Inst_dp_mem_wrapper - dp_mem_wrapper300 - arc</ClosedNode>
          <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd/Inst_dram_reader - dram_reader - arch</ClosedNode>
@@ -23,16 +22,18 @@
          <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd/mbCompute - mbrot - behavior</ClosedNode>
          <ClosedNode>/mcs_top - rtl |home|huang|FPGACo|fpga_mcs|rtl|mcs_top.vhd</ClosedNode>
          <ClosedNode>/shiftPipe - imp |home|fel|Desktop|mcs|rtl|shiftPipe.vhd</ClosedNode>
-         <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd</ClosedNode>
+         <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp/pipeStage0 - shiftStage - imp</ClosedNode>
+         <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp/pipeStageN - shiftStage - imp</ClosedNode>
+         <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp/pipeStageX - shiftStage - imp</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xc6slx45-2csg324</SelectedItem>
+         <SelectedItem>mcs_top - rtl (/home/fel/Desktop/mcs/rtl/mcs_top.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001eb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001eb0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b9000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>xc6slx45-2csg324</CurrentItem>
+      <CurrentItem>mcs_top - rtl (/home/fel/Desktop/mcs/rtl/mcs_top.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -43,13 +44,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000151000000010000000100000000000000000000000064ffffffff000000810000000000000001000001510000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -71,12 +72,12 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000123000000010001000100000000000000000000000064ffffffff000000810000000000000001000001230000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000161000000010001000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>ieee_proposed</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -116,7 +117,6 @@
          <ClosedNode>/mbrot_pipe_element_tb - behavior |home|fel|Desktop|mcs|mbrot_pipe_element_tb.vhd</ClosedNode>
          <ClosedNode>/mbrot_pipe_element_tb - behavior |home|fel|Desktop|mcs|rtl|mbrot_pipe_element_tb.vhd</ClosedNode>
          <ClosedNode>/mbrot_tb - behavior |home|fel|Desktop|mcs|rtl|float|mbrot_tb.vhd</ClosedNode>
-         <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd</ClosedNode>
          <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/CXGEN_I - cxgen - Behavioral</ClosedNode>
          <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/Inst_dp_mem_wrapper - dp_mem_wrapper300 - arc</ClosedNode>
          <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/Inst_dram_reader - dram_reader - arch</ClosedNode>
@@ -126,14 +126,14 @@
          <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/clkRst - dp_mem_infrastructure - syn</ClosedNode>
          <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/edidRom - i2cSlave</ClosedNode>
          <ClosedNode>/mcs_top_tb - behavior |home|fel|Desktop|mcs|sim|mcs_top_tb.vhd/uut - mcs_top - rtl/mbCompute - mbrot - behavior</ClosedNode>
-         <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd</ClosedNode>
+         <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>mbrot_pipe_element_tb - behavior (/home/fel/Desktop/mcs/rtl/mbrot_pipe_element_tb.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001f90000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002cd000000020000000000000000000000000200000064ffffffff000000810000000300000002000002cd0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>mbrot_pipe_element_tb - behavior (/home/fel/Desktop/mcs/rtl/mbrot_pipe_element_tb.vhd)</CurrentItem>
    </ItemView>
@@ -143,13 +143,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
