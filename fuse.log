@@ -7,13 +7,14 @@ Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fcmpless.vhd" into library w
 Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fadd_l3.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fmul_l3.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/fsub_l3.vhd" into library work
-Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/cx_shift.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/cx_shift_3.vhd" into library work
+Parsing VHDL file "/home/fel/Desktop/mcs/ipcore_dir/cx_shift_6.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element.vhd" into library work
 Parsing VHDL file "/home/fel/Desktop/mcs/rtl/mbrot_pipe_element_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 42384 KB
-Fuse CPU Usage: 2060 ms
+Fuse Memory Usage: 42564 KB
+Fuse CPU Usage: 1860 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -24,7 +25,10 @@ Compiling package c_reg_fd_v11_0_comp
 Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(32,"000000000000...]
 Compiling architecture behavioral of entity c_shift_ram_v11_0_legacy [\c_shift_ram_v11_0_legacy("spart...]
 Compiling architecture behavioral of entity c_shift_ram_v11_0 [\c_shift_ram_v11_0("spartan6",0,...]
-Compiling architecture cx_shift_a of entity cx_shift [cx_shift_default]
+Compiling architecture cx_shift_6_a of entity cx_shift_6 [cx_shift_6_default]
+Compiling architecture behavioral of entity c_shift_ram_v11_0_legacy [\c_shift_ram_v11_0_legacy("spart...]
+Compiling architecture behavioral of entity c_shift_ram_v11_0 [\c_shift_ram_v11_0("spartan6",0,...]
+Compiling architecture cx_shift_3_a of entity cx_shift_3 [cx_shift_3_default]
 Compiling package std_logic_arith
 Compiling package floating_point_v5_0_consts
 Compiling package floating_point_pkg_v5_0
@@ -44,9 +48,9 @@ Compiling architecture fcmpless_a of entity fcmpless [fcmpless_default]
 Compiling architecture behavioral of entity mbrot_pipe_element [\mbrot_pipe_element(800)\]
 Compiling architecture behavior of entity mbrot_pipe_element_tb
 Time Resolution for simulation is 1ps.
-Waiting for 17 sub-compilation(s) to finish...
-Compiled 45 VHDL Units
+Waiting for 13 sub-compilation(s) to finish...
+Compiled 51 VHDL Units
 Built simulation executable /home/fel/Desktop/mcs/mbrot_pipe_element_tb_isim_beh.exe
-Fuse Memory Usage: 106304 KB
-Fuse CPU Usage: 2690 ms
-GCC CPU Usage: 11330 ms
+Fuse Memory Usage: 106488 KB
+Fuse CPU Usage: 2470 ms
+GCC CPU Usage: 7800 ms

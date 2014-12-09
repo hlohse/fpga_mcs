@@ -25,54 +25,73 @@
 --    (c) Copyright 1995-2014 Xilinx, Inc.                                    --
 --    All rights reserved.                                                    --
 --------------------------------------------------------------------------------
-
 --------------------------------------------------------------------------------
---    Generated from core with identifier: xilinx.com:ip:c_shift_ram:11.0     --
---                                                                            --
---    The Xilinx LogiCORE RAM-based Shift Register generates fast, compact    --
---    FIFO-style registers, delay lines or time-skew buffers up to 256 bits   --
---    wide and up to 1024 words deep using Select RAM in SRL16 or SRLC32      --
---    mode. User options allow you to create either fixed-length or           --
---    variable-length shift registers, as well as to specify output           --
---    register capability with clock enable and synchronous controls.         --
---------------------------------------------------------------------------------
+-- You must compile the wrapper file cx_shift_3.vhd when simulating
+-- the core, cx_shift_3. When compiling the wrapper file, be sure to
+-- reference the XilinxCoreLib VHDL simulation library. For detailed
+-- instructions, please refer to the "CORE Generator Help".
 
--- Interfaces:
---    a_intf
---    clk_intf
---    sclr_intf
---    ce_intf
---    d_intf
---    sset_intf
---    sinit_intf
---    q_intf
+-- The synthesis directives "translate_off/translate_on" specified
+-- below are supported by Xilinx, Mentor Graphics and Synplicity
+-- synthesis tools. Ensure they are correct for your synthesis tool(s).
 
--- The following code must appear in the VHDL architecture header:
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+-- synthesis translate_off
+LIBRARY XilinxCoreLib;
+-- synthesis translate_on
+ENTITY cx_shift_3 IS
+  PORT (
+    d : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    q : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END cx_shift_3;
 
-------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
-COMPONENT cx_shift
+ARCHITECTURE cx_shift_3_a OF cx_shift_3 IS
+-- synthesis translate_off
+COMPONENT wrapped_cx_shift_3
   PORT (
     d : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     clk : IN STD_LOGIC;
     q : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END COMPONENT;
--- COMP_TAG_END ------ End COMPONENT Declaration ------------
 
--- The following code must appear in the VHDL architecture
--- body. Substitute your own instance name and net names.
-
-------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
-your_instance_name : cx_shift
+-- Configuration specification
+  FOR ALL : wrapped_cx_shift_3 USE ENTITY XilinxCoreLib.c_shift_ram_v11_0(behavioral)
+    GENERIC MAP (
+      c_addr_width => 4,
+      c_ainit_val => "00000000000000000000000000000000",
+      c_default_data => "00000000000000000000000000000000",
+      c_depth => 3,
+      c_has_a => 0,
+      c_has_ce => 0,
+      c_has_sclr => 0,
+      c_has_sinit => 0,
+      c_has_sset => 0,
+      c_mem_init_file => "no_coe_file_loaded",
+      c_opt_goal => 0,
+      c_parser_type => 0,
+      c_read_mif => 0,
+      c_reg_last_bit => 1,
+      c_shift_type => 0,
+      c_sinit_val => "00000000000000000000000000000000",
+      c_sync_enable => 0,
+      c_sync_priority => 1,
+      c_verbosity => 0,
+      c_width => 32,
+      c_xdevicefamily => "spartan6"
+    );
+-- synthesis translate_on
+BEGIN
+-- synthesis translate_off
+U0 : wrapped_cx_shift_3
   PORT MAP (
     d => d,
     clk => clk,
     q => q
   );
--- INST_TAG_END ------ End INSTANTIATION Template ------------
+-- synthesis translate_on
 
--- You must compile the wrapper file cx_shift.vhd when simulating
--- the core, cx_shift. When compiling the wrapper file, be sure to
--- reference the XilinxCoreLib VHDL simulation library. For detailed
--- instructions, please refer to the "CORE Generator Help".
-
+END cx_shift_3_a;

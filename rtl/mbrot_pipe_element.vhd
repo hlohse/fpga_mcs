@@ -48,7 +48,15 @@ end mbrot_pipe_element;
 
 architecture Behavioral of mbrot_pipe_element is
 
-component cx_shift IS
+component cx_shift_6 IS
+  PORT (
+    d:   IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk: IN  STD_LOGIC;
+    q:   OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END component;
+
+component cx_shift_3 IS
   PORT (
     d:   IN  STD_LOGIC_VECTOR(31 DOWNTO 0);
     clk: IN  STD_LOGIC;
@@ -92,7 +100,8 @@ COMPONENT fcmpless
   );
 END COMPONENT;
 
-signal cx_shift_out:   STD_LOGIC_VECTOR(31 downto 0);
+signal cx_shift_6_out: STD_LOGIC_VECTOR(31 downto 0);
+signal cx_shift_3_out: STD_LOGIC_VECTOR(31 downto 0);
 
 signal sqr_1_1_result: STD_LOGIC_VECTOR(31 downto 0);
 signal mul_1_result:   STD_LOGIC_VECTOR(31 downto 0);
@@ -109,7 +118,8 @@ signal counter: integer range 0 to 9;
 
 begin
 
-  CX_SHIFT_I: cx_shift port map (cx_in, clk, cx_shift_out);
+  CX_SHIFT_6_I: cx_shift_6 port map (cx_in,          clk, cx_shift_6_out);
+  CX_SHIFT_3_I: cx_shift_3 port map (cx_shift_6_out, clk, cx_shift_3_out);
 
   FSQR_1_1_I: fmul_l3  port map (zx_in,          zx_in,          clk, sqr_1_1_result);
   FMUL_1_I:   fmul_l3  port map (zx_in,          zy_in,          clk, mul_1_result);
@@ -119,7 +129,7 @@ begin
   FMUL_2_I:   fmul_l3  port map (mul_2_const_2,  mul_1_result,   clk, mul_2_result);
   FADD_2_I:   fadd_l3  port map (sqr_1_1_result, sqr_1_2_result, clk, add_2_result);
   
-  FADD_3_1_I: fadd_l3  port map (cx_shift_out,   sub_2_result,   clk, zx_out);
+  FADD_3_1_I: fadd_l3  port map (cx_shift_6_out, sub_2_result,   clk, zx_out);
   FADD_3_2_I: fadd_l3  port map (cy,             mul_2_result,   clk, zy_out);
   FCMP_3_I:   fcmpless port map (add_2_result,   cmp_3_const_4,  clk,
     result(0) => compare);
@@ -140,7 +150,7 @@ begin
       elsif valid_in = '1' then
         if counter = 8 then
           valid_out <= '1';
-          cx_out    <= cx_shift_out;
+          cx_out    <= cx_shift_3_out;
         else
           counter <= counter + 1;
         end if;

@@ -1,6 +1,6 @@
 Version 4
 SymbolType BLOCK
-TEXT 32 32 LEFT 4 cx_shift
+TEXT 32 32 LEFT 4 cx_shift_3
 RECTANGLE Normal 32 32 256 416
 LINE Wide 0 80 32 80
 PIN 0 80 LEFT 36

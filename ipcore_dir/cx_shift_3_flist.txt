@@ -1,0 +1,14 @@
+# Output products list for <cx_shift_3>
+_xmsgs/pn_parser.xmsgs
+cx_shift_3/doc/c_shift_ram_v11_0_readme.txt
+cx_shift_3/doc/c_shift_ram_v11_0_vinfo.html
+cx_shift_3/doc/ds228_shift_ram.pdf
+cx_shift_3.asy
+cx_shift_3.gise
+cx_shift_3.ngc
+cx_shift_3.vhd
+cx_shift_3.vho
+cx_shift_3.xco
+cx_shift_3.xise
+cx_shift_3_flist.txt
+cx_shift_3_xmdf.tcl

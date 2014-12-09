@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Thu Dec  4 11:11:51 2014
+# Date: Tue Dec  9 07:12:15 2014
 #
 ##############################################################
 #
@@ -43,10 +43,10 @@ CSET asyncinitradix=2
 CSET asyncinitval=00000000000000000000000000000000
 CSET ce=false
 CSET cepriority=Sync_Overrides_CE
-CSET component_name=cx_shift
+CSET component_name=cx_shift_3
 CSET defaultdata=00000000000000000000000000000000
 CSET defaultdataradix=2
-CSET depth=6
+CSET depth=3
 CSET meminitfile=no_coe_file_loaded
 CSET optgoal=Resources
 CSET readmiffile=false
@@ -64,4 +64,4 @@ CSET width=32
 MISC pkg_timestamp=2013-07-22T10:38:24Z
 # END Extra information
 GENERATE
-# CRC: 697cd0d8
+# CRC: 87c82090
