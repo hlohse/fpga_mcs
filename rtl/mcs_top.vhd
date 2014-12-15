@@ -189,6 +189,7 @@ constant cxgenClearReg:  integer := 11; -- cxgen clear
 constant mbpipeClearReg: integer := 12; -- mbrot_pipe clear
 constant mbpipeCyReg:    integer := 13; -- mbrot_pipe cy
 constant startAddrReg:   integer := 14; -- start addr for fr_buff
+constant validOutReg:    integer := 15;
 
 constant idAddr:   ADDR :=  std_logic_vector(to_unsigned(idReg,addrBits));
 constant ctlAddr:  ADDR :=  std_logic_vector(to_unsigned(ctlReg,addrBits));
@@ -205,6 +206,7 @@ constant cxgenClearAddr:  ADDR := std_logic_vector(to_unsigned(cxgenClearReg,add
 constant mbpipeClearAddr: ADDR := std_logic_vector(to_unsigned(mbpipeClearReg,addrBits));
 constant mbpipeCyAddr:    ADDR := std_logic_vector(to_unsigned(mbpipeCyReg,addrBits));
 constant startAddr: 		  ADDR := std_logic_vector(to_unsigned(startAddrReg,addrBits)); 
+constant validOutAddr:    ADDR := std_logic_vector(to_unsigned(startAddrReg,addrBits)); 
 
 constant ramSelectAddrBit: integer := 29;
 
@@ -1041,6 +1043,7 @@ begin
 								 regs(ctlReg) when ctlAddr,
 								 regs(statReg) when statAddr,
 								 regs(miscReg) when miscAddr,
+                 regs(validOutReg) when validOutAddr,
 								 mb_n when crAddr,
 								 (others => '0') when others;
 		-- memory						 
@@ -1477,6 +1480,7 @@ begin
 		process
 		begin
 			wait until rising_edge(clk);
+      regs(validOutReg) <= colorConverterValidOut & (others => '0');
 			hdmiRxact_r0 <= colorConverterValidOut;
 			hdmiRxact_r1 <= hdmiRxact_r0;
 			hdmiRxdreg0  <= colorConverterColorOut;

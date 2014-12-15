@@ -327,18 +327,20 @@ void mbrotHwPipe (int x0, int y0, int nx, int ny)
 	const float dxy     = 0.006;
     float cx = xCentre - nx/2 * dxy;
     float cy = xCentre - ny/2 * dxy;
-    int i;
+    int row, column;
     
-    ioBase[cxgenMinReg]    = cx;
-    ioBase[cxgenDxReg]     = dxy;
+    ioBase[cxgenMinReg]    = *((int*) &cx);
+    ioBase[cxgenDxReg]     = *((int*) &dxy);
     ioBase[cxgenEnableReg] = 1;
     ioBase[cxgenClearReg]  = 0;
     
     ioBase[mbpipeClearReg] = 0;
-    ioBase[mbpipeCyReg]    = cy;
+    ioBase[mbpipeCyReg]    = *((int*) &cy);
     
-    // Delay?
-    for (i = 0; i < 1000000; ++i);
+    ioBase[startAddrReg]
+    
+    
+    
 }
 
 

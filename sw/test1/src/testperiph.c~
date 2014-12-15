@@ -329,7 +329,7 @@ void mbrotHwPipe (int x0, int y0, int nx, int ny)
     float cy = xCentre - ny/2 * dxy;
     int i;
     
-    ioBase[cxgenMinReg]    = dx;
+    ioBase[cxgenMinReg]    = cx;
     ioBase[cxgenDxReg]     = dxy;
     ioBase[cxgenEnableReg] = 1;
     ioBase[cxgenClearReg]  = 0;

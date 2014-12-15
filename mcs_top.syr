@@ -271,7 +271,7 @@ Parsing architecture <rtl> of entity <mcs_top>.
 =========================================================================
 
 Elaborating entity <mcs_top> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:871 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 637: Using initial value 1024 for line_length since it is never assigned
+WARNING:HDLCompiler:871 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 639: Using initial value 1024 for line_length since it is never assigned
 
 Elaborating entity <cxgen> (architecture <Behavioral>) from library <work>.
 
@@ -374,7 +374,7 @@ Elaborating entity <dram_reader> (architecture <arch>) with generics from librar
 Elaborating entity <reader> (architecture <fsm>) from library <work>.
 INFO:HDLCompiler:679 - "/home/fel/Desktop/mcs/rtl/image/ramReader/work/hdl/reader_fsm.vhd" Line 155. Case statement is complete. others clause is never selected
 INFO:HDLCompiler:679 - "/home/fel/Desktop/mcs/rtl/image/ramReader/work/hdl/reader_fsm.vhd" Line 216. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 1353: Assignment to clkhdmirx ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 1356: Assignment to clkhdmirx ignored, since the identifier is never used
 
 Elaborating entity <mbrot> (architecture <behavior>) with generics from library <work>.
 
@@ -383,9 +383,9 @@ Elaborating entity <itof_l3> (architecture <itof_l3_a>) from library <work>.
 Elaborating entity <fmul_nd_l3> (architecture <fmul_nd_l3_a>) from library <work>.
 WARNING:HDLCompiler:634 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 170: Net <cs_rst> does not have a driver.
 WARNING:HDLCompiler:634 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 171: Net <cs_stop> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 213: Net <regs[0][31]> does not have a driver.
-WARNING:Xst:2972 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 807. All outputs of instance <SHIFTPIPE_I> of block <shiftPipe> are unconnected in block <mcs_top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 819. All outputs of instance <COLERCONVERTER_I> of block <ColorConverter_4_24> are unconnected in block <mcs_top>. Underlying logic will be removed.
+WARNING:HDLCompiler:634 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" Line 215: Net <regs[15][31]> does not have a driver.
+WARNING:Xst:2972 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 809. All outputs of instance <SHIFTPIPE_I> of block <shiftPipe> are unconnected in block <mcs_top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 821. All outputs of instance <COLERCONVERTER_I> of block <ColorConverter_4_24> are unconnected in block <mcs_top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -404,57 +404,58 @@ Synthesizing Unit <mcs_top>.
         num_mbpipe_stages = 16
 WARNING:Xst:647 - Input <hdmiRx_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <hdmiRx_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 791: Output port <zx> of the instance <MBPIPE_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 791: Output port <zy> of the instance <MBPIPE_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 819: Output port <color_out> of the instance <COLERCONVERTER_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 819: Output port <valid_out> of the instance <COLERCONVERTER_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 828: Output port <clk125> of the instance <clkRst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <IO_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Instruction> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_PC> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Reg_Addr> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_MSR_Reg> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_New_Reg_Value> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Data_Address> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Data_Write_Value> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Data_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <IO_Addr_Strobe> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <UART_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <FIT1_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <FIT2_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <FIT2_Toggle> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <PIT1_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <PIT2_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <GPI1_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <GPI2_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Valid_Instr> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Reg_Write> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Jump_Taken> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Delay_Slot> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Data_Access> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Data_Read> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_Data_Write> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 850: Output port <Trace_MB_Halted> of the instance <mcs_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p2_wr_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p3_rd_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_wr_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p5_rd_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p2_wr_underrun> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p2_wr_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p3_rd_overflow> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p3_rd_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_cmd_empty> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_cmd_full> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_wr_full> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_wr_empty> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_wr_underrun> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p4_wr_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p5_cmd_empty> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p5_rd_overflow> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1129: Output port <p5_rd_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1240: Output port <hdmiRow> of the instance <withHdmiTx.Inst_hdmiOutIF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 793: Output port <zx> of the instance <MBPIPE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 793: Output port <zy> of the instance <MBPIPE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 821: Output port <color_out> of the instance <COLERCONVERTER_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 821: Output port <valid_out> of the instance <COLERCONVERTER_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 830: Output port <clk125> of the instance <clkRst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <IO_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Instruction> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_PC> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Reg_Addr> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_MSR_Reg> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_New_Reg_Value> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Data_Address> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Data_Write_Value> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Data_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <IO_Addr_Strobe> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <UART_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <FIT1_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <FIT2_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <FIT2_Toggle> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <PIT1_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <PIT2_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <GPI1_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <GPI2_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Valid_Instr> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Reg_Write> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Jump_Taken> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Delay_Slot> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Data_Access> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Data_Read> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_Data_Write> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 852: Output port <Trace_MB_Halted> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p2_wr_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p3_rd_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_wr_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p5_rd_count> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p2_wr_underrun> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p2_wr_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p3_rd_overflow> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p3_rd_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_cmd_empty> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_cmd_full> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_wr_full> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_wr_empty> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_wr_underrun> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p4_wr_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p5_cmd_empty> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p5_rd_overflow> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1132: Output port <p5_rd_error> of the instance <withDram.Inst_dp_mem_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/fel/Desktop/mcs/rtl/mcs_top.vhd" line 1243: Output port <hdmiRow> of the instance <withHdmiTx.Inst_hdmiOutIF> is unconnected or connected to loadless signal.
 Always blocking tristate driving signal <edid_sda> is removed.
 Always blocking tristate driving signal <edid_scl> is removed.
+WARNING:Xst:2935 - Signal 'regs<15>', unconnected in block 'mcs_top', is tied to its initial value (00000000000000000000000000000000).
 WARNING:Xst:2935 - Signal 'regs<0>', unconnected in block 'mcs_top', is tied to its initial value (00000000000000000000000000000100).
 WARNING:Xst:653 - Signal <cs_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <cs_stop> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -490,10 +491,10 @@ WARNING:Xst:653 - Signal <cs_stop> is used but never assigned. This sourceless s
     Found 32-bit register for signal <cnReg_i>.
     Found 32-bit register for signal <mb_n>.
     Found 1-bit register for signal <mb_done>.
-    Found 6-bit adder for signal <withHdmiTx.noHdmiInput.cnt[5]_GND_7_o_add_171_OUT> created at line 1379.
-    Found 30-bit adder for signal <c3_p4_cmd_byte_addr[29]_GND_7_o_add_180_OUT> created at line 1383.
-    Found 8-bit 3-to-1 multiplexer for signal <_n0552> created at line 1304.
-    Found 8-bit comparator greater for signal <GND_7_o_imageDataTx[7]_LessThan_151_o> created at line 1335
+    Found 6-bit adder for signal <withHdmiTx.noHdmiInput.cnt[5]_GND_7_o_add_171_OUT> created at line 1382.
+    Found 30-bit adder for signal <c3_p4_cmd_byte_addr[29]_GND_7_o_add_180_OUT> created at line 1386.
+    Found 8-bit 3-to-1 multiplexer for signal <_n0552> created at line 1307.
+    Found 8-bit comparator greater for signal <GND_7_o_imageDataTx[7]_LessThan_151_o> created at line 1338
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 570 D-type flip-flop(s).
@@ -3306,153 +3307,3 @@ WARNING:Xst:1293 - FF/Latch <c3_p4_cmd_byte_addr_6> has a constant value of 0 in
 INFO:Xst:1901 - Instance clkGen/clkout6_buf in unit dp_mem_infrastructure of type BUFGCE has been replaced by BUFGMUX
 INFO:Xst:1901 - Instance clkGen/pll_base_inst in unit clkGen/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
 INFO:Xst:1901 - Instance xgaTiming.clkGen/pll_base_inst in unit xgaTiming.clkGen/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
-WARNING:Xst:2677 - Node <c3_p4_cmd_byte_addr_27> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <c3_p4_cmd_byte_addr_28> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <c3_p4_cmd_byte_addr_29> of sequential type is unconnected in block <mcs_top>.
-
-Optimizing unit <mbrot_pipe> ...
-
-Optimizing unit <mcs_top> ...
-WARNING:Xst:1293 - FF/Latch <withHdmiTx.noHdmiInput.cnt_5> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withHdmiTx.noHdmiInput.cnt_5> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-
-Optimizing unit <cxgen> ...
-
-Optimizing unit <mbrot_pipe_element> ...
-
-Optimizing unit <dp_mem_infrastructure> ...
-
-Optimizing unit <mcb_soft_calibration_top> ...
-
-Optimizing unit <mcb_soft_calibration> ...
-
-Optimizing unit <iodrp_controller> ...
-
-Optimizing unit <iodrp_mcb_controller> ...
-
-Optimizing unit <hdmiOutIF> ...
-
-Optimizing unit <tmdsEncoder> ...
-
-Optimizing unit <timing_xga> ...
-
-Optimizing unit <mbrot> ...
-
-Optimizing unit <dram_reader> ...
-
-Optimizing unit <reader> ...
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/c1_q> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/c0_q> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/greeEncoder/c1_q> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/greeEncoder/c0_q> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_31> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_30> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_29> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_28> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_27> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_26> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_25> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_24> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_23> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_22> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_21> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_20> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_19> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_18> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_17> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <mb_n_16> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <withHdmiTx.Inst_hdmiOutIF/greeEncoder/c1_reg> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <withHdmiTx.Inst_hdmiOutIF/greeEncoder/c0_reg> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/c1_reg> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/c0_reg> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <regs_6_16> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_17> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_18> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_19> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_20> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_21> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_22> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_23> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_24> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_25> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_26> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_27> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_28> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_29> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_30> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <regs_6_31> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_16> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_17> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_18> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_19> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_20> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_21> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_22> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_23> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_24> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_25> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_26> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_27> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_28> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_29> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_30> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <cnReg_i_31> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/counter_3> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/counter_2> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/counter_1> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/counter_0> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_31> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_30> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_29> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_28> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_27> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_26> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_25> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_24> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_23> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_22> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_21> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_20> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_19> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_18> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_17> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_16> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_15> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_14> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_13> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_12> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_11> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_10> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_9> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_8> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_7> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_6> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_5> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_4> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_3> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_2> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_1> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/cx_out_0> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[15].LAST.MBROT_PIPE_ELEMENT_I/valid_out> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <GEN_ELEMENTS[14].MIDDLE.MBROT_PIPE_ELEMENT_I/valid_out> of sequential type is unconnected in block <MBPIPE_I>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_7> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_6> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_5> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_4> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_3> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_2> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_1> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:2677 - Node <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/read_data_0> of sequential type is unconnected in block <mcs_top>.
-WARNING:Xst:1293 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RstCounter_9> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RstCounter_8> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RstCounter_7> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RstCounter_6> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RstCounter_5> has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/blueEncoder/cnt_0> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/greeEncoder/cnt_0> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/redEncoder/cnt_0> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vpos_cnt_10> (without init value) has a constant value of 0 in block <mcs_top>. This FF/Latch will be trimmed during the optimization process.
-
-Mapping all equations...
