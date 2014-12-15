@@ -50,6 +50,8 @@ const int cxgenEnableReg = 10;
 const int cxgenClearReg  = 11;
 const int mbpipeClearReg = 12;
 const int mbpipeCyReg    = 13;
+const int startAddrReg   = 14;
+const int validOutReg    = 15;
 
 const int simStatBit = 31;
 
@@ -327,20 +329,29 @@ void mbrotHwPipe (int x0, int y0, int nx, int ny)
 	const float dxy     = 0.006;
     float cx = xCentre - nx/2 * dxy;
     float cy = xCentre - ny/2 * dxy;
-    int row, column;
+    int address_start  = 0;
+    int address_offset = 4*1024;
+    int row;
     
-    ioBase[cxgenMinReg]    = *((int*) &cx);
-    ioBase[cxgenDxReg]     = *((int*) &dxy);
-    ioBase[cxgenEnableReg] = 1;
-    ioBase[cxgenClearReg]  = 0;
+    ioBase[cxgenMinReg] = *((int*) &cx);
+    ioBase[cxgenDxReg]  = *((int*) &dxy);
     
-    ioBase[mbpipeClearReg] = 0;
-    ioBase[mbpipeCyReg]    = *((int*) &cy);
-    
-    ioBase[startAddrReg]
-    
-    
-    
+    for (row = 0; row < ny; ++row) {
+        ioBase[mbpipeClearReg] = 0;
+        ioBase[cxgenClearReg]  = 0;
+        ioBase[mbpipeCyReg]    = *((int*) &cy);
+        ioBase[startAddrReg]   = address_start;
+        ioBase[cxgenEnableReg] = 1;
+        
+        while (ioBase[validOutReg] == 0); // Wait until ColorConverter output is valid
+        while (ioBase[validOutReg] != 0); // Wait until ColorConverter output is invalid again (finished)
+        ioBase[cxgenEnableReg] = 0;
+        ioBase[mbpipeClearReg] = 1;
+        ioBase[cxgenClearReg]  = 1;
+        
+        cy += dxy;
+        address_start += address_offset;
+    }
 }
 
 
