@@ -62,12 +62,6 @@ entity mcs_top is
 		hdmiTx3_p : OUT std_logic;
 		hdmiTx3_n : OUT std_logic;
 		------------------------------------
-		----- HDMI in ports ----------------
-		hdmiRx_p : IN std_logic_vector(3 downto 0);
-		hdmiRx_n : IN std_logic_vector(3 downto 0);
-		------------------------------------
-		edid_scl : inout std_logic;
-		edid_sda:  inout std_logic;
 		------------------------------------
 		UART_Rx : IN STD_LOGIC;
 		UART_Tx : OUT STD_LOGIC;
@@ -1233,13 +1227,6 @@ begin
   withHdmiTx: if hasHdmiTx /= 0 generate
   begin
   
-		edidRom: i2cSlave PORT MAP(
-		clk => sysClk,
-		rst => reset,
-		sda => edid_sda,
-		scl => edid_scl
-	);
-
 		Inst_hdmiOutIF: hdmiOutIF 
 		generic map ( xga => xga, simulation => simulation)
 		PORT MAP(
@@ -1350,51 +1337,6 @@ begin
 		end if;
 	end process;
 
-	-- copy inverted data to other memory area if no hdmi input
-	noHdmiInput: if hasHdmiRx = 0 generate
-	begin
-		clkHdmiRx <= clkHdmiTx;
-
-		edid_sda <= 'Z';
-		edid_scl  <= 'Z';
-
-		process
-			variable cnt : integer range 0 to 32 := 0;
-			variable act_r0, act_r1: std_logic;
-			variable row_base_addr  : std_logic_vector(29 downto 0) := (others => '0');
-		begin
-			wait until rising_edge(clkHdmiTx);
-			act_r0 := hdmiActiveTx;
-			act_r1 := act_r0;
-			if hdmiVsyncTx = '1' then 
-				cnt := 0;
-				row_base_addr := frameBaseRx;
-				-- c3_p4_cmd_byte_addr <= frameBaseRx;
-			--elsif hdmiActiveTx = '0' then 
-			elsif (act_r0 = '0') and (act_r1 = '1') then 	-- new line
-				cnt := 0;
-				row_base_addr := row_base_addr + line_length*4;
-				c3_p4_cmd_byte_addr <= row_base_addr; -- test
-				-- c3_p4_cmd_byte_addr <= frameBaseRx;
-			elsif cnt = 31 then
-				cnt := 0;
-			else
-				cnt := cnt + 1;
-			end if;
-			if cnt = 31 then
-				c3_p4_cmd_en <= '1';
-				c3_p4_cmd_byte_addr <= c3_p4_cmd_byte_addr + 32*4;
-			else 
-				c3_p4_cmd_en <= '0';
-			end if;
-		end process;
-		c3_p4_cmd_instr <= single_wr_instr_code;
-		c3_p4_cmd_bl <= std_logic_vector(to_unsigned(31, 6));
-		c3_p4_wr_en <= activeTx;
-		c3_p4_wr_mask <= "0000";
-		c3_p4_wr_data <= imageDataTx xor X"FFFFFFFF";
-	end generate; -- nohddmirx
-
   end generate;
 
 	withMbrot: if hasMbrot /= 0 generate
@@ -1426,29 +1368,6 @@ begin
 
 	end generate;
  
-  withHdmiRx: if hasHdmiRx /= 0 generate
-  begin
-	-- hdmi receiver
-	Inst_hdmiRx: hdmiRx PORT MAP(
-		hdmiRx_p => hdmiRx_p,
-		hdmiRx_n => hdmiRx_n,
-		reset => reset,
-		pclk => hdmiRxClk,
-		frame_width => hdmiRx_frame_width,
-		frame_height => hdmiRx_frame_height,
-		new_frame => hdmiRx_new_frame,
-		line_end => hdmiRx_line_end,
-		hsync => hdmiRxHsync,
-		vsync => hdmiRxVsync,
-		de => hdmiRxActive,
-		red => hdmiRxRed,
-		green => hdmiRxGreen,
-		blue => hdmiRxBlue
-	);
-
-	-- copy input data to other memory area
-		clkHdmiRx <= hdmiRxClk;
-		
 
 		process
 			variable cnt : integer range 0 to 32 := 0;
@@ -1480,7 +1399,7 @@ begin
 		process
 		begin
 			wait until rising_edge(clk);
-      regs(validOutReg) <= colorConverterValidOut & (others => '0');
+         regs(validOutReg)(3) <= colorConverterValidOut;
 			hdmiRxact_r0 <= colorConverterValidOut;
 			hdmiRxact_r1 <= hdmiRxact_r0;
 			hdmiRxdreg0  <= colorConverterColorOut;
@@ -1503,7 +1422,5 @@ begin
 --			end if;
 --			c3_p4_wr_data <= X"00" & hdmiRxRed & hdmiRxGreen & hdmiRxBlue;
 		end process;
-
-	end generate;
  
 end rtl;
