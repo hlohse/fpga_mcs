@@ -36,7 +36,7 @@ TIMESPEC TS_hdmireset3 = FROM "SyncReset" TO "HdmiReset3" TIG;
 
 #Created by Constraints Editor (xc6slx45-csg324-2) - 2013/10/10
 # allow for ~80MHz
-NET "hdmiRx_p<3>" TNM_NET = hdmiRxClk;
-TIMESPEC TS_hdmiRxClk = PERIOD "hdmiRxClk" 12 ns HIGH 50%;
-NET "hdmiRx_n<3>" TNM_NET = hdmiRxClk_n;
-TIMESPEC TS_hdmiRx_n_3_ = PERIOD "hdmiRxClk_n" TS_hdmiRxClk PHASE 6 ns HIGH 50%;
+#NET "hdmiRx_p<3>" TNM_NET = hdmiRxClk;
+#TIMESPEC TS_hdmiRxClk = PERIOD "hdmiRxClk" 12 ns HIGH 50%;
+#NET "hdmiRx_n<3>" TNM_NET = hdmiRxClk_n;
+#TIMESPEC TS_hdmiRx_n_3_ = PERIOD "hdmiRxClk_n" TS_hdmiRxClk PHASE 6 ns HIGH 50%;
