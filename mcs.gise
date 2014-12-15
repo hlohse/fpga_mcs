@@ -107,6 +107,11 @@
     <transform xil_pn:end_ts="1418109384" xil_pn:in_ck="1097944839436497435" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1418109384">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_controller.vhd"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_mcb_controller.vhd"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/mcb_raw_wrapper.vhd"/>
@@ -197,6 +202,11 @@
     <transform xil_pn:end_ts="1418109386" xil_pn:in_ck="1622417437823135755" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1418109386">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_controller.vhd"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/iodrp_mcb_controller.vhd"/>
       <outfile xil_pn:name="dp_dram250mhz/example_design/rtl/mcb_raw_wrapper.vhd"/>
@@ -263,7 +273,11 @@
     <transform xil_pn:end_ts="1418109405" xil_pn:in_ck="-5998533291861782506" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-823358733024040630" xil_pn:start_ts="1418109386">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -275,6 +289,8 @@
     <transform xil_pn:end_ts="1418109620" xil_pn:in_ck="-529270575519877173" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7342412385881478185" xil_pn:start_ts="1418109619">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -336,8 +352,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418109343" xil_pn:in_ck="-972040269507799391" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6946508347882655198" xil_pn:start_ts="1418109328">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1418651303" xil_pn:in_ck="-7686262740887172415" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6946508347882655198" xil_pn:start_ts="1418651244">
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -347,7 +363,6 @@
       <outfile xil_pn:name="mcs_top.prj"/>
       <outfile xil_pn:name="mcs_top.syr"/>
       <outfile xil_pn:name="mcs_top.xst"/>
-      <outfile xil_pn:name="mcs_top_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
@@ -360,6 +375,7 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>

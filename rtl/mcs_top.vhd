@@ -18,7 +18,7 @@ entity mcs_top is
 		hasMbrot: integer := 1;
 		xga: integer := 1; -- xga or 720p on hdmi
 		hasHdmiTx: integer := 1;
-		hasHdmiRx: integer := 1;
+		hasHdmiRx: integer := 0;
 		simulation: integer := 0;
 		trace: integer := 1;  -- use chipscope
     num_cx: integer := 800;
@@ -507,6 +507,9 @@ end component;
   
   signal spOColor:         STD_LOGIC_VECTOR(3 downto 0);
   signal spOValid:         STD_LOGIC;
+  
+  signal colorConverterColorOut: STD_LOGIC_VECTOR (23 downto 0);
+  signal colorConverterValidOut: std_logic;
 
 -------------------------------------------------------------
 component cxgen is
@@ -551,6 +554,16 @@ port
   oValid:		out std_logic
 );
 END COMPONENT;
+-------------------------------------------------------------
+
+COMPONENT ColorConverter_4_24 is
+    Port ( clock : in  STD_LOGIC;
+           reset : in  STD_LOGIC;
+           color_in : in  STD_LOGIC_VECTOR (3 downto 0);
+           color_out : out  STD_LOGIC_VECTOR (23 downto 0);
+           valid_in: in std_logic;
+           valid_out: out std_logic);
+end COMPONENT;
   
 -------------------------------------------------------------
 	COMPONENT dp_mem_infrastructure
@@ -798,9 +811,18 @@ begin
           reset => reset,
           iCmpVector => mbpipe_compare,
           iValid => mbpipe_valid_out,
-          oColor => shiftPipe_debug(3 downto 0),
-          oValid => shiftPipe_debug(4)
+          oColor => spOColor,
+          oValid => spOValid
         );
+       
+  -- ColorConverter
+  COLERCONVERTER_I: ColorConverter_4_24 port map (
+    clock => clk,
+    reset => reset,
+    color_in => spOColor,
+    color_out => colorConverterColorOut,
+    valid_in => spOValid,
+    valid_out => colorConverterValidOut);
 
   -- infrastructure: clock and reset
 	clkRst: dp_mem_infrastructure PORT MAP(
@@ -1160,14 +1182,14 @@ begin
 		p3_rd_overflow                       =>  c3_p3_rd_overflow,
 		p3_rd_error                          =>  c3_p3_rd_error,
 
-		p4_cmd_clk                           =>  clkHdmiRx,
+		p4_cmd_clk                           =>  clk,
 		p4_cmd_en                            =>  c3_p4_cmd_en,
 		p4_cmd_instr                         =>  c3_p4_cmd_instr,
 		p4_cmd_bl                            =>  c3_p4_cmd_bl,
 		p4_cmd_byte_addr                     =>  c3_p4_cmd_byte_addr,
 		p4_cmd_empty                         =>  c3_p4_cmd_empty,
 		p4_cmd_full                          =>  c3_p4_cmd_full,
-		p4_wr_clk                            =>  clkHdmiRx,
+		p4_wr_clk                            =>  clk,
 		p4_wr_en                             =>  c3_p4_wr_en,
 		p4_wr_mask                           =>  c3_p4_wr_mask,
 		p4_wr_data                           =>  c3_p4_wr_data,
@@ -1429,20 +1451,13 @@ begin
 			variable cnt : integer range 0 to 32 := 0;
 			variable row_base_addr  : std_logic_vector(29 downto 0) := (others => '0');
 		begin
-			wait until rising_edge(hdmiRxClk);
-			c3_p4_cmd_en <= '0';
-			if hdmiRx_new_frame = '1' then 
-				cnt := 0;
-				row_base_addr := startAddr;
-				-- c3_p4_cmd_byte_addr <= frameBaseRx;
-			elsif (hdmiRx_line_end = '1') and (hdmiRxVsync = '0') then -- line_end should not be active during vsync. might be though
-			-- elsif (hdmiRx_line_end = '1') then -- line_end should not be active during vsync. might be though
-				cnt := 0;
-				row_base_addr := row_base_addr + line_length*4;
-				--c3_p4_cmd_byte_addr <= row_base_addr; -- test
-				c3_p4_cmd_byte_addr <= row_base_addr + line_length*4;
-			-- elsif hdmiRxActive = '1' then 
-			elsif c3_p4_wr_en = '1' then  -- count with the real data write enable
+			wait until rising_edge(clk);
+      
+      if hdmiRxActive = '0' then
+        cnt := 0;
+				c3_p4_cmd_en <= '1';
+        c3_p4_cmd_byte_addr <= regs(startAddrReg)(29 downto 0);
+      else
 				if cnt = 31 then
 					cnt := 0;
 					c3_p4_cmd_en <= '1';
@@ -1450,7 +1465,7 @@ begin
 				else
 					cnt := cnt + 1;
 				end if;
-			end if;
+      end if;
 		end process;
 
 		-- direct write signals
@@ -1461,10 +1476,10 @@ begin
 		-- pipelined write signals
 		process
 		begin
-			wait until rising_edge(hdmiRxClk);
-			hdmiRxact_r0 <= hdmiRxActive;
+			wait until rising_edge(clk);
+			hdmiRxact_r0 <= colorConverterValidOut;
 			hdmiRxact_r1 <= hdmiRxact_r0;
-			hdmiRxdreg0  <= hdmiRxRed & hdmiRxGreen & hdmiRxBlue;
+			hdmiRxdreg0  <= colorConverterColorOut;
 			hdmiRxdreg1  <= hdmiRxdreg0;
 			if (hdmiRxact_r0 = '0') and (hdmiRxact_r1 = '0') then -- supress single cycle actives from rx decoder
 				c3_p4_wr_en <= '0';
