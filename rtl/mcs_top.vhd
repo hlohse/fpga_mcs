@@ -15,7 +15,7 @@ use UNISIM.VComponents.all;
 entity mcs_top is
   generic (
 		hasDram: integer := 1;
-		hasMbrot: integer := 1;
+		hasMbrot: integer := 0;
 		xga: integer := 1; -- xga or 720p on hdmi
 		hasHdmiTx: integer := 1;
 		hasHdmiRx: integer := 0;
