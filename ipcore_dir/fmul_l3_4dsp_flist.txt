@@ -1,0 +1,14 @@
+# Output products list for <fmul_l3_4dsp>
+_xmsgs/pn_parser.xmsgs
+fmul_l3_4dsp/doc/floating_point_ds335.pdf
+fmul_l3_4dsp/doc/floating_point_v5_0_readme.txt
+fmul_l3_4dsp/doc/floating_point_v5_0_vinfo.html
+fmul_l3_4dsp.asy
+fmul_l3_4dsp.gise
+fmul_l3_4dsp.ngc
+fmul_l3_4dsp.vhd
+fmul_l3_4dsp.vho
+fmul_l3_4dsp.xco
+fmul_l3_4dsp.xise
+fmul_l3_4dsp_flist.txt
+fmul_l3_4dsp_xmdf.tcl

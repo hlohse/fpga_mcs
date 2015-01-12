@@ -1,0 +1,551 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -72 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/pa.fromNetlist.tcl
+# create_project -name mcs -dir "/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/planAhead_run_1" -part xc6slx45csg324-2
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs} {ipcore_dir} }
+# add_files [list {/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mblaze.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fmul_l3_4dsp.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fadd_l3.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fsub.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fmul_l3.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fcmpless.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fadd.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/itof_l3.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fmul.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/cx_shift_3.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fsub_l3.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/c_counter_binary_v11_0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fmul_nd_l3.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/cx_shift_6.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf" [current_fileset -constrset]
+Adding file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf' to fileset 'constrs_1'
+# add_files [list {mcs_top.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {dp_dram.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {hdmi.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx45csg324-2
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design mcs_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mcs_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus IO_Byte_Address[29 : 2] on block mcs_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   SHIFTPIPE_I/pipeStageN/stage8/colorVal_out[3 : 0] on block mcs_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus hdmiRxDreg1[23 : 0] on block mcs_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus c3_p4_wr_data[23 : 0] on block mcs_top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n2118[8
+   : 1] on block mcs_top is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTR
+   LR_MEMCELL_ADDR[7 : 0] on block mcs_top is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_co
+   ntroller_inst/memcell_addr_reg[7 : 0] on block mcs_top is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/ge
+   n_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mc
+   b_controller_inst/memcell_addr_reg[7 : 0] on block mcs_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   CXGEN_I/Madd_cnt[10]_GND_8_o_add_0_OUT_cy[8 : 5] on block mcs_top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   SHIFTPIPE_I/pipeStageN/stage8/colorVal_in[3]_colorVal_in[3]_mux_1_OUT[3 : 0]
+   on block mcs_top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file mcs_top.edif ...
+ngc2edif: Total memory usage is 114656 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/mcs_top_ngc_d38f56a.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/mcs_top_ngc_d38f56a.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fsub.ngc ...
+WARNING:NetListWriters:298 - No output is written to fsub.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fsub.edif ...
+ngc2edif: Total memory usage is 104972 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub.ngc' for (cell view 'fsub', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fsub_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fsub_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fmul_l3.ngc ...
+WARNING:NetListWriters:298 - No output is written to fmul_l3.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fmul_l3.edif ...
+ngc2edif: Total memory usage is 106152 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ngc' for (cell view 'fmul_l3', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fmul_l3_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fmul_l3_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fcmpless.ngc ...
+WARNING:NetListWriters:298 - No output is written to fcmpless.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fcmpless.edif ...
+ngc2edif: Total memory usage is 103784 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ngc' for (cell view 'fcmpless', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fcmpless_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fcmpless_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fmul_l3_4dsp.ngc ...
+WARNING:NetListWriters:298 - No output is written to fmul_l3_4dsp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fmul_l3_4dsp.edif ...
+ngc2edif: Total memory usage is 104800 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ngc' for (cell view 'fmul_l3_4dsp', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fmul_l3_4dsp_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fmul_l3_4dsp_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fadd_l3.ngc ...
+WARNING:NetListWriters:298 - No output is written to fadd_l3.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fadd_l3.edif ...
+ngc2edif: Total memory usage is 105012 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ngc' for (cell view 'fadd_l3', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fadd_l3_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fadd_l3_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design cx_shift_3.ngc ...
+WARNING:NetListWriters:298 - No output is written to cx_shift_3.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file cx_shift_3.edif ...
+ngc2edif: Total memory usage is 104144 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ngc' for (cell view 'cx_shift_3', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/cx_shift_3_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/cx_shift_3_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design cx_shift_6.ngc ...
+WARNING:NetListWriters:298 - No output is written to cx_shift_6.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file cx_shift_6.edif ...
+ngc2edif: Total memory usage is 104136 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ngc' for (cell view 'cx_shift_6', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/cx_shift_6_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/cx_shift_6_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fsub_l3.ngc ...
+WARNING:NetListWriters:298 - No output is written to fsub_l3.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fsub_l3.edif ...
+ngc2edif: Total memory usage is 105012 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ngc' for (cell view 'fsub_l3', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fsub_l3_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fsub_l3_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design fadd.ngc ...
+WARNING:NetListWriters:298 - No output is written to fadd.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fadd.edif ...
+ngc2edif: Total memory usage is 104964 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd.ngc' for (cell view 'fadd', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fadd_ngc_40321a91.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/fadd_ngc_40321a91.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design mblaze.ngc ...
+WARNING:NetListWriters:298 - No output is written to mblaze.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/iomodule_0/IO_Address[31 : 0] on
+   block mblaze is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Trace_PC[29 : 0] on block mblaze is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Trace_MSR_Reg[30 : 21] on block mblaze is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Trace_Data_Address[31 : 0] on block mblaze
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/Using_UART.Uart_Control_Status_I1/UART_Status[
+   6 : 0] on block mblaze is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/INTC_CISR[18 : 1] on block mblaze
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr[18 : 1] on block mblaze is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/microblaze_I/LOCKSTEP_Master_Out[9 :
+   2] on block mblaze is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/control_reg[8 : 0] on block mblaze is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Instr_Addr_Stored_1[0]_Area.PC_EX_i[0]
+   _mux_134_OUT[31 : 2] on block mblaze is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Instr_Addr_Stored[29 : 0] on block
+   mblaze is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Instr_Addr_Stored_1[29 : 0] on block
+   mblaze is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/instr_EX_i[31 : 0] on block
+   mblaze is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Shift_Logic_Module_I/op1_s
+   hift[29 : 0] on block mblaze is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/Detect_Commands.sample[6 : 0] on block mblaze is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/status_reg[27 : 0] on block mblaze is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/microblaze_I/MicroBlaze_Core_I/Area.Implement_Debug_Logic.Master_Core.Debu
+   g_Area/Use_SRL16.tdo_config_word1[15 : 0] on block mblaze is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/Debug.mdm_0/MDM_Core_I1/Config_Reg[31
+   : 1] on block mblaze is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file mblaze.edif ...
+ngc2edif: Total memory usage is 113252 kilobytes
+
+Reading core file '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mblaze.ngc' for (cell view 'mblaze', library 'mcs_top_lib', file 'mcs_top.ngc')
+Parsing EDIF File [./planAhead_run_1/mcs.data/cache/mblaze_ngc_d38f56a.edif]
+Finished Parsing EDIF File [./planAhead_run_1/mcs.data/cache/mblaze_ngc_d38f56a.edif]
+INFO: [Netlist 29-17] Analyzing 190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+Loading io standards from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mblaze.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mblaze.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3_4dsp.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fmul_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fcmpless.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fadd.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/fsub_l3.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/ipcore_dir/cx_shift_6.ncf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_0 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_1 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_2 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_3 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_4 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_5 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_6 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_7 will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[2] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[2] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[3] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[3] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[4] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[4] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[5] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[5] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[6] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[6] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[7] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_i[7] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_r[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_r[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_r[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPO1_r[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:22]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_0_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_1_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_2_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_3_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_4_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_5_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_6_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_7_IBUF will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[0] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[1] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[2] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[2] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[3] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[3] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[4] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[4] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[5] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[5] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[6] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Constraints 18-98] IO constraint iostandard with a setting of lvcmos33 for net GPI1_r[6] will not be propagated through the buffer. The constraint should be associated with the net that is connected to the top level port. [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf:33]
+INFO: [Common 17-14] Message 'Constraints 18-98' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ucf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/dp_dram.ucf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/dp_dram.ucf]
+Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/hdmi.ucf]
+Finished Parsing UCF File [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/hdmi.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'SyncReset', timing constraint is ignored [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/hdmi.ucf:32]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'SyncReset', timing constraint is ignored [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/hdmi.ucf:35]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'SyncReset', timing constraint is ignored [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/hdmi.ucf:37]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 190 instances were transformed.
+  IOBUF => IOBUF (OBUFT, IBUF): 18 instances
+  IOBUFDS => IOBUFDS (IBUFDS, OBUFTDS): 2 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 106 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+Phase 0 | Netlist Checksum: b23831e0
+link_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 2966.996 ; gain = 253.211
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Jan 11 14:42:11 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

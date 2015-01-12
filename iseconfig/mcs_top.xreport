@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-15T16:08:18</DateModified>
+  <DateModified>2015-01-12T14:15:35</DateModified>
   <ModuleName>mcs_top</ModuleName>
-  <SummaryTimeStamp>2014-12-08T15:43:23</SummaryTimeStamp>
-  <SavedFilePath>/home/fel/Desktop/mcs/iseconfig/mcs_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/fel/Desktop/mcs/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2015-01-11T12:45:51</SummaryTimeStamp>
+  <SavedFilePath>/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/iseconfig/mcs_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/</ImplementationReportsDirectory>
   <DateInitialized>2014-11-17T15:15:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

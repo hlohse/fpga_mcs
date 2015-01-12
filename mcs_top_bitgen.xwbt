@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/fel/Desktop/mcs/mcs_top.ncd
-OUTFILE=/home/fel/Desktop/mcs/mcs_top.bit
+INFILE=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ncd
+OUTFILE=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.bit
 FAMILY=Spartan6
 PART=xc6slx45-2csg324
-WORKINGDIR=/home/fel/Desktop/mcs
-LICENSE=WebPack
-USER_INFO=174144604_176456465_0_538
+WORKINGDIR=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs
+LICENSE=ISE
+USER_INFO=174144604_174144605_210568836_627

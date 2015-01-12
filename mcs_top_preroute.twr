@@ -1,0 +1,1804 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml mcs_top_preroute.twx mcs_top_map.ncd -o mcs_top_preroute.twr
+mcs_top.pcf -ucf mcs_top.ucf -ucf dp_dram.ucf -ucf hdmi.ucf
+
+Design file:              mcs_top_map.ncd
+Physical constraint file: mcs_top.pcf
+Device,package,speed:     xc6slx45,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 52 paths analyzed, 52 endpoints analyzed, 28 failing endpoints
+ 28 timing errors detected. (0 setup errors, 28 hold errors, 0 component switching limit errors)
+ Minimum period is   5.859ns.
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (MCB_X0Y1.P4CMDEN), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.141ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c3_p4_cmd_en (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (CPU)
+  Requirement:          10.000ns
+  Data Path Delay:      4.853ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.695ns (6.171 - 6.866)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    Clk_IBUFG rising at 10.000ns
+  Clock Uncertainty:    0.311ns
+
+  Clock Uncertainty:          0.311ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.199ns
+
+  Maximum Data Path at Slow Process Corner: c3_p4_cmd_en to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y43.DQ      Tcko                  0.476   MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FCMP_3_I/sig0000001a
+                                                       c3_p4_cmd_en
+    MCB_X0Y1.P4CMDEN     net (fanout=8)     e  3.838   MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FCMP_3_I/sig0000001a
+    MCB_X0Y1.P4CMDCLK    Tmcbdck_CMDEN         0.539   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    -------------------------------------------------  ---------------------------
+    Total                                      4.853ns (1.015ns logic, 3.838ns route)
+                                                       (20.9% logic, 79.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (MCB_X0Y1.P4CMDRA12), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     7.060ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c3_p4_cmd_byte_addr_26 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (CPU)
+  Requirement:          10.000ns
+  Data Path Delay:      1.934ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.695ns (6.171 - 6.866)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    Clk_IBUFG rising at 10.000ns
+  Clock Uncertainty:    0.311ns
+
+  Clock Uncertainty:          0.311ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.199ns
+
+  Maximum Data Path at Slow Process Corner: c3_p4_cmd_byte_addr_26 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y75.CQ       Tcko                  0.476   c3_p4_cmd_byte_addr<25>
+                                                       c3_p4_cmd_byte_addr_26
+    MCB_X0Y1.P4CMDRA12   net (fanout=1)     e  1.042   c3_p4_cmd_byte_addr<26>
+    MCB_X0Y1.P4CMDCLK    Tmcbdck_CMDRA         0.416   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.934ns (0.892ns logic, 1.042ns route)
+                                                       (46.1% logic, 53.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (MCB_X0Y1.P4CMDRA2), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     7.102ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               c3_p4_cmd_byte_addr_16 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (CPU)
+  Requirement:          10.000ns
+  Data Path Delay:      1.892ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.695ns (6.171 - 6.866)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    Clk_IBUFG rising at 10.000ns
+  Clock Uncertainty:    0.311ns
+
+  Clock Uncertainty:          0.311ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.199ns
+
+  Maximum Data Path at Slow Process Corner: c3_p4_cmd_byte_addr_16 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y73.AQ       Tcko                  0.476   c3_p4_cmd_byte_addr<13>
+                                                       c3_p4_cmd_byte_addr_16
+    MCB_X0Y1.P4CMDRA2    net (fanout=1)     e  1.000   c3_p4_cmd_byte_addr<16>
+    MCB_X0Y1.P4CMDCLK    Tmcbdck_CMDRA         0.416   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.892ns (0.892ns logic, 1.000ns route)
+                                                       (47.1% logic, 52.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (MCB_X0Y1.P4WRDATA1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.369ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               c3_p4_wr_data_0 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.832ns (Levels of Logic = 0)
+  Clock Path Skew:      0.890ns (6.617 - 5.727)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    Clk_IBUFG rising at 0.000ns
+  Clock Uncertainty:    0.311ns
+
+  Clock Uncertainty:          0.311ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.199ns
+
+  Minimum Data Path at Fast Process Corner: c3_p4_wr_data_0 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y38.AQ       Tcko                  0.198   c3_p4_wr_data<14>
+                                                       c3_p4_wr_data_0
+    MCB_X0Y1.P4WRDATA1   net (fanout=6)     e  0.589   c3_p4_wr_data<0>
+    MCB_X0Y1.P4CLK       Tmcbckd_WRDATA(-Th)    -0.045   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.832ns (0.243ns logic, 0.589ns route)
+                                                       (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (MCB_X0Y1.P4WRDATA2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.369ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               c3_p4_wr_data_0 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.832ns (Levels of Logic = 0)
+  Clock Path Skew:      0.890ns (6.617 - 5.727)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    Clk_IBUFG rising at 0.000ns
+  Clock Uncertainty:    0.311ns
+
+  Clock Uncertainty:          0.311ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.199ns
+
+  Minimum Data Path at Fast Process Corner: c3_p4_wr_data_0 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y38.AQ       Tcko                  0.198   c3_p4_wr_data<14>
+                                                       c3_p4_wr_data_0
+    MCB_X0Y1.P4WRDATA2   net (fanout=6)     e  0.589   c3_p4_wr_data<0>
+    MCB_X0Y1.P4CLK       Tmcbckd_WRDATA(-Th)    -0.045   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.832ns (0.243ns logic, 0.589ns route)
+                                                       (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (MCB_X0Y1.P4WRDATA4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.369ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               c3_p4_wr_data_0 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0 (CPU)
+  Requirement:          0.000ns
+  Data Path Delay:      0.832ns (Levels of Logic = 0)
+  Clock Path Skew:      0.890ns (6.617 - 5.727)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    Clk_IBUFG rising at 0.000ns
+  Clock Uncertainty:    0.311ns
+
+  Clock Uncertainty:          0.311ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.199ns
+
+  Minimum Data Path at Fast Process Corner: c3_p4_wr_data_0 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y38.AQ       Tcko                  0.198   c3_p4_wr_data<14>
+                                                       c3_p4_wr_data_0
+    MCB_X0Y1.P4WRDATA4   net (fanout=6)     e  0.589   c3_p4_wr_data<0>
+    MCB_X0Y1.P4CLK       Tmcbckd_WRDATA(-Th)    -0.045   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.832ns (0.243ns logic, 0.589ns route)
+                                                       (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.615ns (period - min period limit)
+  Period: 1.667ns
+  Min period limit: 1.052ns (950.570MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: clkRstSlow/clkGen/pll_base_inst/PLL_ADV/CLKOUT0
+  Logical resource: clkRstSlow/clkGen/pll_base_inst/PLL_ADV/CLKOUT0
+  Location pin: PLL_ADV_X0Y1.CLKOUT0
+  Clock network: clkRstSlow/CLK_500
+--------------------------------------------------------------------------------
+Slack: 0.615ns (period - min period limit)
+  Period: 1.667ns
+  Min period limit: 1.052ns (950.570MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: clkRstSlow/clkGen/pll_base_inst/PLL_ADV/CLKOUT1
+  Logical resource: clkRstSlow/clkGen/pll_base_inst/PLL_ADV/CLKOUT1
+  Location pin: PLL_ADV_X0Y1.CLKOUT1
+  Clock network: clkRstSlow/CLK_500_n
+--------------------------------------------------------------------------------
+Slack: 6.666ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 1.667ns (Tdcmpw_CLKIN_100_150)
+  Physical resource: clkRstSlow/clkGen/pll_base_inst/PLL_ADV/CLKIN1
+  Logical resource: clkRstSlow/clkGen/pll_base_inst/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y1.CLKIN1
+  Clock network: clkRstSlow/CLK_IN
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clkRstSlow_CLK_100s = PERIOD TIMEGRP 
+"clkRstSlow_CLK_100s" TS_Clk HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 49 paths analyzed, 49 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.682ns.
+--------------------------------------------------------------------------------
+
+Paths for end point clkRstSlow/rstDelay_24 (SLICE_X26Y87.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     6.318ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/localRst (FF)
+  Destination:          clkRstSlow/rstDelay_24 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.439ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.012ns (2.572 - 2.584)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.231ns
+
+  Clock Uncertainty:          0.231ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: clkRstSlow/localRst to clkRstSlow/rstDelay_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y56.DQ      Tcko                  0.430   clkRstSlow/localRst
+                                                       clkRstSlow/localRst
+    SLICE_X26Y87.SR      net (fanout=6)     e  2.779   clkRstSlow/localRst
+    SLICE_X26Y87.CLK     Trck                  0.230   clkRstSlow/rstDelay<24>
+                                                       clkRstSlow/rstDelay_24
+    -------------------------------------------------  ---------------------------
+    Total                                      3.439ns (0.660ns logic, 2.779ns route)
+                                                       (19.2% logic, 80.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point clkRstSlow/rstDelay_24 (SLICE_X26Y87.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     6.892ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/rstDelay_23 (FF)
+  Destination:          clkRstSlow/rstDelay_24 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.009ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk100 rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.099ns
+
+  Clock Uncertainty:          0.099ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.184ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: clkRstSlow/rstDelay_23 to clkRstSlow/rstDelay_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y56.DMUX    Tshcko                0.518   clkRstSlow/rstDelay<19>
+                                                       clkRstSlow/rstDelay_23
+    SLICE_X26Y87.AX      net (fanout=1)     e  2.406   clkRstSlow/rstDelay<23>
+    SLICE_X26Y87.CLK     Tdick                 0.085   clkRstSlow/rstDelay<24>
+                                                       clkRstSlow/rstDelay_24
+    -------------------------------------------------  ---------------------------
+    Total                                      3.009ns (0.603ns logic, 2.406ns route)
+                                                       (20.0% logic, 80.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point clkRstSlow/rstDelay_11 (SLICE_X25Y56.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     7.938ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/localRst (FF)
+  Destination:          clkRstSlow/rstDelay_11 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.819ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.012ns (2.572 - 2.584)
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.231ns
+
+  Clock Uncertainty:          0.231ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: clkRstSlow/localRst to clkRstSlow/rstDelay_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y56.DQ      Tcko                  0.430   clkRstSlow/localRst
+                                                       clkRstSlow/localRst
+    SLICE_X25Y56.SR      net (fanout=6)     e  1.010   clkRstSlow/localRst
+    SLICE_X25Y56.CLK     Trck                  0.379   clkRstSlow/rstDelay<11>
+                                                       clkRstSlow/rstDelay_11
+    -------------------------------------------------  ---------------------------
+    Total                                      1.819ns (0.809ns logic, 1.010ns route)
+                                                       (44.5% logic, 55.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clkRstSlow_CLK_100s = PERIOD TIMEGRP "clkRstSlow_CLK_100s" TS_Clk HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point clkRstSlow/rstDelay_16 (SLICE_X27Y56.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.768ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               clkRstSlow/rstDelay_15 (FF)
+  Destination:          clkRstSlow/rstDelay_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.768ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk100 rising at 10.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: clkRstSlow/rstDelay_15 to clkRstSlow/rstDelay_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y56.DMUX    Tshcko                0.244   clkRstSlow/rstDelay<11>
+                                                       clkRstSlow/rstDelay_15
+    SLICE_X27Y56.AX      net (fanout=1)     e  0.465   clkRstSlow/rstDelay<15>
+    SLICE_X27Y56.CLK     Tckdi       (-Th)    -0.059   clkRstSlow/rstDelay<19>
+                                                       clkRstSlow/rstDelay_16
+    -------------------------------------------------  ---------------------------
+    Total                                      0.768ns (0.303ns logic, 0.465ns route)
+                                                       (39.5% logic, 60.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point clkRstSlow/rstDelay_14 (SLICE_X25Y56.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.804ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               clkRstSlow/rstDelay_13 (FF)
+  Destination:          clkRstSlow/rstDelay_14 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.804ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk100 rising at 10.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: clkRstSlow/rstDelay_13 to clkRstSlow/rstDelay_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y56.BMUX    Tshcko                0.244   clkRstSlow/rstDelay<11>
+                                                       clkRstSlow/rstDelay_13
+    SLICE_X25Y56.C5      net (fanout=1)     e  0.405   clkRstSlow/rstDelay<13>
+    SLICE_X25Y56.CLK     Tah         (-Th)    -0.155   clkRstSlow/rstDelay<11>
+                                                       clkRstSlow/rstDelay<13>_rt
+                                                       clkRstSlow/rstDelay_14
+    -------------------------------------------------  ---------------------------
+    Total                                      0.804ns (0.399ns logic, 0.405ns route)
+                                                       (49.6% logic, 50.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point clkRstSlow/rstDelay_6 (SLICE_X25Y57.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.804ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               clkRstSlow/rstDelay_5 (FF)
+  Destination:          clkRstSlow/rstDelay_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.804ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk100 rising at 10.000ns
+  Destination Clock:    clk100 rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: clkRstSlow/rstDelay_5 to clkRstSlow/rstDelay_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y57.BMUX    Tshcko                0.244   clkRstSlow/rstDelay<3>
+                                                       clkRstSlow/rstDelay_5
+    SLICE_X25Y57.C5      net (fanout=1)     e  0.405   clkRstSlow/rstDelay<5>
+    SLICE_X25Y57.CLK     Tah         (-Th)    -0.155   clkRstSlow/rstDelay<3>
+                                                       clkRstSlow/rstDelay<5>_rt
+                                                       clkRstSlow/rstDelay_6
+    -------------------------------------------------  ---------------------------
+    Total                                      0.804ns (0.399ns logic, 0.405ns route)
+                                                       (49.6% logic, 50.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clkRstSlow_CLK_100s = PERIOD TIMEGRP "clkRstSlow_CLK_100s" TS_Clk HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.486ns (period - min period limit)
+  Period: 1.538ns
+  Min period limit: 1.052ns (950.570MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV/CLKOUT0
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV/CLKOUT0
+  Location pin: PLL_ADV_X0Y2.CLKOUT0
+  Clock network: withHdmiTx.Inst_hdmiOutIF/clk_650
+--------------------------------------------------------------------------------
+Slack: 6.640ns (period - min period limit)
+  Period: 7.692ns
+  Min period limit: 1.052ns (950.570MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV/CLKOUT1
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV/CLKOUT1
+  Location pin: PLL_ADV_X0Y2.CLKOUT1
+  Clock network: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout1
+--------------------------------------------------------------------------------
+Slack: 6.666ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 1.667ns (Tdcmpw_CLKIN_100_150)
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV/CLKIN1
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y2.CLKIN1
+  Clock network: clk100
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clkRstSlow_CLK_500_n = PERIOD TIMEGRP 
+"clkRstSlow_CLK_500_n" TS_Clk / 6         PHASE 0.833333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.599ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clkRstSlow_CLK_500_n = PERIOD TIMEGRP "clkRstSlow_CLK_500_n" TS_Clk / 6
+        PHASE 0.833333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 0.067ns (period - min period limit)
+  Period: 1.666ns
+  Min period limit: 1.599ns (625.391MHz) (Tmcbcper_PLLCLK)
+  Physical resource: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0/PLLCLK1
+  Logical resource: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0/PLLCLK1
+  Location pin: MCB_X0Y1.PLLCLK1
+  Clock network: clkMem2x180
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clkRstSlow_clkGen_clkout5 = PERIOD TIMEGRP 
+"clkRstSlow_clkGen_clkout5"         TS_Clk / 0.5 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 18036400383 paths analyzed, 32750 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  18.755ns.
+--------------------------------------------------------------------------------
+
+Paths for end point MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (SLICE_X7Y64.D2), 178161396 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.644ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y75.CMUX    Tshcko                0.518   MBPIPE_I/e_zy_out<3><4>
+                                                       MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y14.B5       net (fanout=50)    e  2.421   MBPIPE_I/e_zy_out<3><5>
+    DSP48_X0Y14.PCOUT0   Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y15.PCIN0    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000170
+    DSP48_X0Y15.PCOUT9   Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y16.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y16.PCOUT9   Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y17.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y17.P13      Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X8Y61.D5       net (fanout=27)    e  1.403   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X8Y61.COUT     Topcyd                0.290   mcs_0/U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cier_18
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X8Y62.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X8Y62.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X8Y63.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X8Y63.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X8Y64.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X8Y64.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X8Y65.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X8Y65.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X8Y66.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X8Y66.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X8Y67.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X8Y67.AMUX     Tcina                 0.210   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X7Y64.D2       net (fanout=1)     e  1.248   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002b
+    SLICE_X7Y64.CLK      Tas                   0.264   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<16>
+                                                       lut147465_23210
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    -------------------------------------------------  ---------------------------
+    Total                                     18.644ns (13.548ns logic, 5.096ns route)
+                                                       (72.7% logic, 27.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.644ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y75.CMUX    Tshcko                0.518   MBPIPE_I/e_zy_out<3><4>
+                                                       MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y14.B5       net (fanout=50)    e  2.421   MBPIPE_I/e_zy_out<3><5>
+    DSP48_X0Y14.PCOUT9   Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y15.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000179
+    DSP48_X0Y15.PCOUT9   Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y16.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y16.PCOUT9   Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y17.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y17.P13      Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X8Y61.D5       net (fanout=27)    e  1.403   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X8Y61.COUT     Topcyd                0.290   mcs_0/U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cier_18
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X8Y62.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X8Y62.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X8Y63.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X8Y63.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X8Y64.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X8Y64.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X8Y65.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X8Y65.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X8Y66.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X8Y66.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X8Y67.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X8Y67.AMUX     Tcina                 0.210   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X7Y64.D2       net (fanout=1)     e  1.248   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002b
+    SLICE_X7Y64.CLK      Tas                   0.264   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<16>
+                                                       lut147465_23210
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    -------------------------------------------------  ---------------------------
+    Total                                     18.644ns (13.548ns logic, 5.096ns route)
+                                                       (72.7% logic, 27.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.245ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.644ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y75.CMUX    Tshcko                0.518   MBPIPE_I/e_zy_out<3><4>
+                                                       MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y14.B5       net (fanout=50)    e  2.421   MBPIPE_I/e_zy_out<3><5>
+    DSP48_X0Y14.PCOUT1   Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y15.PCIN1    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000171
+    DSP48_X0Y15.PCOUT9   Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y16.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y16.PCOUT9   Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y17.PCIN9    net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y17.P13      Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X8Y61.D5       net (fanout=27)    e  1.403   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X8Y61.COUT     Topcyd                0.290   mcs_0/U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cier_18
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X8Y62.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X8Y62.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X8Y63.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X8Y63.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X8Y64.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X8Y64.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X8Y65.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X8Y65.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X8Y66.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X8Y66.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X8Y67.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X8Y67.AMUX     Tcina                 0.210   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X7Y64.D2       net (fanout=1)     e  1.248   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002b
+    SLICE_X7Y64.CLK      Tas                   0.264   MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<16>
+                                                       lut147465_23210
+                                                       MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    -------------------------------------------------  ---------------------------
+    Total                                     18.644ns (13.548ns logic, 5.096ns route)
+                                                       (72.7% logic, 27.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (SLICE_X3Y15.A2), 178161396 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.268ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000168 (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.621ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000168 to MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y26.AMUX    Tshcko                0.518   SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB2
+                                                       MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000168
+    DSP48_X0Y2.B10       net (fanout=20)    e  2.166   MBPIPE_I/e_zy_out<0><10>
+    DSP48_X0Y2.PCOUT9    Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y3.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000179
+    DSP48_X0Y3.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y4.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y4.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y5.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y5.P13       Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X0Y13.D5       net (fanout=27)    e  1.685   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X0Y13.COUT     Topcyd                0.290   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X0Y14.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X0Y14.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X0Y15.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X0Y15.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X0Y16.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X0Y16.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X0Y17.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X0Y17.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X0Y18.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X0Y18.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X0Y19.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X0Y19.AMUX     Tcina                 0.210   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X3Y15.A2       net (fanout=1)     e  1.198   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002b
+    SLICE_X3Y15.CLK      Tas                   0.264   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<22>
+                                                       lut145698_22580
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    -------------------------------------------------  ---------------------------
+    Total                                     18.621ns (13.548ns logic, 5.073ns route)
+                                                       (72.8% logic, 27.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.268ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.621ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y26.CMUX    Tshcko                0.518   SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB2
+                                                       MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y2.B5        net (fanout=50)    e  2.166   MBPIPE_I/e_zy_out<0><5>
+    DSP48_X0Y2.PCOUT9    Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y3.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000179
+    DSP48_X0Y3.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y4.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y4.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y5.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y5.P13       Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X0Y13.D5       net (fanout=27)    e  1.685   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X0Y13.COUT     Topcyd                0.290   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X0Y14.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X0Y14.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X0Y15.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X0Y15.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X0Y16.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X0Y16.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X0Y17.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X0Y17.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X0Y18.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X0Y18.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X0Y19.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X0Y19.AMUX     Tcina                 0.210   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X3Y15.A2       net (fanout=1)     e  1.198   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002b
+    SLICE_X3Y15.CLK      Tas                   0.264   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<22>
+                                                       lut145698_22580
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    -------------------------------------------------  ---------------------------
+    Total                                     18.621ns (13.548ns logic, 5.073ns route)
+                                                       (72.8% logic, 27.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.268ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.621ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y26.CMUX    Tshcko                0.518   SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB2
+                                                       MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y2.B5        net (fanout=50)    e  2.166   MBPIPE_I/e_zy_out<0><5>
+    DSP48_X0Y2.PCOUT0    Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y3.PCIN0     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000170
+    DSP48_X0Y3.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y4.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y4.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y5.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y5.P13       Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X0Y13.D5       net (fanout=27)    e  1.685   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X0Y13.COUT     Topcyd                0.290   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X0Y14.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X0Y14.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X0Y15.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X0Y15.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X0Y16.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X0Y16.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X0Y17.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X0Y17.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X0Y18.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X0Y18.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X0Y19.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X0Y19.AMUX     Tcina                 0.210   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X3Y15.A2       net (fanout=1)     e  1.198   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002b
+    SLICE_X3Y15.CLK      Tas                   0.264   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<22>
+                                                       lut145698_22580
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a8
+    -------------------------------------------------  ---------------------------
+    Total                                     18.621ns (13.548ns logic, 5.073ns route)
+                                                       (72.8% logic, 27.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be (SLICE_X3Y15.C5), 189780615 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.404ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000168 (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.485ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000168 to MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y26.AMUX    Tshcko                0.518   SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB2
+                                                       MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000168
+    DSP48_X0Y2.B10       net (fanout=20)    e  2.166   MBPIPE_I/e_zy_out<0><10>
+    DSP48_X0Y2.PCOUT9    Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y3.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000179
+    DSP48_X0Y3.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y4.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y4.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y5.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y5.P13       Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X0Y13.D5       net (fanout=27)    e  1.685   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X0Y13.COUT     Topcyd                0.290   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X0Y14.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X0Y14.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X0Y15.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X0Y15.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X0Y16.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X0Y16.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X0Y17.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X0Y17.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X0Y18.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X0Y18.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X0Y19.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X0Y19.BMUX     Tcinb                 0.277   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X3Y15.C5       net (fanout=1)     e  0.886   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002a
+    SLICE_X3Y15.CLK      Tas                   0.373   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<22>
+                                                       lut145566_22514
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be
+    -------------------------------------------------  ---------------------------
+    Total                                     18.485ns (13.724ns logic, 4.761ns route)
+                                                       (74.2% logic, 25.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.404ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.485ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y26.CMUX    Tshcko                0.518   SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB2
+                                                       MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y2.B5        net (fanout=50)    e  2.166   MBPIPE_I/e_zy_out<0><5>
+    DSP48_X0Y2.PCOUT9    Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y3.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000179
+    DSP48_X0Y3.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y4.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y4.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y5.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y5.P13       Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X0Y13.D5       net (fanout=27)    e  1.685   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X0Y13.COUT     Topcyd                0.290   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X0Y14.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X0Y14.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X0Y15.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X0Y15.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X0Y16.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X0Y16.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X0Y17.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X0Y17.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X0Y18.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X0Y18.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X0Y19.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X0Y19.BMUX     Tcinb                 0.277   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X3Y15.C5       net (fanout=1)     e  0.886   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002a
+    SLICE_X3Y15.CLK      Tas                   0.373   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<22>
+                                                       lut145566_22514
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be
+    -------------------------------------------------  ---------------------------
+    Total                                     18.485ns (13.724ns logic, 4.761ns route)
+                                                       (74.2% logic, 25.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.404ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d (FF)
+  Destination:          MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.485ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 0.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.111ns
+
+  Clock Uncertainty:          0.111ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.211ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d to MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y26.CMUX    Tshcko                0.518   SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB2
+                                                       MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000016d
+    DSP48_X0Y2.B5        net (fanout=50)    e  2.166   MBPIPE_I/e_zy_out<0><5>
+    DSP48_X0Y2.PCOUT0    Tdspdo_B_PCOUT        3.860   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002c
+    DSP48_X0Y3.PCIN0     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000170
+    DSP48_X0Y3.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002a
+    DSP48_X0Y4.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000d5
+    DSP48_X0Y4.PCOUT9    Tdspdo_PCIN_PCOUT     2.653   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk0000002b
+    DSP48_X0Y5.PCIN9     net (fanout=1)     e  0.002   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000106
+    DSP48_X0Y5.P13       Tdspdo_PCIN_P         2.645   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000029
+    SLICE_X0Y13.D5       net (fanout=27)    e  1.685   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig000000b5
+    SLICE_X0Y13.COUT     Topcyd                0.290   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000e7
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000098
+    SLICE_X0Y14.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000270
+    SLICE_X0Y14.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000090
+    SLICE_X0Y15.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000026c
+    SLICE_X0Y15.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000088
+    SLICE_X0Y16.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000268
+    SLICE_X0Y16.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000080
+    SLICE_X0Y17.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000265
+    SLICE_X0Y17.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000078
+    SLICE_X0Y18.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000261
+    SLICE_X0Y18.COUT     Tbyp                  0.091   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk00000070
+    SLICE_X0Y19.CIN      net (fanout=1)     e  0.003   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000025d
+    SLICE_X0Y19.BMUX     Tcinb                 0.277   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig00000277
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000a7
+    SLICE_X3Y15.C5       net (fanout=1)     e  0.886   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/sig0000002a
+    SLICE_X3Y15.CLK      Tas                   0.373   MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/mul_1_result<22>
+                                                       lut145566_22514
+                                                       MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FMUL_1_I/blk000000be
+    -------------------------------------------------  ---------------------------
+    Total                                     18.485ns (13.724ns logic, 4.761ns route)
+                                                       (74.2% logic, 25.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clkRstSlow_clkGen_clkout5 = PERIOD TIMEGRP "clkRstSlow_clkGen_clkout5"
+        TS_Clk / 0.5 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg_5 (SLICE_X26Y118.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.364ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd8 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.364ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 20.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd8 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y118.DQ     Tcko                  0.405   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd8
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd8
+    SLICE_X26Y118.CE     net (fanout=24)    e  0.351   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd8
+    SLICE_X26Y118.CLK    Tckce       (-Th)     0.392   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg<6>
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.364ns (0.013ns logic, 0.351ns route)
+                                                       (3.6% logic, 96.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_In_Term_Done (SLICE_X6Y111.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.371ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5 (FF)
+  Destination:          withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_In_Term_Done (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.371ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 20.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5 to withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_In_Term_Done
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y110.CQ      Tcko                  0.405   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5
+    SLICE_X6Y111.CE      net (fanout=7)     e  0.331   withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5
+    SLICE_X6Y111.CLK     Tckce       (-Th)     0.365   ][125868_16493
+                                                       withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/First_In_Term_Done
+    -------------------------------------------------  ---------------------------
+    Total                                      0.371ns (0.040ns logic, 0.331ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point SHIFTPIPE_I/pipeStageN/GEN[4].stageX/Mshreg_colorVal_out_2_BRB01 (SLICE_X18Y25.AI), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.375ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_0_BRB0 (FF)
+  Destination:          SHIFTPIPE_I/pipeStageN/GEN[4].stageX/Mshreg_colorVal_out_2_BRB01 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.375ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkDrp rising at 20.000ns
+  Destination Clock:    clkDrp rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_0_BRB0 to SHIFTPIPE_I/pipeStageN/GEN[4].stageX/Mshreg_colorVal_out_2_BRB01
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y25.AQ      Tcko                  0.198   SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_0_BRB0
+                                                       SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_0_BRB0
+    SLICE_X18Y25.AI      net (fanout=2)     e  0.147   SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_0_BRB0
+    SLICE_X18Y25.CLK     Tdh         (-Th)    -0.030   SHIFTPIPE_I/pipeStageN/GEN[4].stageX/colorVal_out_2_BRB6
+                                                       SHIFTPIPE_I/pipeStageN/GEN[4].stageX/Mshreg_colorVal_out_2_BRB01
+    -------------------------------------------------  ---------------------------
+    Total                                      0.375ns (0.228ns logic, 0.147ns route)
+                                                       (60.8% logic, 39.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clkRstSlow_clkGen_clkout5 = PERIOD TIMEGRP "clkRstSlow_clkGen_clkout5"
+        TS_Clk / 0.5 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 15.148ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.852ns (206.101MHz) (Tdspper_AREG_PREG)
+  Physical resource: MBPIPE_I/GEN_ELEMENTS[5].LAST.MBROT_PIPE_ELEMENT_I/FSQR_1_1_I/blk00000029/CLK
+  Logical resource: MBPIPE_I/GEN_ELEMENTS[5].LAST.MBROT_PIPE_ELEMENT_I/FSQR_1_1_I/blk00000029/CLK
+  Location pin: DSP48_X1Y3.CLK
+  Clock network: clkDrp
+--------------------------------------------------------------------------------
+Slack: 15.148ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.852ns (206.101MHz) (Tdspper_AREG_PREG)
+  Physical resource: MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FSQR_1_1_I/blk00000029/CLK
+  Logical resource: MBPIPE_I/GEN_ELEMENTS[4].MIDDLE.MBROT_PIPE_ELEMENT_I/FSQR_1_1_I/blk00000029/CLK
+  Location pin: DSP48_X1Y13.CLK
+  Clock network: clkDrp
+--------------------------------------------------------------------------------
+Slack: 15.148ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.852ns (206.101MHz) (Tdspper_AREG_PREG)
+  Physical resource: MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSQR_1_1_I/blk00000029/CLK
+  Logical resource: MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSQR_1_1_I/blk00000029/CLK
+  Location pin: DSP48_X1Y15.CLK
+  Clock network: clkDrp
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clkRstSlow_CLK_500 = PERIOD TIMEGRP "clkRstSlow_CLK_500" 
+TS_Clk / 6 HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.599ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clkRstSlow_CLK_500 = PERIOD TIMEGRP "clkRstSlow_CLK_500" TS_Clk / 6 HIGH
+        50%;
+--------------------------------------------------------------------------------
+Slack: 0.067ns (period - min period limit)
+  Period: 1.666ns
+  Min period limit: 1.599ns (625.391MHz) (Tmcbcper_PLLCLK)
+  Physical resource: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0/PLLCLK0
+  Logical resource: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0/PLLCLK0
+  Location pin: MCB_X0Y1.PLLCLK0
+  Clock network: clkMem2x
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = 
+PERIOD TIMEGRP         "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"     
+    TS_clkRstSlow_CLK_100s / 1.3 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 106 paths analyzed, 106 endpoints analyzed, 12 failing endpoints
+ 12 timing errors detected. (0 setup errors, 12 hold errors, 0 component switching limit errors)
+ Minimum period is   5.724ns.
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0 (SLICE_X24Y116.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     1.968ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               withHdmiTx.Inst_hdmiOutIF/dataToggle (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0 (FF)
+  Requirement:          7.692ns
+  Data Path Delay:      5.608ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 0.000ns
+  Destination Clock:    withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Clock Uncertainty:    0.116ns
+
+  Clock Uncertainty:          0.116ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.221ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: withHdmiTx.Inst_hdmiOutIF/dataToggle to withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y125.AQ      Tcko                  0.525   withHdmiTx.Inst_hdmiOutIF/dataToggle
+                                                       withHdmiTx.Inst_hdmiOutIF/dataToggle
+    SLICE_X24Y116.AX     net (fanout=7)     e  4.969   withHdmiTx.Inst_hdmiOutIF/dataToggle
+    SLICE_X24Y116.CLK    Tdick                 0.114   withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB2
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.608ns (0.639ns logic, 4.969ns route)
+                                                       (11.4% logic, 88.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_4 (SLICE_X7Y114.B3), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.066ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0 (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_4 (FF)
+  Requirement:          7.692ns
+  Data Path Delay:      5.510ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 0.000ns
+  Destination Clock:    withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Clock Uncertainty:    0.116ns
+
+  Clock Uncertainty:          0.116ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.221ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0 to withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y116.AQ     Tcko                  0.476   withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB2
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0
+    SLICE_X7Y114.B3      net (fanout=8)     e  4.661   withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0
+    SLICE_X7Y114.CLK     Tas                   0.373   withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe<4>
+                                                       lut127882_17227
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.510ns (0.849ns logic, 4.661ns route)
+                                                       (15.4% logic, 84.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_1 (SLICE_X7Y114.A3), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.077ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0 (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_1 (FF)
+  Requirement:          7.692ns
+  Data Path Delay:      5.499ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 0.000ns
+  Destination Clock:    withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Clock Uncertainty:    0.116ns
+
+  Clock Uncertainty:          0.116ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.221ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0 to withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X24Y116.AQ     Tcko                  0.476   withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB2
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0
+    SLICE_X7Y114.A3      net (fanout=8)     e  4.650   withHdmiTx.Inst_hdmiOutIF/hdmiTxBFast_4_BRB0
+    SLICE_X7Y114.CLK     Tas                   0.373   withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe<4>
+                                                       lut127900_17239
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiTxRFastPipe_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.499ns (0.849ns logic, 4.650ns route)
+                                                       (15.4% logic, 84.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP
+        "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"
+        TS_clkRstSlow_CLK_100s / 1.3 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave (OLOGIC_X4Y116.D2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.906ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withHdmiTx.Inst_hdmiOutIF/dataToggle (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      -0.906ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Destination Clock:    withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: withHdmiTx.Inst_hdmiOutIF/dataToggle to withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y125.AQ      Tcko                  0.495   withHdmiTx.Inst_hdmiOutIF/dataToggle
+                                                       withHdmiTx.Inst_hdmiOutIF/dataToggle
+    OLOGIC_X4Y116.D2     net (fanout=7)     e  0.337   withHdmiTx.Inst_hdmiOutIF/dataToggle
+    OLOGIC_X4Y116.CLKDIV Tosckd_D    (-Th)     1.738   withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave
+    -------------------------------------------------  ---------------------------
+    Total                                     -0.906ns (-1.243ns logic, 0.337ns route)
+                                                       (137.2% logic, -37.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave (OLOGIC_X4Y116.D1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.899ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withHdmiTx.Inst_hdmiOutIF/dataToggle (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      -0.899ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Destination Clock:    withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: withHdmiTx.Inst_hdmiOutIF/dataToggle to withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y125.AQ      Tcko                  0.495   withHdmiTx.Inst_hdmiOutIF/dataToggle
+                                                       withHdmiTx.Inst_hdmiOutIF/dataToggle
+    OLOGIC_X4Y116.D1     net (fanout=7)     e  0.331   withHdmiTx.Inst_hdmiOutIF/dataToggle
+    OLOGIC_X4Y116.CLKDIV Tosckd_D    (-Th)     1.725   withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_slave
+    -------------------------------------------------  ---------------------------
+    Total                                     -0.899ns (-1.230ns logic, 0.331ns route)
+                                                       (136.8% logic, -36.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_master (OLOGIC_X4Y117.D1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.868ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withHdmiTx.Inst_hdmiOutIF/dataToggle (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_master (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      -0.868ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Destination Clock:    withHdmiTx.Inst_hdmiOutIF/clk_130 rising at 7.692ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: withHdmiTx.Inst_hdmiOutIF/dataToggle to withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_master
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y125.AQ      Tcko                  0.495   withHdmiTx.Inst_hdmiOutIF/dataToggle
+                                                       withHdmiTx.Inst_hdmiOutIF/dataToggle
+    OLOGIC_X4Y117.D1     net (fanout=7)     e  0.362   withHdmiTx.Inst_hdmiOutIF/dataToggle
+    OLOGIC_X4Y117.CLKDIV Tosckd_D    (-Th)     1.725   withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_master
+                                                       withHdmiTx.Inst_hdmiOutIF/hdmiOserdes_3/oserdes2_master
+    -------------------------------------------------  ---------------------------
+    Total                                     -0.868ns (-1.230ns logic, 0.362ns route)
+                                                       (141.7% logic, -41.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP
+        "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"
+        TS_clkRstSlow_CLK_100s / 1.3 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 5.026ns (period - min period limit)
+  Period: 7.692ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout2_buf/I0
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout2_buf/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout1
+--------------------------------------------------------------------------------
+Slack: 7.212ns (period - min period limit)
+  Period: 7.692ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/dataToggle/CLK
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/dataToggle/CK
+  Location pin: SLICE_X6Y125.CLK
+  Clock network: withHdmiTx.Inst_hdmiOutIF/clk_130
+--------------------------------------------------------------------------------
+Slack: 7.212ns (period - min period limit)
+  Period: 7.692ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_4_BRB2/CLK
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/hdmiTxRFast_4_BRB1/CK
+  Location pin: SLICE_X10Y110.CLK
+  Clock network: withHdmiTx.Inst_hdmiOutIF/clk_130
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP        
+ "withHdmiTx_Inst_hdmiOutIF_clk_650" TS_clkRstSlow_CLK_100s / 6.5 HIGH         
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = 
+PERIOD TIMEGRP         "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2"     
+    TS_clkRstSlow_CLK_100s / 0.65 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 5683 paths analyzed, 871 endpoints analyzed, 1 failing endpoint
+ 1 timing error detected. (1 setup error, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  31.628ns.
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/localRst (SLICE_X27Y88.SR), 2 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.812ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/rstDelay_24 (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/localRst (FF)
+  Requirement:          0.769ns
+  Data Path Delay:      5.024ns (Levels of Logic = 3)
+  Clock Path Skew:      3.865ns (5.758 - 1.893)
+  Source Clock:         clk100 rising at 30.000ns
+  Destination Clock:    clkHdmiTx rising at 30.769ns
+  Clock Uncertainty:    0.422ns
+
+  Clock Uncertainty:          0.422ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.261ns
+    Phase Error (PE):           0.287ns
+
+  Maximum Data Path at Slow Process Corner: clkRstSlow/rstDelay_24 to withHdmiTx.Inst_hdmiOutIF/localRst
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y87.AQ      Tcko                  0.525   clkRstSlow/rstDelay<24>
+                                                       clkRstSlow/rstDelay_24
+    SLICE_X26Y87.B6      net (fanout=135)   e  0.602   clkRstSlow/rstDelay<24>
+    SLICE_X26Y87.B       Tilo                  0.254   clkRstSlow/rstDelay<24>
+                                                       lut15461_3320
+    PLL_ADV_X0Y2.RST     net (fanout=3)     e  0.568   ][165061_3321
+    PLL_ADV_X0Y2.LOCKED  Tplldo_LOCKED         1.300   withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV
+                                                       withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV
+    SLICE_X26Y87.A5      net (fanout=2)     e  0.610   withHdmiTx.Inst_hdmiOutIF/pll_locked
+    SLICE_X26Y87.A       Tilo                  0.254   clkRstSlow/rstDelay<24>
+                                                       lut200386_39170
+    SLICE_X27Y88.SR      net (fanout=1)     e  0.590   ][IN_virtPIBox_22165_39171
+    SLICE_X27Y88.CLK     Trck                  0.321   withHdmiTx.Inst_hdmiOutIF/localRst
+                                                       withHdmiTx.Inst_hdmiOutIF/localRst
+    -------------------------------------------------  ---------------------------
+    Total                                      5.024ns (2.654ns logic, 2.370ns route)
+                                                       (52.8% logic, 47.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.921ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/rstDelay_24 (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/localRst (FF)
+  Requirement:          0.769ns
+  Data Path Delay:      2.385ns (Levels of Logic = 2)
+  Clock Path Skew:      2.959ns (4.852 - 1.893)
+  Source Clock:         clk100 rising at 30.000ns
+  Destination Clock:    clkHdmiTx rising at 30.769ns
+  Clock Uncertainty:    0.422ns
+
+  Clock Uncertainty:          0.422ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.261ns
+    Phase Error (PE):           0.287ns
+
+  Maximum Data Path at Fast Process Corner: clkRstSlow/rstDelay_24 to withHdmiTx.Inst_hdmiOutIF/localRst
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y87.AQ      Tcko                  0.248   clkRstSlow/rstDelay<24>
+                                                       clkRstSlow/rstDelay_24
+    SLICE_X26Y87.B6      net (fanout=135)   e  0.602   clkRstSlow/rstDelay<24>
+    SLICE_X26Y87.B       Tilo                  0.166   clkRstSlow/rstDelay<24>
+                                                       lut15461_3320
+    SLICE_X26Y87.A6      net (fanout=3)     e  0.414   ][165061_3321
+    SLICE_X26Y87.A       Tilo                  0.166   clkRstSlow/rstDelay<24>
+                                                       lut200386_39170
+    SLICE_X27Y88.SR      net (fanout=1)     e  0.590   ][IN_virtPIBox_22165_39171
+    SLICE_X27Y88.CLK     Trck                  0.199   withHdmiTx.Inst_hdmiOutIF/localRst
+                                                       withHdmiTx.Inst_hdmiOutIF/localRst
+    -------------------------------------------------  ---------------------------
+    Total                                      2.385ns (0.779ns logic, 1.606ns route)
+                                                       (32.7% logic, 67.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_dram_reader/rst_r1 (SLICE_X26Y88.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     1.526ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/rstDelay_24 (FF)
+  Destination:          withHdmiTx.Inst_dram_reader/rst_r1 (FF)
+  Requirement:          0.769ns
+  Data Path Delay:      1.780ns (Levels of Logic = 1)
+  Clock Path Skew:      2.959ns (4.852 - 1.893)
+  Source Clock:         clk100 rising at 30.000ns
+  Destination Clock:    clkHdmiTx rising at 30.769ns
+  Clock Uncertainty:    0.422ns
+
+  Clock Uncertainty:          0.422ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.261ns
+    Phase Error (PE):           0.287ns
+
+  Maximum Data Path at Fast Process Corner: clkRstSlow/rstDelay_24 to withHdmiTx.Inst_dram_reader/rst_r1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y87.AQ      Tcko                  0.248   clkRstSlow/rstDelay<24>
+                                                       clkRstSlow/rstDelay_24
+    SLICE_X26Y87.B6      net (fanout=135)   e  0.602   clkRstSlow/rstDelay<24>
+    SLICE_X26Y87.B       Tilo                  0.166   clkRstSlow/rstDelay<24>
+                                                       lut15461_3320
+    SLICE_X26Y88.SR      net (fanout=3)     e  0.590   ][165061_3321
+    SLICE_X26Y88.CLK     Trck                  0.174   withHdmiTx.Inst_dram_reader/rst_r1
+                                                       withHdmiTx.Inst_dram_reader/rst_r1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.780ns (0.588ns logic, 1.192ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_dram_reader/rst_r0 (SLICE_X26Y88.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     1.577ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               clkRstSlow/rstDelay_24 (FF)
+  Destination:          withHdmiTx.Inst_dram_reader/rst_r0 (FF)
+  Requirement:          0.769ns
+  Data Path Delay:      1.729ns (Levels of Logic = 1)
+  Clock Path Skew:      2.959ns (4.852 - 1.893)
+  Source Clock:         clk100 rising at 30.000ns
+  Destination Clock:    clkHdmiTx rising at 30.769ns
+  Clock Uncertainty:    0.422ns
+
+  Clock Uncertainty:          0.422ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.261ns
+    Phase Error (PE):           0.287ns
+
+  Maximum Data Path at Fast Process Corner: clkRstSlow/rstDelay_24 to withHdmiTx.Inst_dram_reader/rst_r0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y87.AQ      Tcko                  0.248   clkRstSlow/rstDelay<24>
+                                                       clkRstSlow/rstDelay_24
+    SLICE_X26Y87.B6      net (fanout=135)   e  0.602   clkRstSlow/rstDelay<24>
+    SLICE_X26Y87.B       Tilo                  0.166   clkRstSlow/rstDelay<24>
+                                                       lut15461_3320
+    SLICE_X26Y88.SR      net (fanout=3)     e  0.590   ][165061_3321
+    SLICE_X26Y88.CLK     Trck                  0.123   withHdmiTx.Inst_dram_reader/rst_r1
+                                                       withHdmiTx.Inst_dram_reader/rst_r0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.729ns (0.537ns logic, 1.192ns route)
+                                                       (31.1% logic, 68.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP
+        "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2"
+        TS_clkRstSlow_CLK_100s / 0.65 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active (SLICE_X1Y86.B6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.562ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vpos_cnt_8 (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.562ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkHdmiTx rising at 0.000ns
+  Destination Clock:    clkHdmiTx rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vpos_cnt_8 to withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y86.AQ       Tcko                  0.200   withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/Mcount_vpos_cnt_xor<9>_rt
+                                                       withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vpos_cnt_8
+    SLICE_X1Y86.B6       net (fanout=2)     e  0.147   withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/vpos_cnt<8>
+    SLICE_X1Y86.CLK      Tah         (-Th)    -0.215   withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active
+                                                       lut128922_17685
+                                                       withHdmiTx.Inst_hdmiOutIF/xgaTiming.timeCtl/active
+    -------------------------------------------------  ---------------------------
+    Total                                      0.562ns (0.415ns logic, 0.147ns route)
+                                                       (73.8% logic, 26.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3 (SLICE_X4Y79.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.564ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3 (FF)
+  Destination:          withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.564ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkHdmiTx rising at 0.000ns
+  Destination Clock:    clkHdmiTx rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3 to withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y79.CQ       Tcko                  0.200   withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3
+                                                       withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3
+    SLICE_X4Y79.CX       net (fanout=6)     e  0.258   withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3
+    SLICE_X4Y79.CLK      Tckdi       (-Th)    -0.106   withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3
+                                                       withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3-In14
+                                                       withHdmiTx.Inst_dram_reader/withFsm.fsmInst/current_state_FSM_FFd3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.564ns (0.306ns logic, 0.258ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point withHdmiTx.Inst_hdmiOutIF/blueEncoder/de_q_BRB0 (SLICE_X13Y105.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.763ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmiActiveTxIn_BRB0 (FF)
+  Destination:          withHdmiTx.Inst_hdmiOutIF/blueEncoder/de_q_BRB0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.763ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkHdmiTx rising at 0.000ns
+  Destination Clock:    clkHdmiTx rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmiActiveTxIn_BRB0 to withHdmiTx.Inst_hdmiOutIF/blueEncoder/de_q_BRB0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y105.BQ     Tcko                  0.234   hdmiActiveTxIn_BRB2
+                                                       hdmiActiveTxIn_BRB0
+    SLICE_X13Y105.AX     net (fanout=2)     e  0.470   hdmiActiveTxIn_BRB0
+    SLICE_X13Y105.CLK    Tckdi       (-Th)    -0.059   withHdmiTx.Inst_hdmiOutIF/blueEncoder/de_q_BRB2
+                                                       withHdmiTx.Inst_hdmiOutIF/blueEncoder/de_q_BRB0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.763ns (0.293ns logic, 0.470ns route)
+                                                       (38.4% logic, 61.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP
+        "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2"
+        TS_clkRstSlow_CLK_100s / 0.65 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.718ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout3_buf/I0
+  Logical resource: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout3_buf/I0
+  Location pin: BUFGMUX_X2Y3.I0
+  Clock network: withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/clkout2
+--------------------------------------------------------------------------------
+Slack: 13.884ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 1.500ns (666.667MHz) (Tmcbcper_P5CMDCLK)
+  Physical resource: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0/P5CMDCLK
+  Logical resource: withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0/P5CMDCLK
+  Location pin: MCB_X0Y1.P5CMDCLK
+  Clock network: clkHdmiTx
+--------------------------------------------------------------------------------
+Slack: 13.985ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: hdmiActiveTxIn_BRB2/CLK
+  Logical resource: Mshreg_hdmiActiveTxIn_BRB0/CLK
+  Location pin: SLICE_X10Y105.CLK
+  Clock network: clkHdmiTx
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_Clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_Clk                         |     10.000ns|      5.859ns|     20.558ns|           28|           13|           52|  18036406221|
+| TS_clkRstSlow_CLK_100s        |     10.000ns|      3.682ns|     20.558ns|            0|           13|           49|         5789|
+|  TS_withHdmiTx_Inst_hdmiOutIF_|      7.692ns|      5.724ns|          N/A|           12|            0|          106|            0|
+|  xgaTiming_clkGen_clkout1     |             |             |             |             |             |             |             |
+|  TS_withHdmiTx_Inst_hdmiOutIF_|      1.538ns|          N/A|          N/A|            0|            0|            0|            0|
+|  clk_650                      |             |             |             |             |             |             |             |
+|  TS_withHdmiTx_Inst_hdmiOutIF_|     15.385ns|     31.628ns|          N/A|            1|            0|         5683|            0|
+|  xgaTiming_clkGen_clkout2     |             |             |             |             |             |             |             |
+| TS_clkRstSlow_CLK_500_n       |      1.667ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_clkRstSlow_clkGen_clkout5  |     20.000ns|     18.755ns|          N/A|            0|            0|  18036400383|            0|
+| TS_clkRstSlow_CLK_500         |      1.667ns|      1.599ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+3 constraints not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |   18.755|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 41  Score: 11814  (Setup/Max: 812, Hold: 11002)
+
+Constraints cover 18036406273 paths, 0 nets, and 78592 connections
+
+Design statistics:
+   Minimum period:  31.628ns{1}   (Maximum frequency:  31.618MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sun Jan 11 14:34:26 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 769 MB
+
+
+

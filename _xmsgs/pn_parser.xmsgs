@@ -8,7 +8,34 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/fel/Desktop/mcs/rtl/mcs_top.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/fpTest.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/fpTest_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/cxgen_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/float/lib/fixed_float_types_c.vhdl&quot; into library ieee_proposed</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/float/lib/fixed_pkg_c.vhdl&quot; into library ieee_proposed</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/float/lib/float_pkg_c.vhdl&quot; into library ieee_proposed</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/float/mbrot_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/hdmi/hdmi_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/mbrot_pipe_element_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/sim/mcs_top_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

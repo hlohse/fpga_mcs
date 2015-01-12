@@ -1,0 +1,749 @@
+
+WARNING: The Trce option "-ucf" is either illegal or not supported by projNav and hence will not be added in the strategy file(mapruntime.xds) created by Smartxplorer.
+
+Command Line : 
+-------------
+map /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.ngd -ol high -w -p xc6slx45-csg324-2 -o mcs_top_map.ncd /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.pcf
+
+Release 14.7 - Map P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Using target part "6slx45csg324-2".
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to '/home/kugel/.Xilinx' in
+/home/kugel/.flexlmrc.
+INFO:Security:54 - 'xc6slx45' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+Writing file mcs_top_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 34 secs 
+Total CPU  time at the beginning of Placer: 33 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:be11dc26) REAL time: 40 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:be11dc26) REAL time: 43 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:50453e6) REAL time: 43 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:a6507b32) REAL time: 1 mins 23 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:a6507b32) REAL time: 1 mins 23 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:a6507b32) REAL time: 1 mins 23 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:a6507b32) REAL time: 1 mins 23 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:a6507b32) REAL time: 1 mins 23 secs 
+
+Phase 9.8  Global Placement
+......................
+.................................................................................................................................
+...............................................................................................................................................................................................
+..........................................................................................................................................................................................................
+.................................................................................
+Phase 9.8  Global Placement (Checksum:149d142f) REAL time: 4 mins 15 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:149d142f) REAL time: 4 mins 15 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:ff123f4a) REAL time: 4 mins 41 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:ff123f4a) REAL time: 4 mins 41 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:f469be60) REAL time: 4 mins 42 secs 
+
+Total REAL time to Placer completion: 4 mins 43 secs 
+Total CPU  time to Placer completion: 4 mins 41 secs 
+Running post-placement packing...
+Writing output files...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                 7,388 out of  54,576   13%
+    Number used as Flip Flops:               7,368
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               20
+  Number of Slice LUTs:                     17,994 out of  27,288   65%
+    Number used as logic:                   17,089 out of  27,288   62%
+      Number using O6 output only:          11,341
+      Number using O5 output only:             524
+      Number using O5 and O6:                5,224
+      Number used as ROM:                        0
+    Number used as Memory:                     467 out of   6,408    7%
+      Number used as Dual Port RAM:             64
+        Number using O6 output only:             0
+        Number using O5 output only:             0
+        Number using O5 and O6:                 64
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           403
+        Number using O6 output only:            47
+        Number using O5 output only:             1
+        Number using O5 and O6:                355
+    Number used exclusively as route-thrus:    438
+      Number with same-slice register load:    114
+      Number with same-slice carry load:       322
+      Number with other load:                    2
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 5,666 out of   6,822   83%
+  Number of MUXCYs used:                    10,180 out of  13,644   74%
+  Number of LUT Flip Flop pairs used:       18,918
+    Number with an unused Flip Flop:        12,109 out of  18,918   64%
+    Number with an unused LUT:                 924 out of  18,918    4%
+    Number of fully used LUT-FF pairs:       5,885 out of  18,918   31%
+    Number of unique control sets:             222
+    Number of slice register sites lost
+      to control set restrictions:             850 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        80 out of     218   36%
+    Number of LOCed IOBs:                       80 out of      80  100%
+    IOB Flip Flops:                             21
+    IOB Master Pads:                             4
+    IOB Slave Pads:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        32 out of     116   27%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        5
+    Number used as BUFGMUX:                      2
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                  13 out of     376    3%
+    Number used as ILOGIC2s:                    13
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        24 out of     376    6%
+    Number used as IODELAY2s:                    0
+    Number used as IODRP2s:                      2
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  61 out of     376   16%
+    Number used as OLOGIC2s:                     8
+    Number used as OSERDES2s:                   53
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             1 out of       8   12%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                           18 out of      58   31%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            2 out of       4   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.46
+
+Peak Memory Usage:  1269 MB
+Total REAL time to MAP completion:  4 mins 53 secs 
+Total CPU time to MAP completion:   4 mins 51 secs 
+
+Mapping completed.
+See MAP report file "mcs_top_map.mrp" for details.
+
+Command Line : 
+-------------
+par /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.ngd -ol high -w mcs_top.ncd /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.pcf
+
+Release 14.7 - par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+
+Constraints file:
+/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.pcf
+.
+Loading device for application Rf_Device from file '6slx45.nph' in environment /opt/xilinx/14.7/ISE_DS/ISE/.
+   "mcs_top" is an NCD, version 3.2, device xc6slx45, package csg324, speed -2
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to '/home/kugel/.Xilinx' in /home/kugel/.flexlmrc.
+INFO:Security:54 - 'xc6slx45' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_Clk;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14969)] modifies the effective value of constraint <TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14925)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_500_n;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14970)] modifies the effective value of constraint <TS_clkRst_CLK_500_n = PERIOD TIMEGRP "clkRst_CLK_500_n"
+   TS_Clk / 6 PHASE         0.833333333 ns HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14928)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_clkGen_clkout5;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14971)] modifies the effective value of constraint <TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP
+   "clkRst_clkGen_clkout5" TS_Clk / 0.5         HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14930)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_500;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14972)] modifies the effective value of constraint <TS_clkRst_CLK_500 = PERIOD TIMEGRP "clkRst_CLK_500" TS_Clk /
+   6 HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14931)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_clkRst_CLK_100c;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14973)] modifies the effective value of constraint <TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkRst_CLK_100c" TS_Clk
+   HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14932)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =        
+   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14975)] modifies the effective value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 =
+   PERIOD TIMEGRP         "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"         TS_clkRst_CLK_100s / 1.3 HIGH
+   50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14935)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14976)] modifies the effective value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP       
+    "withHdmiTx_Inst_hdmiOutIF_clk_650" TS_clkRst_CLK_100s / 6.5 HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14937)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =        
+   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14978)] modifies the effective value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 =
+   PERIOD TIMEGRP         "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2"         TS_clkRst_CLK_100s / 0.65 HIGH
+   50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top
+   .pcf(14940)].
+
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 7,388 out of  54,576   13%
+    Number used as Flip Flops:               7,368
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               20
+  Number of Slice LUTs:                     17,994 out of  27,288   65%
+    Number used as logic:                   17,089 out of  27,288   62%
+      Number using O6 output only:          11,341
+      Number using O5 output only:             524
+      Number using O5 and O6:                5,224
+      Number used as ROM:                        0
+    Number used as Memory:                     467 out of   6,408    7%
+      Number used as Dual Port RAM:             64
+        Number using O6 output only:             0
+        Number using O5 output only:             0
+        Number using O5 and O6:                 64
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           403
+        Number using O6 output only:            47
+        Number using O5 output only:             1
+        Number using O5 and O6:                355
+    Number used exclusively as route-thrus:    438
+      Number with same-slice register load:    114
+      Number with same-slice carry load:       322
+      Number with other load:                    2
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 5,666 out of   6,822   83%
+  Number of MUXCYs used:                    10,180 out of  13,644   74%
+  Number of LUT Flip Flop pairs used:       18,918
+    Number with an unused Flip Flop:        12,109 out of  18,918   64%
+    Number with an unused LUT:                 924 out of  18,918    4%
+    Number of fully used LUT-FF pairs:       5,885 out of  18,918   31%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  54,576    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        80 out of     218   36%
+    Number of LOCed IOBs:                       80 out of      80  100%
+    IOB Flip Flops:                             21
+    IOB Master Pads:                             4
+    IOB Slave Pads:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        32 out of     116   27%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        5
+    Number used as BUFGMUX:                      2
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                  13 out of     376    3%
+    Number used as ILOGIC2s:                    13
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        24 out of     376    6%
+    Number used as IODELAY2s:                    0
+    Number used as IODRP2s:                      2
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  61 out of     376   16%
+    Number used as OLOGIC2s:                     8
+    Number used as OSERDES2s:                   53
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             1 out of       8   12%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                           18 out of      58   31%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            2 out of       4   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 15 secs 
+Finished initial Timing Analysis.  REAL time: 15 secs 
+
+Starting Router
+
+
+Phase  1  : 92398 unrouted;      REAL time: 17 secs 
+
+Phase  2  : 79081 unrouted;      REAL time: 21 secs 
+
+Phase  3  : 32176 unrouted;      REAL time: 54 secs 
+
+Phase  4  : 32536 unrouted; (Setup:12186, Hold:79283, Component Switching Limit:0)     REAL time: 1 mins 1 secs 
+
+Updating file: mcs_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:13643, Hold:71071, Component Switching Limit:0)     REAL time: 2 mins 33 secs 
+
+Phase  6  : 0 unrouted; (Setup:5321, Hold:71071, Component Switching Limit:0)     REAL time: 2 mins 42 secs 
+
+Updating file: mcs_top.ncd with current fully routed design.
+
+Phase  7  : 0 unrouted; (Setup:5321, Hold:71071, Component Switching Limit:0)     REAL time: 3 mins 19 secs 
+
+Phase  8  : 0 unrouted; (Setup:5321, Hold:71071, Component Switching Limit:0)     REAL time: 3 mins 19 secs 
+WARNING:Route:522 - Unusually high hold time violation detected among 18 connections.The router will continue and try to fix it 
+	c3_p4_wr_data<22>:DQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA22 -2290
+	c3_p4_wr_data<22>:CMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA14 -2188
+	c3_p4_wr_data<22>:BQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA9 -2172
+	c3_p4_wr_data<22>:BQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA10 -2172
+	c3_p4_wr_data<22>:AMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA2 -2156
+	c3_p4_wr_data<22>:CQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA15 -2126
+	c3_p4_wr_data<22>:DMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA17 -2124
+	c3_p4_wr_data<22>:DMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA20 -2059
+	c3_p4_wr_data<22>:AMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA4 -2043
+	c3_p4_wr_data<22>:AMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA3 -2043
+	c3_p4_wr_data<22>:AMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA1 -2043
+	c3_p4_wr_data<22>:AMUX -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA0 -2043
+	c3_p4_wr_data<22>:BQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA8 -2020
+	c3_p4_wr_data<22>:BQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA13 -2020
+	c3_p4_wr_data<22>:BQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA12 -2020
+	c3_p4_wr_data<22>:BQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA11 -2020
+	c3_p4_wr_data<22>:AQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA6 -2008
+	c3_p4_wr_data<23>:AQ -> withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/samc_0:P4WRDATA23 -2003
+
+
+Phase  9  : 0 unrouted; (Setup:5321, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 21 secs 
+
+Phase 10  : 0 unrouted; (Setup:1072, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 25 secs 
+Total REAL time to Router completion: 3 mins 25 secs 
+Total CPU time to Router completion: 3 mins 35 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|              cpuClk | BUFGMUX_X2Y10| No   |  625 |  0.064     |  1.774      |
++---------------------+--------------+------+------+------------+-------------+
+|              sysClk |  BUFGMUX_X2Y1| No   | 1765 |  0.704     |  2.412      |
++---------------------+--------------+------+------+------------+-------------+
+|mcs_0/U0/Debug.mdm_0 |              |      |      |            |             |
+|               /drck |  BUFGMUX_X2Y2| No   |   63 |  0.060     |  1.770      |
++---------------------+--------------+------+------+------------+-------------+
+|              clkDrp | BUFGMUX_X2Y12| No   |  148 |  0.077     |  1.796      |
++---------------------+--------------+------+------+------------+-------------+
+|           clkHdmiTx |  BUFGMUX_X2Y3| No   |   91 |  0.053     |  1.768      |
++---------------------+--------------+------+------+------------+-------------+
+|withHdmiTx.Inst_hdmi |              |      |      |            |             |
+|       OutIF/clk_130 | BUFGMUX_X3Y13| No   |   25 |  0.357     |  2.081      |
++---------------------+--------------+------+------+------------+-------------+
+|           Clk_IBUFG |         Local|      |    3 |  2.339     |  8.633      |
++---------------------+--------------+------+------+------------+-------------+
+|mcs_0/U0/Debug.mdm_0 |              |      |      |            |             |
+|             /update |         Local|      |   19 |  6.187     |  7.888      |
++---------------------+--------------+------+------+------------+-------------+
+|            clkMem2x |         Local|      |   34 |  0.704     |  1.551      |
++---------------------+--------------+------+------+------------+-------------+
+|withDram.Inst_dp_mem |              |      |      |            |             |
+|_wrapper/memc3_wrapp |              |      |      |            |             |
+|er_inst/memc3_mcb_ra |              |      |      |            |             |
+|w_wrapper_inst/ioi_d |              |      |      |            |             |
+|              rp_clk |         Local|      |   22 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|         clkMem2x180 |         Local|      |   37 |  0.723     |  1.570      |
++---------------------+--------------+------+------+------------+-------------+
+|withHdmiTx.Inst_hdmi |              |      |      |            |             |
+|     OutIF/ioclk_650 |         Local|      |    8 |  0.000     |  1.740      |
++---------------------+--------------+------+------+------------+-------------+
+|withDram.Inst_dp_mem |              |      |      |            |             |
+|_wrapper/memc3_wrapp |              |      |      |            |             |
+|er_inst/memc3_mcb_ra |              |      |      |            |             |
+|w_wrapper_inst/idela |              |      |      |            |             |
+|         y_dqs_ioi_m |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|withDram.Inst_dp_mem |              |      |      |            |             |
+|_wrapper/memc3_wrapp |              |      |      |            |             |
+|er_inst/memc3_mcb_ra |              |      |      |            |             |
+|w_wrapper_inst/idela |              |      |      |            |             |
+|        y_udqs_ioi_m |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|withDram.Inst_dp_mem |              |      |      |            |             |
+|_wrapper/memc3_wrapp |              |      |      |            |             |
+|er_inst/memc3_mcb_ra |              |      |      |            |             |
+|w_wrapper_inst/idela |              |      |      |            |             |
+|         y_dqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|withDram.Inst_dp_mem |              |      |      |            |             |
+|_wrapper/memc3_wrapp |              |      |      |            |             |
+|er_inst/memc3_mcb_ra |              |      |      |            |             |
+|w_wrapper_inst/idela |              |      |      |            |             |
+|        y_udqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 1072 (Setup: 1072, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
+   are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_clkRst_CLK_100s = PERIOD TIMEGRP "clkR | SETUP       |    -0.661ns|    10.661ns|       2|        1072
+  st_CLK_100s" TS_Clk HIGH 50%              | HOLD        |     0.244ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clkRst_CLK_500_n = PERIOD TIMEGRP "clk | MINPERIOD   |     0.067ns|     1.599ns|       0|           0
+  Rst_CLK_500_n" TS_Clk / 6 PHASE         0 |             |            |            |        |            
+  .833333333 ns HIGH 50%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clkRst_CLK_500 = PERIOD TIMEGRP "clkRs | MINPERIOD   |     0.067ns|     1.599ns|       0|           0
+  t_CLK_500" TS_Clk / 6 HIGH 50%            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkR | SETUP       |     0.328ns|     9.672ns|       0|           0
+  st_CLK_100c" TS_Clk HIGH 50%              | HOLD        |     0.345ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_cl | SETUP       |     0.524ns|     7.168ns|       0|           0
+  kGen_clkout1 = PERIOD TIMEGRP         "wi | HOLD        |     0.095ns|            |       0|           0
+  thHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_ |             |            |            |        |            
+  clkout1"         TS_clkRst_CLK_100s / 1.3 |             |            |            |        |            
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH  | SETUP       |     2.843ns|     7.157ns|       0|           0
+  50%                                       | HOLD        |     0.129ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP | SETUP       |     1.105ns|    18.895ns|       0|           0
+   "clkRst_clkGen_clkout5" TS_Clk / 0.5     | HOLD        |     0.382ns|            |       0|           0
+       HIGH 50%                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_cl | SETUP       |     4.659ns|    10.725ns|       0|           0
+  kGen_clkout2 = PERIOD TIMEGRP         "wi | HOLD        |     0.431ns|            |       0|           0
+  thHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_ |             |            |            |        |            
+  clkout2"         TS_clkRst_CLK_100s / 0.6 |             |            |            |        |            
+  5 HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_hdmireset_path" TIG              | SETUP       |         N/A|    11.897ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_hdmireset2_path" TIG             | SETUP       |         N/A|     6.723ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_hdmireset3_path" TIG             | SETUP       |         N/A|     6.734ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PE | N/A         |         N/A|         N/A|     N/A|         N/A
+  RIOD TIMEGRP         "withHdmiTx_Inst_hdm |             |            |            |        |            
+  iOutIF_clk_650" TS_clkRst_CLK_100s / 6.5  |             |            |            |        |            
+  HIGH 50%                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_Clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_Clk                         |     10.000ns|      7.157ns|     10.661ns|            0|            2|           52|    185086176|
+| TS_clkRst_CLK_100s            |     10.000ns|     10.661ns|      9.318ns|            2|            0|    184831730|        14062|
+|  TS_withHdmiTx_Inst_hdmiOutIF_|      7.692ns|      7.168ns|          N/A|            0|            0|          106|            0|
+|  xgaTiming_clkGen_clkout1     |             |             |             |             |             |             |             |
+|  TS_withHdmiTx_Inst_hdmiOutIF_|      1.538ns|          N/A|          N/A|            0|            0|            0|            0|
+|  clk_650                      |             |             |             |             |             |             |             |
+|  TS_withHdmiTx_Inst_hdmiOutIF_|     15.385ns|     10.725ns|          N/A|            0|            0|        13956|            0|
+|  xgaTiming_clkGen_clkout2     |             |             |             |             |             |             |             |
+| TS_clkRst_CLK_500_n           |      1.667ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_clkRst_clkGen_clkout5      |     20.000ns|     18.895ns|          N/A|            0|            0|        19459|            0|
+| TS_clkRst_CLK_500             |      1.667ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| TS_clkRst_CLK_100c            |     10.000ns|      9.672ns|          N/A|            0|            0|       220925|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 3 mins 30 secs 
+Total CPU time to PAR completion: 3 mins 40 secs 
+
+Peak Memory Usage:  1100 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 2 errors found.
+
+Number of error messages: 0
+Number of warning messages: 10
+Number of info messages: 1
+
+Writing design to file mcs_top.ncd
+
+
+
+PAR done!
+
+Command Line : 
+-------------
+trce /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.ngd /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.pcf -xml /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.twx -v 3 -s 2 -n 3 -fastpaths -ucf dp_dram.ucf -o /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.twr
+
+Release 14.7 - Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Loading device for application Rf_Device from file '6slx45.nph' in environment
+/opt/xilinx/14.7/ISE_DS/ISE/.
+   "mcs_top" is an NCD, version 3.2, device xc6slx45, package csg324, speed -2
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG = TS_Clk;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14969)] modifies the effective
+   value of constraint <TS_Clk = PERIOD TIMEGRP "Clk" 10 ns HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14925)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =
+   TS_clkRst_CLK_500_n;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14970)] modifies the effective
+   value of constraint <TS_clkRst_CLK_500_n = PERIOD TIMEGRP "clkRst_CLK_500_n"
+   TS_Clk / 6 PHASE         0.833333333 ns HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14928)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =
+   TS_clkRst_clkGen_clkout5;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14971)] modifies the effective
+   value of constraint <TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP
+   "clkRst_clkGen_clkout5" TS_Clk / 0.5         HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14930)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =
+   TS_clkRst_CLK_500;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14972)] modifies the effective
+   value of constraint <TS_clkRst_CLK_500 = PERIOD TIMEGRP "clkRst_CLK_500"
+   TS_Clk / 6 HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14931)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =
+   TS_clkRst_CLK_100c;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14973)] modifies the effective
+   value of constraint <TS_clkRst_CLK_100c = PERIOD TIMEGRP "clkRst_CLK_100c"
+   TS_Clk HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14932)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =        
+   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14975)] modifies the effective
+   value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 =
+   PERIOD TIMEGRP         "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1"  
+         TS_clkRst_CLK_100s / 1.3 HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14935)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =
+   TS_withHdmiTx_Inst_hdmiOutIF_clk_650;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14976)] modifies the effective
+   value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP   
+        "withHdmiTx_Inst_hdmiOutIF_clk_650" TS_clkRst_CLK_100s / 6.5 HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14937)].
+
+WARNING:ConstraintSystem:67 - Constraint <PIN "Rst_n_pins<0>" TIG =        
+   TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14978)] modifies the effective
+   value of constraint <TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 =
+   PERIOD TIMEGRP         "withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2"  
+         TS_clkRst_CLK_100s / 0.65 HIGH 50%;>
+   [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fp
+   ga_mcs/smartxplorer_results/run1/mcs_top.pcf(14940)].
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more
+   information, see the TSI report.  Please consult the Xilinx Command Line
+   Tools User Guide for information on generating a TSI report.
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce
+/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_m
+cs/smartxplorer_results/run1/mcs_top.ncd
+/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_m
+cs/smartxplorer_results/run1/mcs_top.pcf
+-xml
+/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_m
+cs/smartxplorer_results/run1/mcs_top.twx
+-v 3 -s 2 -n 3 -fastpaths -ucf dp_dram.ucf -o
+/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_m
+cs/smartxplorer_results/run1/mcs_top.twr
+
+
+Design file:              mcs_top.ncd
+Physical constraint file: mcs_top.pcf
+Device,speed:             xc6slx45,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in
+   the unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of
+   this model, and for more information on accounting for different loading conditions, please see the device datasheet.
+
+
+Timing summary:
+---------------
+
+Timing errors: 2  Score: 1072 (Setup/Max: 1072, Hold: 0)
+
+Constraints cover 185086232 paths, 0 nets, and 78542 connections
+
+Design statistics:
+   Minimum period:  18.895ns (Maximum frequency:  52.924MHz)
+
+
+Analysis completed Fri Jan  9 13:20:45 2015
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 8
+Number of info messages: 4
+Total time: 26 secs 

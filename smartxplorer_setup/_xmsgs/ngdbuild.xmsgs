@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT3</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_100s = PERIOD &quot;clkRst_CLK_100s&quot; TS_Clk HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_500_n = PERIOD &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE 0.833333333 ns HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT5</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_clkGen_clkout5 = PERIOD &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_500 = PERIOD &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT4</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_100c = PERIOD &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRst_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRst_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot; TS_clkRst_CLK_100s / 1.3 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRst_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRst_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRst_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRst_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot; TS_clkRst_CLK_100s / 0.65 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_CLK_500_n&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_CLK_500_n = PERIOD &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE 0.833333333 ns HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_clkGen_clkout5&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_clkGen_clkout5 = PERIOD &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5 HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_CLK_500&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_CLK_500 = PERIOD &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_CLK_100c&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_CLK_100c = PERIOD &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot; TS_clkRst_CLK_100s / 1.3 HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot; TS_clkRst_CLK_100s / 0.65 HIGH 50%&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[31].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[30].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[29].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[28].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[27].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[26].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[25].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[24].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/Use_UART.TX_Buffer_Empty_FDRE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N805</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N807</arg>&apos; has no driver
+</msg>
+
+</messages>
+

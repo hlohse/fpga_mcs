@@ -24,7 +24,9 @@ NET "hdmiTx3_n"  LOC = "A6" |IOSTANDARD = TMDS_33 ;
 #NET "edid_scl"  LOC = "M16" | PULLUP | IOSTANDARD = LVCMOS33;
 #NET "edid_sda"  LOC = "M18" | PULLUP | IOSTANDARD = LVCMOS33;
 #Created by Constraints Editor (xc6slx45-csg324-2) - 2013/09/24
-INST "clkRst/rstDelay_24" TNM = SyncReset;
+
+INST "clkRstSlow/rstDelay_24" TNM = SyncReset;
+
 #Created by Constraints Editor (xc6slx45-csg324-2) - 2013/09/24
 INST "withHdmiTx.Inst_hdmiOutIF/localRst" TNM = HdmiReset;
 TIMESPEC TS_hdmireset = FROM "SyncReset" TO "HdmiReset" TIG;

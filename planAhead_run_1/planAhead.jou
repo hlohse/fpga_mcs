@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Jan 11 14:38:34 2015
+# Process ID: 5581
+# Log file: /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/planAhead_run_1/planAhead.log
+# Journal file: /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/pa.fromNetlist.tcl

@@ -42,12 +42,13 @@ architecture Behavioral of ColorConverter_4_24 is
 
 begin
 
-	process( clock, reset )
+	process
 	begin
+		wait until rising_edge(clock);
 		if( reset = '0' ) then
 			color_out <= (others => '0');
-      valid_out <= '0';
-		elsif( rising_edge( clock ) ) then
+			valid_out <= '0';
+		else
 			case color_in is
 				when "0000" => color_out <= X"FF0000";
 				when "0001" => color_out <= X"FF0000";
@@ -67,7 +68,7 @@ begin
 				when "1111" => color_out <= X"0000FF";
 				when others => color_out <= (others => 'X');
 			end case;
-      valid_out <= valid_in;
+			valid_out <= valid_in;
 		end if;
 	end process;
 

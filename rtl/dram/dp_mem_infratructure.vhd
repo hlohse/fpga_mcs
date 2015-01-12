@@ -136,6 +136,26 @@ architecture syn of dp_mem_infrastructure is
 	 );
 	end component;
 
+	component mcsPll_600_125_50_50
+	port
+	 (-- Clock in ports
+	  CLK_IN           : in     std_logic;
+	  CLKFB_IN          : in     std_logic;
+	  -- Clock out ports
+	  CLK_500          : out    std_logic;
+	  CLK_500_n          : out    std_logic;
+	  CLK_125          : out    std_logic;
+	  CLK_100s          : out    std_logic;
+	  CLK_100c          : out    std_logic;
+	  CLK_50_CE       : in     std_logic;
+	  CLK_50          : out    std_logic;
+	  CLKFB_OUT         : out    std_logic;
+	  -- Status and control signals
+	  RESET             : in     std_logic;
+	  LOCKED            : out    std_logic
+	 );
+	end component;
+
 signal extRstIn: std_logic;
 
 signal CLK_IN          :     std_logic;

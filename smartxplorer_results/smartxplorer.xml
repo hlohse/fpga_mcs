@@ -1,0 +1,207 @@
+
+<smartXplorerReport>
+    <command>smartxplorer -p xc6slx45-csg324-2 -b -wd smartxplorer_results mcs_top.ngd -to "-v 3 -s 2 -n 3 -fastpaths -xml mcs_top.twx -ucf dp_dram.ucf" -host_list hostlistfile.txt -max_runs 7
+    </command>
+    <programStatus>Done
+    </programStatus>
+    <programPID>26334
+    </programPID>
+    
+    <strategy name="MapRunTime">
+        <strategyData>map  -ol high -w ; par  -ol high 
+        </strategyData>
+        <xdsFile>mapruntime.xds
+        </xdsFile>
+        <host name="pcakulap">
+            <hostData>Linux, x86_64, 8-processor, 16G RAM
+            </hostData>
+        </host>
+        <runIndex>run1
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>1072
+        </timingScore>
+        <WorstCaseSlack>-0.661ns
+        </WorstCaseSlack>
+        <Luts>17,994 (65%)
+	</Luts>
+	<SliceRegisters>7,388 (13%)
+	</SliceRegisters>
+	<runTime>0h 9m 10s
+        </runTime>
+    </strategy>
+    <strategy name="MapLogicOpt">
+        <strategyData>map  -ol high -xe n -logic_opt on -t 2 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>maplogicopt.xds
+        </xdsFile>
+        <host name="pcakulap">
+            <hostData>Linux, x86_64, 8-processor, 16G RAM
+            </hostData>
+        </host>
+        <runIndex>run2
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>6005
+        </timingScore>
+        <WorstCaseSlack>-0.658ns
+        </WorstCaseSlack>
+        <Luts>17,995 (65%)
+	</Luts>
+	<SliceRegisters>7,388 (13%)
+	</SliceRegisters>
+	<runTime>0h 10m 21s
+        </runTime>
+    </strategy>
+    <strategy name="MapGlobOptIOReg">
+        <strategyData>map  -ol high -global_opt speed -pr b -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapgloboptioreg.xds
+        </xdsFile>
+        <host name="pcakulap">
+            <hostData>Linux, x86_64, 8-processor, 16G RAM
+            </hostData>
+        </host>
+        <runIndex>run3
+        </runIndex>
+        <status>Done
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>0
+        </timingScore>
+        <WorstCaseSlack>0.004ns
+        </WorstCaseSlack>
+        <Luts>16,669 (61%)
+	</Luts>
+	<SliceRegisters>7,958 (14%)
+	</SliceRegisters>
+	<runTime>0h 15m 42s
+        </runTime>
+    </strategy>
+    <strategy name="MapRegDup">
+        <strategyData>map  -ol high -xe n -register_duplication on -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapregdup.xds
+        </xdsFile>
+        <host name="pcakulap">
+            <hostData>Linux, x86_64, 8-processor, 16G RAM
+            </hostData>
+        </host>
+        <runIndex>run4
+        </runIndex>
+        <status>Stopped
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>17,982 (65%)
+	</Luts>
+	<SliceRegisters>7,388 (13%)
+	</SliceRegisters>
+	<runTime>0h 6m 29s
+        </runTime>
+    </strategy>
+    <strategy name="MapExtraEffortIOReg">
+        <strategyData>map  -ol high -xe n -pr b -t 7 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>mapextraeffortioreg.xds
+        </xdsFile>
+        <host name="pcakulap">
+            <hostData>Linux, x86_64, 8-processor, 16G RAM
+            </hostData>
+        </host>
+        <runIndex>run5
+        </runIndex>
+        <status>Stopped
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>0h 5m 24s
+        </runTime>
+    </strategy>
+    <strategy name="MapLogOptRegDup">
+        <strategyData>map  -ol high -xe n -logic_opt on -register_duplication on -t 2 -w ; par  -ol high -xe n 
+        </strategyData>
+        <xdsFile>maplogoptregdup.xds
+        </xdsFile>
+        <host name="None">
+            <hostData>None
+            </hostData>
+        </host>
+        <runIndex>None
+        </runIndex>
+        <status>None
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>None
+        </runTime>
+    </strategy>
+    <strategy name="MapExtraEffort2">
+        <strategyData>map  -ol high -xe n -t 3 -w ; par  -ol high 
+        </strategyData>
+        <xdsFile>mapextraeffort2.xds
+        </xdsFile>
+        <host name="None">
+            <hostData>None
+            </hostData>
+        </host>
+        <runIndex>None
+        </runIndex>
+        <status>None
+        </status>
+        <logFile>mcs_top_sx.log
+        </logFile>
+        <timingScore>None
+        </timingScore>
+        <WorstCaseSlack>None
+        </WorstCaseSlack>
+        <Luts>None
+	</Luts>
+	<SliceRegisters>None
+	</SliceRegisters>
+	<runTime>None
+        </runTime>
+    </strategy>
+    <bestStrategy>MapGlobOptIOReg
+    </bestStrategy>
+    <envVariables>
+        <env name="XILINX_DSP"  value="/opt/xilinx/14.7/ISE_DS/ISE"/>
+        <env name="XILINX"  value="/opt/xilinx/14.7/ISE_DS/ISE/"/>
+        <env name="LM_LICENSE_FILE"  value="1717@pcakulap"/>
+        <env name="LD_LIBRARY_PATH"  value="/opt/xilinx/14.7/ISE_DS/ISE//lib/lin64:/usr/lib64:/opt/xilinx/14.7/ISE_DS/ISE/lib/lin64:/opt/xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/opt/xilinx/14.7/ISE_DS/ISE/sysgen/lib:/opt/xilinx/14.7/ISE_DS/EDK/lib/lin64:/opt/xilinx/14.7/ISE_DS/common/lib/lin64:/usr/lib64/alliance/lib:/usr/local/cuda-5.5/lib64:/usr/lib64/root:/usr/local/lib64:/usr/local/lib:/usr/local/lib"/>
+        <env name="XILINX_PLANAHEAD"  value="/opt/xilinx/14.7/ISE_DS/PlanAhead"/>
+        <env name="XILINX_EDK"  value="/opt/xilinx/14.7/ISE_DS/EDK"/>
+        <env name="PLX_SDK_DIR"  value="/opt/plx/sdk"/>
+        <env name="PATH"  value="/opt/xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/xilinx/14.7/ISE_DS/ISE/sysgen/bin:/opt/xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/xilinx/14.7/ISE_DS/common/bin/lin64:/usr/lib64/qt-3.3/bin:/usr/lib/qtchooser:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/local/sbin:/usr/sbin:/usr/lib64/alliance/bin:/usr/libexec/sdcc:/usr/local/cuda-5.5/bin:/opt/mentor/sim/modeltech/bin:/opt/mentor/pcb/7.9.4EE/SDD_HOME/common/linux/bin:/opt/mentor/hds/bin:/opt/mentor/precision/Mgc_home/bin:/usr/lib64/openmpi/bin/:/opt/matlab/R2013a/bin/:/opt/cmt/Linux-x86_64:/home/kugel/.local/bin:/home/kugel/bin"/>
+        
+    </envVariables>
+    <copyResult>MapGlobOptIOReg
+    </copyResult>
+</smartXplorerReport>

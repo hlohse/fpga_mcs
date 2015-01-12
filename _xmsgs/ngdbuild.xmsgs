@@ -6,91 +6,56 @@
      users do not edit the contents of this file. -->
 <messages>
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT3</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_100s = PERIOD &quot;clkRst_CLK_100s&quot; TS_Clk HIGH 50%&gt;</arg>
+<arg fmt="%s" index="7">CLKOUT3</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRstSlow_CLK_100s = PERIOD &quot;clkRstSlow_CLK_100s&quot; TS_Clk HIGH 50%&gt;</arg>
 </msg>
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_500_n = PERIOD &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE 0.833333333 ns HIGH 50%&gt;</arg>
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRstSlow_CLK_500_n = PERIOD &quot;clkRstSlow_CLK_500_n&quot; TS_Clk / 6 PHASE 0.833333333 ns HIGH 50%&gt;</arg>
 </msg>
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT5</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_clkGen_clkout5 = PERIOD &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5 HIGH 50%&gt;</arg>
+<arg fmt="%s" index="7">CLKOUT5</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRstSlow_clkGen_clkout5 = PERIOD &quot;clkRstSlow_clkGen_clkout5&quot; TS_Clk / 0.5 HIGH 50%&gt;</arg>
 </msg>
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_500 = PERIOD &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%&gt;</arg>
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRstSlow_CLK_500 = PERIOD &quot;clkRstSlow_CLK_500&quot; TS_Clk / 6 HIGH 50%&gt;</arg>
 </msg>
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">Clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_Clk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT4</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRst_CLK_100c = PERIOD &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%&gt;</arg>
+<arg fmt="%s" index="7">CLKOUT4</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clkRstSlow_CLK_100c = PERIOD &quot;clkRstSlow_CLK_100c&quot; TS_Clk HIGH 50%&gt;</arg>
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">hdmiRxClk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_hdmiRxClk</arg>&apos;, was traced into <arg fmt="%s" index="4">BUFIO2</arg> instance <arg fmt="%s" index="5">withHdmiRx.Inst_hdmiRx/receiveDecoder/bufio_tmdsclk</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">BUFIO2</arg> output(s): 
-<arg fmt="%s" index="7">DIVCLK</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk&quot; TS_hdmiRxClk HIGH 50%&gt;</arg>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRstSlow_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRstSlow_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot; TS_clkRstSlow_CLK_100s / 1.3 HIGH 50%&gt;</arg>
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">hdmiRxClk_n</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_hdmiRx_n_3_</arg>&apos;, was traced into <arg fmt="%s" index="4">BUFIO2</arg> instance <arg fmt="%s" index="5">withHdmiRx.Inst_hdmiRx/receiveDecoder/bufio_tmdsclk</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">BUFIO2</arg> output(s): 
-<arg fmt="%s" index="7">DIVCLK</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0&quot; TS_hdmiRx_n_3_ HIGH 50%&gt;</arg>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRstSlow_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRstSlow_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRstSlow_CLK_100s / 6.5 HIGH 50%&gt;</arg>
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRst_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRst_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot; TS_clkRst_CLK_100s / 1.3 HIGH 50%&gt;</arg>
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRstSlow_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRstSlow_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot; TS_clkRstSlow_CLK_100s / 0.65 HIGH 50%&gt;</arg>
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRst_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRst_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%&gt;</arg>
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRstSlow_CLK_500_n&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRstSlow_CLK_500_n = PERIOD &quot;clkRstSlow_CLK_500_n&quot; TS_Clk / 6 PHASE 0.833333333 ns HIGH 50%&gt;</arg>.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkRst_CLK_100s</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkRst_CLK_100s</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot; TS_clkRst_CLK_100s / 0.65 HIGH 50%&gt;</arg>
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRstSlow_clkGen_clkout5&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRstSlow_clkGen_clkout5 = PERIOD &quot;clkRstSlow_clkGen_clkout5&quot; TS_Clk / 0.5 HIGH 50%&gt;</arg>.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1&quot; TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk HIGH 50%&gt;</arg>
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRstSlow_CLK_500&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRstSlow_CLK_500 = PERIOD &quot;clkRstSlow_CLK_500&quot; TS_Clk / 6 HIGH 50%&gt;</arg>.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk0 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk0&quot; TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk / 10 HIGH 50%&gt;</arg>
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRstSlow_CLK_100c&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRstSlow_CLK_100c = PERIOD &quot;clkRstSlow_CLK_100c&quot; TS_Clk HIGH 50%&gt;</arg>.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2&quot; TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk / 2 HIGH 50%&gt;</arg>
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot; TS_clkRstSlow_CLK_100s / 1.3 HIGH 50%&gt;</arg>.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk1_0&quot; TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0 HIGH 50%&gt;</arg>
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRstSlow_CLK_100s / 6.5 HIGH 50%&gt;</arg>.
 </msg>
 
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk0_0 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk0_0&quot; TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0 / 10 HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT2</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0 = PERIOD &quot;withHdmiRx_Inst_hdmiRx_receiveDecoder_pllclk2_0&quot; TS_withHdmiRx_Inst_hdmiRx_receiveDecoder_rxclk_0 / 2 HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_CLK_500_n&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_CLK_500_n = PERIOD &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE 0.833333333 ns HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_clkGen_clkout5&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_clkGen_clkout5 = PERIOD &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5 HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_CLK_500&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_CLK_500 = PERIOD &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_clkRst_CLK_100c&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_clkRst_CLK_100c = PERIOD &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot; TS_clkRst_CLK_100s / 1.3 HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot; TS_clkRst_CLK_100s / 0.65 HIGH 50%&gt;</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1440" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">10</arg>) was detected for the <arg fmt="%s" index="2">CLKIN1_PERIOD</arg> attribute on <arg fmt="%s" index="3">PLL</arg> &quot;<arg fmt="%s" index="4">PLL_ADV</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">12 ns.</arg>).  The uncertainty calculation will use the PERIOD constraint value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">PLL</arg> output clocks.
+<msg type="warning" file="ConstraintSystem" num="67" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;rst_n&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&gt;</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot; TS_clkRstSlow_CLK_100s / 0.65 HIGH 50%&gt;</arg>.
 </msg>
 
 <msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/PLB_Interconnect.PLBv46_rdDBus_DFF[31].PLBv46_rdBus_FDRE</arg>&apos; has unconnected output pin
@@ -120,106 +85,10 @@
 <msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">mcs_0/U0/Debug.mdm_0/MDM_Core_I1/Use_UART.TX_Buffer_Empty_FDRE</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N667</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N903</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N669</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;0&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;1&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;2&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;3&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;4&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;5&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;5&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;6&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;6&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;7&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;7&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;8&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;8&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;9&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;9&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;10&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;10&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;11&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;11&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;12&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;12&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;13&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;13&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;14&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/e_valid_out&lt;14&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/compare&lt;15&gt;</arg>&apos; has no driver
-</msg>
-
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">MBPIPE_I/valid_out</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N905</arg>&apos; has no driver
 </msg>
 
 </messages>

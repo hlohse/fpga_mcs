@@ -1,0 +1,50 @@
+
+Release 14.7 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+smartxplorer -p xc6slx45-csg324-2 -b -wd smartxplorer_results mcs_top.ngd -to "-v 3 -s 2 -n 3 -fastpaths -xml mcs_top.twx -ucf dp_dram.ucf" -host_list hostlistfile.txt -max_runs 7
+
+SmartXplorer Settings: 
+
+designName=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/mcs_top.ngd 
+write_dir=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results 
+host_list=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/hostlistfile.txt 
+part=xc6slx45-csg324-2 
+strategy_file=None 
+notify=None 
+source_dir=/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs 
+batch_mode=True 
+run_all_strategies=False 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 2 -n 3 -fastpaths -xml mcs_top.twx -ucf dp_dram.ucf"
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+
+
+INFO: Timing Met... Stopping remaining jobs
+######################################################################
+ BestStrategy : MapGlobOptIOReg
+######################################################################
+ Run index                           : run3
+ Map options                         : -ol high -global_opt speed -pr b -w 
+ Par options                         : -ol high -xe n 
+ Number of Luts                      : 16,669 (61%)
+ Number of Slice Registers           : 7,958 (14%)
+ Achieved Timing Score               : 0
+ Worst Case Slack                : 0.004ns
+
+######################################################################
+
+Total Real Time:975.1(secs)
+SmartXplorer Done
+
+
+SmartXplorer Done. See file 'smartxplorer.txt' for detailed report.

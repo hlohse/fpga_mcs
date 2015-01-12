@@ -1,0 +1,56 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsglobal_opt:spspeed:sp:dspr:spb:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:sp:dsp:spxc6slx45:dscsg324:ds2:sp:dsuc:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:clslmcs_top.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spmcs_top.twx:sp:dsucf:spdp_dram.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp3:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapGlobOptIOReg:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sq:slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINX_PLANAHEAD': '/opt/xilinx/14.7/ISE_DS/PlanAhead'
+'XILINX_DSP': '/opt/xilinx/14.7/ISE_DS/ISE'
+'XILINX_EDK': '/opt/xilinx/14.7/ISE_DS/EDK'
+'LM_LICENSE_FILE': '1717@pcakulap'
+'XILINX': '/opt/xilinx/14.7/ISE_DS/ISE/'
+'PATH': '/opt/xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/xilinx/14.7/ISE_DS/ISE/sysgen/bin:/opt/xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/xilinx/14.7/ISE_DS/common/bin/lin64:/usr/lib64/qt-3.3/bin:/usr/lib/qtchooser:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/local/sbin:/usr/sbin:/usr/lib64/alliance/bin:/usr/libexec/sdcc:/usr/local/cuda-5.5/bin:/opt/mentor/sim/modeltech/bin:/opt/mentor/pcb/7.9.4EE/SDD_HOME/common/linux/bin:/opt/mentor/hds/bin:/opt/mentor/precision/Mgc_home/bin:/usr/lib64/openmpi/bin/:/opt/matlab/R2013a/bin/:/opt/cmt/Linux-x86_64:/home/kugel/.local/bin:/home/kugel/bin'
+'LD_LIBRARY_PATH': '/opt/xilinx/14.7/ISE_DS/ISE//lib/lin64:/usr/lib64:/opt/xilinx/14.7/ISE_DS/ISE/lib/lin64:/opt/xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/opt/xilinx/14.7/ISE_DS/ISE/sysgen/lib:/opt/xilinx/14.7/ISE_DS/EDK/lib/lin64:/opt/xilinx/14.7/ISE_DS/common/lib/lin64:/usr/lib64/alliance/lib:/usr/local/cuda-5.5/lib64:/usr/lib64/root:/usr/local/lib64:/usr/local/lib:/usr/local/lib'
+'PLX_SDK_DIR': '/opt/plx/sdk'}
+envDict = {}
+PATH = ['/opt/xilinx/14.7/ISE_DS/ISE//bin/lin64', '/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64', '/opt/xilinx/14.7/ISE_DS/ISE/sysgen/util', '/opt/xilinx/14.7/ISE_DS/ISE/sysgen/bin', '/opt/xilinx/14.7/ISE_DS/ISE/../../../DocNav', '/opt/xilinx/14.7/ISE_DS/PlanAhead/bin', '/opt/xilinx/14.7/ISE_DS/EDK/bin/lin64', '/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin', '/opt/xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin', '/opt/xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin', '/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin', '/opt/xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin', '/opt/xilinx/14.7/ISE_DS/common/bin/lin64', '/usr/lib64/qt-3.3/bin', '/usr/lib/qtchooser', '/usr/lib64/ccache', '/usr/local/bin', '/usr/bin', '/bin', '/usr/games', '/usr/local/sbin', '/usr/sbin', '/usr/lib64/alliance/bin', '/usr/libexec/sdcc', '/usr/local/cuda-5.5/bin', '/opt/mentor/sim/modeltech/bin', '/opt/mentor/pcb/7.9.4EE/SDD_HOME/common/linux/bin', '/opt/mentor/hds/bin', '/opt/mentor/precision/Mgc_home/bin', '/usr/lib64/openmpi/bin/', '/opt/matlab/R2013a/bin/', '/opt/cmt/Linux-x86_64', '/home/kugel/.local/bin', '/home/kugel/bin']
+Found xst at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/xst.
+Found ngdbuild at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/ngdbuild.
+Found map at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/map.
+Found par at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/par.
+Found trce at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/trce.
+Found xpwr at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/xpwr.
+Found bitgen at /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/bitgen.
+pcakulap_2.stat:/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/.sx.keepAlive.pcakulap_2
+INFO: total number of threads running this host 615
+...searching for file: mapgloboptioreg.xds
+Creating XDS file ... mapgloboptioreg.xds
+###################################
+
+      <property name = "Map:Placer Effort Level"
+               value = "High" />
+      <property name = "Map:Global Optimization"
+               value = "Speed" />
+      <property name = "Map:Pack I/O Registers/Latches into IOBs"
+               value = "For Inputs and Outputs" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Place &amp; Route:Extra Effort (Highest PAR level only)"
+               value = "Normal" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-2" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -ol high -global_opt speed -pr b -w  -p xc6slx45-csg324-2 -o mcs_top_map.ncd  :slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.pcf...
+runTask: map mcs_top.ngd -ol high -global_opt speed -pr b -w -p xc6slx45-csg324-2 -o mcs_top_map.ncd /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf
+args = ['map', 'mcs_top.ngd', '-ol', 'high', '-global_opt', 'speed', '-pr', 'b', '-w', '-p', 'xc6slx45-csg324-2', '-o', 'mcs_top_map.ncd', '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf']
+launching par with options  -ol high -xe n  -w mcs_top.ncd  :slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.pcf...
+runTask: par mcs_top_map.ncd -ol high -xe n -w mcs_top.ncd /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf
+args = ['par', 'mcs_top_map.ncd', '-ol', 'high', '-xe', 'n', '-w', 'mcs_top.ncd', '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf']
+launching trce...
+runTask: trce /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.ncd /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf -xml /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.twx -v 3 -s 2 -n 3 -fastpaths -ucf dp_dram.ucf -o /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.twr
+args = ['trce', '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.ncd', '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf', '-xml', '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.twx', '-v', '3', '-s', '2', '-n', '3', '-fastpaths', '-ucf', 'dp_dram.ucf', '-o', '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.twr']

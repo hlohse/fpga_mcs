@@ -91,6 +91,15 @@ component fmul_l3 IS
   );
 END component;
 
+component fmul_l3_4dsp IS
+  PORT (
+    a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    b : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    result : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+  );
+END component;
+
 COMPONENT fcmpless
   PORT (
     a : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -122,7 +131,7 @@ begin
   CX_SHIFT_3_I: cx_shift_3 port map (cx_shift_6_out, clk, cx_shift_3_out);
 
   FSQR_1_1_I: fmul_l3  port map (zx_in,          zx_in,          clk, sqr_1_1_result);
-  FMUL_1_I:   fmul_l3  port map (zx_in,          zy_in,          clk, mul_1_result);
+  FMUL_1_I:   fmul_l3_4dsp  port map (zx_in,          zy_in,          clk, mul_1_result);
   FSQR_1_2_I: fmul_l3  port map (zy_in,          zy_in,          clk, sqr_1_2_result);
   
   FSUB_2_I:   fsub_l3  port map (sqr_1_1_result, sqr_1_2_result, clk, sub_2_result);
@@ -142,19 +151,17 @@ begin
       cmp_3_const_4 <= "01000000100000000000000000000000";
       counter       <= 0;
       
-    else
-      if clear = '1' then
+    elsif clear = '1' then
         valid_out <= '0';
         counter   <= 0;
          
-      elsif valid_in = '1' then
+    elsif valid_in = '1' then
         if counter = 8 then
           valid_out <= '1';
           cx_out    <= cx_shift_3_out;
         else
           counter <= counter + 1;
         end if;
-      end if;
     end if;
   end process;
 

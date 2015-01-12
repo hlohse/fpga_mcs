@@ -1,0 +1,219 @@
+PING pcakulap (147.142.42.20) 56(84) bytes of data.
+
+--- pcakulap ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 999ms
+rtt min/avg/max/mdev = 0.031/0.034/0.038/0.006 ms
+
+launching strategy on machine: pcakulap
+'/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/smartxplorer'  --runStrategy  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top.ngd'  xc6slx45-csg324-2  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run1/mcs_top_sx.log'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/pcakulap_0.stat'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/smartxplorer.env'   'None'  :oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:sp:dsp:spxc6slx45:dscsg324:ds2:sp:dsuc:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:clslmcs_top.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spmcs_top.twx:sp:dsucf:spdp_dram.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp1:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapRunTime:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sq:slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:sq:cc map par
+launching strategy on machine: pcakulap
+'/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/smartxplorer'  --runStrategy  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run2'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run2/mcs_top.ngd'  xc6slx45-csg324-2  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run2/mcs_top_sx.log'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/pcakulap_1.stat'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/smartxplorer.env'   'None'  :oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:dslogic_opt:spon:sp:dst:sp2:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:sp:dsp:spxc6slx45:dscsg324:ds2:sp:dsuc:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:clslmcs_top.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spmcs_top.twx:sp:dsucf:spdp_dram.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp2:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapLogicOpt:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sq:slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:sq:cc map par
+launching strategy on machine: pcakulap
+'/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/smartxplorer'  --runStrategy  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.ngd'  xc6slx45-csg324-2  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top_sx.log'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/pcakulap_2.stat'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/smartxplorer.env'   'None'  :oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsglobal_opt:spspeed:sp:dspr:spb:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:sp:dsp:spxc6slx45:dscsg324:ds2:sp:dsuc:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:clslmcs_top.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spmcs_top.twx:sp:dsucf:spdp_dram.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp3:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapGlobOptIOReg:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sq:slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:sq:cc map par
+pcakulap_0 pcakulap_0.stat 1420805502.52 1420805502.47 1420805502.55
+pcakulap_1 pcakulap_1.stat 1420805502.55 1420805502.5 1420805502.55
+pcakulap_2 waiting on /home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/.sx.keepAlive.pcakulap_2
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 pcakulap_2.stat 1420805502.58 1420805502.55 1420805517.49
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805532.55 1420805502.55 1420805547.51
+pcakulap_1 pcakulap_1.stat 1420805532.58 1420805502.55 1420805547.58
+pcakulap_2 pcakulap_2.stat 1420805532.61 1420805517.49 1420805547.58
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805562.58 1420805547.51 1420805577.54
+pcakulap_1 pcakulap_1.stat 1420805562.61 1420805547.58 1420805577.54
+pcakulap_2 pcakulap_2.stat 1420805562.64 1420805547.58 1420805577.54
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805592.61 1420805577.54 1420805607.57
+pcakulap_1 pcakulap_1.stat 1420805592.61 1420805577.54 1420805607.57
+pcakulap_2 pcakulap_2.stat 1420805592.67 1420805577.54 1420805607.57
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805622.64 1420805607.57 1420805637.6
+pcakulap_1 pcakulap_1.stat 1420805622.64 1420805607.57 1420805637.6
+pcakulap_2 pcakulap_2.stat 1420805622.7 1420805607.57 1420805637.6
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805652.67 1420805637.6 1420805667.62
+pcakulap_1 pcakulap_1.stat 1420805652.67 1420805637.6 1420805667.62
+pcakulap_2 pcakulap_2.stat 1420805652.73 1420805637.6 1420805667.62
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805682.7 1420805667.62 1420805697.66
+pcakulap_1 pcakulap_1.stat 1420805682.7 1420805667.62 1420805697.66
+pcakulap_2 pcakulap_2.stat 1420805682.76 1420805667.62 1420805697.66
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805712.73 1420805697.66 1420805727.68
+pcakulap_1 pcakulap_1.stat 1420805712.73 1420805697.66 1420805727.68
+pcakulap_2 pcakulap_2.stat 1420805712.79 1420805697.66 1420805727.68
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805742.76 1420805727.68 1420805757.71
+pcakulap_1 pcakulap_1.stat 1420805742.76 1420805727.68 1420805757.71
+pcakulap_2 pcakulap_2.stat 1420805742.82 1420805727.68 1420805757.71
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805772.79 1420805757.71 1420805787.74
+pcakulap_1 pcakulap_1.stat 1420805772.79 1420805757.71 1420805787.74
+pcakulap_2 pcakulap_2.stat 1420805772.85 1420805757.71 1420805787.74
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805802.82 1420805787.74 1420805817.77
+pcakulap_1 pcakulap_1.stat 1420805802.82 1420805787.74 1420805817.77
+pcakulap_2 pcakulap_2.stat 1420805802.88 1420805787.74 1420805817.78
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805832.83 1420805817.77 1420805847.8
+pcakulap_1 pcakulap_1.stat 1420805832.85 1420805817.77 1420805847.8
+pcakulap_2 pcakulap_2.stat 1420805832.91 1420805817.78 1420805847.8
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805862.86 1420805847.8 1420805877.83
+pcakulap_1 pcakulap_1.stat 1420805862.87 1420805847.8 1420805877.84
+pcakulap_2 pcakulap_2.stat 1420805862.92 1420805847.81 1420805877.84
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805892.89 1420805877.84 1420805907.86
+pcakulap_1 pcakulap_1.stat 1420805892.9 1420805877.84 1420805907.86
+pcakulap_2 pcakulap_2.stat 1420805892.95 1420805877.84 1420805907.86
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805922.92 1420805907.86 1420805937.89
+pcakulap_1 pcakulap_1.stat 1420805922.93 1420805907.86 1420805937.89
+pcakulap_2 pcakulap_2.stat 1420805922.98 1420805907.86 1420805937.89
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805952.95 1420805937.89 1420805967.92
+pcakulap_1 pcakulap_1.stat 1420805952.96 1420805937.89 1420805967.92
+pcakulap_2 pcakulap_2.stat 1420805953.01 1420805937.9 1420805967.92
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420805982.98 1420805967.92 1420805997.95
+pcakulap_1 pcakulap_1.stat 1420805982.99 1420805967.92 1420805997.95
+pcakulap_2 pcakulap_2.stat 1420805983.04 1420805967.92 1420805997.95
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420806013.01 1420805997.95 1420806027.98
+pcakulap_1 pcakulap_1.stat 1420806013.02 1420805997.95 1420806027.98
+pcakulap_2 pcakulap_2.stat 1420806013.07 1420805997.95 1420806027.98
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+New best strategy: MapRunTime score: 1072
+launching strategy on machine: pcakulap
+'/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/smartxplorer'  --runStrategy  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run4'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run4/mcs_top.ngd'  xc6slx45-csg324-2  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run4/mcs_top_sx.log'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/pcakulap_0.stat'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/smartxplorer.env'   'None'  :oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:dsregister_duplication:spon:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:sp:dsp:spxc6slx45:dscsg324:ds2:sp:dsuc:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:clslmcs_top.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spmcs_top.twx:sp:dsucf:spdp_dram.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp4:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapRegDup:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sq:slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:sq:cc map par
+pcakulap_0 pcakulap_0.stat 1420806043.03 1420806064.02 1420806064.04
+pcakulap_1 pcakulap_1.stat 1420806043.05 1420806027.98 1420806064.04
+pcakulap_2 pcakulap_2.stat 1420806043.1 1420806027.98 1420806064.04
+pcakulap_0 pcakulap_0.stat 1420806064.07 1420806064.04 1420806079.03
+pcakulap_0 pcakulap_0.stat 1420806073.06 1420806079.03 1420806079.03
+pcakulap_1 pcakulap_1.stat 1420806073.08 1420806064.04 1420806079.03
+pcakulap_2 pcakulap_2.stat 1420806073.13 1420806064.04 1420806079.03
+pcakulap_0 no new lines in stat file
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420806094.09 1420806079.03 1420806109.06
+pcakulap_1 pcakulap_1.stat 1420806103.09 1420806079.03 1420806109.06
+pcakulap_2 pcakulap_2.stat 1420806103.16 1420806079.03 1420806109.06
+launching strategy on machine: pcakulap
+'/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/smartxplorer'  --runStrategy  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run5'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run5/mcs_top.ngd'  xc6slx45-csg324-2  '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run5/mcs_top_sx.log'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/pcakulap_1.stat'   '/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/.smartxplorer/smartxplorer.env'   'None'  :oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:dspr:spb:sp:dst:sp7:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:sp:dsp:spxc6slx45:dscsg324:ds2:sp:dsuc:sp:clslhome:clslkugel:clsldaten:clslwork:clslverwalt:clslheidelberg:clsllectures:clsl2014:clslcopro:clslexercises:clsl3:clslfpga_mcs:clslmcs_top.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:spmcs_top.twx:sp:dsucf:spdp_dram.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp5:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapExtraEffortIOReg:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sq:slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:sq:cc map par
+pcakulap_0 pcakulap_0.stat 1420806124.11 1420806109.06 1420806135.13
+pcakulap_1 pcakulap_1.stat 1420806133.1 1420806135.09 1420806135.13
+pcakulap_2 pcakulap_2.stat 1420806133.19 1420806109.06 1420806135.13
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806135.16 1420806135.13 1420806145.14
+pcakulap_2 no new lines in stat file
+pcakulap_0 pcakulap_0.stat 1420806154.13 1420806135.13 1420806160.16
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806165.19 1420806145.14 1420806175.17
+pcakulap_2 pcakulap_2.stat 1420806163.21 1420806135.13 1420806175.17
+pcakulap_0 pcakulap_0.stat 1420806184.16 1420806160.16 1420806190.19
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806195.22 1420806175.17 1420806205.2
+pcakulap_2 pcakulap_2.stat 1420806193.24 1420806175.17 1420806205.2
+pcakulap_0 pcakulap_0.stat 1420806214.19 1420806190.19 1420806220.22
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806225.25 1420806205.2 1420806235.23
+pcakulap_2 pcakulap_2.stat 1420806223.27 1420806205.2 1420806235.23
+pcakulap_0 pcakulap_0.stat 1420806244.22 1420806220.22 1420806250.25
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806255.28 1420806235.23 1420806265.26
+pcakulap_2 pcakulap_2.stat 1420806253.3 1420806235.23 1420806265.26
+pcakulap_0 pcakulap_0.stat 1420806274.23 1420806250.25 1420806280.28
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806285.31 1420806265.26 1420806295.29
+pcakulap_2 pcakulap_2.stat 1420806283.33 1420806265.26 1420806295.29
+pcakulap_0 pcakulap_0.stat 1420806304.26 1420806280.28 1420806310.31
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806315.34 1420806295.29 1420806325.32
+pcakulap_2 pcakulap_2.stat 1420806313.36 1420806295.29 1420806325.32
+pcakulap_0 pcakulap_0.stat 1420806334.29 1420806310.31 1420806340.34
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806345.37 1420806325.32 1420806355.35
+pcakulap_2 pcakulap_2.stat 1420806343.36 1420806325.32 1420806355.35
+pcakulap_0 pcakulap_0.stat 1420806364.32 1420806340.34 1420806370.37
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806375.4 1420806355.35 1420806385.38
+pcakulap_2 pcakulap_2.stat 1420806373.39 1420806355.35 1420806385.38
+pcakulap_0 pcakulap_0.stat 1420806394.35 1420806370.37 1420806400.4
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+pcakulap_0 no new lines in stat file
+pcakulap_1 pcakulap_1.stat 1420806405.42 1420806385.38 1420806415.4
+pcakulap_2 pcakulap_2.stat 1420806403.42 1420806385.38 1420806415.4
+pcakulap_0 pcakulap_0.stat 1420806424.38 1420806400.4 1420806430.42
+pcakulap_1 no new lines in stat file
+pcakulap_2 no new lines in stat file
+New best strategy: MapGlobOptIOReg score: 0
+
+INFO: Timing Met... Stopping remaining jobs
+kill -9 27274
+kill -9 26936
+kill -9 26936
+kill -9 27038
+kill -9 27032
+kill -9 27032
+kill -9 27352
+kill -9 26349
+kill -9 26349
+pcakulap_0 is Idle
+pcakulap_1 is Idle
+pcakulap_2 is Idle

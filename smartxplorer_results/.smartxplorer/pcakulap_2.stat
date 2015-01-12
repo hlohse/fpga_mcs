@@ -1,0 +1,20 @@
+START:Strategy:3:MapGlobOptIOReg
+REMOTE_PID:26349
+RUNNING:26349:26355:MapGlobOptIOReg:map:mcs_top.ngd: -ol high -global_opt speed -pr b -w  -p xc6slx45-csg324-2 -o mcs_top_map.ncd  :slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.pcf
+STATUS:MapGlobOptIOReg:map:Score:None:lut:None:slice_reg:7,958 (14%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:630.66 secs 
+STATUS:MapGlobOptIOReg:map:Score:None:lut:16,669 (61%):slice_reg:7,958 (14%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:630.66 secs 
+STATUS:MapGlobOptIOReg:map:Score:None:lut:16,669 (61%):slice_reg:7,958 (14%):slice:5,267 (77%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:630.66 secs 
+STATUS:MapGlobOptIOReg:map:Score:None:lut:16,669 (61%):slice_reg:7,958 (14%):slice:5,267 (77%):bram:32:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:630.66 secs 
+STATUS:MapGlobOptIOReg:map:Score:None:lut:16,669 (61%):slice_reg:7,958 (14%):slice:5,267 (77%):bram:32:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:630.66 secs 
+STATUS:MapGlobOptIOReg:map:Score:None:lut:16,669 (61%):slice_reg:7,958 (14%):slice:5,267 (77%):bram:32:dsp48:18 (31%):mult18x18:None:Power:None:wnsInfo:None:Time:630.66 secs 
+DONE:map:0
+RUNNING:26349:27030:MapGlobOptIOReg:par:mcs_top_map.ncd: -ol high -xe n  -w mcs_top.ncd  :slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.pcf
+STATUS:MapGlobOptIOReg:par:Score:80632:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:855.86 secs 
+STATUS:MapGlobOptIOReg:par:Score:283:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:900.91 secs 
+STATUS:MapGlobOptIOReg:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:905.91 secs 
+STATUS:MapGlobOptIOReg:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:0.004ns:Time:910.92 secs 
+DONE:par:0
+RUNNING:26349:27352:MapGlobOptIOReg:trce:/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.ncd::slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.pcf -xml :slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.twx -v 3 -s 2 -n 3 -fastpaths   -ucf dp_dram.ucf -o :slhome:slkugel:sldaten:slwork:slverwalt:slheidelberg:sllectures:sl2014:slcopro:slexercises:sl3:slfpga_mcs:slsmartxplorer_results:slrun3:slmcs_top.twr
+STATUS:MapGlobOptIOReg:trce:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:940.96 secs 
+DONE:trce:0
+DONE:Xplorer

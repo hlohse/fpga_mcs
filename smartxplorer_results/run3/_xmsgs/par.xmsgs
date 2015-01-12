@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_Clk;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15577)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_Clk = PERIOD TIMEGRP &quot;Clk&quot; 10 ns HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15533)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500_n;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15578)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500_n = PERIOD TIMEGRP &quot;clkRst_CLK_500_n&quot; TS_Clk / 6 PHASE         0.833333333 ns HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15536)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_clkGen_clkout5;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15579)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_clkGen_clkout5 = PERIOD TIMEGRP &quot;clkRst_clkGen_clkout5&quot; TS_Clk / 0.5         HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15538)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_500;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15580)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_500 = PERIOD TIMEGRP &quot;clkRst_CLK_500&quot; TS_Clk / 6 HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15539)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_clkRst_CLK_100c;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15581)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_clkRst_CLK_100c = PERIOD TIMEGRP &quot;clkRst_CLK_100c&quot; TS_Clk HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15540)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15583)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout1&quot;         TS_clkRst_CLK_100s / 1.3 HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15543)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG = TS_withHdmiTx_Inst_hdmiOutIF_clk_650;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15584)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_clk_650 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_clk_650&quot; TS_clkRst_CLK_100s / 6.5 HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15545)]</arg>.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="67" delta="new" >Constraint <arg fmt="%s" index="1">&lt;PIN &quot;Rst_n_pins&lt;0&gt;&quot; TIG =         TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15586)]</arg> modifies the effective value of constraint <arg fmt="%s" index="2">&lt;TS_withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2 = PERIOD TIMEGRP         &quot;withHdmiTx_Inst_hdmiOutIF_xgaTiming_clkGen_clkout2&quot;         TS_clkRst_CLK_100s / 0.65 HIGH 50%;&gt; [/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/smartxplorer_results/run3/mcs_top.pcf(15548)]</arg>.
+</msg>
+
+<msg type="warning" file="Par" num="251" delta="old" >Map -timing was run with a lower effort level setting than you are using for PAR.  Xilinx recommends that you rerun Map -timing with the effort level that you have set in PAR to achieve better design performance.
+</msg>
+
+<msg type="info" file="Timing" num="3386" delta="old" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
+
+<msg type="warning" file="Route" num="466" delta="new" >Unusually high hold time violation detected among <arg fmt="%d" index="1">26</arg> connections. The top <arg fmt="%d" index="2">20</arg> such instances are printed below. The router will continue and try to fix it
+</msg>
+
+<msg type="info" file="Timing" num="2761" delta="old" >N/A entries in the Constraints List may indicate that the constraint is not analyzed due to the following: No paths covered by this constraint; Other constraints intersect with this constraint; or This constraint was disabled by a Path Tracing Control. Please run the Timespec Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.</msg>
+
+</messages>
+

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Map" num="284" delta="old" >Map is running with the multi-threading option on. Map currently supports the use of up to 2 processors. Based on the the user options and machine load, Map will use 2 processors during this run.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mcs_0/U0/dlmb/POR_FF_I</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mcs_0/U0/ilmb/POR_FF_I&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_Break</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/take_NM_Break&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">c3_p4_cmd_en</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FCMP_3_I/blk0000000f&gt; &lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FCMP_3_I/blk0000000f&gt; &lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FCMP_3_I/blk0000000f&gt; &lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FCMP_3_I/blk0000000f&gt; &lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FCMP_3_I/blk0000000f&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB41&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_0_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000310</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk00000032&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk0000030f</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000ea&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000311</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_3_1_I/blk00000031&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB02</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB02</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_0_BRB12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB02</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB42&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB32&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB03</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB03</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_0_BRB13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB03</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB43&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB33&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB04</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB04</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_0_BRB14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB04</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB44&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB34&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB05</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB05</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_0_BRB15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB05</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB45&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB35&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB06</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_0_BRB16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB06</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_0_BRB16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB06</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB46&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB36&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_0_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_2_BRB27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[3].pipeStageX/GEN[6].stageX/colorVal_out_1_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[5].stageX/Mshreg_colorVal_out_3_BRB47&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_0_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_0_BRB11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_1_BRB27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/pipeStageN/GEN[6].stageX/colorVal_out_1_BRB01</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/pipeStageN/GEN[6].stageX/Mshreg_colorVal_out_3_BRB27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/Mshreg_colorVal_out_1_BRB17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB37&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">SHIFTPIPE_I/GEN[2].pipeStageX/GEN[6].stageX/colorVal_out_1_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SHIFTPIPE_I/GEN[3].pipeStageX/GEN[5].stageX/Mshreg_colorVal_out_0_BRB38&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000b1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[3].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000b1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000b1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[2].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000b1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000b1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[1].MIDDLE.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000b1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000b1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[0].FIRST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000b1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FSUB_2_I/blk000000b1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;MBPIPE_I/GEN_ELEMENTS[4].LAST.MBROT_PIPE_ELEMENT_I/FADD_2_I/blk000000b1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig000001fe</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000179</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000017a</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000017b</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000017c</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000017d</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000017e</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000017f</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000180</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000181</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000182</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000183</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000184</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000185</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig00000186</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000018d</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000018b</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FSUB_I/sig0000018a</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig000001fe</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000179</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000017a</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000017b</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000017c</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000017d</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000017e</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000017f</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000180</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000181</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000182</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000183</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000184</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000185</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig00000186</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000018f</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000018d</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000018b</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FADD_I/sig0000018a</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig000001fe</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig0000017e</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig0000017f</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000180</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000181</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000182</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000183</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000184</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000185</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">CXGEN_I/FMUL_I/sig00000186</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[5].gen_iob_dq_inst/N2</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">121</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[5].gen_iob_dq_inst/N3,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[4].gen_iob_dq_inst/N2,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[4].gen_iob_dq_inst/N3,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[7].gen_iob_dq_inst/N2,
+withDram.Inst_dp_mem_wrapper/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_dq_iobuft[7].gen_iob_dq_inst/N3</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="841" delta="old" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">clkRst/clkGen/pll_base_inst/PLL_ADV</arg>.
+</msg>
+
+<msg type="info" file="MapLib" num="841" delta="old" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">withHdmiTx.Inst_hdmiOutIF/xgaTiming.clkGen/pll_base_inst/PLL_ADV</arg>.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="info" file="Timing" num="3386" delta="old" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
+
+<msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+</messages>
+

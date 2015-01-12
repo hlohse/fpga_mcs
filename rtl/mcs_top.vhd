@@ -22,7 +22,7 @@ entity mcs_top is
 		simulation: integer := 0;
 		trace: integer := 1;  -- use chipscope
     num_cx: integer := 800;
-    num_mbpipe_stages: integer := 16
+    num_mbpipe_stages: integer := 7
   );
   port (
 		Clk : IN STD_LOGIC;
@@ -267,7 +267,7 @@ signal Trace_Valid_Instr : STD_LOGIC;
 signal Trace_Jump_Taken : STD_LOGIC;
 
 signal memPll_ce_0, memPll_ce_90, memPll_lock: std_logic;
-signal clkDrp, clk125, clkMem2x, clkMem2x180: std_logic;
+signal clkDrp, clk100, clk125, clkMem2x, clkMem2x180: std_logic;
 signal sysClk, cpuClk: std_logic;
 signal stopClk: std_logic := '0';
 
@@ -776,7 +776,7 @@ begin
 	  enable => cxgen_enable,
 	  clear  => cxgen_clear,
 	  reset  => reset,
-	  clk    => clk,
+	  clk    => sysClk,
 	  cx     => cxgen_cx,
 	  valid  => cxgen_valid
   );
@@ -787,7 +787,7 @@ begin
   MBPIPE_I: mbrot_pipe
     generic map (num_cx     => num_cx,
                  num_stages => num_mbpipe_stages)
-    port map    (clk       => clk,
+    port map    (clk       => sysClk,
                  reset     => reset,
                  clear     => mbpipe_clear,
                  valid_in  => cxgen_valid,
@@ -803,7 +803,7 @@ begin
    SHIFTPIPE_I: shiftPipe
    generic map (width => 4, depth => num_mbpipe_stages)
    PORT MAP (
-          clk => clk,
+          clk => sysClk,
           reset => reset,
           iCmpVector => mbpipe_compare,
           iValid => mbpipe_valid_out,
@@ -813,7 +813,7 @@ begin
        
   -- ColorConverter
   COLERCONVERTER_I: ColorConverter_4_24 port map (
-    clock => clk,
+    clock => sysClk,
     reset => reset,
     color_in => spOColor,
     color_out => colorConverterColorOut,
@@ -821,11 +821,30 @@ begin
     valid_out => colorConverterValidOut);
 
   -- infrastructure: clock and reset
-	clkRst: dp_mem_infrastructure PORT MAP(
+--	clkRstNormal: dp_mem_infrastructure PORT MAP(
+--		clkIn => clk,
+--		clkSys => sysClk,
+--		stopCpu => stopClk,
+--		clkCpu => cpuClk,
+--		clk125 => clk125,
+--		clkDrp => clkDrp,
+--		clkMem2x => clkMem2x,
+--		clkMem2x180 => clkMem2x180,
+--		memPll_ce_0 => memPll_ce_0,
+--		memPll_ce_90 => memPll_ce_90,
+--		memPll_lock => memPll_lock,
+--		extRstIn_n => rst_n,
+--		intRstIn => cs_rst,
+--		areset => areset, -- reset for dram only
+--		dreset => reset
+--	);
+--	clk100 <= sysClk;
+
+	clkRstSlow: dp_mem_infrastructure PORT MAP(
 		clkIn => clk,
-		clkSys => sysClk,
-		stopCpu => stopClk,
-		clkCpu => cpuClk,
+		clkSys => clk100, -- sysClk,
+		stopCpu => '0', -- stopClk,
+		clkCpu => open, -- cpuClk,
 		clk125 => clk125,
 		clkDrp => clkDrp,
 		clkMem2x => clkMem2x,
@@ -838,6 +857,8 @@ begin
 		areset => areset, -- reset for dram only
 		dreset => reset
 	);
+	sysClk <= clkDrp; -- 50MHz
+	cpuClk <= clkDrp; -- 50MHz
   
 	-------------------------------
 	-------------------------------
@@ -1230,7 +1251,7 @@ begin
 		Inst_hdmiOutIF: hdmiOutIF 
 		generic map ( xga => xga, simulation => simulation)
 		PORT MAP(
-			CLK100_IN => sysClk,
+			CLK100_IN => clk100, -- sysClk,
 			clkHdmiTx => clkHdmiTx,
 			hdmiDataR => hdmiDataRTx,
 			hdmiDataG => hdmiDataGTx,
@@ -1339,41 +1360,13 @@ begin
 
   end generate;
 
-	withMbrot: if hasMbrot /= 0 generate
-	begin
-		mb_rst <= '1' when (IO_Write_Strobe = '1') and (IO_Byte_Address(ramSelectAddrBit) = '0') and (IO_Address(addrBits - 1 downto 0)) = cxAddr else '0';
-		
-		-- input and output pipeline required for speed
-		process
-		begin
-			wait until rising_edge(cpuClk);
-			cxReg_i <= regs(cxReg);
-			cyReg_i <= regs(cyReg);
-			cnReg_i <= regs(cnReg);
-			mb_n <= mb_n_i;
-			mb_done <= mb_done_i;
-		end process;
-	
-		mbCompute: mbrot 
-		generic map (maxDsp => 0, latency => 3) -- maybe we need maxDsp = 1 for 100MHz
-		PORT MAP (
-		 cx => cxReg_i,
-		 cy => cyReg_i,
-		 nmax => cnReg_i,
-		 n => mb_n_i,
-		 done => mb_done_i,
-		 clk => cpuClk,
-		 rst => mb_rst
-	  );
 
-	end generate;
- 
 
 		process
 			variable cnt : integer range 0 to 32 := 0;
 			variable row_base_addr  : std_logic_vector(29 downto 0) := (others => '0');
 		begin
-			wait until rising_edge(clk);
+			wait until rising_edge(sysClk);
       
       if hdmiRxActive = '0' then
         cnt := 0;
@@ -1398,7 +1391,7 @@ begin
 		-- pipelined write signals
 		process
 		begin
-			wait until rising_edge(clk);
+			wait until rising_edge(sysClk);
          regs(validOutReg)(3) <= colorConverterValidOut;
 			hdmiRxact_r0 <= colorConverterValidOut;
 			hdmiRxact_r1 <= hdmiRxact_r0;

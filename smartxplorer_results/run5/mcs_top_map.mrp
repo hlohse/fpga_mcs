@@ -1,0 +1,99 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'mcs_top'
+
+Design Information
+------------------
+Command Line   : map -ol high -xe n -pr b -t 7 -w -p xc6slx45-csg324-2 -o
+mcs_top_map.ncd mcs_top.ngd
+/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_m
+cs/smartxplorer_results/run5/mcs_top.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Jan  9 13:22:17 2015
+
+Interim Summary
+---------------
+Slice Logic Utilization:
+  Number of Slice Registers:                 7,385 out of  54,576   13%
+    Number used as Flip Flops:               7,365
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:               20
+  Number of Slice LUTs:                     17,930 out of  27,288   65%
+    Number used as logic:                   17,089 out of  27,288   62%
+      Number using O6 output only:          11,354
+      Number using O5 output only:             521
+      Number using O5 and O6:                5,214
+      Number used as ROM:                        0
+    Number used as Memory:                     467 out of   6,408    7%
+      Number used as Dual Port RAM:             64
+        Number using O6 output only:             0
+        Number using O5 output only:             0
+        Number using O5 and O6:                 64
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           403
+        Number using O6 output only:            47
+        Number using O5 output only:             1
+        Number using O5 and O6:                355
+    Number used exclusively as route-thrus:    374
+      Number with same-slice register load:      1
+      Number with same-slice carry load:       371
+      Number with other load:                    2
+
+Slice Logic Distribution:
+  Number of MUXCYs used:                    10,180 out of  13,644   74%
+  Number of LUT Flip Flop pairs used:       20,075
+    Number with an unused Flip Flop:        13,171 out of  20,075   65%
+    Number with an unused LUT:               2,145 out of  20,075   10%
+    Number of fully used LUT-FF pairs:       4,759 out of  20,075   23%
+    Number of unique control sets:             222
+    Number of slice register sites lost
+      to control set restrictions:             845 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        80 out of     218   36%
+    Number of LOCed IOBs:                       80 out of      80  100%
+    IOB Flip Flops:                             24
+    IOB Master Pads:                             4
+    IOB Slave Pads:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        32 out of     116   27%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        5
+    Number used as BUFGMUX:                      2
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                  15 out of     376    3%
+    Number used as ILOGIC2s:                    15
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        24 out of     376    6%
+    Number used as IODELAY2s:                    0
+    Number used as IODRP2s:                      2
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  62 out of     376   16%
+    Number used as OLOGIC2s:                     9
+    Number used as OSERDES2s:                   53
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             1 out of       8   12%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                           18 out of      58   31%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            2 out of       4   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+

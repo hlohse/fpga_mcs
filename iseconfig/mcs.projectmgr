@@ -8,6 +8,9 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/hdmiRx - Behavioral |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|hdmi|hdmiRx.vhd</ClosedNode>
+         <ClosedNode>/i2cSlave |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|hdmi|i2c|i2cSlave.v</ClosedNode>
+         <ClosedNode>/mbrot - behavior |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|float|mbrot.vhd</ClosedNode>
          <ClosedNode>/mbrot_pipe - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe.vhd/MBROT_PIPE_ELEMENT_I - mbrot_pipe_element - Behavioral</ClosedNode>
          <ClosedNode>/mbrot_pipe - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe_element.vhd</ClosedNode>
          <ClosedNode>/mbrot_pipe_element - Behavioral |home|fel|Desktop|mcs|rtl|mbrot_pipe_element.vhd</ClosedNode>
@@ -21,34 +24,43 @@
          <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd/edidRom - i2cSlave</ClosedNode>
          <ClosedNode>/mcs_top - rtl |home|fel|Desktop|mcs|rtl|mcs_top.vhd/mbCompute - mbrot - behavior</ClosedNode>
          <ClosedNode>/mcs_top - rtl |home|huang|FPGACo|fpga_mcs|rtl|mcs_top.vhd</ClosedNode>
+         <ClosedNode>/mcs_top - rtl |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|mcs_top.vhd/Inst_dp_mem_wrapper - dp_mem_wrapper300 - arc</ClosedNode>
+         <ClosedNode>/mcs_top - rtl |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|mcs_top.vhd/Inst_dram_reader - dram_reader - arch</ClosedNode>
+         <ClosedNode>/mcs_top - rtl |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|mcs_top.vhd/MBPIPE_I - mbrot_pipe - Behavioral</ClosedNode>
+         <ClosedNode>/mcs_top - rtl |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|mcs_top.vhd/MBPIPE_I - mbrot_pipe - Behavioral/MBROT_PIPE_ELEMENT_I - mbrot_pipe_element - Behavioral</ClosedNode>
+         <ClosedNode>/mcs_top - rtl |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|mcs_top.vhd/SHIFTPIPE_I - shiftPipe - imp</ClosedNode>
+         <ClosedNode>/mcs_top - rtl |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|mcs_top.vhd/mbCompute - mbrot - behavior</ClosedNode>
          <ClosedNode>/shiftPipe - imp |home|fel|Desktop|mcs|rtl|shiftPipe.vhd</ClosedNode>
          <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp/pipeStage0 - shiftStage - imp</ClosedNode>
          <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp/pipeStageN - shiftStage - imp</ClosedNode>
          <ClosedNode>/shiftPipe_TB - behavior |home|fel|Desktop|mcs|rtl|shiftPipe_TB.vhd/uut - shiftPipe - imp/pipeStageX - shiftStage - imp</ClosedNode>
+         <ClosedNode>/shiftPipe_TB - behavior |home|kugel|daten|work|verwalt|heidelberg|lectures|2014|copro|exercises|3|fpga_mcs|rtl|shiftPipe_TB.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mcs_top - rtl (/home/fel/Desktop/mcs/rtl/mcs_top.vhd)</SelectedItem>
+         <SelectedItem>Inst_hdmiOutIF - hdmiOutIF - Behavioral (/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/hdmi/hdmiOutIF.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >16</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b9000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b90000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000295000000020000000000000000000000000200000064ffffffff000000810000000300000002000002950000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mcs_top - rtl (/home/fel/Desktop/mcs/rtl/mcs_top.vhd)</CurrentItem>
+      <CurrentItem>Inst_hdmiOutIF - hdmiOutIF - Behavioral (/home/kugel/daten/work/verwalt/heidelberg/lectures/2014/copro/exercises/3/fpga_mcs/rtl/hdmi/hdmiOutIF.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
-         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000151000000010000000100000000000000000000000064ffffffff000000810000000000000001000001510000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000139000000010000000100000000000000000000000064ffffffff000000810000000000000001000001390000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -59,7 +71,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002ec000000040101000100000000000000000000000064ffffffff000000810000000000000004000000dc00000001000000000000011b0000000100000000000000840000000100000000000000710000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000038c000000040101000100000000000000000000000064ffffffff000000810000000000000004000000dc00000001000000000000011b0000000100000000000000840000000100000000000001110000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>dp_dram.ucf</CurrentItem>
    </ItemView>
@@ -97,13 +109,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Manage Cores</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000139000000010000000100000000000000000000000064ffffffff000000810000000000000001000001390000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Manage Cores</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -174,6 +186,34 @@
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000161000000010000000100000000000000000000000064ffffffff000000810000000000000001000001610000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000139000000010000000100000000000000000000000064ffffffff000000810000000000000001000001390000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000139000000010000000100000000000000000000000064ffffffff000000810000000000000001000001390000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
